@@ -55,6 +55,26 @@ export default function InstalarFooter(){
                 </div>
             </div>
 
+            <div className="container">
+                <div className="row justify-content-center">
+                    <div className="col-12">
+                        <div className="py-4 text-center">
+                            <p className="text-muted small mb-0">
+                                <span className="d-block d-md-inline me-md-3 mb-2 mb-md-0">Fotowoltaika</span>
+                                <span className="d-block d-md-inline me-md-3 mb-2 mb-md-0">Pompy ciepła</span>
+                                <span className="d-block d-md-inline me-md-3 mb-2 mb-md-0">Instalacje fotowoltaiczne</span>
+                                <span className="d-block d-md-inline me-md-3 mb-2 mb-md-0">Montaż paneli słonecznych</span>
+                                <span className="d-block d-md-inline me-md-3 mb-2 mb-md-0">Dofinansowanie Mój Prąd</span>
+                                <span className="d-block d-md-inline me-md-3 mb-2 mb-md-0">Program Czyste Powietrze</span>
+                                <span className="d-block d-md-inline me-md-3 mb-2 mb-md-0">OZE</span>
+                                <span className="d-block d-md-inline me-md-3 mb-2 mb-md-0">Energia odnawialna</span>
+                                <span className="d-block d-md-inline me-md-3 mb-2 mb-md-0">Oszczędność energii</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div className="footer-py-30 footer-bar bg-footer">
                 <div className="container text-center">
                     <div className="row align-items-center justify-content-between">
