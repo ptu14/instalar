@@ -8,52 +8,52 @@ export default function Faq(){
         {
             id:1,
             title:'Jak działają instalacje fotowoltaiczne?',
-            desc:'Instalacje fotowoltaiczne przekształcają energię słoneczną w energię elektryczną, co pozwala na zasilanie Twojego domu ekologiczną i odnawialną energią.'
+            desc:'Instalacje fotowoltaiczne przekształcają energię słoneczną w energię elektryczną. Panele PV instalowane na dachu lub gruncie wytwarzają prąd stały, który falownik (inwerter) zamienia na prąd zmienny używany w domowych urządzeniach. Nadwyżki energii można magazynować w akumulatorach lub oddawać do sieci energetycznej w ramach systemu net-metering lub net-billing.'
         },
         {
             id:2,
             title:'Czy pompa ciepła jest odpowiednia do mojego domu?',
-            desc:'Pompy ciepła to doskonałe rozwiązanie do efektywnego ogrzewania budynków. Oferujemy profesjonalne doradztwo, aby pomóc dobrać najlepsze rozwiązanie do Twoich potrzeb.'
+            desc:'Pompy ciepła sprawdzają się w większości budynków, zarówno nowych, jak i modernizowanych. Kluczowe czynniki to: stopień izolacji budynku, dostępne miejsce na instalację jednostki zewnętrznej, typ ogrzewania (najlepiej niskotemperaturowe, np. podłogowe). Oferujemy bezpłatny audyt energetyczny, który pozwoli dobrać optymalny model pompy ciepła do Twoich potrzeb.'
         },
         {
             id:3,
             title:'Jak długo trwa montaż instalacji OZE?',
-            desc:'Czas montażu zależy od wybranej technologii oraz wielkości instalacji. Zazwyczaj instalacja fotowoltaiczna zajmuje od kilku dni do tygodnia, a montaż pompy ciepła może zająć do kilku tygodni.'
+            desc:'Czas montażu zależy od wybranej technologii oraz wielkości instalacji. Standardowa instalacja fotowoltaiczna o mocy 6-10 kWp zajmuje zwykle 1-2 dni robocze. Montaż pompy ciepła wraz z podłączeniem do systemu grzewczego trwa zazwyczaj 2-3 dni. Kompleksowe instalacje (fotowoltaika + pompa ciepła + magazyn energii) mogą zająć do tygodnia.'
         },
         {
             id:4,
             title:'Czy oferujecie serwis pomp ciepła i instalacji fotowoltaicznych?',
-            desc:'Tak, zapewniamy pełny serwis instalacji OZE, w tym regularne przeglądy, naprawy oraz optymalizację wydajności urządzeń, aby działały sprawnie przez wiele lat.'
+            desc:'Tak, zapewniamy pełny serwis instalacji OZE, w tym regularne przeglądy, czyszczenie paneli, diagnostykę, naprawy oraz optymalizację wydajności urządzeń. Dla wszystkich naszych instalacji oferujemy pakiety serwisowe, gwarantujące priorytetową obsługę i wydłużoną gwarancję. Serwis wykonujemy zgodnie z wymogami producentów, zachowując warunki gwarancji.'
         },
         {
             id:5,
             title:'Jakie są korzyści z instalacji fotowoltaiki?',
-            desc:'Fotowoltaika to oszczędności na rachunkach za prąd, niezależność energetyczna oraz dbanie o środowisko dzięki wykorzystaniu odnawialnych źródeł energii.'
+            desc:'Fotowoltaika to znaczące oszczędności na rachunkach za prąd (nawet do 90%), niezależność energetyczna, ochrona przed podwyżkami cen energii, zwiększenie wartości nieruchomości oraz dbanie o środowisko przez redukcję emisji CO2. Instalacja fotowoltaiczna jest niemal bezobsługowa i ma długą żywotność (25-30 lat), zapewniając stabilne oszczędności przez dekady.'
         },
         {
             id:6,
             title:'Czy oferujecie pomoc w uzyskaniu dotacji na OZE?',
-            desc:'Tak, pomagamy naszym klientom w uzyskaniu dotacji i ulg podatkowych na instalacje odnawialnych źródeł energii. Skontaktuj się z nami, aby dowiedzieć się więcej o dostępnych programach wsparcia.'
+            desc:'Tak, kompleksowo pomagamy w uzyskaniu wszystkich dostępnych form dofinansowania, takich jak program "Mój Prąd", "Czyste Powietrze", ulga termomodernizacyjna oraz lokalne programy dotacji. Przygotowujemy pełną dokumentację, wypełniamy wnioski i prowadzimy klienta przez cały proces uzyskania dotacji, co pozwala zaoszczędzić nawet do 30-50% kosztów inwestycji.'
         },
         {
             id:7,
             title:'Jakie są koszty instalacji fotowoltaiki lub pompy ciepła?',
-            desc:'Koszt instalacji zależy od wielu czynników, takich jak wielkość instalacji, wybrane technologie oraz warunki techniczne na miejscu. Oferujemy bezpłatne wyceny po wstępnej konsultacji.'
+            desc:'Koszt instalacji fotowoltaicznej o mocy 6-10 kWp (standardowej dla domu jednorodzinnego) wynosi obecnie 25-40 tys. zł brutto. Pompy ciepła powietrze-woda kosztują od 30 do 60 tys. zł, w zależności od mocy i producenta. Po uwzględnieniu dotacji i ulg podatkowych, realny koszt inwestycji może być niższy nawet o 30-50%. Oferujemy też atrakcyjne finansowanie, pozwalające rozłożyć płatność na raty.'
         },
         {
             id:8,
             title:'Czy instalacja pompy ciepła wymaga przebudowy domu?',
-            desc:'Instalacja pompy ciepła zazwyczaj nie wymaga dużej ingerencji w strukturę budynku. W większości przypadków montaż można przeprowadzić bez większych zmian w istniejącej infrastrukturze.'
+            desc:'Instalacja pompy ciepła zazwyczaj nie wymaga znaczącej przebudowy domu. W przypadku modernizacji istniejącego systemu grzewczego, zwykle wystarczy wymiana źródła ciepła i dostosowanie instalacji. Najlepsze efekty daje połączenie z ogrzewaniem podłogowym, ale pompy ciepła mogą też współpracować z grzejnikami, po ich odpowiednim doborze. Każdą instalację projektujemy indywidualnie, minimalizując zakres niezbędnych prac budowlanych.'
         },
         {
             id:9,
             title:'Jakie są zalety klimatyzacji zasilanej energią odnawialną?',
-            desc:'Klimatyzacja zasilana energią odnawialną pozwala na oszczędności na kosztach energii oraz redukcję emisji CO2, co przyczynia się do ochrony środowiska.'
+            desc:'Klimatyzacja zasilana własną energią z fotowoltaiki pozwala na praktycznie bezkosztowe chłodzenie domu latem. Nowoczesne pompy ciepła typu split oferują funkcję chłodzenia, stanowiąc 2w1: ogrzewanie zimą i klimatyzację latem. Zasilanie klimatyzacji energią odnawialną eliminuje wysokie rachunki za prąd w okresie letnim, znacząco redukuje emisję CO2 oraz zapewnia komfort termiczny przez cały rok przy minimalnych kosztach eksploatacji.'
         },
         {
             id:10,
             title:'Czy mogę monitorować wydajność mojej instalacji OZE?',
-            desc:'Tak, oferujemy systemy monitoringu, które umożliwiają śledzenie wydajności instalacji fotowoltaicznych oraz pomp ciepła w czasie rzeczywistym, co pozwala na szybkie reagowanie na ewentualne problemy.'
+            desc:'Tak, wszystkie instalowane przez nas systemy OZE wyposażamy w zaawansowane systemy monitoringu online. Dzięki specjalnym aplikacjom możesz na bieżąco śledzić produkcję energii, zużycie, oszczędności oraz wykrywać ewentualne anomalie w pracy instalacji. Systemy monitoringu pomagają optymalizować zużycie energii, maksymalizować autokonsumpcję i wcześnie wykrywać potencjalne problemy, zanim wpłyną na wydajność instalacji.'
         },
     ]
     return(
@@ -61,8 +61,8 @@ export default function Faq(){
         <div className="row justify-content-center">
             <div className="col-12">
                 <div className="section-title mb-4 pb-2 text-center">
-                    <h4 className="title mb-3">Najczęściej Zadawane Pytania</h4>
-                    <p className="text-muted mx-auto para-desc mb-0">Oferujemy kompleksowe rozwiązania w zakresie odnawialnych źródeł energii. Dowiedz się więcej o naszych usługach i jak możemy pomóc Ci w przejściu na zieloną energię!</p>
+                    <h2 className="title mb-3">Najczęściej Zadawane Pytania o Fotowoltaikę i Pompy Ciepła</h2>
+                    <p className="text-muted mx-auto para-desc mb-0">Oferujemy kompleksowe rozwiązania w zakresie odnawialnych źródeł energii - od instalacji fotowoltaicznych po pompy ciepła. Dowiedz się więcej o naszych usługach, dotacjach i jak możemy pomóc Ci zaoszczędzić na rachunkach za energię dzięki zielonym rozwiązaniom!</p>
                 </div>
             </div>
         </div>

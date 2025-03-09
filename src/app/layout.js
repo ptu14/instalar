@@ -36,8 +36,28 @@ const kaushan = Kaushan_Script({
 })
 
 export const metadata = {
-  title: 'Instalar Energy - Twoje źródło ciepła',
-  description: 'Instalar Energy to firma specjalizująca się w instalacjach fotowoltaiki, pomp ciepła oraz klimatyzacji. Oferujemy nowoczesne i ekologiczne rozwiązania energetyczne, które pozwolą Ci cieszyć się komfortem i oszczędnościami. Skontaktuj się z nami, aby dowiedzieć się więcej o możliwościach, jakie dają odnawialne źródła energii.'  
+  title: 'Instalar Energy - Instalacje Fotowoltaiczne i Pompy Ciepła | OZE',
+  description: 'Profesjonalne instalacje fotowoltaiczne i pompy ciepła. ✓ Dotacje Mój Prąd i Czyste Powietrze ✓ Oszczędności na rachunkach ✓ Kompleksowa obsługa od projektu po montaż ➤ Sprawdź ofertę!',
+  keywords: 'fotowoltaika, pompy ciepła, instalacje OZE, dotacje fotowoltaika, Mój Prąd, Czyste Powietrze, panele słoneczne, ekologiczne ogrzewanie, energia odnawialna, dofinansowanie OZE',
+  robots: 'index, follow',
+  viewport: 'width=device-width, initial-scale=1',
+  canonical: 'https://instalarenergy.pl/',
+  openGraph: {
+    type: 'website',
+    locale: 'pl_PL',
+    url: 'https://instalarenergy.pl/',
+    title: 'Instalar Energy - Instalacje Fotowoltaiczne i Pompy Ciepła',
+    description: 'Profesjonalne instalacje fotowoltaiczne i pompy ciepła. Skorzystaj z dotacji i oszczędzaj na rachunkach. Kompleksowa obsługa od projektu po montaż.',
+    images: [
+      {
+        url: 'https://instalarenergy.pl/images/logo-icon.png',
+        width: 800,
+        height: 600,
+        alt: 'Instalar Energy Logo',
+      }
+    ],
+    siteName: 'Instalar Energy',
+  }
 }
 
 export default function RootLayout({ children }) {

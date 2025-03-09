@@ -8,7 +8,7 @@
     left: 0;
     top: 0;
     z-index: 999;
-    background-color: transparent;
+    background: linear-gradient(180deg, rgba(2,0,36,0.1) 0%, rgba(0,0,0,0.1) 75%, rgba(0,0,0,0) 100%);
     border: 0;
     transition: all .5s ease;
     font-family: $font-family-base;
@@ -183,13 +183,13 @@
             display: block;
             position: relative;
             margin: 0 10px;
-            &:hover > a{
-                color: $primary !important;
+            &:hover > a {
+                color: $white !important;
             }
             
             > a {
                 display: block;
-                color: $dark;
+                color: $white;
                 font-size: 13px;
                 background-color: transparent !important;
                 font-weight: 600;
@@ -200,8 +200,11 @@
                 padding-left: 10px;
                 padding-right: 10px;
 
+                &:hover {
+                    color: $white;
+                }
                 &:active{
-                    color: $primary !important;    
+                    color: $white !important;
                 }
             }
             .submenu {
@@ -268,7 +271,7 @@
         .navigation-menu {
             > li {
                 > a {
-                    color: $dark;
+                    color: $dark !important;
                 }
                 
                 > .menu-arrow {
@@ -276,7 +279,7 @@
                 }
                 &:hover, &.active {
                     > a {
-                        color: $primary !important  ;
+                        color: $white !important  ;
                     }
                     > .menu-arrow {
                         border-color: $primary;
@@ -458,7 +461,7 @@
                             color: $dark !important;
                             transition: all 0.3s;
                             &:hover {
-                                color: $primary !important;
+                                color: $white !important;
                             }
                             &:active {
                                 color: $primary !important;
@@ -525,10 +528,10 @@
                     }
                 }
                 &:hover > a {
-                    color: $primary !important;
+                    color: $white !important;
                 } 
                 &:active > a {
-                    color: $primary !important;
+                    color: $white !important;
                 } 
                 
                 &:last-child {
@@ -904,5 +907,12 @@
 
     @media (min-width: 576px) {
         top: 48px !important;
+    }
+}
+
+#topnav.nav-sticky {
+    background: $white;
+    li > a {
+        color: $dark;
     }
 }
