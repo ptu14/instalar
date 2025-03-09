@@ -17,11 +17,15 @@ const nextConfig = {
     })
     return config;
   },
-
-  
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'jakoszczedzacpieniadze.pl',
+        pathname: '/**',
+      },
+    ],
+  },
 }
 
-
-
 module.exports = nextConfig
-

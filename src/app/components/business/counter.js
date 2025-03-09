@@ -6,7 +6,7 @@ import CountUp from 'react-countup';
 
 export default function Counter(){
     return(
-    <div className="container mt-100 mt-60">
+    <div className="container mt-100 mt-20">
         <div className="row">
             {counterData.map((item,index)=>{
                 return(

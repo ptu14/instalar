@@ -90,6 +90,9 @@ export default function Navbar({navClass,manuClass,navDark}){
                                     <li className="has-submenu">
                                         <Link1 to="inner" activeClass="active" spy={true} smooth={true} duration={500}>FAQ</Link1>
                                     </li>
+                                    <li className="has-submenu">
+                                        <Link href="/blog">Blog</Link>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
