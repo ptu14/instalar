@@ -82,13 +82,13 @@ export default function Navbar({navClass,manuClass,navDark}){
                             <div id="navigation" style={{ display: isMenu ? 'block' : 'none' }}>  
                                 <ul className="navigation-menu nav-right" id="navmenu-nav">
                                     <li className="has-submenu">
-                                        <Link1 to="demos" activeClass="active" spy={true} smooth={true} duration={500}>Oferta</Link1>
+                                        <Link1 href="" to="demos" activeClass="active" spy={true} smooth={true} duration={500}>Oferta</Link1>
                                     </li>
                                     <li className="has-submenu">
-                                        <Link1 to="service" activeClass="active" spy={true} smooth={true} duration={500}>współpraca</Link1>
+                                        <Link1 href="" to="service" activeClass="active" spy={true} smooth={true} duration={500}>współpraca</Link1>
                                     </li>
                                     <li className="has-submenu">
-                                        <Link1 to="inner" activeClass="active" spy={true} smooth={true} duration={500}>FAQ</Link1>
+                                        <Link1 href="" to="inner" activeClass="active" spy={true} smooth={true} duration={500}>FAQ</Link1>
                                     </li>
                                     <li className="has-submenu">
                                         <Link href="/blog">Blog</Link>
