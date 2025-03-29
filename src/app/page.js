@@ -4,13 +4,14 @@ import Image from "next/image";
 
 import Navbar from "./components/navbar/navbar";
 import Partners from "./components/partners";
-import HeroSlider from "./components/business/heroSlider";
+// import HeroSlider from "./components/business/heroSlider";
 import Counter from "./components/business/counter";
 import Faq from "./components/faq";
 import Process from "./components/process";
-import InstalarFooter from "./components/footer/instalarFooter";
+import KomplexFooter from "./components/footer/komplexFooter";
 
 import { aboutData } from "./data/business";
+import HeroSlider from "@/app/components/business/heroSlider";
 
 export default function IndexBusiness(){
     return(
@@ -23,17 +24,17 @@ export default function IndexBusiness(){
                     <div className="col-lg-5 col-md-6 order-1 order-md-2">
                         <div className="features-absoluteTwo">
                             <div className="position-relative">
-                                <Image src='/images/instalator.jpg' width={0} height={0} sizes="100vw" style={{width:'100%', height:'auto'}} className="img-fluid rounded shadow" alt="Instalacja fotowoltaiczna i pompy ciepła - profesjonalny montaż"/>
+                                <Image src='/images/bus.png' width={0} height={0} sizes="100vw" style={{width:'100%', height:'auto'}} className="img-fluid rounded shadow" alt="Instalacja fotowoltaiczna i pompy ciepła - profesjonalny montaż"/>
                                 <div itemScope itemType="https://schema.org/LocalBusiness" style={{display: 'none'}}>
-                                    <span itemProp="name">Instalar Energy</span>
+                                    <span itemProp="name">Komplex System</span>
                                     <div itemProp="address" itemScope itemType="https://schema.org/PostalAddress">
-                                        <span itemProp="streetAddress">ul. Słoneczna 15</span>
-                                        <span itemProp="postalCode">00-000</span>
-                                        <span itemProp="addressLocality">Warszawa</span>
+                                        <span itemProp="streetAddress">Głogoczów 472</span>
+                                        <span itemProp="postalCode">32-444</span>
+                                        <span itemProp="addressLocality">Głogoczów</span>
                                         <span itemProp="addressCountry">Polska</span>
                                     </div>
-                                    <span itemProp="telephone">+48 123 456 789</span>
-                                    <a itemProp="url" href="https://instalarenergy.pl">https://instalarenergy.pl</a>
+                                    <a href="tel:+48785076979" itemProp="telephone">+48 785 076 979</a>
+                                    <a itemProp="url" href="https://komplexsystem.pl">https://komplexsystem.pl</a>
                                     <div itemProp="geo" itemScope itemType="https://schema.org/GeoCoordinates">
                                         <meta itemProp="latitude" content="52.2297" />
                                         <meta itemProp="longitude" content="21.0122" />
@@ -124,8 +125,8 @@ export default function IndexBusiness(){
             <Faq />
         </section>
 
-            <section className="section mt-4">
-        <InstalarFooter />
+            <section className="section mt-4 pb-0">
+        <KomplexFooter />
             </section>
         </>
     )

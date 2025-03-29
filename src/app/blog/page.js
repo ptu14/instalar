@@ -4,7 +4,7 @@ import Image from "next/image";
 import axios from "axios";
 
 import Navbar from "../components/navbar/navbar";
-import Footer from "../components/footer/footer";
+import KomplexFooter from "../components/footer/komplexFooter";
 
 // Adres WordPress API
 const API_URL = 'https://komplexsystem.com/wp-json/wp/v2';
@@ -34,7 +34,7 @@ export async function generateMetadata({ searchParams }) {
     }
     
     return {
-        title: categoryName ? `Blog - ${categoryName} | Instalar Energy` : "Blog | Instalar Energy",
+        title: categoryName ? `Blog - ${categoryName} | Komplex System` : "Blog | Komplex System",
         description: "Najnowsze wpisy i artykuły o odnawialnych źródłach energii, fotowoltaice, pompach ciepła i efektywności energetycznej.",
     };
 }
@@ -231,7 +231,7 @@ export default async function BlogPage({ searchParams }) {
                 </div>
             </section>
 
-            <Footer/>
+            <KomplexFooter/>
         </>
     );
 }

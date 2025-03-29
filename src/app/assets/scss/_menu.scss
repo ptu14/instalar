@@ -15,6 +15,13 @@
     .logo {
         float: left;
         color: $dark !important;
+
+
+        .logo-img{
+            width: auto;
+            height: 50px;
+        }
+
         .l-dark,
         .logo-dark-mode {
             display: none;

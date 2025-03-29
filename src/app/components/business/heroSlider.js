@@ -17,7 +17,7 @@ export default function HeroSlider(){
                                 <div className="col-12">
                                     <div className="title-heading text-center">
                                         <h2 className="fw-semibold display-3 text-white title-dark mb-4">Efektywne Pompy Ciepła</h2>
-                                        <p className="para-desc mx-auto text-white-50">Oszczędzaj do 75% na ogrzewaniu dzięki pompom ciepła. Profesjonalny montaż z dofinansowaniem z programu Czyste Powietrze. Ciepły dom bez wysokich rachunków!</p>
+                                        <p className="para-desc mx-auto text-white">Oszczędzaj do 75% na ogrzewaniu dzięki pompom ciepła. Profesjonalny montaż z dofinansowaniem z programu Czyste Powietrze. Ciepły dom bez wysokich rachunków!</p>
                                         <div className="mt-4 pt-2">
                                             <Link href="/page-services" className="btn btn-primary">Poznaj Ofertę</Link>
                                         </div>

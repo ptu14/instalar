@@ -1,0 +1,44 @@
+# Robots.txt dla Komplex System
+User-agent: *
+Allow: /
+
+Allow: /blog/
+Allow: /images/
+
+Sitemap: https://komplexsystem.pl/sitemap.xml
+
+Disallow: /.next/
+Disallow: /node_modules/
+Disallow: /src/app/assets/
+Disallow: /src/app/components/
+Disallow: /src/app/data/
+Disallow: /public/next.svg
+Disallow: /public/vercel.svg
+
+#Googlebot
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Googlebot-Image
+Allow: /images/
+Allow: /public/images/
+
+User-agent: Googlebot-Mobile
+Allow: /
+
+# Bing
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Reguly dla narzedzi analitycznych
+User-agent: Google-Site-Verification
+Allow: /
+
+# Respektuj standardy szybkości indeksowania
+User-agent: AdsBot-Google
+Allow: /
+
+User-agent: *
+Disallow: /admin/

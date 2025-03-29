@@ -47,15 +47,15 @@ export default function Navbar({navClass,manuClass,navDark}){
                         <div className="px-lg-5 mx-lg-5">
                         {navDark === true ?  
                             <Link className="logo" href="/">
-                                <Image src='/images/logo-ie.svg' width={110} height={30} className="logo-light-mode" alt=""/>
-                                <Image src='/images/logo-ie.svg' width={110} height={30} className="logo-dark-mode" alt=""/>
+                                <Image src='/images/komplex_system.png' width={650} height={413} className="logo-img logo-light-mode" alt=""/>
+                                <Image src='/images/komplex_system.png' width={650} height={413} className="logo-img logo-dark-mode" alt=""/>
                             </Link> :
                             <Link className="logo" href="/">
                                 <span className="logo-light-mode">
-                                    <Image src='/images/logo-ie.svg' width={160} height={50} className="l-dark" alt=""/>
-                                    <Image src='/images/logo-ie-dark.svg' width={160} height={50} className="l-light" alt=""/>
+                                    <Image src='/images/komplex_system.png' width={650} height={413} className="logo-img l-dark" alt=""/>
+                                    <Image src='/images/komplex_system_neg.png' width={650} height={413} className="logo-img l-light" alt=""/>
                                 </span>
-                                <Image src='/images/logo-ie.svg' width={110} height={30} className="logo-dark-mode" alt=""/>
+                                <Image src='/images/komplex_system.png' width={650} height={413} className="logo-img logo-dark-mode" alt=""/>
                             </Link>
                             }
 
@@ -85,7 +85,13 @@ export default function Navbar({navClass,manuClass,navDark}){
                                         <Link1 href="" to="demos" activeClass="active" spy={true} smooth={true} duration={500}>Oferta</Link1>
                                     </li>
                                     <li className="has-submenu">
-                                        <Link1 href="" to="service" activeClass="active" spy={true} smooth={true} duration={500}>współpraca</Link1>
+                                        <Link href="#">Dotacje <span className="menu-arrow"></span></Link>
+                                        <ul className="submenu">
+                                            <li><Link href="/dotacje/moj-prad">Mój Prąd</Link></li>
+                                            <li><Link href="/dotacje/czyste-powietrze">Czyste Powietrze</Link></li>
+                                            <li><Link href="/dotacje/moje-cieplo">Moje Ciepło</Link></li>
+                                            <li><Link href="/dotacje/finansowanie">Finansowanie</Link></li>
+                                        </ul>
                                     </li>
                                     <li className="has-submenu">
                                         <Link1 href="" to="inner" activeClass="active" spy={true} smooth={true} duration={500}>FAQ</Link1>

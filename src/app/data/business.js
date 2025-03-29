@@ -1,4 +1,10 @@
-import {GiHeatHaze, PiDropBold, IoMdSunny, PiPipe } from '../assets/icons/vander' 
+import {GiHeatHaze, PiDropBold, IoMdSunny, PiPipe } from '../assets/icons/vander'
+import {BiBattery, BiMoney} from "react-icons/bi";
+import {BsBattery, BsBatteryFull} from "react-icons/bs";
+import {IoIosBatteryFull} from "react-icons/io";
+import {MdMoney} from "react-icons/md";
+import {GrMoney} from "react-icons/gr";
+import {PiMoney} from "react-icons/pi";
 
 export const aboutData = [
     {
@@ -12,12 +18,12 @@ export const aboutData = [
         desc: 'Nowoczesne instalacje fotowoltaiczne z dofinansowaniem do 6 tys. zł z programu Mój Prąd 6.0. Produkuj własny prąd, zmniejsz rachunki nawet o 90% i uniezależnij się od podwyżek cen energii.'
     },
     {
-        icon: PiPipe,
+        icon: IoIosBatteryFull,
         title: 'Magazyny energii',
         desc: 'Nowoczesne magazyny energii pozwalające na większą niezależność energetyczną. Wykorzystaj wyprodukowaną energię gdy jej potrzebujesz, nawet po zachodzie słońca. Dotacje do 16 tys. zł w programie Mój Prąd.'
     },
     {
-        icon: PiDropBold,
+        icon: PiMoney,
         title: 'Dotacje i finansowanie',
         desc: 'Kompleksowa pomoc w uzyskaniu dofinansowania na instalacje OZE. Obsługujemy wszystkie programy dotacji: Mój Prąd, Czyste Powietrze, ulga termomodernizacyjna. Atrakcyjne finansowanie i leasing.'
     },
@@ -31,8 +37,9 @@ export const counterData = [
     },
     {
         start:'0',
-        end:'5',
-        title:'Lat doświadczenia'
+        end:'2',
+        title:'Uzyskanych Dotacji i finansowań',
+        suffix: '+ MLN'
     },
     {
         start:'0',

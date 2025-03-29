@@ -6,13 +6,13 @@ import CountUp from 'react-countup';
 
 export default function Counter(){
     return(
-    <div className="container mt-100 mt-20">
+    <div className="container">
         <div className="row">
             {counterData.map((item,index)=>{
                 return(
                 <div className="col-md-3 col-6" key={index}>
                     <div className="counter-box position-relative text-center">
-                        <h2 className="mb-0 display-1 fw-bold title-dark mt-2 opacity-05"><CountUp start={item.start} end={item.end}/></h2>
+                        <h2 className="mb-0 display-1 fw-bold title-dark mt-2 opacity-2 fs-5"><CountUp start={item.start} end={item.end} suffix={item.suffix} separator=" "/></h2>
                         <span className="counter-head fw-semibold title-dark position-absolute top-50 start-50 translate-middle">{item.title}</span>
                     </div>
                 </div>

@@ -36,27 +36,27 @@ const kaushan = Kaushan_Script({
 })
 
 export const metadata = {
-  title: 'Instalar Energy - Instalacje Fotowoltaiczne i Pompy Ciepła | OZE',
+  title: 'Komplex System - Instalacje Fotowoltaiczne i Pompy Ciepła | OZE',
   description: 'Profesjonalne instalacje fotowoltaiczne i pompy ciepła ✓ Dotacje Mój Prąd i Czyste Powietrze ✓ Oszczędności na rachunkach ✓ Kompleksowa obsługa',
   keywords: 'fotowoltaika, pompy ciepła, instalacje OZE, dotacje fotowoltaika, Mój Prąd, Czyste Powietrze, panele słoneczne, ekologiczne ogrzewanie, energia odnawialna, dofinansowanie OZE',
   robots: 'index, follow',
   viewport: 'width=device-width, initial-scale=1',
-  canonical: 'https://instalarenergy.pl/',
+  canonical: 'https://komplexsystem.pl/',
   openGraph: {
     type: 'website',
     locale: 'pl_PL',
-    url: 'https://instalarenergy.pl/',
-    title: 'Instalar Energy - Instalacje Fotowoltaiczne i Pompy Ciepła',
+    url: 'https://komplexsystem.pl/',
+    title: 'Komplex System - Instalacje Fotowoltaiczne i Pompy Ciepła',
     description: 'Profesjonalne instalacje fotowoltaiczne i pompy ciepła. Skorzystaj z dotacji i oszczędzaj na rachunkach. Kompleksowa obsługa od projektu po montaż.',
     images: [
       {
-        url: 'https://instalarenergy.pl/images/logo-icon.png',
+        url: 'https://komplexsystem.pl/images/logo-icon.png',
         width: 800,
         height: 600,
-        alt: 'Instalar Energy Logo',
+        alt: 'Komplex System Logo',
       }
     ],
-    siteName: 'Instalar Energy',
+    siteName: 'Komplex System',
   }
 }
 

@@ -46,7 +46,7 @@ export async function generateMetadata({ params }) {
             }
             
             return {
-                title: `${post.title.rendered} | Instalar Energy Blog`,
+                title: `${post.title.rendered} | Komplex System Blog`,
                 description: description,
                 openGraph: ogImage ? {
                     images: [{ url: ogImage }],
@@ -59,7 +59,7 @@ export async function generateMetadata({ params }) {
     
     // Domyślne metadane
     return {
-        title: "Blog | Instalar Energy",
+        title: "Blog | Komplex System",
         description: "Artykuły o odnawialnych źródłach energii, fotowoltaice i pompach ciepła.",
     };
 }
