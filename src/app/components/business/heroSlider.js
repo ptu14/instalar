@@ -8,7 +8,19 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 export default function HeroSlider(){
     return(
         <section className="home-slider position-relative">
-            <Carousel showArrows={false} selectedItem={false} infiniteLoop={true} autoPlay={true} interval={3000} showStatus={false} showThumbs={false}>
+            <Carousel 
+                showArrows={false} 
+                selectedItem={false} 
+                infiniteLoop={true} 
+                autoPlay={true} 
+                interval={3000} 
+                showStatus={false} 
+                showThumbs={false}
+                swipeable={true}
+                emulateTouch={true}
+                preventMovementUntilSwipeScrollTolerance={true}
+                swipeScrollTolerance={50}
+            >
             <div className="carousel-item active" data-bs-interval="3000">
                     <div className="bg-home d-flex align-items-center" style={{backgroundImage:"url('/images/1.jpg')"}}>
                         <div className="bg-overlay bg-linear-gradient"></div>

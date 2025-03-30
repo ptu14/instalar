@@ -1,4 +1,5 @@
-import React from "react";
+'use client';
+import React, { useState } from "react";
 import Link from "next/link";
 import Navbar from "../components/navbar/navbar";
 
@@ -7,10 +8,72 @@ import ScrollTop from "../components/scrollTop";
 import KomplexFooter from "@/app/components/footer/komplexFooter";
 
 export default function Contact() {
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        subject: '',
+        comments: ''
+    });
+    const [status, setStatus] = useState({
+        loading: false,
+        success: false,
+        error: false,
+        message: ''
+    });
+
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData(prev => ({
+            ...prev,
+            [name]: value
+        }));
+    };
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        setStatus({ loading: true, success: false, error: false, message: '' });
+
+        try {
+            const response = await fetch('/api/contact', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formData),
+            });
+
+            const data = await response.json();
+
+            if (response.ok) {
+                setStatus({
+                    loading: false,
+                    success: true,
+                    error: false,
+                    message: 'Wiadomość została wysłana pomyślnie!'
+                });
+                setFormData({
+                    name: '',
+                    email: '',
+                    subject: '',
+                    comments: ''
+                });
+            } else {
+                throw new Error(data.message || 'Wystąpił błąd podczas wysyłania wiadomości');
+            }
+        } catch (error) {
+            setStatus({
+                loading: false,
+                success: false,
+                error: true,
+                message: error.message
+            });
+        }
+    };
+
     return (
         <>
             <Navbar navClass="defaultscroll sticky" manuClass="navigation-menu nav-right nav-light" />
-            <section className="bg-half-170 d-table w-100" style={{ backgroundImage: "url('/images/bg/about.jpg')" }}>
+            <section className="bg-half-170 d-table w-100" style={{ backgroundImage: "url('/images/salon.jpg')" }}>
                 <div className="bg-overlay bg-gradient-overlay"></div>
                 <div className="container">
                     <div className="row mt-5 justify-content-center">
@@ -43,8 +106,8 @@ export default function Contact() {
                                 </div>
                                 <div className="content mt-3">
                                     <h5 className="footer-head">Telefon</h5>
-                                    <p className="text-muted">Rozpocznij współpracę z Starty, który zapewni wszystko, czego potrzebujesz</p>
-                                    <Link href="tel:+152534-468-854" className="text-foot">+152 534-468-854</Link>
+                                    <p className="text-muted">Skontaktuj się z nami, aby uzyskać więcej informacji</p>
+                                    <Link href="tel:+48785076979" className="text-foot">+48 785 076 979</Link>
                                 </div>
                             </div>
                         </div>
@@ -56,8 +119,8 @@ export default function Contact() {
                                 </div>
                                 <div className="content mt-3">
                                     <h5 className="footer-head">Email</h5>
-                                    <p className="text-muted">Rozpocznij współpracę z Starty, który zapewni wszystko, czego potrzebujesz</p>
-                                    <Link href="mailto:contact@example.com" className="text-foot">contact@example.com</Link>
+                                    <p className="text-muted">Skontaktuj się z nami, aby uzyskać więcej informacji</p>
+                                    <Link href="mailto:kontakt@komplexsystem.pl" className="text-foot">kontakt@komplexsystem.pl</Link>
                                 </div>
                             </div>
                         </div>
@@ -69,9 +132,8 @@ export default function Contact() {
                                 </div>
                                 <div className="content mt-3">
                                     <h5 className="footer-head">Lokalizacja</h5>
-                                    <p className="text-muted">C/54 Northwest Freeway, Suite 558, <br />Houston, USA 485</p>
-                                    <Link href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39206.002432144705!2d-95.4973981212445!3d29.709510002925988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640c16de81f3ca5%3A0xf43e0b60ae539ac9!2sGerald+D.+Hines+Waterwall+Park!5e0!3m2!1sen!2sin!4v1566305861440!5m2!1sen!2sin"
-                                          data-type="iframe" className="video-play-icon text-foot lightbox">Zobacz na mapie Google</Link>
+                                    <p className="text-muted">Głogoczów 472, 32-444 Głogoczów</p>
+                                    <Link href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x471667f6e33e8a85:0x35e4b3ee0b82dae?sa=X&ved=1t:8290&ictx=111" className="text-foot mb-0">Zobacz na mapie Google</Link>
                                 </div>
                             </div>
                         </div>
@@ -86,43 +148,90 @@ export default function Contact() {
                                 <p className="text-muted para-desc mx-auto mb-0">Nasze projekty są świeże i proste, co przynosi ogromne korzyści Twojej firmie. Dowiedz się więcej o naszej pracy!</p>
                             </div>
                             <div className="custom-form">
-                                <form>
+                                <form onSubmit={handleSubmit}>
                                     <div className="row">
                                         <div className="col-md-6">
                                             <div className="mb-3">
                                                 <label className="form-label">Twoje imię <span className="text-danger">*</span></label>
-                                                <input name="name" id="name" type="text" className="form-control" placeholder="Imię :" />
+                                                <input 
+                                                    name="name" 
+                                                    id="name" 
+                                                    type="text" 
+                                                    className="form-control" 
+                                                    placeholder="Imię :" 
+                                                    value={formData.name}
+                                                    onChange={handleChange}
+                                                    required
+                                                />
                                             </div>
                                         </div>
 
                                         <div className="col-md-6">
                                             <div className="mb-3">
                                                 <label className="form-label">Twój email <span className="text-danger">*</span></label>
-                                                <input name="email" id="email" type="email" className="form-control" placeholder="Email :" />
+                                                <input 
+                                                    name="email" 
+                                                    id="email" 
+                                                    type="email" 
+                                                    className="form-control" 
+                                                    placeholder="Email :" 
+                                                    value={formData.email}
+                                                    onChange={handleChange}
+                                                    required
+                                                />
                                             </div>
                                         </div>
 
                                         <div className="col-12">
                                             <div className="mb-3">
                                                 <label className="form-label">Temat</label>
-                                                <input name="subject" id="subject" className="form-control" placeholder="Temat :" />
+                                                <input 
+                                                    name="subject" 
+                                                    id="subject" 
+                                                    className="form-control" 
+                                                    placeholder="Temat :" 
+                                                    value={formData.subject}
+                                                    onChange={handleChange}
+                                                />
                                             </div>
                                         </div>
 
                                         <div className="col-12">
                                             <div className="mb-3">
                                                 <label className="form-label">Wiadomość <span className="text-danger">*</span></label>
-                                                <textarea name="comments" id="comments" rows="4" className="form-control" placeholder="Wiadomość :"></textarea>
+                                                <textarea 
+                                                    name="comments" 
+                                                    id="comments" 
+                                                    rows="4" 
+                                                    className="form-control" 
+                                                    placeholder="Wiadomość :"
+                                                    value={formData.comments}
+                                                    onChange={handleChange}
+                                                    required
+                                                ></textarea>
                                             </div>
                                         </div>
                                     </div>
                                     <div className="row">
                                         <div className="col-12">
                                             <div className="d-grid">
-                                                <button type="submit" id="submit" name="send" className="btn btn-primary">Wyślij wiadomość</button>
+                                                <button 
+                                                    type="submit" 
+                                                    id="submit" 
+                                                    name="send" 
+                                                    className="btn btn-primary"
+                                                    disabled={status.loading}
+                                                >
+                                                    {status.loading ? 'Wysyłanie...' : 'Wyślij wiadomość'}
+                                                </button>
                                             </div>
                                         </div>
                                     </div>
+                                    {status.message && (
+                                        <div className={`alert ${status.success ? 'alert-success' : status.error ? 'alert-danger' : ''} mt-3`}>
+                                            {status.message}
+                                        </div>
+                                    )}
                                 </form>
                             </div>
                         </div>
@@ -148,3 +257,5 @@ export default function Contact() {
         </>
     );
 }
+
+

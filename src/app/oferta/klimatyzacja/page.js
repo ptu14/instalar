@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Navbar from "../../components/navbar/navbar";
 import KomplexFooter from "../../components/footer/komplexFooter";
+import ContactForm from "../../components/contact-form/contact-form";
 import { AiOutlineCheckCircle } from "react-icons/ai";
 
 export default function Klimatyzacja() {
@@ -106,16 +107,11 @@ export default function Klimatyzacja() {
                 <div className="container">
                     <div className="row justify-content-center">
                         <div className="col-lg-7">
-                            <div className="p-4 bg-white rounded shadow">
-                                <div className="text-center">
-                                    <h5>Chcesz dowiedzieć się więcej o klimatyzacji?</h5>
-                                    <p className="text-muted">Skontaktuj się z nami, a przygotujemy indywidualną ofertę dopasowaną do Twoich potrzeb</p>
-                                    <form>
-                                        <input name="phone" id="phone" type="tel" className="form-control mb-3" placeholder="Twój numer telefonu:" required="" />
-                                        <button type="submit" className="btn btn-primary">Bezpłatna wycena</button>
-                                    </form>
-                                </div>
-                            </div>
+                            <ContactForm 
+                                title="Chcesz dowiedzieć się więcej o klimatyzacji?"
+                                description="Skontaktuj się z nami, a przygotujemy indywidualną ofertę dopasowaną do Twoich potrzeb"
+                                subject="Nowa prośba o kontakt - Klimatyzacja"
+                            />
                         </div>
                     </div>
                 </div>

@@ -8,6 +8,7 @@ import Counter from "./components/business/counter";
 import Faq from "./components/faq";
 import Process from "./components/process";
 import KomplexFooter from "./components/footer/komplexFooter";
+import ContactForm from "./components/contact-form/contact-form";
 
 import { aboutData } from "./data/business";
 import HeroSlider from "@/app/components/business/heroSlider";
@@ -160,19 +161,11 @@ export default function IndexBusiness(){
 
                     <div className="row justify-content-center mt-4 pt-2">
                         <div className="col-lg-7 mt-4 pt-2">
-                            <div className="p-md-5 p-4 bg-light rounded shadow">
-                                <div className="subcribe-form text-center">
-                                    <h5>Zostaw swój numer telefonu, a my skontaktujemy się z Tobą w ciągu godziny!</h5>
-                                    <form>
-                                        <input name="phone" id="phone" type="tel" className="rounded shadow"
-                                               placeholder="Twój numer telefonu:" required=""/>
-                                        <button type="submit" className="btn btn-primary">Bezpłatna wycena</button>
-                                    </form>
-                                    <p className="text-muted mt-2 small">Sprawdź, ile możesz zaoszczędzić dzięki
-                                        fotowoltaice i pompom ciepła. Otrzymaj informacje o aktualnych dotacjach z
-                                        programów "Mój Prąd" i "Czyste Powietrze".</p>
-                                </div>
-                            </div>
+                            <ContactForm 
+                                title="Zostaw swój numer telefonu, a my skontaktujemy się z Tobą w ciągu godziny!"
+                                description="Sprawdź, ile możesz zaoszczędzić dzięki fotowoltaice i pompom ciepła. Otrzymaj informacje o aktualnych dotacjach z programów 'Mój Prąd' i 'Czyste Powietrze'."
+                                subject="Nowa prośba o kontakt - Strona główna"
+                            />
                         </div>
                     </div>
                 </div>

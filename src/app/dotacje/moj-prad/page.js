@@ -1,11 +1,13 @@
-import React from "react";
+import React,  from "react";
 import Link from "next/link";
 import Image from "next/image";
 
 import Navbar from "../../components/navbar/navbar";
 import KomplexFooter from "../../components/footer/komplexFooter";
+import ContactForm from "../../components/contact-form/contact-form";
 
 export default function MojPrad() {
+
   return (
     <>
       <Navbar navClass="nav-sticky defaultscroll sticky" manuClass="navigation-menu nav-right nav-light" />
@@ -263,32 +265,11 @@ export default function MojPrad() {
             </div>
 
             <div className="col-lg-5 col-md-6 mt-4 mt-lg-0 pt-2 pt-lg-0">
-              <div className="card shadow rounded border-0">
-                <div className="card-body py-5">
-                  <h5 className="card-title">Zostaw swój numer telefonu</h5>
-                  <div className="custom-form mt-3">
-                    <form>
-                      <div className="row">
-                        <div className="col-12">
-                          <div className="mb-3">
-                            <input name="name" id="name" type="text" className="form-control" placeholder="Imię i nazwisko" />
-                          </div>
-                        </div>
-                        <div className="col-12">
-                          <div className="mb-3">
-                            <input name="phone" id="phone" type="tel" className="form-control" placeholder="Numer telefonu" />
-                          </div>
-                        </div>
-                        <div className="col-12">
-                          <div className="mb-3">
-                            <button type="submit" className="btn btn-primary w-100">Bezpłatna konsultacja</button>
-                          </div>
-                        </div>
-                      </div>
-                    </form>
-                  </div>
-                </div>
-              </div>
+              <ContactForm 
+                title="Zostaw swój numer telefonu"
+                description="Skontaktujemy się z Tobą i pomożemy w uzyskaniu dofinansowania"
+                subject="Nowa prośba o kontakt - Program Mój Prąd"
+              />
             </div>
           </div>
         </div>

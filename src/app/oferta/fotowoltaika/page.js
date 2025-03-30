@@ -1,11 +1,14 @@
-import React from "react";
+"use client";
+import React,  from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Navbar from "../../components/navbar/navbar";
 import KomplexFooter from "../../components/footer/komplexFooter";
 import {AiOutlineCheckCircle} from "react-icons/ai";
+import ContactForm from "@/app/components/contact-form/contact-form";
 
 export default function Fotowoltaika() {
+
     return (
         <>
             <Navbar navClass="nav-sticky defaultscroll sticky" manuClass="navigation-menu nav-right nav-light"/>
@@ -16,12 +19,15 @@ export default function Fotowoltaika() {
                         <div className="col-lg-6">
                             <div className="section-title">
                                 <h4 className="title mb-3">Fotowoltaika</h4>
-                                <p className="text-muted">Produkuj własną energię elektryczną i oszczędzaj na rachunkach</p>
+                                <p className="text-muted">Produkuj własną energię elektryczną i oszczędzaj na
+                                    rachunkach</p>
                             </div>
                             <div className="mt-4">
                                 <p className="text-muted">
-                                    Instalacje fotowoltaiczne pozwalają na produkcję własnej energii elektrycznej ze słońca. 
-                                    To rozwiązanie, które znacząco obniża rachunki za prąd i zapewnia niezależność energetyczną.
+                                    Instalacje fotowoltaiczne pozwalają na produkcję własnej energii elektrycznej ze
+                                    słońca.
+                                    To rozwiązanie, które znacząco obniża rachunki za prąd i zapewnia niezależność
+                                    energetyczną.
                                 </p>
                                 <ul className="list-unstyled text-muted mb-0">
                                     <li className="mb-3">
@@ -84,8 +90,10 @@ export default function Fotowoltaika() {
                             <div className="section-title">
                                 <h4 className="title mb-3">Idealna synergia: Fotowoltaika + Magazyn Energii</h4>
                                 <p className="text-muted">
-                                    Połączenie instalacji fotowoltaicznej z magazynem energii to rozwiązanie, które maksymalizuje 
-                                    wykorzystanie produkowanej energii. Magazyn energii pozwala na przechowywanie nadwyżek 
+                                    Połączenie instalacji fotowoltaicznej z magazynem energii to rozwiązanie, które
+                                    maksymalizuje
+                                    wykorzystanie produkowanej energii. Magazyn energii pozwala na przechowywanie
+                                    nadwyżek
                                     prądu i wykorzystanie ich wtedy, gdy instalacja nie produkuje energii (np. w nocy).
                                 </p>
                                 <ul className="list-unstyled text-muted mb-0">
@@ -130,11 +138,15 @@ export default function Fotowoltaika() {
                     <div className="row align-items-center">
                         <div className="col-lg-6">
                             <div className="section-title">
-                                <h4 className="title mb-3">Kompleksowe rozwiązanie: Fotowoltaika + Magazyn Energii + Pompa Ciepła</h4>
+                                <h4 className="title mb-3">Kompleksowe rozwiązanie: Fotowoltaika + Magazyn Energii +
+                                    Pompa Ciepła</h4>
                                 <p className="text-muted">
-                                    Połączenie fotowoltaiki, magazynu energii i pompy ciepła to najbardziej efektywne rozwiązanie 
-                                    dla Twojego domu. Fotowoltaika produkuje prąd, magazyn energii go przechowuje, a pompa ciepła 
-                                    wykorzystuje do ogrzewania domu i wody. To system, który maksymalizuje oszczędności i zapewnia 
+                                    Połączenie fotowoltaiki, magazynu energii i pompy ciepła to najbardziej efektywne
+                                    rozwiązanie
+                                    dla Twojego domu. Fotowoltaika produkuje prąd, magazyn energii go przechowuje, a
+                                    pompa ciepła
+                                    wykorzystuje do ogrzewania domu i wody. To system, który maksymalizuje oszczędności
+                                    i zapewnia
                                     pełną niezależność energetyczną.
                                 </p>
                                 <ul className="list-unstyled text-muted mb-0">
@@ -199,7 +211,8 @@ export default function Fotowoltaika() {
                             <div className="card features feature-primary h-100">
                                 <div className="card-body">
                                     <h5 className="card-title">Certyfikowani instalatorzy</h5>
-                                    <p className="text-muted">Zespół wykwalifikowanych specjalistów z uprawnieniami SEP</p>
+                                    <p className="text-muted">Zespół wykwalifikowanych specjalistów z uprawnieniami
+                                        SEP</p>
                                 </div>
                             </div>
                         </div>
@@ -227,16 +240,11 @@ export default function Fotowoltaika() {
                 <div className="container">
                     <div className="row justify-content-center">
                         <div className="col-lg-7">
-                            <div className="p-4 bg-white rounded shadow">
-                                <div className="text-center">
-                                    <h5>Chcesz dowiedzieć się więcej o fotowoltaice?</h5>
-                                    <p className="text-muted">Skontaktuj się z nami, a przygotujemy dla Ciebie indywidualną ofertę</p>
-                                    <form>
-                                        <input name="phone" id="phone" type="tel" className="form-control mb-3" placeholder="Twój numer telefonu:" required=""/>
-                                        <button type="submit" className="btn btn-primary">Bezpłatna wycena</button>
-                                    </form>
-                                </div>
-                            </div>
+                            <ContactForm
+                                title="Potrzebujesz Fotowoltaiki?"
+                                description="Skontaktuj się z nami, a przygotujemy dopasowaną ofertę"
+                                subject="Nowa prośba o kontakt - Fotowoltaika"
+                            />
                         </div>
                     </div>
                 </div>

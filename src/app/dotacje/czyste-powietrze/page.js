@@ -1,11 +1,64 @@
-import React from "react";
+import React,  from "react";
 import Link from "next/link";
 import Image from "next/image";
 
 import Navbar from "../../components/navbar/navbar";
 import KomplexFooter from "../../components/footer/komplexFooter";
+import ContactForm from "../../components/contact-form/contact-form";
 
 export default function CzystePowietrze() {
+  const [formData, setFormData] = useState({
+    name: '',
+    phone: ''
+  });
+  const [status, setStatus] = useState('');
+  const [isLoading, setIsLoading] = useState(false);
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setIsLoading(true);
+    setStatus('');
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: 'brak@email.com',
+          subject: 'Nowa prośba o kontakt - Program Czyste Powietrze',
+          comments: `Nowa prośba o kontakt telefoniczny. Imię i nazwisko: ${formData.name}, Numer telefonu: ${formData.phone}`
+        }),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        setStatus('success');
+        setFormData({
+          name: '',
+          phone: ''
+        });
+      } else {
+        setStatus('error');
+      }
+    } catch (error) {
+      setStatus('error');
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
   return (
     <>
       <Navbar navClass="nav-sticky defaultscroll sticky" manuClass="navigation-menu nav-right nav-light" />
@@ -248,7 +301,7 @@ export default function CzystePowietrze() {
           <div className="row align-items-center">
             <div className="col-lg-7 col-md-6">
               <div className="section-title">
-                <h4 className="title mb-4">Komplex System - kompleksowa pomoc w uzyskaniu dotacji</h4>
+                <h4 className="title mb-4">Pomożemy Ci uzyskać dofinansowanie</h4>
                 <p className="text-muted para-desc">Oferujemy pełne wsparcie w procesie pozyskania dofinansowania z programu "Czyste Powietrze". Nasi doradcy pomogą wybrać optymalne rozwiązania i przeprowadzą Cię przez cały proces.</p>
                 <ul className="list-unstyled text-muted mt-4">
                   <li className="mb-0"><span className="text-primary h5 me-2"><i className="uil uil-check-circle align-middle"></i></span>Bezpłatna wstępna ocena możliwości uzyskania dofinansowania</li>
@@ -264,36 +317,26 @@ export default function CzystePowietrze() {
             </div>
 
             <div className="col-lg-5 col-md-6 mt-4 mt-lg-0 pt-2 pt-lg-0">
-              <div className="card shadow rounded border-0">
-                <div className="card-body py-5">
-                  <h5 className="card-title">Zostaw swój numer telefonu</h5>
-                  <div className="custom-form mt-3">
-                    <form>
-                      <div className="row">
-                        <div className="col-12">
-                          <div className="mb-3">
-                            <input name="name" id="name" type="text" className="form-control" placeholder="Imię i nazwisko" />
-                          </div>
-                        </div>
-                        <div className="col-12">
-                          <div className="mb-3">
-                            <input name="phone" id="phone" type="tel" className="form-control" placeholder="Numer telefonu" />
-                          </div>
-                        </div>
-                        <div className="col-12">
-                          <div className="mb-3">
-                            <button type="submit" className="btn btn-primary w-100">Bezpłatna konsultacja</button>
-                          </div>
-                        </div>
-                      </div>
-                    </form>
-                  </div>
-                </div>
-              </div>
+              <ContactForm 
+                title="Zostaw swój numer telefonu"
+                description="Skontaktujemy się z Tobą i pomożemy w uzyskaniu dofinansowania"
+                subject="Nowa prośba o kontakt - Program Czyste Powietrze"
+              />
             </div>
           </div>
         </div>
       </section>
+
+      {status === 'success' && (
+        <div className="alert alert-success mt-3">
+          Dziękujemy! Skontaktujemy się z Tobą wkrótce.
+        </div>
+      )}
+      {status === 'error' && (
+        <div className="alert alert-danger mt-3">
+          Wystąpił błąd podczas wysyłania formularza. Spróbuj ponownie później.
+        </div>
+      )}
 
       <KomplexFooter />
     </>

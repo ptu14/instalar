@@ -47,3 +47,6 @@
 //Demos
 @import "cafe";
 @import "restaurant";
+:root {
+  --bs-link-color-rgb: #{$dark};
+}

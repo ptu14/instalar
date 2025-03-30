@@ -1,9 +1,9 @@
 {
   "/_not-found/page": "app/_not-found/page.js",
-  "/page": "app/page.js",
   "/kontakt/page": "app/kontakt/page.js",
-  "/oferta/klimatyzacja/page": "app/oferta/klimatyzacja/page.js",
-  "/blog/page": "app/blog/page.js",
-  "/oferta/instalacje-sanitarne/page": "app/oferta/instalacje-sanitarne/page.js",
-  "/dotacje/moj-prad/page": "app/dotacje/moj-prad/page.js"
+  "/page": "app/page.js",
+  "/oferta/fotowoltaika/page": "app/oferta/fotowoltaika/page.js",
+  "/api/contact/route": "app/api/contact/route.js",
+  "/oferta/magazyny-energii/page": "app/oferta/magazyny-energii/page.js",
+  "/dotacje/page": "app/dotacje/page.js"
 }

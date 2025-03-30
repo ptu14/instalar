@@ -3,10 +3,12 @@ import Link from "next/link";
 import Image from "next/image";
 import Navbar from "../components/navbar/navbar";
 import KomplexFooter from "../components/footer/komplexFooter";
+import ContactForm from "../components/contact-form/contact-form";
 import {AiOutlineCheckCircle} from "react-icons/ai";
 import "./styles.css";
 
 export default function Dotacje() {
+
     const dotacje = [
         {
             title: "Mój Prąd",
@@ -44,7 +46,8 @@ export default function Dotacje() {
                         <div className="col-12">
                             <div className="section-title text-center">
                                 <h4 className="title mb-3">Dofinansowanie na OZE</h4>
-                                <p className="text-muted">Sprawdź dostępne programy dotacyjne i dofinansowania na instalacje OZE</p>
+                                <p className="text-muted">Sprawdź dostępne programy dotacyjne i dofinansowania na
+                                    instalacje OZE</p>
                             </div>
                         </div>
                     </div>
@@ -54,11 +57,12 @@ export default function Dotacje() {
                             <div className="col-lg-6 col-md-6 mb-4" key={index}>
                                 <Link href={dotacja.link} className="text-decoration-none">
                                     <div className="card features feature-primary h-100 hover-shadow transition-all">
-                                        <div className="position-relative" style={{ height: "120px", overflow: "hidden" }}>
+                                        <div className="position-relative"
+                                             style={{height: "120px", overflow: "hidden"}}>
                                             <Image
                                                 src={dotacja.image}
                                                 fill={true}
-                                                style={{ objectFit: "contain" }}
+                                                style={{objectFit: "contain"}}
                                                 className="rounded-top"
                                                 alt={dotacja.title}
                                             />
@@ -113,17 +117,19 @@ export default function Dotacje() {
                                 </ul>
                             </div>
                         </div>
-                        <div className="col-lg-6">
-                            <div className="p-4 bg-white rounded shadow">
-                                <div className="text-center">
-                                    <h5>Chcesz dowiedzieć się więcej o dotacjach?</h5>
-                                    <p className="text-muted">Skontaktuj się z nami, a pomożemy Ci wybrać najlepszy program dofinansowania</p>
-                                    <form>
-                                        <input name="phone" id="phone" type="tel" className="form-control mb-3" placeholder="Twój numer telefonu:" required=""/>
-                                        <button type="submit" className="btn btn-primary">Bezpłatne doradztwo</button>
-                                    </form>
-                                </div>
-                            </div>
+                    </div>
+                </div>
+            </section>
+
+            <section className="section">
+                <div className="container">
+                    <div className="row justify-content-center">
+                        <div className="col-lg-7">
+                            <ContactForm
+                                title="Oferujemy pomoc w uzyskaniu Dotacji"
+                                description="Skontaktuj się z nami, a przygotujemy dopasowaną ofertę"
+                                subject="Nowa prośba o kontakt - Fotowoltaika"
+                            />
                         </div>
                     </div>
                 </div>

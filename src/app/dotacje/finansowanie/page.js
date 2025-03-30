@@ -1,11 +1,16 @@
-import React from "react";
+import React,  from "react";
 import Link from "next/link";
 import Image from "next/image";
 import Navbar from "../../components/navbar/navbar";
 import KomplexFooter from "../../components/footer/komplexFooter";
+import ContactForm from "../../components/contact-form/contact-form";
 import {AiOutlineCheckCircle} from "react-icons/ai";
 
 export default function Finansowanie() {
+    const [phone, setPhone] = useState('');
+    const [status, setStatus] = useState('');
+    const [isLoading, setIsLoading] = useState(false);
+
     const opcjeFinansowania = [
         {
             title: "Pożyczka na OZE BGK",
@@ -48,6 +53,40 @@ export default function Finansowanie() {
             ]
         }
     ];
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        setIsLoading(true);
+        setStatus('');
+
+        try {
+            const response = await fetch('/api/contact', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    name: 'Klient',
+                    email: 'brak@email.com',
+                    subject: 'Nowa prośba o kontakt - Finansowanie',
+                    comments: `Nowa prośba o kontakt telefoniczny. Numer telefonu: ${phone}`
+                }),
+            });
+
+            const data = await response.json();
+
+            if (response.ok) {
+                setStatus('success');
+                setPhone('');
+            } else {
+                setStatus('error');
+            }
+        } catch (error) {
+            setStatus('error');
+        } finally {
+            setIsLoading(false);
+        }
+    };
 
     return (
         <>
@@ -194,12 +233,11 @@ export default function Finansowanie() {
                             <div className="text-center">
                                 <h4 className="title mb-3">Chcesz skorzystać z finansowania?</h4>
                                 <p className="text-muted mb-4">Skontaktuj się z nami, a pomożemy Ci w wyborze najlepszego rozwiązania i przygotowaniu wniosku</p>
-                                <form className="row justify-content-center">
-                                    <div className="col-lg-6">
-                                        <input name="phone" id="phone" type="tel" className="form-control mb-3" placeholder="Twój numer telefonu:" required=""/>
-                                        <button type="submit" className="btn btn-primary">Bezpłatne doradztwo</button>
-                                    </div>
-                                </form>
+                                <ContactForm 
+                                    title="Zostaw swój numer telefonu"
+                                    description="Skontaktujemy się z Tobą i pomożemy w wyborze najlepszego rozwiązania finansowego"
+                                    subject="Nowa prośba o kontakt - Finansowanie"
+                                />
                             </div>
                         </div>
                     </div>

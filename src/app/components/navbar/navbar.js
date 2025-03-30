@@ -20,8 +20,10 @@ export default function Navbar({navClass,manuClass,navDark}){
             window.removeEventListener('scroll', scrollHandler);
         };
       }, []);
+    const allowedPaths = ['/', '/kontakt'];
     const pathname = usePathname();
-    const isHomePage = pathname === "/";
+    const isAllowedPath = allowedPaths.includes(pathname);
+    const isNotAllowedPath = !isAllowedPath;
       const toggleMenu = () => {
         setisMenu(!isMenu);
         if (document.getElementById("navigation")) {
@@ -41,7 +43,7 @@ export default function Navbar({navClass,manuClass,navDark}){
     };
     return(
         <>
-         <header id="topnav" className={`${!isHomePage || scroll ? "nav-sticky" :""} defaultscroll sticky`}>
+         <header id="topnav" className={`${!isAllowedPath || scroll ? "nav-sticky" :""} defaultscroll sticky`}>
             <div className="container-fluid">
                 <div className="row">
                     <div className="col-12">
@@ -83,7 +85,7 @@ export default function Navbar({navClass,manuClass,navDark}){
                             <div id="navigation" style={{ display: isMenu ? 'block' : 'none' }}>
                                 <ul className="navigation-menu nav-right" id="navmenu-nav">
                                     <li className="">
-                                        <Link href="/" activeClass="active">Start</Link>
+                                        <Link href="/">Start</Link>
                                     </li>
                                     <li className="has-submenu">
                                         <Link href="/oferta">Oferta</Link>
@@ -93,7 +95,8 @@ export default function Navbar({navClass,manuClass,navDark}){
                                             <li><Link href="/oferta/magazyny-energii">Magazyny Energii</Link></li>
                                             <li><Link href="/dotacje">Wnioski o Dofinansowanie OZE</Link></li>
                                             <li><Link href="/oferta/klimatyzacja">Klimatyzacja</Link></li>
-                                            <li><Link href="/oferta/instalacje-sanitarne">Instalacje Sanitarne</Link></li>
+                                            <li><Link href="/oferta/instalacje-sanitarne">Instalacje Sanitarne</Link>
+                                            </li>
                                         </ul>
                                     </li>
                                     <li className="has-submenu">
@@ -107,6 +110,9 @@ export default function Navbar({navClass,manuClass,navDark}){
                                     </li>
                                     <li className="has-submenu">
                                         <Link href="/blog">Blog</Link>
+                                    </li>
+                                    <li className="has-submenu">
+                                        <Link href="/kontakt">Kontakt</Link>
                                     </li>
                                 </ul>
                             </div>

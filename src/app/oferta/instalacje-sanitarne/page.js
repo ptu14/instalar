@@ -1,7 +1,9 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import Navbar from "../../components/navbar/navbar";
 import KomplexFooter from "../../components/footer/komplexFooter";
+import ContactForm from "../../components/contact-form/contact-form";
 import { AiOutlineCheckCircle } from "react-icons/ai";
 
 export default function InstalacjeSanitarne() {
@@ -107,16 +109,11 @@ export default function InstalacjeSanitarne() {
                 <div className="container">
                     <div className="row justify-content-center">
                         <div className="col-lg-7">
-                            <div className="p-4 bg-white rounded shadow">
-                                <div className="text-center">
-                                    <h5>Potrzebujesz instalacji sanitarnej?</h5>
-                                    <p className="text-muted">Skontaktuj się z nami, a przygotujemy dopasowaną ofertę</p>
-                                    <form>
-                                        <input name="phone" id="phone" type="tel" className="form-control mb-3" placeholder="Twój numer telefonu:" required />
-                                        <button type="submit" className="btn btn-primary">Bezpłatna wycena</button>
-                                    </form>
-                                </div>
-                            </div>
+                            <ContactForm 
+                                title="Potrzebujesz instalacji sanitarnej?"
+                                description="Skontaktuj się z nami, a przygotujemy dopasowaną ofertę"
+                                subject="Nowa prośba o kontakt - Instalacje Sanitarne"
+                            />
                         </div>
                     </div>
                 </div>
