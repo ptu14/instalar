@@ -100,7 +100,7 @@ export default function Navbar({navClass,manuClass,navDark}){
                                         </ul>
                                     </li>
                                     <li className="has-submenu">
-                                        <Link href="/dotacje">Dotacje <span className="menu-arrow"></span></Link>
+                                        <Link href="/dotacje">Dotacje</Link>
                                         <ul className="submenu">
                                             <li><Link href="/dotacje/moj-prad">Mój Prąd</Link></li>
                                             <li><Link href="/dotacje/czyste-powietrze">Czyste Powietrze</Link></li>
