@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import axios from "axios";
+import "../blog.css";
 
 import Navbar from "../../components/navbar/navbar";
 import KomplexFooter from "@/app/components/footer/komplexFooter";
