@@ -4,6 +4,7 @@ import Link from "next/link";
 import Navbar2 from "../components/navbar/navbar";
 import KomplexFooter from "../components/footer/komplexFooter";
 import {AiOutlineCheckCircle} from "react-icons/ai";
+import ContactForm from "../components/ContactForm";
 
 export default function Oferta() {
     const uslugi = [
@@ -115,16 +116,11 @@ export default function Oferta() {
                             </div>
                         </div>
                         <div className="col-lg-6">
-                            <div className="p-4 bg-white rounded shadow">
-                                <div className="text-center">
-                                    <h5>Chcesz dowiedzieć się więcej?</h5>
-                                    <p className="text-muted">Skontaktuj się z nami, a przygotujemy dla Ciebie indywidualną ofertę</p>
-                                    <form>
-                                        <input name="phone" id="phone" type="tel" className="form-control mb-3" placeholder="Twój numer telefonu:" required=""/>
-                                        <button type="submit" className="btn btn-primary">Bezpłatna wycena</button>
-                                    </form>
-                                </div>
-                            </div>
+                            <ContactForm 
+                                title="Chcesz dowiedzieć się więcej?"
+                                description="Skontaktuj się z nami, a przygotujemy dla Ciebie indywidualną ofertę"
+                                subject="Nowa prośba o kontakt - Oferta"
+                            />
                         </div>
                     </div>
                 </div>

@@ -1,5 +1,4 @@
 import React,  from "react";
-import Link from "next/link";
 import Image from "next/image";
 import Navbar from "../../components/navbar/navbar";
 import KomplexFooter from "../../components/footer/komplexFooter";
@@ -7,9 +6,6 @@ import ContactForm from "../../components/contact-form/contact-form";
 import {AiOutlineCheckCircle} from "react-icons/ai";
 
 export default function Finansowanie() {
-    const [phone, setPhone] = useState('');
-    const [status, setStatus] = useState('');
-    const [isLoading, setIsLoading] = useState(false);
 
     const opcjeFinansowania = [
         {

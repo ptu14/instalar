@@ -7,43 +7,6 @@ import ContactForm from "../../components/contact-form/contact-form";
 import {AiOutlineCheckCircle} from "react-icons/ai";
 
 export default function MojeCieplo() {
-    const [phone, setPhone] = useState('');
-    const [status, setStatus] = useState('');
-    const [isLoading, setIsLoading] = useState(false);
-
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-        setIsLoading(true);
-        setStatus('');
-
-        try {
-            const response = await fetch('/api/contact', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({
-                    name: 'Klient',
-                    email: 'brak@email.com',
-                    subject: 'Nowa prośba o kontakt - Program Moje Ciepło',
-                    comments: `Nowa prośba o kontakt telefoniczny. Numer telefonu: ${phone}`
-                }),
-            });
-
-            const data = await response.json();
-
-            if (response.ok) {
-                setStatus('success');
-                setPhone('');
-            } else {
-                setStatus('error');
-            }
-        } catch (error) {
-            setStatus('error');
-        } finally {
-            setIsLoading(false);
-        }
-    };
 
     return (
         <>
@@ -55,7 +18,8 @@ export default function MojeCieplo() {
                         <div className="col-12">
                             <div className="section-title text-center">
                                 <h4 className="title mb-3">Program Moje Ciepło</h4>
-                                <p className="text-muted">Dofinansowanie do pomp ciepła dla nowych budynków jednorodzinnych</p>
+                                <p className="text-muted">Dofinansowanie do pomp ciepła dla nowych budynków
+                                    jednorodzinnych</p>
                             </div>
                         </div>
                     </div>
@@ -65,8 +29,10 @@ export default function MojeCieplo() {
                             <div className="section-title">
                                 <h4 className="title mb-3">O programie</h4>
                                 <p className="text-muted mb-4">
-                                    Program Moje Ciepło to inicjatywa Narodowego Funduszu Ochrony Środowiska i Gospodarki Wodnej, 
-                                    która ma na celu wsparcie inwestycji w pompy ciepła w nowych budynkach jednorodzinnych. 
+                                    Program Moje Ciepło to inicjatywa Narodowego Funduszu Ochrony Środowiska i
+                                    Gospodarki Wodnej,
+                                    która ma na celu wsparcie inwestycji w pompy ciepła w nowych budynkach
+                                    jednorodzinnych.
                                     Program oferuje atrakcyjne dofinansowanie do zakupu i montażu pomp ciepła.
                                 </p>
                                 <div className="mt-4">
@@ -101,11 +67,11 @@ export default function MojeCieplo() {
                             </div>
                         </div>
                         <div className="col-lg-6">
-                            <div className="position-relative" style={{ height: "400px" }}>
+                            <div className="position-relative" style={{height: "400px"}}>
                                 <Image
                                     src="/images/moje-cieplo.jpg"
                                     fill={true}
-                                    style={{ objectFit: "contain" }}
+                                    style={{objectFit: "contain"}}
                                     className="rounded"
                                     alt="Program Moje Ciepło"
                                 />
@@ -154,39 +120,11 @@ export default function MojeCieplo() {
                     <div className="row mt-5">
                         <div className="col-12">
                             <div className="text-center">
-                                <h4 className="title mb-3">Chcesz skorzystać z programu?</h4>
-                                <p className="text-muted mb-4">Skontaktuj się z nami, a pomożemy Ci w przygotowaniu wniosku</p>
-                                <form onSubmit={handleSubmit} className="row justify-content-center">
-                                    <div className="col-lg-6">
-                                        <input 
-                                            name="phone" 
-                                            id="phone" 
-                                            type="tel" 
-                                            className="form-control mb-3" 
-                                            placeholder="Twój numer telefonu:" 
-                                            required
-                                            value={phone}
-                                            onChange={(e) => setPhone(e.target.value)}
-                                        />
-                                        <button 
-                                            type="submit" 
-                                            className="btn btn-primary"
-                                            disabled={isLoading}
-                                        >
-                                            {isLoading ? 'Wysyłanie...' : 'Bezpłatne doradztwo'}
-                                        </button>
-                                    </div>
-                                </form>
-                                {status === 'success' && (
-                                    <div className="alert alert-success mt-3">
-                                        Dziękujemy! Skontaktujemy się z Tobą wkrótce.
-                                    </div>
-                                )}
-                                {status === 'error' && (
-                                    <div className="alert alert-danger mt-3">
-                                        Wystąpił błąd podczas wysyłania formularza. Spróbuj ponownie później.
-                                    </div>
-                                )}
+                                <ContactForm
+                                    title="Zostaw swój numer telefonu"
+                                    description="Skontaktujemy się z Tobą i pomożemy w wyborze najlepszego rozwiązania finansowego"
+                                    subject="Nowa prośba o kontakt - Finansowanie"
+                                />
                             </div>
                         </div>
                     </div>

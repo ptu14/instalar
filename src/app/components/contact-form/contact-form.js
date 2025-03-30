@@ -41,36 +41,38 @@ export default function ContactForm({ title, description, subject }) {
     };
 
     return (
-        <div className="p-4 bg-white rounded shadow">
+        <div className="p-5 bg-white rounded shadow-lg border border-light">
             <div className="text-center">
-                <h5>{title || 'Chcesz dowiedzieć się więcej?'}</h5>
-                <p className="text-muted">{description || 'Skontaktuj się z nami, a przygotujemy dla Ciebie indywidualną ofertę'}</p>
-                <form onSubmit={handleSubmit}>
-                    <input 
-                        name="phone" 
-                        id="phone" 
-                        type="tel" 
-                        className="form-control mb-3" 
-                        placeholder="Twój numer telefonu:" 
-                        required
-                        value={phone}
-                        onChange={(e) => setPhone(e.target.value)}
-                    />
+                <h4 className="title mb-3 fw-bold">{title || 'Chcesz dowiedzieć się więcej?'}</h4>
+                <p className="text-muted mb-4">{description || 'Skontaktuj się z nami, a przygotujemy dla Ciebie indywidualną ofertę'}</p>
+                <form onSubmit={handleSubmit} className="contact-form">
+                    <div className="form-group mb-4">
+                        <input 
+                            name="phone" 
+                            id="phone" 
+                            type="tel" 
+                            className="form-control form-control-lg" 
+                            placeholder="Twój numer telefonu:" 
+                            required
+                            value={phone}
+                            onChange={(e) => setPhone(e.target.value)}
+                        />
+                    </div>
                     <button 
                         type="submit" 
-                        className="btn btn-primary"
+                        className="btn btn-primary btn-lg w-100"
                         disabled={isLoading}
                     >
                         {isLoading ? 'Wysyłanie...' : 'Bezpłatna wycena'}
                     </button>
                 </form>
                 {status === 'success' && (
-                    <div className="alert alert-success mt-3">
+                    <div className="alert alert-success mt-4">
                         Dziękujemy! Skontaktujemy się z Tobą wkrótce.
                     </div>
                 )}
                 {status === 'error' && (
-                    <div className="alert alert-danger mt-3">
+                    <div className="alert alert-danger mt-4">
                         Wystąpił błąd podczas wysyłania formularza. Spróbuj ponownie później.
                     </div>
                 )}

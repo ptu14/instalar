@@ -7,58 +7,6 @@ import KomplexFooter from "../../components/footer/komplexFooter";
 import ContactForm from "../../components/contact-form/contact-form";
 
 export default function CzystePowietrze() {
-  const [formData, setFormData] = useState({
-    name: '',
-    phone: ''
-  });
-  const [status, setStatus] = useState('');
-  const [isLoading, setIsLoading] = useState(false);
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({
-      ...prev,
-      [name]: value
-    }));
-  };
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setIsLoading(true);
-    setStatus('');
-
-    try {
-      const response = await fetch('/api/contact', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          name: formData.name,
-          email: 'brak@email.com',
-          subject: 'Nowa prośba o kontakt - Program Czyste Powietrze',
-          comments: `Nowa prośba o kontakt telefoniczny. Imię i nazwisko: ${formData.name}, Numer telefonu: ${formData.phone}`
-        }),
-      });
-
-      const data = await response.json();
-
-      if (response.ok) {
-        setStatus('success');
-        setFormData({
-          name: '',
-          phone: ''
-        });
-      } else {
-        setStatus('error');
-      }
-    } catch (error) {
-      setStatus('error');
-    } finally {
-      setIsLoading(false);
-    }
-  };
-
   return (
     <>
       <Navbar navClass="nav-sticky defaultscroll sticky" manuClass="navigation-menu nav-right nav-light" />
@@ -326,17 +274,6 @@ export default function CzystePowietrze() {
           </div>
         </div>
       </section>
-
-      {status === 'success' && (
-        <div className="alert alert-success mt-3">
-          Dziękujemy! Skontaktujemy się z Tobą wkrótce.
-        </div>
-      )}
-      {status === 'error' && (
-        <div className="alert alert-danger mt-3">
-          Wystąpił błąd podczas wysyłania formularza. Spróbuj ponownie później.
-        </div>
-      )}
 
       <KomplexFooter />
     </>
