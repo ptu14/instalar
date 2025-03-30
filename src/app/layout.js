@@ -40,7 +40,6 @@ export const metadata = {
   description: 'Profesjonalne instalacje fotowoltaiczne i pompy ciepła ✓ Dotacje Mój Prąd i Czyste Powietrze ✓ Oszczędności na rachunkach ✓ Kompleksowa obsługa',
   keywords: 'fotowoltaika, pompy ciepła, instalacje OZE, dotacje fotowoltaika, Mój Prąd, Czyste Powietrze, panele słoneczne, ekologiczne ogrzewanie, energia odnawialna, dofinansowanie OZE',
   robots: 'index, follow',
-  viewport: 'width=device-width, initial-scale=1',
   canonical: 'https://komplexsystem.pl/',
   icons: {
     icon: [

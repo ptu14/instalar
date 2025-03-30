@@ -4,7 +4,7 @@ import Link from "next/link";
 import Navbar2 from "../components/navbar/navbar";
 import KomplexFooter from "../components/footer/komplexFooter";
 import {AiOutlineCheckCircle} from "react-icons/ai";
-import ContactForm from "../components/ContactForm";
+import ContactForm from "@/app/components/contact-form/contact-form";
 
 export default function Oferta() {
     const uslugi = [
