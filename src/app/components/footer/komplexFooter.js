@@ -92,7 +92,7 @@ export default function KomplexFooter(){
                         <div className="col-sm-8 mt-4 mt-sm-0">
                             <div className="text-sm-end text-center">
                                 <p className="mb-0 text-foot">© {new Date().getFullYear()} Komplex System. Wszelkie
-                                    prawa zastrzeżone.</p>
+                                    prawa zastrzeżone. <Link href="/polityka-prywatnosci" className="text-foot">Polityka Prywatności</Link></p>
                             </div>
                         </div>
                     </div>
