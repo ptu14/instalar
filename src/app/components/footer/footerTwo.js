@@ -62,7 +62,7 @@ export default function FooterTwo(){
                         <div className="col-lg-3 col-md-2 col-sm-3">
                             <div className="text-sm-start">
                                 <Link href="#" className="logo-footer">
-                                    <Image src='/images/logo-icon.png' width={30} height={34} alt=""/>
+                                    <Image src='/images/komplex_system.png' width={30} height={34} alt=""/>
                                 </Link>
                             </div>
                         </div>

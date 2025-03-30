@@ -44,7 +44,7 @@ export default function NavOnePage(){
             <div className="container">
                 <Link className="logo" href="/">
                     <span className="logo-light-mode">
-                        <Image src="/images/logo-dark.png" width={110} height={30} className="l-dark" alt=""/>
+                        <Image src="/images/komplex_system_neg.png" width={110} height={30} className="l-dark" alt=""/>
                         <Image src='/images/logo-light.png' width={110} height={30} className="l-light" alt=""/>
                     </span>
                     <Image src='/images/logo-light.png' width={110} height={30} className="logo-dark-mode" alt=""/>

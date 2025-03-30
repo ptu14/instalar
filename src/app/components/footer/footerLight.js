@@ -39,7 +39,7 @@ export default function FooterLight({top}){
                             <div className="row">
                                 <div className="col-lg-4 col-12 mb-0 mb-md-4 pb-0 pb-md-2">
                                     <Link href="#" className="logo-footer">
-                                        <Image src='/images/logo-dark.png' width={102} height={28} alt=""/>
+                                        <Image src='/images/komplex_system_neg.png' width={102} height={28} alt=""/>
                                     </Link>
                                     <p className="mt-4 text-foot">Our design projects are fresh and simple and will benefit your business greatly. Learn more about our work!</p>
                                     <ul className="list-unstyled social-icon foot-social-icon mb-0 mt-4">

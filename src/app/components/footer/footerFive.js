@@ -63,7 +63,7 @@ export default function FooterFive(){
                                     </ul>
                                     <small className="d-block">Are you developer ? <Link href="#" className="text-foot fw-medium">Learn More<FiArrowRight/></Link></small>
 
-                                    <Image src='/images/logo-icon.png' width={90} height={100} className="mt-4" alt=""/>
+                                    <Image src='/images/komplex_system.png' width={90} height={100} className="mt-4" alt=""/>
                                 </div>
                             </div>
                         </div>

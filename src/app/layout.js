@@ -74,9 +74,9 @@ export const metadata = {
     description: 'Profesjonalne instalacje fotowoltaiczne i pompy ciepła. Skorzystaj z dotacji i oszczędzaj na rachunkach. Kompleksowa obsługa od projektu po montaż.',
     images: [
       {
-        url: 'https://komplexsystem.pl/images/logo-icon.png',
-        width: 800,
-        height: 600,
+        url: 'https://komplexsystem.pl/images/komplex_system.png',
+        width: 650,
+        height: 413,
         alt: 'Komplex System Logo',
       }
     ],
