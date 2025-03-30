@@ -1,6 +1,8 @@
 //
 // helper.scss
 //
+
+
 .section {
     padding: 100px 0;
     position: relative;
@@ -8,6 +10,13 @@
         padding: 60px 0;
     }
 }
+
+.first-section {
+    @media (max-width: 768px) {
+        padding: 100px 0;
+    }
+}
+
 .section-two {
     padding: 60px 0;
     position: relative;

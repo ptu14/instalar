@@ -88,7 +88,7 @@ export default function Finansowanie() {
         <>
             <Navbar navClass="nav-sticky defaultscroll sticky" manuClass="navigation-menu nav-right nav-light"/>
 
-            <section className="section">
+            <section className="first-section section">
                 <div className="container">
                     <div className="row justify-content-center">
                         <div className="col-12">

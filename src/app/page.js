@@ -20,7 +20,7 @@ export default function IndexBusiness(){
         <>
             <Navbar navClass="defaultscroll sticky" manuClass="navigation-menu nav-right nav-light"/>
             <HeroSlider/>
-            <section className="section">
+            <section className="first-section section">
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-5 col-md-6 order-1 order-md-2">

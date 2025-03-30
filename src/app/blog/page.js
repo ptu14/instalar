@@ -90,7 +90,7 @@ export default async function BlogPage({ searchParams }) {
         <>
             <Navbar navClass="nav-sticky defaultscroll sticky" manuClass="navigation-menu nav-right nav-light" />
 
-            <section className="section">
+            <section className="first-section section">
                 <div className="container">
                     {/* Kategorie */}
                     {categories.length > 0 && (

@@ -12,7 +12,7 @@ export default function Fotowoltaika() {
         <>
             <Navbar navClass="nav-sticky defaultscroll sticky" manuClass="navigation-menu nav-right nav-light"/>
 
-            <section className="section">
+            <section className="first-section section">
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col-lg-6">
