@@ -1,0 +1,13 @@
+.hover-shadow {
+    transition: all 0.3s ease;
+    box-shadow:var(--bs-box-shadow-sm)
+}
+
+.hover-shadow:hover {
+    transform: translateY(-1px);
+    box-shadow:var(--bs-box-shadow)
+}
+
+.transition-all {
+    transition: all 0.3s ease;
+} 

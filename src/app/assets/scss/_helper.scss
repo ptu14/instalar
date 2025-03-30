@@ -345,6 +345,9 @@
         height: 80%;
     }
 }
+.img-fit {
+    object-fit: contain;
+}
 
 //Image Fluid Responsive
 .img-fluid-responsive {

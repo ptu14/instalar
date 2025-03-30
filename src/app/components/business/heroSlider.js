@@ -19,7 +19,7 @@ export default function HeroSlider(){
                                         <h2 className="fw-semibold display-3 text-white title-dark mb-4">Efektywne Pompy Ciepła</h2>
                                         <p className="para-desc mx-auto text-white">Oszczędzaj do 75% na ogrzewaniu dzięki pompom ciepła. Profesjonalny montaż z dofinansowaniem z programu Czyste Powietrze. Ciepły dom bez wysokich rachunków!</p>
                                         <div className="mt-4 pt-2">
-                                            <Link href="/page-services" className="btn btn-primary">Poznaj Ofertę</Link>
+                                            <Link href="/oferta" className="btn btn-primary">Poznaj Ofertę</Link>
                                         </div>
                                     </div>
                                 </div>
@@ -35,9 +35,9 @@ export default function HeroSlider(){
                                     <div className="col-12">
                                         <div className="title-heading text-center">
                                             <h2 className="fw-semibold display-3 text-white title-dark mb-4">Fotowoltaika z Dotacją</h2>
-                                            <p className="para-desc mx-auto text-white-50">Zyskaj niezależność energetyczną dzięki instalacji fotowoltaicznej. Dostępne dotacje z programu Mój Prąd 6.0. Zmniejsz rachunki za prąd nawet o 90%!</p>
+                                            <p className="para-desc mx-auto text-white">Zyskaj niezależność energetyczną dzięki instalacji fotowoltaicznej. Dostępne dotacje z programu Mój Prąd 6.0. Zmniejsz rachunki za prąd nawet o 90%!</p>
                                             <div className="mt-4 pt-2">
-                                                <Link href="/page-services" className="btn btn-primary">Sprawdź Dotacje</Link>
+                                                <Link href="/dotacje" className="btn btn-primary">Sprawdź Dotacje</Link>
                                             </div>
                                         </div>
                                     </div>
@@ -55,9 +55,9 @@ export default function HeroSlider(){
                                     <div className="col-12">
                                         <div className="title-heading text-center">
                                         <h2 className="fw-semibold display-3 text-white title-dark mb-4">Kompleksowe Instalacje OZE</h2>
-                                        <p className="para-desc mx-auto text-white-50">Fotowoltaika, pompy ciepła i magazyny energii w jednym miejscu. Zapewniamy pełną obsługę - od projektu po uzyskanie dotacji. Zainwestuj w przyszłość z Instalar Energy!</p>
+                                        <p className="para-desc mx-auto text-white">Fotowoltaika, pompy ciepła i magazyny energii w jednym miejscu. Zapewniamy pełną obsługę - od projektu po uzyskanie dotacji. Zainwestuj w przyszłość z Instalar Energy!</p>
                                         <div className="mt-4 pt-2">
-                                            <Link href="/page-aboutus" className="btn btn-primary">Bezpłatna Konsultacja</Link>
+                                            <Link href="/kontakt" className="btn btn-primary">Bezpłatna Konsultacja</Link>
                                         </div>
                                         </div>
                                     </div>

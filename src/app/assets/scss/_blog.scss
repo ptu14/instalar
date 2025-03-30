@@ -1,6 +1,11 @@
 //
 // _blog.scss
 //
+
+.section-blog {
+    padding-top: 100px;
+    padding-bottom: 24px;
+}
 .blog {
     @each $name,
     $value in $colors {

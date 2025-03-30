@@ -24,6 +24,11 @@ const nextConfig = {
         hostname: 'jakoszczedzacpieniadze.pl',
         pathname: '/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'komplexsystem.com',
+        pathname: '/**',
+      },
     ],
   },
 }

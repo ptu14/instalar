@@ -88,27 +88,7 @@ export default async function BlogPage({ searchParams }) {
 
     return (
         <>
-            <Navbar navClass="defaultscroll sticky" manuClass="navigation-menu nav-right nav-light" />
-
-            <section className="bg-half-170 bg-light d-table w-100">
-                <div className="container">
-                    <div className="row mt-5 justify-content-center">
-                        <div className="col-lg-12 text-center">
-                            <div className="pages-heading">
-                                <h2 className="title mb-0"> Blog </h2>
-                                <div className="page-next">
-                                    <nav className="d-inline-block">
-                                        <ul className="breadcrumb rounded shadow mb-0 px-4 py-2">
-                                            <li className="breadcrumb-item"><Link href="/">Strona główna</Link></li>
-                                            <li className="breadcrumb-item active" aria-current="page">Blog</li>
-                                        </ul>
-                                    </nav>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <Navbar navClass="nav-sticky defaultscroll sticky" manuClass="navigation-menu nav-right nav-light" />
 
             <section className="section">
                 <div className="container">

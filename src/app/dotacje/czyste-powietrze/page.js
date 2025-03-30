@@ -8,7 +8,7 @@ import KomplexFooter from "../../components/footer/komplexFooter";
 export default function CzystePowietrze() {
   return (
     <>
-      <Navbar navClass="defaultscroll sticky" manuClass="navigation-menu nav-right nav-light" />
+      <Navbar navClass="nav-sticky defaultscroll sticky" manuClass="navigation-menu nav-right nav-light" />
       
       <section className="bg-half-170 d-table w-100" style={{ backgroundImage: "url('/images/cta02.jpg')", backgroundSize: "cover", backgroundPosition: "center" }}>
         <div className="bg-overlay bg-gradient-overlay"></div>
@@ -29,7 +29,7 @@ export default function CzystePowietrze() {
           <div className="row align-items-center">
             <div className="col-lg-6 col-md-6">
               <div className="me-lg-5">
-                <Image src="/images/corporate01.png" width={600} height={400} className="img-fluid rounded shadow" alt="Program Czyste Powietrze" />
+                <Image src="/images/czyste-powietrze.webp" width={600} height={400} className="img-fluid rounded shadow" alt="Program Czyste Powietrze" />
               </div>
             </div>
 

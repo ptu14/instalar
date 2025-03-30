@@ -4,7 +4,7 @@ import Image from "next/image";
 import axios from "axios";
 
 import Navbar from "../../components/navbar/navbar";
-import Footer from "../../components/footer/footer";
+import KomplexFooter from "@/app/components/footer/komplexFooter";
 
 // Adres WordPress API
 const API_URL = 'https://komplexsystem.com/wp-json/wp/v2';
@@ -111,14 +111,13 @@ export default async function BlogPostPage({ params }) {
 
     return (
         <>
-            <Navbar navClass="defaultscroll sticky" manuClass="navigation-menu nav-right nav-light" />
+            <Navbar navClass="nav-sticky defaultscroll sticky" manuClass="navigation-menu nav-right nav-light"/>
 
-            <section className="bg-half-170 bg-light d-table w-100">
+            <section className="section-blog bg-light d-table w-100">
                 <div className="container">
-                    <div className="row mt-5 justify-content-center">
+                    <div className="row justify-content-center">
                         <div className="col-lg-12 text-center">
                             <div className="pages-heading">
-                                <h2 className="title mb-0"> Blog </h2>
                                 <div className="page-next">
                                     <nav className="d-inline-block">
                                         <ul className="breadcrumb rounded shadow mb-0 px-4 py-2">
@@ -151,31 +150,35 @@ export default async function BlogPostPage({ params }) {
                                     <div className="card blog blog-detail border-0 shadow rounded">
                                         <div className="position-relative">
                                             {post._embedded && post._embedded['wp:featuredmedia'] && post._embedded['wp:featuredmedia'][0] && (
-                                                <Image 
-                                                    src={post._embedded['wp:featuredmedia'][0].source_url} 
+                                                <Image
+                                                    src={post._embedded['wp:featuredmedia'][0].source_url}
                                                     alt={post.title.rendered}
                                                     width={1200}
                                                     height={800}
-                                                    style={{ width: '100%', height: 'auto' }}
+                                                    style={{width: '100%', height: 'auto'}}
                                                     className="img-fluid rounded-top"
                                                     priority
                                                 />
                                             )}
                                         </div>
                                         <div className="card-body content">
-                                            <h6><i className="mdi mdi-calendar-outline me-1"></i>{formatDate(post.date)}</h6>
+                                            <h6><i className="mdi mdi-calendar-outline me-1"></i>{formatDate(post.date)}
+                                            </h6>
                                             <h5 className="mt-3">{post.title.rendered}</h5>
-                                            
-                                            <div className="post-content mt-3" dangerouslySetInnerHTML={{ __html: post.content.rendered }} />
-                                            
+
+                                            <div className="post-content mt-3"
+                                                 dangerouslySetInnerHTML={{__html: post.content.rendered}}/>
+
                                             {post._embedded && post._embedded['wp:term'] && post._embedded['wp:term'][0] && (
-                                                <div className="post-meta d-flex justify-content-between mt-5 pt-4 border-top">
+                                                <div
+                                                    className="post-meta d-flex justify-content-between mt-5 pt-4 border-top">
                                                     <div>
                                                         <h6 className="mb-0">Kategorie: </h6>
                                                         <ul className="list-unstyled mb-0">
                                                             {post._embedded['wp:term'][0].map((category) => (
                                                                 <li key={category.id} className="list-inline-item">
-                                                                    <Link href={`/blog?category=${category.slug}`} className="text-muted">
+                                                                    <Link href={`/blog?category=${category.slug}`}
+                                                                          className="text-muted">
                                                                         {category.name}
                                                                     </Link>
                                                                 </li>
@@ -185,7 +188,8 @@ export default async function BlogPostPage({ params }) {
                                                     {post._embedded && post._embedded.author && post._embedded.author[0] && (
                                                         <div>
                                                             <h6 className="mb-0">Autor: </h6>
-                                                            <span className="text-muted">{post._embedded.author[0].name}</span>
+                                                            <span
+                                                                className="text-muted">{post._embedded.author[0].name}</span>
                                                         </div>
                                                     )}
                                                 </div>
@@ -193,51 +197,55 @@ export default async function BlogPostPage({ params }) {
                                         </div>
                                     </div>
                                 </div>
-                                
+
                                 {/* Powiązane wpisy */}
                                 {relatedPosts.length > 0 && (
                                     <div className="col-12 mt-5">
                                         <div className="section-title mb-4 pb-2">
                                             <h4 className="title mb-3">Powiązane artykuły</h4>
                                         </div>
-                                        
+
                                         <div className="row">
                                             {relatedPosts.map(relatedPost => {
-                                                const featuredImageUrl = relatedPost._embedded && 
-                                                                      relatedPost._embedded['wp:featuredmedia'] && 
-                                                                      relatedPost._embedded['wp:featuredmedia'][0] ? 
-                                                                      relatedPost._embedded['wp:featuredmedia'][0].source_url : 
-                                                                      '/images/blog/01.jpg';
-                                                
+                                                const featuredImageUrl = relatedPost._embedded &&
+                                                relatedPost._embedded['wp:featuredmedia'] &&
+                                                relatedPost._embedded['wp:featuredmedia'][0] ?
+                                                    relatedPost._embedded['wp:featuredmedia'][0].source_url :
+                                                    '/images/blog/01.jpg';
+
                                                 return (
                                                     <div className="col-lg-4 col-md-6 mt-4 pt-2" key={relatedPost.id}>
                                                         <div className="card blog blog-primary rounded border-0 shadow">
                                                             <div className="position-relative">
-                                                                <Image 
-                                                                    src={featuredImageUrl} 
+                                                                <Image
+                                                                    src={featuredImageUrl}
                                                                     alt={relatedPost.title.rendered}
                                                                     width={400}
                                                                     height={300}
-                                                                    style={{ width: '100%', height: 'auto' }}
+                                                                    style={{width: '100%', height: 'auto'}}
                                                                     className="card-img-top"
                                                                 />
                                                                 <div className="overlay rounded-top"></div>
                                                             </div>
                                                             <div className="card-body content">
                                                                 <h5>
-                                                                    <Link href={`/blog/${relatedPost.slug}`} className="card-title title text-dark">
+                                                                    <Link href={`/blog/${relatedPost.slug}`}
+                                                                          className="card-title title text-dark">
                                                                         {relatedPost.title.rendered}
                                                                     </Link>
                                                                 </h5>
-                                                                <div className="post-meta d-flex justify-content-between mt-3">
+                                                                <div
+                                                                    className="post-meta d-flex justify-content-between mt-3">
                                                                     <ul className="list-unstyled mb-0">
                                                                         <li className="list-inline-item me-2 mb-0">
                                                                             <i className="mdi mdi-calendar-outline me-1"></i>
                                                                             {formatDate(relatedPost.date)}
                                                                         </li>
                                                                     </ul>
-                                                                    <Link href={`/blog/${relatedPost.slug}`} className="text-muted readmore">
-                                                                        Czytaj więcej <i className="mdi mdi-chevron-right"></i>
+                                                                    <Link href={`/blog/${relatedPost.slug}`}
+                                                                          className="text-muted readmore">
+                                                                        Czytaj więcej <i
+                                                                        className="mdi mdi-chevron-right"></i>
                                                                     </Link>
                                                                 </div>
                                                             </div>
@@ -259,8 +267,9 @@ export default async function BlogPostPage({ params }) {
                     </div>
                 </div>
             </section>
-
-            <Footer/>
+            <section className="section mt-4 pb-0">
+                <KomplexFooter/>
+            </section>
         </>
     );
 }

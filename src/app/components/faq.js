@@ -58,7 +58,7 @@ export default function Faq(){
     ]
     return(
         <>
-        <div className="row justify-content-center">
+        <div id="faq" className="row justify-content-center">
             <div className="col-12">
                 <div className="section-title mb-4 pb-2 text-center">
                     <h2 className="title mb-3">Najczęściej Zadawane Pytania o Fotowoltaikę i Pompy Ciepła</h2>

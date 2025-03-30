@@ -1,184 +1,137 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-
 import Navbar from "../components/navbar/navbar";
 import KomplexFooter from "../components/footer/komplexFooter";
+import {AiOutlineCheckCircle} from "react-icons/ai";
+import "./styles.css";
 
 export default function Dotacje() {
-  return (
-    <>
-      <Navbar navClass="defaultscroll sticky" manuClass="navigation-menu nav-right nav-light" />
-      
-      <section className="bg-half-170 d-table w-100" style={{ backgroundImage: "url('/images/cta03.jpg')", backgroundSize: "cover", backgroundPosition: "center" }}>
-        <div className="bg-overlay bg-gradient-overlay"></div>
-        <div className="container">
-          <div className="row mt-5 justify-content-center">
-            <div className="col-12">
-              <div className="title-heading text-center">
-                <h1 className="heading text-white mb-3">Dotacje i Finansowanie</h1>
-                <p className="para-desc text-white-50 mx-auto">Oferujemy pomoc w uzyskaniu środków z programów krajowych i lokalnych, a także w zorganizowaniu finansowania poprzez pożyczki lub kredyty bankowe.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+    const dotacje = [
+        {
+            title: "Mój Prąd",
+            description: "Program dofinansowania instalacji fotowoltaicznych dla gospodarstw domowych. Możesz otrzymać nawet 6000 zł na montaż instalacji PV.",
+            image: "/images/moj-prad.svg",
+            link: "/dotacje/moj-prad"
+        },
+        {
+            title: "Czyste Powietrze",
+            description: "Program wspierający wymianę źródeł ciepła i termomodernizację budynków jednorodzinnych. Możesz otrzymać do 69 000 zł na inwestycję.",
+            image: "/images/czyste-powietrze.webp",
+            link: "/dotacje/czyste-powietrze"
+        },
+        {
+            title: "Moje Ciepło",
+            description: "Program dofinansowania pomp ciepła dla nowych budynków jednorodzinnych. Możesz otrzymać do 21 000 zł na montaż pompy ciepła.",
+            image: "/images/moje-cieplo.jpg",
+            link: "/dotacje/moje-cieplo"
+        },
+        {
+            title: "Finansowanie",
+            description: "Oferujemy atrakcyjne finansowanie inwestycji w OZE. Sprawdź nasze oferty kredytowe i możliwości rozłożenia płatności na raty.",
+            image: "/images/bgk.png",
+            link: "/dotacje/finansowanie"
+        }
+    ];
 
-      <section className="section">
-        <div className="container">
-          <div className="row justify-content-center">
-            <div className="col-12 text-center mb-4">
-              <h2 className="mb-4">Dostępne Programy Dotacyjne</h2>
-              <p className="text-muted">Jesteśmy gotowi załatwić wszystkie formalności w imieniu klienta. Skorzystaj z dofinansowania i obniż koszt inwestycji w odnawialne źródła energii.</p>
-            </div>
-          </div>
+    return (
+        <>
+            <Navbar navClass="nav-sticky defaultscroll sticky" manuClass="navigation-menu nav-right nav-light"/>
 
-          <div className="row">
-            <div className="col-lg-4 col-md-6 mt-4 pt-2">
-              <div className="card features feature-primary feature-clean rounded p-4">
-                <div className="icon text-center rounded-pill">
-                  <i className="uil uil-sun fs-1"></i>
-                </div>
-                <div className="card-body p-0 mt-4">
-                  <Link href="/dotacje/moj-prad" className="title h5 text-dark">Program "Mój Prąd"</Link>
-                  <p className="text-muted mt-3">Dofinansowanie do 7 000 zł na instalacje fotowoltaiczne dla gospodarstw domowych. Skorzystaj z 6. edycji programu i uzyskaj zwrot części kosztów inwestycji.</p>
-                  <Link href="/dotacje/moj-prad" className="text-primary">Dowiedz się więcej <i className="uil uil-angle-right-b"></i></Link>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-lg-4 col-md-6 mt-4 pt-2">
-              <div className="card features feature-primary feature-clean rounded p-4">
-                <div className="icon text-center rounded-pill">
-                  <i className="uil uil-house-user fs-1"></i>
-                </div>
-                <div className="card-body p-0 mt-4">
-                  <Link href="/dotacje/czyste-powietrze" className="title h5 text-dark">Program "Czyste Powietrze"</Link>
-                  <p className="text-muted mt-3">Dofinansowanie do wymiany starych pieców i termomodernizacji domów. Dotacje nawet do 135 000 zł na kompleksowe inwestycje w efektywność energetyczną.</p>
-                  <Link href="/dotacje/czyste-powietrze" className="text-primary">Dowiedz się więcej <i className="uil uil-angle-right-b"></i></Link>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-lg-4 col-md-6 mt-4 pt-2">
-              <div className="card features feature-primary feature-clean rounded p-4">
-                <div className="icon text-center rounded-pill">
-                  <i className="uil uil-temperature-half fs-1"></i>
-                </div>
-                <div className="card-body p-0 mt-4">
-                  <Link href="/dotacje/moje-cieplo" className="title h5 text-dark">Program "Moje Ciepło"</Link>
-                  <p className="text-muted mt-3">Dofinansowanie do pomp ciepła w nowych budynkach mieszkalnych. Dotacje pokrywające do 30% kosztów kwalifikowanych inwestycji, maksymalnie do 21 000 zł.</p>
-                  <Link href="/dotacje/moje-cieplo" className="text-primary">Dowiedz się więcej <i className="uil uil-angle-right-b"></i></Link>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-lg-4 col-md-6 mt-4 pt-2 offset-lg-4">
-              <div className="card features feature-primary feature-clean rounded p-4">
-                <div className="icon text-center rounded-pill">
-                  <i className="uil uil-credit-card fs-1"></i>
-                </div>
-                <div className="card-body p-0 mt-4">
-                  <Link href="/dotacje/finansowanie" className="title h5 text-dark">Finansowanie Inwestycji</Link>
-                  <p className="text-muted mt-3">Oferujemy pomoc w uzyskaniu atrakcyjnych kredytów i pożyczek na instalacje OZE. Współpracujemy z bankami oferującymi specjalne warunki finansowania dla ekologicznych inwestycji.</p>
-                  <Link href="/dotacje/finansowanie" className="text-primary">Dowiedz się więcej <i className="uil uil-angle-right-b"></i></Link>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="row mt-5 pt-4">
-            <div className="col-12">
-              <div className="section-title text-center">
-                <h3>Dlaczego warto skorzystać z naszej pomocy?</h3>
-              </div>
-            </div>
-
-            <div className="col-lg-4 col-md-6 mt-4 pt-2">
-              <div className="d-flex features feature-primary">
-                <div className="icon text-center rounded-circle me-3 mt-2">
-                  <i className="uil uil-file-check-alt fs-4"></i>
-                </div>
-                <div className="flex-1">
-                  <h5>Kompleksowa obsługa</h5>
-                  <p className="text-muted mb-0">Zapewniamy pomoc na każdym etapie - od wyboru programu po rozliczenie dotacji.</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-lg-4 col-md-6 mt-4 pt-2">
-              <div className="d-flex features feature-primary">
-                <div className="icon text-center rounded-circle me-3 mt-2">
-                  <i className="uil uil-money-withdrawal fs-4"></i>
-                </div>
-                <div className="flex-1">
-                  <h5>Maksymalne dofinansowanie</h5>
-                  <p className="text-muted mb-0">Pomagamy dobrać optymalne źródła finansowania, aby maksymalnie obniżyć koszt inwestycji.</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-lg-4 col-md-6 mt-4 pt-2">
-              <div className="d-flex features feature-primary">
-                <div className="icon text-center rounded-circle me-3 mt-2">
-                  <i className="uil uil-clock fs-4"></i>
-                </div>
-                <div className="flex-1">
-                  <h5>Oszczędność czasu</h5>
-                  <p className="text-muted mb-0">Zajmiemy się wszystkimi formalnościami, więc Ty nie musisz tracić czasu na biurokrację.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="section bg-light">
-        <div className="container">
-          <div className="row align-items-center">
-            <div className="col-lg-7">
-              <div className="section-title">
-                <h4 className="title mb-4">Skontaktuj się z nami</h4>
-                <p className="text-muted para-desc">Nasi doradcy pomogą Ci wybrać najlepszy program dotacyjny dla Twojej inwestycji i przeprowadzą Cię przez cały proces uzyskania dofinansowania.</p>
-                <div className="mt-4 pt-2">
-                  <Link href="/kontakt" className="btn btn-primary">Umów konsultację</Link>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-lg-5 mt-4 pt-2 mt-lg-0 pt-lg-0">
-              <div className="card shadow rounded border-0">
-                <div className="card-body py-5">
-                  <h5 className="card-title">Zostaw swój numer telefonu</h5>
-                  <div className="custom-form mt-3">
-                    <form>
-                      <div className="row">
+            <section className="section">
+                <div className="container">
+                    <div className="row justify-content-center">
                         <div className="col-12">
-                          <div className="mb-3">
-                            <input name="name" id="name" type="text" className="form-control" placeholder="Imię i nazwisko" />
-                          </div>
+                            <div className="section-title text-center">
+                                <h4 className="title mb-3">Dofinansowanie na OZE</h4>
+                                <p className="text-muted">Sprawdź dostępne programy dotacyjne i dofinansowania na instalacje OZE</p>
+                            </div>
                         </div>
-                        <div className="col-12">
-                          <div className="mb-3">
-                            <input name="phone" id="phone" type="tel" className="form-control" placeholder="Numer telefonu" />
-                          </div>
-                        </div>
-                        <div className="col-12">
-                          <div className="mb-3">
-                            <button type="submit" className="btn btn-primary w-100">Oddzwońcie do mnie</button>
-                          </div>
-                        </div>
-                      </div>
-                    </form>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+                    </div>
 
-      <KomplexFooter />
-    </>
-  );
-} 
+                    <div className="row">
+                        {dotacje.map((dotacja, index) => (
+                            <div className="col-lg-6 col-md-6 mb-4" key={index}>
+                                <Link href={dotacja.link} className="text-decoration-none">
+                                    <div className="card features feature-primary h-100 hover-shadow transition-all">
+                                        <div className="position-relative" style={{ height: "120px", overflow: "hidden" }}>
+                                            <Image
+                                                src={dotacja.image}
+                                                fill={true}
+                                                style={{ objectFit: "contain" }}
+                                                className="rounded-top"
+                                                alt={dotacja.title}
+                                            />
+                                        </div>
+                                        <div className="card-body">
+                                            <h5 className="card-title text-dark">{dotacja.title}</h5>
+                                            <p className="text-muted">{dotacja.description}</p>
+                                            <div className="d-flex align-items-center text-primary">
+                                                <span className="me-2">Dowiedz się więcej</span>
+                                                <i className="uil uil-arrow-right"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </Link>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
+            <section className="section bg-light">
+                <div className="container">
+                    <div className="row align-items-center">
+                        <div className="col-lg-6">
+                            <div className="section-title">
+                                <h4 className="title mb-3">Dlaczego warto skorzystać z dotacji?</h4>
+                                <ul className="list-unstyled text-muted mb-0">
+                                    <li className="mb-3">
+                                        <span className="text-dark h5 me-2">
+                                            <AiOutlineCheckCircle className="align-middle"/>
+                                        </span>
+                                        Znaczące oszczędności na inwestycji
+                                    </li>
+                                    <li className="mb-3">
+                                        <span className="text-dark h5 me-2">
+                                            <AiOutlineCheckCircle className="align-middle"/>
+                                        </span>
+                                        Szybszy zwrot z inwestycji
+                                    </li>
+                                    <li className="mb-3">
+                                        <span className="text-dark h5 me-2">
+                                            <AiOutlineCheckCircle className="align-middle"/>
+                                        </span>
+                                        Profesjonalna pomoc w przygotowaniu wniosku
+                                    </li>
+                                    <li className="mb-3">
+                                        <span className="text-dark h5 me-2">
+                                            <AiOutlineCheckCircle className="align-middle"/>
+                                        </span>
+                                        Kompleksowa obsługa formalności
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div className="col-lg-6">
+                            <div className="p-4 bg-white rounded shadow">
+                                <div className="text-center">
+                                    <h5>Chcesz dowiedzieć się więcej o dotacjach?</h5>
+                                    <p className="text-muted">Skontaktuj się z nami, a pomożemy Ci wybrać najlepszy program dofinansowania</p>
+                                    <form>
+                                        <input name="phone" id="phone" type="tel" className="form-control mb-3" placeholder="Twój numer telefonu:" required=""/>
+                                        <button type="submit" className="btn btn-primary">Bezpłatne doradztwo</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section className="section mt-4 pb-0">
+                <KomplexFooter/>
+            </section>
+        </>
+    );
+}

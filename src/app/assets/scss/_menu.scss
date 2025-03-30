@@ -8,7 +8,6 @@
     left: 0;
     top: 0;
     z-index: 999;
-    background: linear-gradient(180deg, rgba(2,0,36,0.1) 0%, rgba(0,0,0,0.1) 75%, rgba(0,0,0,0) 100%);
     border: 0;
     transition: all .5s ease;
     font-family: $font-family-base;
@@ -118,13 +117,13 @@
             background-color: $dark;
             display: block;
             margin-bottom: 5px;
-            transition: transform .5s ease;   
+            transition: transform .5s ease;
             &:last-child {
                 margin-bottom: 0;
             }
         }
     }
-    
+
     //Buy button
     .buy-button {
         float: right;
@@ -173,14 +172,14 @@
         }
     }
     .navbar-toggle {
-        &:hover, 
+        &:hover,
         &:focus,
-        .navigation-menu > li > a:hover, 
+        .navigation-menu > li > a:hover,
         &:focus {
             background-color: transparent;
         }
     }
-  
+
     .navigation-menu {
         list-style: none;
         margin: 0;
@@ -190,13 +189,13 @@
             display: block;
             position: relative;
             margin: 0 10px;
-            &:hover > a {
-                color: $white !important;
+            &:hover > a{
+                color: $primary !important;
             }
-            
+
             > a {
                 display: block;
-                color: $white;
+                color: rgba(255, 255, 255, 0.65);
                 font-size: 13px;
                 background-color: transparent !important;
                 font-weight: 600;
@@ -270,7 +269,7 @@
     .menu-extras {
         float: right;
     }
-    
+
     &.scroll {
         background-color: $white;
         border: none;
@@ -280,7 +279,7 @@
                 > a {
                     color: $dark !important;
                 }
-                
+
                 > .menu-arrow {
                     border-color: $dark;
                 }
@@ -291,11 +290,11 @@
                     > .menu-arrow {
                         border-color: $primary;
                     }
-                } 
-            } 
+                }
+            }
         }
     }
-    
+
     &.defaultscroll{
         &.dark-menubar {
             .logo {
@@ -315,14 +314,14 @@
     }
 
     &.nav-sticky{
-        backdrop-filter: blur(12px);
-        background-color: rgba($white, 0.8);
+        background-color: $white;
         box-shadow: $shadow;
         .navigation-menu {
-            &.nav-light {
+            &.nav-right {
                 > li {
                     > a {
                         color: $dark;
+
                         &.active{
                             color: $primary !important;
                         }
@@ -330,9 +329,9 @@
                     &.active {
                         > a {
                             color: $primary !important;
-                        }      
+                        }
                     }
-                    &:hover, 
+                    &:hover,
                     &.active {
                         > .menu-arrow {
                             border-color: $primary !important;
@@ -341,10 +340,10 @@
                             color: $primary !important;
                         }
                     }
-                } 
+                }
                 .has-submenu {
                     .menu-arrow {
-                        border-color: $dark; 
+                        border-color: $dark;
                     }
                 }
             }
@@ -352,7 +351,7 @@
         &.tagline-height {
             top: 0 !important;
         }
-        
+
         .buy-button {
             .nav-light-icon-dark {
                 display: inline-block;
@@ -437,7 +436,7 @@
                         top: 30px;
                     }
                 }
-            } 
+            }
             > li {
                 .submenu {
                     position: absolute;
@@ -468,7 +467,7 @@
                             color: $dark !important;
                             transition: all 0.3s;
                             &:hover {
-                                color: $white !important;
+                                color: $dark !important;
                             }
                             &:active {
                                 color: $primary !important;
@@ -520,7 +519,7 @@
                         }
                     }
                 }
-                
+
                 > a {
                     padding-top: 25px;
                     padding-bottom: 25px;
@@ -536,11 +535,11 @@
                 }
                 &:hover > a {
                     color: $white !important;
-                } 
+                }
                 &:active > a {
                     color: $white !important;
-                } 
-                
+                }
+
                 &:last-child {
                     .submenu {
                         left: auto;
@@ -565,12 +564,12 @@
                         &.active{
                             color: $white !important;
                         }
-                    }   
+                    }
                     &.active {
                         > a {
                             color: $white !important;
-                        }      
-                    }           
+                        }
+                    }
                     &:hover {
                         > .menu-arrow {
                             border-color: $white !important;
@@ -611,11 +610,11 @@
                     }
                 }
             }
-        }  
+        }
         .buy-button {
             padding-left: 15px;
             margin-left: 15px;
-        }      
+        }
         .navbar-toggle {
             display: none;
         }
@@ -645,7 +644,7 @@
         }
     }
 }
-  
+
 @media (max-width: 991px) {
     #topnav {
         background-color: $white;
@@ -762,7 +761,7 @@
                 display: none;
             }
         }
-        
+
         .has-submenu{
             .submenu {
                 .submenu-arrow {
@@ -778,7 +777,7 @@
                 }
             }
         }
-        
+
         &.nav-sticky{
             background-color: $white !important;
         }
@@ -917,9 +916,4 @@
     }
 }
 
-#topnav.nav-sticky {
-    background: $white;
-    li > a {
-        color: $dark;
-    }
-}
+//_menu.scss
