@@ -20,7 +20,6 @@ function formatDate(dateString) {
 function stripHtml(html) {
     return html.replace(/<[^>]+>/g, '');
 }
-
 // Dynamicznie generuj metadane SEO dla wpisu
 export async function generateMetadata({ params }) {
     const { slug } = params;
@@ -245,8 +244,7 @@ export default async function BlogPostPage({ params }) {
                                                                     </ul>
                                                                     <Link href={`/blog/${relatedPost.slug}`}
                                                                           className="text-muted readmore">
-                                                                        Czytaj więcej <i
-                                                                        className="mdi mdi-chevron-right"></i>
+                                                                        Czytaj więcej
                                                                     </Link>
                                                                 </div>
                                                             </div>

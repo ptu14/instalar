@@ -2,6 +2,7 @@ import { Poppins, Ubuntu, Teko, Noto_Sans,Libre_Baskerville,Kaushan_Script } fro
 import 'bootstrap/dist/css/bootstrap.css'
 import './assets/scss/style.scss'
 import './assets/css/materialdesignicons.min.css'
+import { Analytics } from "@vercel/analytics/react"
 
 const poppins = Poppins({ 
   subsets: ['latin'],
@@ -87,6 +88,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="pl">
+      <Analytics/>
       <body className={`${poppins.variable} ${ubuntu.variable} ${teko.variable} ${noto.variable} ${libre.variable} ${kaushan.variable}`}>{children}</body>
     </html>
   )

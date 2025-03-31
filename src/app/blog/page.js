@@ -179,7 +179,7 @@ export default async function BlogPage({ searchParams }) {
                                                             </li>
                                                         )}
                                                     </ul>
-                                                    <Link href={`/blog/${post.slug}`} className="text-muted readmore">Czytaj więcej <i className="mdi mdi-chevron-right"></i></Link>
+                                                    <Link href={`/blog/${post.slug}`} className="text-muted readmore">Czytaj więcej</Link>
                                                 </div>
                                             </div>
                                         </div>
