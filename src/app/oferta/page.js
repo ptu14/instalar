@@ -10,7 +10,7 @@ export default function Oferta() {
     const uslugi = [
         {
             title: "Pompy Ciepła",
-            description: "Oferujemy profesjonalny montaż pomp ciepła różnych typów (powietrzne, gruntowe). Pomagamy w doborze odpowiedniego urządzenia i zapewniamy kompleksową obsługę instalacji.",
+            description: "Oferujemy profesjonalny montaż pomp ciepła różnych typów (powietrze-powietrze, powietrze-woda). Pomagamy w doborze odpowiedniego urządzenia i zapewniamy kompleksową obsługę instalacji.",
             image: "/images/pompa-ciepla.jpg",
             link: "/oferta/pompy-ciepla"
         },

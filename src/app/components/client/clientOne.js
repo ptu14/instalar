@@ -36,32 +36,32 @@ export default function ClientOne({bgWhite}){
       };
     let clientsData = [
         {
-            image:'/images/client/01.jpg',
+            image:'/images/partners/01.jpg',
             name:'Thomas Israel',
             desc:'" It seems that only fragments of the original text remain in the Lorem Ipsum texts used today. "'
         },
         {
-            image:'/images/client/02.jpg',
+            image:'/images/partners/02.jpg',
             name:'Carl Oliver',
             desc:'" The most well-known dummy text is the Lorem Ipsum, which is said to have originated in the 16th century. "'
         },
         {
-            image:'/images/client/03.jpg',
+            image:'/images/partners/03.jpg',
             name:'Barbara McIntosh',
             desc:'" One disadvantage of Lorum Ipsum is that in Latin certain letters appear more frequently than others."'
         },
         {
-            image:'/images/client/04.jpg',
+            image:'/images/partners/04.jpg',
             name:'Jill Webb',
             desc:'" Thus, Lorem Ipsum has only limited suitability as a visual filler for German texts."'
         },
         {
-            image:'/images/client/05.jpg',
+            image:'/images/partners/05.jpg',
             name:'Dean Tolle',
             desc:'"There is now an abundance of readable dummy texts. These are usually used when a text is required. "'
         },
         {
-            image:'/images/client/06.jpg',
+            image:'/images/partners/06.jpg',
             name:'Christa Smith',
             desc:'"According to most sources, Lorum Ipsum can be traced back to a text composed by Cicero. "'
         },

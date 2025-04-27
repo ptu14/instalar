@@ -44,37 +44,37 @@ export default function Team(){
       };
     let teamData = [
         {
-            image:'/images/client/09.jpg',
+            image:'/images/partners/09.jpg',
             name:'Dennis Rosario',
             title:'C.E.O'
         },
         {
-            image:'/images/client/10.jpg',
+            image:'/images/partners/10.jpg',
             name:'Billy Gregory',
             title:'Manager'
         },
         {
-            image:'/images/client/11.jpg',
+            image:'/images/partners/11.jpg',
             name:'Connie Dunton',
             title:'Manager'
         },
         {
-            image:'/images/client/12.jpg',
+            image:'/images/partners/12.jpg',
             name:'Alberta Petty',
             title:'Manager'
         },
         {
-            image:'/images/client/13.jpg',
+            image:'/images/partners/13.jpg',
             name:'Shirley Garcia',
             title:'Manager'
         },
         {
-            image:'/images/client/14.jpg',
+            image:'/images/partners/14.jpg',
             name:'Michael Wheeler',
             title:'Manager'
         },
         {
-            image:'/images/client/15.jpg',
+            image:'/images/partners/15.jpg',
             name:'Billy Gregory',
             title:'Manager'
         },

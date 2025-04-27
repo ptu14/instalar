@@ -54,7 +54,6 @@ body {
         li {
             a {
                 color: $gray-300;
-                border: 1px solid $gray-300;
                 &:hover {
                     color: $dark !important;
                 }
@@ -65,8 +64,7 @@ body {
         &.foot-social-icon {
             li {
                 a {
-                    color: $gray-300;
-                    border-color: lighten($black, 5%);
+                    color: white;
                 }
             }
         }
@@ -85,7 +83,7 @@ body {
 
     footer {
         &.bg-footer {
-            background: lighten($black, 3%) !important;
+            background: $primary;
         }
         .footer-bar {
             border-top: 1px solid lighten($black, 10%) !important;

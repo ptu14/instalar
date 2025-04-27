@@ -1,29 +1,22 @@
-import {GiHeatHaze, PiDropBold, IoMdSunny, PiPipe } from '../assets/icons/vander'
-import {BiBattery, BiMoney} from "react-icons/bi";
-import {BsBattery, BsBatteryFull} from "react-icons/bs";
-import {IoIosBatteryFull} from "react-icons/io";
-import {MdMoney} from "react-icons/md";
-import {GrMoney} from "react-icons/gr";
-import {PiMoney} from "react-icons/pi";
-
+import {HeatPump, LightMode, Savings, BatteryHoriz000} from "@project-lary/react-material-symbols";
 export const aboutData = [
     {
-        icon: GiHeatHaze,
+        icon: HeatPump,
         title: 'Pompy ciepła',
         desc: 'Energooszczędne pompy ciepła do ogrzewania domu i wody użytkowej. Dostępne dotacje do 21 tys. zł z programu Czyste Powietrze. Oszczędności na ogrzewaniu do 75% w porównaniu z tradycyjnymi rozwiązaniami.'
     },
     {
-        icon: IoMdSunny,
+        icon: LightMode,
         title: 'Instalacje fotowoltaiczne',
         desc: 'Nowoczesne instalacje fotowoltaiczne z dofinansowaniem do 6 tys. zł z programu Mój Prąd 6.0. Produkuj własny prąd, zmniejsz rachunki nawet o 90% i uniezależnij się od podwyżek cen energii.'
     },
     {
-        icon: IoIosBatteryFull,
+        icon: BatteryHoriz000,
         title: 'Magazyny energii',
         desc: 'Nowoczesne magazyny energii pozwalające na większą niezależność energetyczną. Wykorzystaj wyprodukowaną energię gdy jej potrzebujesz, nawet po zachodzie słońca. Dotacje do 16 tys. zł w programie Mój Prąd.'
     },
     {
-        icon: PiMoney,
+        icon: Savings,
         title: 'Dotacje i finansowanie',
         desc: 'Kompleksowa pomoc w uzyskaniu dofinansowania na instalacje OZE. Obsługujemy wszystkie programy dotacji: Mój Prąd, Czyste Powietrze, ulga termomodernizacyjna. Atrakcyjne finansowanie i leasing.'
     },

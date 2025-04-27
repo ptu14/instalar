@@ -2,24 +2,33 @@
 import React from 'react';
 import Link from 'next/link';
 
-import { Carousel } from 'react-responsive-carousel';
-import "react-responsive-carousel/lib/styles/carousel.min.css";
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
 
 export default function HeroSlider(){
     return(
         <section className="home-slider position-relative">
             <Carousel 
-                showArrows={false} 
-                selectedItem={false} 
-                infiniteLoop={true} 
-                autoPlay={true} 
-                interval={3000} 
-                showStatus={false} 
-                showThumbs={false}
+                responsive={{
+                    desktop: {
+                        breakpoint: { max: 3000, min: 1024 },
+                        items: 1
+                    },
+                    tablet: {
+                        breakpoint: { max: 1024, min: 464 },
+                        items: 1
+                    },
+                    mobile: {
+                        breakpoint: { max: 464, min: 0 },
+                        items: 1
+                    }
+                }}
+                infinite={true}
+                autoPlay={true}
+                autoPlaySpeed={3000}
+                arrows={false}
                 swipeable={true}
-                emulateTouch={true}
-                preventMovementUntilSwipeScrollTolerance={true}
-                swipeScrollTolerance={50}
+                draggable={true}
             >
             <div className="carousel-item active" data-bs-interval="3000">
                     <div className="bg-home d-flex align-items-center" style={{backgroundImage:"url('/images/1.jpg')"}}>

@@ -5,25 +5,25 @@ import Link from "next/link";
 export default function Comments(){
     let data = [
         {
-            image: '/images/client/01.jpg',
+            image: '/images/partners/01.jpg',
             name:'Lorenzo Peterson',
             time:'13th March 2023 at 01:10 pm',
             desc:'" There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour "'
         },
         {
-            image: '/images/client/02.jpg',
+            image: '/images/partners/02.jpg',
             name:'Tammy Camacho',
             time:'5th May 2023 at 10:30 am',
             desc:'" There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour "'
         },
         {
-            image: '/images/client/03.jpg',
+            image: '/images/partners/03.jpg',
             name:'Tammy Camacho',
             time:'19th June 2023 at 09:00 am',
             desc:'" There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour "'
         },
         {
-            image: '/images/client/04.jpg',
+            image: '/images/partners/04.jpg',
             name:'Lorenzo Peterson',
             time:'20th june 2023 at 02:10 pm',
             desc:'" There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour "'

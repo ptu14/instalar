@@ -9,8 +9,8 @@
 // Color
 $white:                     #ffffff;
 
-$primary:                   #004470 ; //3274f0
-$secondary:                 #90a1b3;
+$primary:                   #01446F; //3274f0
+$secondary:                 #FFB45E;
 $success:                   #8dc351;
 $warning:                   #f1af2d;
 $info:                      #09a5be;
@@ -61,8 +61,8 @@ $footer:                    lighten($black, 5%);
 // Base font
 $font-size-base:            15px;
 
-$font-family-base:          var(--font-poppins);
-$font-family-secondary:     var(--font-poppins);
+$font-family-base:          var(--font-lexend);
+$font-family-secondary:     var(--font-lexend);
 $font-noto:                 var(--font-noto);
 $font-libre:                var(--font-libre);
 $font-kaushan:              var(--font-kaushan);

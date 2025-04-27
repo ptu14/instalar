@@ -13,38 +13,37 @@ export default function Finansowanie() {
             description: "Specjalna pożyczka dla mieszkańców Małopolski na inwestycje w odnawialne źródła energii. Pomagamy w składaniu wniosków i doradzamy w wyborze najlepszego rozwiązania.",
             image: "/images/bgk.png",
             features: [
-                "Dofinansowanie do instalacji fotowoltaicznych",
-                "Wsparcie dla pomp ciepła i kotłów na biomasę",
-                "Możliwość sfinansowania magazynów energii",
-                "Konkurencyjne oprocentowanie"
+                "Do 250 000 zł na okres 15 lat",
+                "Stałe oprocentowanie 0%",
+                "Możliwość umorzenia do 50% kwoty pożyczki",
+
             ],
             szczegoly: {
                 maxMoc: "20 kWe dla instalacji fotowoltaicznych i wiatrowych",
                 maxMocCieplo: "30 kWt dla pomp ciepła i kotłów na biomasę",
-                maxMocKolektory: "10 kWt dla kolektorów słonecznych",
-                beneficjenci: "Właściciele budynków jednorodzinnych",
+                maxMocKolektory: "40 kWh dla magazynów energii",
+                beneficjenci: "Właściciele budynków jednorodzinnych nowych i modernizowanych",
                 budynki: "Wolnostojące, bliźniacze, szeregowe lub grupowe"
             }
         },
         {
-            title: "Pomoc w składaniu wniosków",
-            description: "Profesjonalne doradztwo i pomoc w przygotowaniu dokumentacji kredytowej. Zapewniamy kompleksową obsługę formalności związanych z pozyskaniem finansowania.",
+            title: "Dotacje lokalne",
+            description: "Profesjonalne doradztwo i pomoc w przygotowaniu dokumentacji do lokalnych dotacji gminnych. Zapewniamy kompleksową obsługę formalności związanych z pozyskaniem finansowania.",
             image: "/images/wniosek.jpg",
             features: [
                 "Analiza dokumentacji",
                 "Pomoc w wypełnianiu wniosków",
                 "Doradztwo w wyborze najlepszej oferty",
-                "Wsparcie na każdym etapie"
+                "Wsparcie na każdym etapie realizacji"
             ]
         },
         {
             title: "Inne opcje finansowania",
-            description: "Oferujemy dostęp do szerokiej gamy produktów finansowych, w tym kredytów, leasingu i rat. Pomagamy wybrać najlepsze rozwiązanie dopasowane do Twoich potrzeb.",
+            description: "Oferujemy dostęp do szerokiej gamy produktów finansowych, w tym kredytów i leasingu. Pomagamy wybrać najlepsze rozwiązanie dopasowane do Twoich potrzeb.",
             image: "/images/finansowanie.jpg",
             features: [
                 "Kredyty na OZE",
                 "Leasing sprzętu",
-                "Raty 0%",
                 "Elastyczne formy płatności"
             ]
         }

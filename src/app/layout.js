@@ -1,8 +1,14 @@
-import { Poppins, Ubuntu, Teko, Noto_Sans,Libre_Baskerville,Kaushan_Script } from 'next/font/google'
+import {Poppins, Ubuntu, Teko, Noto_Sans, Libre_Baskerville, Kaushan_Script, Lexend} from 'next/font/google'
 import 'bootstrap/dist/css/bootstrap.css'
 import './assets/scss/style.scss'
 import './assets/css/materialdesignicons.min.css'
 import { Analytics } from "@vercel/analytics/react"
+
+const lexend = Lexend({
+  subsets: ['latin'],
+  weight:['100','200','300','400','500','600','700','800','900'],
+  variable: '--font-lexend',
+})
 
 const poppins = Poppins({ 
   subsets: ['latin'],
@@ -89,7 +95,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="pl">
       <Analytics/>
-      <body className={`${poppins.variable} ${ubuntu.variable} ${teko.variable} ${noto.variable} ${libre.variable} ${kaushan.variable}`}>{children}</body>
+      <body className={`${lexend.variable} ${ubuntu.variable} ${teko.variable} ${noto.variable} ${libre.variable} ${kaushan.variable}`}>{children}</body>
     </html>
   )
 }

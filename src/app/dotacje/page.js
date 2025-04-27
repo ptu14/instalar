@@ -12,19 +12,19 @@ export default function Dotacje() {
     const dotacje = [
         {
             title: "Mój Prąd",
-            description: "Program dofinansowania instalacji fotowoltaicznych dla gospodarstw domowych. Możesz otrzymać nawet 6000 zł na montaż instalacji PV.",
+            description: "Program dofinansowania instalacji fotowoltaicznych dla gospodarstw domowych. Możesz otrzymać nawet 28 000 zł na montaż instalacji PV.",
             image: "/images/moj-prad.svg",
             link: "/dotacje/moj-prad"
         },
         {
             title: "Czyste Powietrze",
-            description: "Program wspierający wymianę źródeł ciepła i termomodernizację budynków jednorodzinnych. Możesz otrzymać do 69 000 zł na inwestycję.",
+            description: "Program wspierający wymianę źródeł ciepła i termomodernizację budynków jednorodzinnych. Możesz otrzymać do 170 100 zł na inwestycję.",
             image: "/images/czyste-powietrze.webp",
             link: "/dotacje/czyste-powietrze"
         },
         {
             title: "Moje Ciepło",
-            description: "Program dofinansowania pomp ciepła dla nowych budynków jednorodzinnych. Możesz otrzymać do 21 000 zł na montaż pompy ciepła.",
+            description: "Program dofinansowania pomp ciepła dla nowych budynków jednorodzinnych. Możesz otrzymać do 21 000 zł na montaż pompy ciepła.",
             image: "/images/moje-cieplo.jpg",
             link: "/dotacje/moje-cieplo"
         },

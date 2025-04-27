@@ -49,4 +49,28 @@
 @import "restaurant";
 :root {
   --bs-link-color-rgb: #{$dark};
+  --color-accent: #ffb45e;
+}
+
+.icon-accent {
+  $icon-size: 64px;
+  color: var(--color-accent);
+  height: $icon-size;
+  width: $icon-size;
+}
+
+.accent {
+  color: var(--color-accent) !important;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.md-contact-form {
+  background-image: url("/images/salon.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }

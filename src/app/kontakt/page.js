@@ -11,6 +11,7 @@ export default function Contact() {
     const [formData, setFormData] = useState({
         name: '',
         email: '',
+        phone: '',
         subject: '',
         comments: ''
     });
@@ -54,6 +55,7 @@ export default function Contact() {
                 setFormData({
                     name: '',
                     email: '',
+                    phone: '',
                     subject: '',
                     comments: ''
                 });
@@ -168,7 +170,23 @@ export default function Contact() {
 
                                         <div className="col-md-6">
                                             <div className="mb-3">
-                                                <label className="form-label">Twój email <span className="text-danger">*</span></label>
+                                                <label className="form-label">Numer telefonu <span className="text-danger">*</span></label>
+                                                <input 
+                                                    name="phone" 
+                                                    id="phone" 
+                                                    type="tel" 
+                                                    className="form-control" 
+                                                    placeholder="Numer telefonu :" 
+                                                    value={formData.phone}
+                                                    onChange={handleChange}
+                                                    required
+                                                />
+                                            </div>
+                                        </div>
+
+                                        <div className="col-12">
+                                            <div className="mb-3">
+                                                <label className="form-label">Twój email</label>
                                                 <input 
                                                     name="email" 
                                                     id="email" 
@@ -177,7 +195,6 @@ export default function Contact() {
                                                     placeholder="Email :" 
                                                     value={formData.email}
                                                     onChange={handleChange}
-                                                    required
                                                 />
                                             </div>
                                         </div>

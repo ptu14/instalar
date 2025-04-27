@@ -2,8 +2,8 @@
 import React from "react";
 import Link from "next/link";
 
-import { Carousel } from 'react-responsive-carousel';
-import "react-responsive-carousel/lib/styles/carousel.min.css";
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
 
 import {AiOutlineUser, AiOutlineCalendar, AiOutlineClockCircle} from "../../assets/icons/vander"
 
@@ -12,7 +12,28 @@ export default function HeroSlider(){
         <>
 
         <section className="home-slider position-relative">
-            <Carousel showArrows={false} selectedItem={false} showThumbs={false} infiniteLoop={true} autoPlay={true} interval={3000} showStatus={false}>
+            <Carousel 
+                responsive={{
+                    desktop: {
+                        breakpoint: { max: 3000, min: 1024 },
+                        items: 1
+                    },
+                    tablet: {
+                        breakpoint: { max: 1024, min: 464 },
+                        items: 1
+                    },
+                    mobile: {
+                        breakpoint: { max: 464, min: 0 },
+                        items: 1
+                    }
+                }}
+                infinite={true}
+                autoPlay={true}
+                autoPlaySpeed={3000}
+                arrows={false}
+                swipeable={true}
+                draggable={true}
+            >
                     <div className="carousel-item active" data-bs-interval="3000">
                         <div className="bg-half-170 d-table w-100" style={{backgroundImage:"url('/images/bg/blog-bg01.jpg')"}}>
                             <div className="bg-overlay"></div>

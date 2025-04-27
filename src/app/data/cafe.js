@@ -96,19 +96,19 @@ export const menuData = [
 
 export const clientData = [
     {
-        image:'/images/client/01.jpg',
+        image:'/images/partners/01.jpg',
         name:'Johnny Rosario',
         title:'C.E.O',
         desc:'" The advantage of its Latin origin and the relative meaninglessness of Lorum Ipsum is that the text does not attract attention to itself or distract the viewers attention from the layout. "'
     },
     {
-        image:'/images/client/02.jpg',
+        image:'/images/partners/02.jpg',
         name:'Gale Larose',
         title:'Manager',
         desc:'" The advantage of its Latin origin and the relative meaninglessness of Lorum Ipsum is that the text does not attract attention to itself or distract the viewers attention from the layout. "'
     },
     {
-        image:'/images/client/03.jpg',
+        image:'/images/partners/03.jpg',
         name:'Shelly Goodman',
         title:'Manager',
         desc:'" The advantage of its Latin origin and the relative meaninglessness of Lorum Ipsum is that the text does not attract attention to itself or distract the viewers attention from the layout. "'

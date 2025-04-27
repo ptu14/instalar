@@ -41,7 +41,7 @@ export default function ContactForm({ title, description, subject }) {
     };
 
     return (
-        <div className="p-5 bg-white rounded shadow-lg border border-light">
+        <div className="p-4 p-md-5 bg-white rounded shadow-lg border border-light">
             <div className="text-center">
                 <h4 className="title mb-3 fw-bold">{title || 'Chcesz dowiedzieć się więcej?'}</h4>
                 <p className="text-muted mb-4">{description || 'Skontaktuj się z nami, a przygotujemy dla Ciebie indywidualną ofertę'}</p>

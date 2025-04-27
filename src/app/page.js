@@ -48,8 +48,8 @@ export default function IndexBusiness(){
                                              itemType="https://schema.org/OpeningHoursSpecification">
                                             <meta itemProp="dayOfWeek"
                                                   content="Monday Tuesday Wednesday Thursday Friday"/>
-                                            <meta itemProp="opens" content="08:00"/>
-                                            <meta itemProp="closes" content="16:00"/>
+                                            <meta itemProp="opens" content="09:00"/>
+                                            <meta itemProp="closes" content="17:00"/>
                                         </div>
                                         <div itemProp="makesOffer" itemScope itemType="https://schema.org/Offer">
                                             <div itemProp="itemOffered" itemScope itemType="https://schema.org/Service">
@@ -77,7 +77,7 @@ export default function IndexBusiness(){
                                     return (
                                         <div className="col-lg-6 col-12 mb-4 pt-2" key={index}>
                                             <div className="card features feature-primary">
-                                                <Icon className="icon h1 d-block mb-3"/>
+                                                <Icon className="icon icon-accent h1 d-block mb-3"/>
                                                 <Link href="/page-single-service"
                                                       className="h5 title text-dark">{item.title}</Link>
                                                 <p className="text-muted mt-2 mb-0">{item.desc}</p>
@@ -89,17 +89,20 @@ export default function IndexBusiness(){
                         </div>
                     </div>
                 </div>
-                <div className="container mt-5">
-                    <Partners/>
+
+            </section>
+            <div className="container-fluid ">
+                <div className="row justify-content-center text-center px-5">
+                    <h2 className="my-1">Jesteśmy autoryzowanem salonem firmy <Image src='/images/partners/daikin.svg'
+                                                                                     width={0} height={0} sizes="100vw"
+                                                                                     style={{
+                                                                                         width: '200px',
+                                                                                         height: 'auto'
+                                                                                     }}
+                                                                                     className="img-fluid d-inline-flex"
+                                                                                     alt="Logo Daikin"/></h2>
                 </div>
-            </section>
-
-            <section className="section bg-light">
-
-                <Counter/>
-
-            </section>
-
+            </div>
             <section className="section">
                 <div className="container">
                     <div className="row align-items-center">
@@ -112,7 +115,8 @@ export default function IndexBusiness(){
                             <div className="section-title ms-lg-5">
                                 <h4 className="title fw-semibold mb-3">Nasi monterzy to profesjonaliści!</h4>
                                 <p className="text-muted">
-                                    Nasz zespół to wykwalifikowani specjaliści z <strong>wieloletnim doświadczeniem</strong> w
+                                    Nasz zespół to wykwalifikowani specjaliści z <strong>wieloletnim
+                                    doświadczeniem</strong> w
                                     instalacjach elektrycznych oraz wodno-kanalizacyjnych. Dzięki temu każda realizacja
                                     – niezależnie od skali – przebiega sprawnie, bezpiecznie i zgodnie z najwyższymi
                                     standardami branży OZE.
@@ -146,7 +150,16 @@ export default function IndexBusiness(){
                 </div>
 
             </section>
-
+            <section>
+                <div className="container">
+                    <div className="row justify-content-center">
+                        <h3 className="mb-5 text-center">Nasze instalacje wykonujemy na najlepszych komponentach</h3>
+                    </div>
+                </div>
+                <div className="container-fluid">
+                    <Partners/>
+                </div>
+            </section>
             <section className="section">
                 <div className="container">
                     <div className="row justify-content-center">
@@ -159,13 +172,21 @@ export default function IndexBusiness(){
 
                     <Process icon={false}/>
 
-                    <div className="row justify-content-center mt-4 pt-2">
-                        <div className="col-lg-7 mt-4 pt-2">
-                            <ContactForm 
-                                title="Zostaw swój numer telefonu, a my skontaktujemy się z Tobą w ciągu godziny!"
-                                description="Sprawdź, ile możesz zaoszczędzić dzięki fotowoltaice i pompom ciepła. Otrzymaj informacje o aktualnych dotacjach z programów 'Mój Prąd' i 'Czyste Powietrze'."
-                                subject="Nowa prośba o kontakt - Strona główna"
-                            />
+                </div>
+            </section>
+            <section className="section">
+                <div className="container-fluid md-contact-form">
+                    <div className="container">
+                        <div className="row align-items-center">
+                            <div className="row justify-content-center py-8 ">
+                                <div className="col-lg-7 my-2 py-5">
+                                    <ContactForm
+                                        title="Zostaw swój numer telefonu, a my skontaktujemy się z Tobą w ciągu godziny!"
+                                        description="Sprawdź, ile możesz zaoszczędzić dzięki fotowoltaice i pompom ciepła. Otrzymaj informacje o aktualnych dotacjach z programów 'Mój Prąd' i 'Czyste Powietrze'."
+                                        subject="Nowa prośba o kontakt - Strona główna"
+                                    />
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

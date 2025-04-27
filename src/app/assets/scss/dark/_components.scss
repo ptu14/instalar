@@ -408,8 +408,7 @@ $value in $colors {
 .social-icon .social {
     li {
         a {
-            color: $gray-300;
-            border: 1px solid $gray-300;
+            color: white;
             &:hover {
                 color: $dark !important;
             }
@@ -420,8 +419,7 @@ $value in $colors {
     &.foot-social-icon {
         li {
             a {
-                color: $gray-300;
-                border-color: lighten($footer, 2%);
+                color: white;
             }
         }
     }
@@ -701,7 +699,7 @@ $value in $colors {
 // _footer.scss
 //
 .footer {
-    color: $gray-300;
+    color: white;
     .footer-head {
         color: $dark;
     }
@@ -798,8 +796,7 @@ $value in $colors {
             &.foot-social-icon {
                 li {
                     a {
-                        color: $gray-300;
-                        border-color: $gray-800;
+                        color: white;
                     }
                 }
             }

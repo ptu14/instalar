@@ -54,19 +54,19 @@ export const skillsData = [
 
 export const ctaData = [
     {
-       image:'/images/client/01.jpg',
+       image:'/images/partners/01.jpg',
        desc:'" The advantage of its Latin origin and the relative meaninglessness of Lorum Ipsum is that the text does not attract attention to itself or distract the viewers attention from the layout. "',
        name:'Johnny Rosario',
        title:'C.E.O',
     },
     {
-        image:"/images/client/02.jpg",
+        image:"/images/partners/02.jpg",
         desc:'" One disadvantage of Lorum Ipsum is that in Latin certain letters appear more frequently than others - which creates a distinct visual impression. "',
         name:'Gale Larose',
         title:'Manager',
      },
      {
-        image:'/images/client/03.jpg',
+        image:'/images/partners/03.jpg',
         desc:'" Thus, Lorem Ipsum has only limited suitability as a visual filler for German texts. If the fill text is intended to illustrate the characteristics of different typefaces. "',
         name:'Shelly Goodman',
         title:'Manager',

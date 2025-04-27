@@ -1,9 +1,10 @@
 {
   "pages": {
-    "/blog/page": [
+    "/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/blog/page.js"
+      "static/css/app/page.css",
+      "static/chunks/app/page.js"
     ],
     "/layout": [
       "static/chunks/webpack.js",
@@ -11,17 +12,37 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
+    "/blog/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/blog/page.js"
+    ],
+    "/oferta/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/oferta/page.js"
+    ],
+    "/dotacje/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/dotacje/page.css",
+      "static/chunks/app/dotacje/page.js"
+    ],
+    "/oferta/fotowoltaika/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/oferta/fotowoltaika/page.js"
+    ],
+    "/kontakt/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/kontakt/page.js"
+    ],
     "/blog/[slug]/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/css/app/blog/[slug]/page.css",
       "static/chunks/app/blog/[slug]/page.js"
-    ],
-    "/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/page.css",
-      "static/chunks/app/page.js"
     ]
   }
 }

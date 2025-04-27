@@ -7,22 +7,22 @@ import {FiFacebook,FiInstagram,FiTwitter,FiLinkedin} from "../assets/icons/vande
 export default function TeamTwo(){
     let teamData = [
         {
-            image:'/images/client/13.jpg',
+            image:'/images/partners/13.jpg',
             name:'Dennis Rosario',
             title:'Manager'
         },
         {
-            image:'/images/client/14.jpg',
+            image:'/images/partners/14.jpg',
             name:'Billy Gregory',
             title:'Manager'
         },
          {
-            image:'/images/client/15.jpg',
+            image:'/images/partners/15.jpg',
             name:'Connie Dunton',
             title:'Manager'
         },
         {
-            image:'/images/client/16.jpg',
+            image:'/images/partners/16.jpg',
             name:'Alberta Petty',
             title:'Manager'
         },

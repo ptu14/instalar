@@ -6,7 +6,7 @@ export const blogData =[
         title:'Building Your Corporate Identity from Starty',
         desc:"The most well-known dummy text is the 'Lorem Ipsum', in the 16th century.",
         date:'13th Sep 2023',
-        client:'/images/client/01.jpg',
+        client:'/images/partners/01.jpg',
         name:'Cristino Murphy',
     },
     {
@@ -16,7 +16,7 @@ export const blogData =[
         title:'The Dark Side of Overnight Success',
         desc:"The most well-known dummy text is the 'Lorem Ipsum', in the 16th century.",
         date:'29th Nov 2023',
-        client:'/images/client/02.jpg',
+        client:'/images/partners/02.jpg',
         name:'Florine Jackson',
     },
     {
@@ -26,7 +26,7 @@ export const blogData =[
         title:'The Right Hand of Business IT World',
         desc:"The most well-known dummy text is the 'Lorem Ipsum', in the 16th century.",
         date:'29th Dec 2023',
-        client:'/images/client/03.jpg',
+        client:'/images/partners/03.jpg',
         name:'Ida Wild',
     },
     {
@@ -36,7 +36,7 @@ export const blogData =[
         title:'How to Create Your Own Viral Moments',
         desc:"The most well-known dummy text is the 'Lorem Ipsum', in the 16th century.",
         date:'13th March 2023',
-        client:'/images/client/04.jpg',
+        client:'/images/partners/04.jpg',
         name:'Calvin Carlo',
     },
     {
@@ -46,7 +46,7 @@ export const blogData =[
         title:'How to Write a Business Plan For Any Business',
         desc:"The most well-known dummy text is the 'Lorem Ipsum', in the 16th century.",
         date:'5th May 2023',
-        client:'/images/client/05.jpg',
+        client:'/images/partners/05.jpg',
         name:'Cristino Murphy',
     },
     {
@@ -56,7 +56,7 @@ export const blogData =[
         title:'Seeing the Customer Journey More Clearly',
         desc:"The most well-known dummy text is the 'Lorem Ipsum', in the 16th century.",
         date:'19th June 2023',
-        client:'/images/client/06.jpg',
+        client:'/images/partners/06.jpg',
         name:'Florine Jackson',
     },
     {
@@ -66,7 +66,7 @@ export const blogData =[
         title:'The Signs of a Highly Giftable Product',
         desc:"The most well-known dummy text is the 'Lorem Ipsum', in the 16th century.",
         date:'20th June 2023',
-        client:'/images/client/07.jpg',
+        client:'/images/partners/07.jpg',
         name:'Ida Wild',
     },
     {
@@ -76,7 +76,7 @@ export const blogData =[
         title:'Defining Your Business Target Audience',
         desc:"The most well-known dummy text is the 'Lorem Ipsum', in the 16th century.",
         date:'31st Aug 2023',
-        client:'/images/client/08.jpg',
+        client:'/images/partners/08.jpg',
         name:'Calvin Carlo',
     },
     {
@@ -86,7 +86,7 @@ export const blogData =[
         title:'Running Out of Time & Ideas? Visit Our Blog',
         desc:"The most well-known dummy text is the 'Lorem Ipsum', in the 16th century.",
         date:'1st Sep 2023',
-        client:'/images/client/09.jpg',
+        client:'/images/partners/09.jpg',
         name:'Cristino Murphy',
     },
     
@@ -99,7 +99,7 @@ export const blogMasonry = [
         title:'Building Your Corporate Identity from Starty',
         desc:"The most well-known dummy text is the 'Lorem Ipsum', in the 16th century.",
         date:'13th Sep 2023',
-        client:'/images/client/01.jpg',
+        client:'/images/partners/01.jpg',
         name:'Cristino Murphy',
     },
     {
@@ -109,7 +109,7 @@ export const blogMasonry = [
         title:'The Dark Side of Overnight Success',
         desc:"The most well-known dummy text is the 'Lorem Ipsum', in the 16th century.",
         date:'29th Nov 2023',
-        client:'/images/client/02.jpg',
+        client:'/images/partners/02.jpg',
         name:'Florine Jackson',
     },
     {
@@ -119,7 +119,7 @@ export const blogMasonry = [
         title:'The Right Hand of Business IT World',
         desc:"The most well-known dummy text is the 'Lorem Ipsum', in the 16th century.",
         date:'29th Dec 2023',
-        client:'/images/client/03.jpg',
+        client:'/images/partners/03.jpg',
         name:'Ida Wild',
     },
     {
@@ -129,7 +129,7 @@ export const blogMasonry = [
         title:'How to Create Your Own Viral Moments',
         desc:"The most well-known dummy text is the 'Lorem Ipsum', in the 16th century.",
         date:'13th March 2023',
-        client:'/images/client/04.jpg',
+        client:'/images/partners/04.jpg',
         name:'Calvin Carlo',
     },
     {
@@ -139,7 +139,7 @@ export const blogMasonry = [
         title:'How to Write a Business Plan For Any Business',
         desc:"The most well-known dummy text is the 'Lorem Ipsum', in the 16th century.",
         date:'5th May 2023',
-        client:'/images/client/05.jpg',
+        client:'/images/partners/05.jpg',
         name:'Cristino Murphy',
     },
     {
@@ -149,7 +149,7 @@ export const blogMasonry = [
         title:'Seeing the Customer Journey More Clearly',
         desc:"The most well-known dummy text is the 'Lorem Ipsum', in the 16th century.",
         date:'19th June 2023',
-        client:'/images/client/06.jpg',
+        client:'/images/partners/06.jpg',
         name:'Florine Jackson',
     },
     {
@@ -159,7 +159,7 @@ export const blogMasonry = [
         title:'The Signs of a Highly Giftable Product',
         desc:"The most well-known dummy text is the 'Lorem Ipsum', in the 16th century.",
         date:'20th June 2023',
-        client:'/images/client/07.jpg',
+        client:'/images/partners/07.jpg',
         name:'Ida Wild',
     },
     {
@@ -169,7 +169,7 @@ export const blogMasonry = [
         title:'Defining Your Business Target Audience',
         desc:"The most well-known dummy text is the 'Lorem Ipsum', in the 16th century.",
         date:'31st Aug 2023',
-        client:'/images/client/08.jpg',
+        client:'/images/partners/08.jpg',
         name:'Calvin Carlo',
     },
     {
@@ -179,7 +179,7 @@ export const blogMasonry = [
         title:'Running Out of Time & Ideas? Visit Our Blog',
         desc:"The most well-known dummy text is the 'Lorem Ipsum', in the 16th century.",
         date:'1st Sep 2023',
-        client:'/images/client/09.jpg',
+        client:'/images/partners/09.jpg',
         name:'Cristino Murphy',
     },
     
@@ -191,7 +191,7 @@ export const BlogImageData = [
         image:'/images/blog/img01.jpg',
         tag:'Finance',
         title:'How to Get a Successful Ad for Your Business',
-        client:'/images/client/01.jpg',
+        client:'/images/partners/01.jpg',
         name:'Cristino Murphy',
         date:'13th Sep 2023 '
     },
@@ -200,7 +200,7 @@ export const BlogImageData = [
         image:'/images/blog/img02.jpg',
         tag:'Branding',
         title:'The Dark Side of Overnight Success',
-        client:'/images/client/02.jpg',
+        client:'/images/partners/02.jpg',
         name:'Florine Jackson',
         date:'29th Nov 2023 '
     },
@@ -209,7 +209,7 @@ export const BlogImageData = [
         image:'/images/blog/img03.jpg',
         tag:'Technology',
         title:'The Right Hand of Business IT World',
-        client:'/images/client/03.jpg',
+        client:'/images/partners/03.jpg',
         name:'Ida Wild',
         date:'29th Dec 2023 '
     },
@@ -218,7 +218,7 @@ export const BlogImageData = [
         image:'/images/blog/img04.jpg',
         tag:'Personal',
         title:'How to Create Your Own Viral Moments',
-        client:'/images/client/04.jpg',
+        client:'/images/partners/04.jpg',
         name:'Calvin Carlo',
         date:'13th March 2023 '
     },
@@ -227,7 +227,7 @@ export const BlogImageData = [
         image:'/images/blog/img05.jpg',
         tag:'Business',
         title:'How to Write a Business Plan For Any Business',
-        client:'/images/client/05.jpg',
+        client:'/images/partners/05.jpg',
         name:'Cristino Murphy',
         date:'5th May 2023 '
     },
@@ -236,7 +236,7 @@ export const BlogImageData = [
         image:'/images/blog/img06.jpg',
         tag:'Marketing',
         title:'Seeing the Customer Journey More Clearly',
-        client:'/images/client/06.jpg',
+        client:'/images/partners/06.jpg',
         name:'Florine Jackson',
         date:'19th June 2023 '
     },
@@ -245,7 +245,7 @@ export const BlogImageData = [
         image:'/images/blog/img07.jpg',
         tag:'Production',
         title:'The Signs of a Highly Giftable Product',
-        client:'/images/client/07.jpg',
+        client:'/images/partners/07.jpg',
         name:'Ida Wild',
         date:'20th June 2023 '
     },
@@ -254,7 +254,7 @@ export const BlogImageData = [
         image:'/images/blog/img08.jpg',
         tag:'Business',
         title:'Defining Your Business Target Audience',
-        client:'/images/client/08.jpg',
+        client:'/images/partners/08.jpg',
         name:'Calvin Carlo',
         date:'31st Aug 2023 '
     },
@@ -263,7 +263,7 @@ export const BlogImageData = [
         image:'/images/blog/img09.jpg',
         tag:'Corporate',
         title:'Running Out of Time & Ideas? Visit Our Blog',
-        client:'/images/client/09.jpg',
+        client:'/images/partners/09.jpg',
         name:'Cristino Murphy',
         date:'1st Sep 2023 '
     },
@@ -274,7 +274,7 @@ export const BlogImageMasonryData = [
         image:'/images/blog/img01.jpg',
         tag:'Finance',
         title:'How to Get a Successful Ad for Your Business',
-        client:'/images/client/01.jpg',
+        client:'/images/partners/01.jpg',
         name:'Cristino Murphy',
         date:'13th Sep 2023 '
     },
@@ -283,7 +283,7 @@ export const BlogImageMasonryData = [
         image:'/images/blog/02.jpg',
         tag:'Branding',
         title:'The Dark Side of Overnight Success',
-        client:'/images/client/02.jpg',
+        client:'/images/partners/02.jpg',
         name:'Florine Jackson',
         date:'29th Nov 2023 '
     },
@@ -292,7 +292,7 @@ export const BlogImageMasonryData = [
         image:'/images/blog/img03.jpg',
         tag:'Technology',
         title:'The Right Hand of Business IT World',
-        client:'/images/client/03.jpg',
+        client:'/images/partners/03.jpg',
         name:'Ida Wild',
         date:'29th Dec 2023 '
     },
@@ -301,7 +301,7 @@ export const BlogImageMasonryData = [
         image:'/images/blog/img04.jpg',
         tag:'Personal',
         title:'How to Create Your Own Viral Moments',
-        client:'/images/client/04.jpg',
+        client:'/images/partners/04.jpg',
         name:'Calvin Carlo',
         date:'13th March 2023 '
     },
@@ -310,7 +310,7 @@ export const BlogImageMasonryData = [
         image:'/images/blog/05.jpg',
         tag:'Business',
         title:'How to Write a Business Plan For Any Business',
-        client:'/images/client/05.jpg',
+        client:'/images/partners/05.jpg',
         name:'Cristino Murphy',
         date:'5th May 2023 '
     },
@@ -319,7 +319,7 @@ export const BlogImageMasonryData = [
         image:'/images/blog/06.jpg',
         tag:'Marketing',
         title:'Seeing the Customer Journey More Clearly',
-        client:'/images/client/06.jpg',
+        client:'/images/partners/06.jpg',
         name:'Florine Jackson',
         date:'19th June 2023 '
     },
@@ -328,7 +328,7 @@ export const BlogImageMasonryData = [
         image:'/images/blog/img07.jpg',
         tag:'Production',
         title:'The Signs of a Highly Giftable Product',
-        client:'/images/client/07.jpg',
+        client:'/images/partners/07.jpg',
         name:'Ida Wild',
         date:'20th June 2023 '
     },
@@ -337,7 +337,7 @@ export const BlogImageMasonryData = [
         image:'/images/blog/08.jpg',
         tag:'Business',
         title:'Defining Your Business Target Audience',
-        client:'/images/client/08.jpg',
+        client:'/images/partners/08.jpg',
         name:'Calvin Carlo',
         date:'31st Aug 2023 '
     },
@@ -346,7 +346,7 @@ export const BlogImageMasonryData = [
         image:'/images/blog/img09.jpg',
         tag:'Corporate',
         title:'Running Out of Time & Ideas? Visit Our Blog',
-        client:'/images/client/09.jpg',
+        client:'/images/partners/09.jpg',
         name:'Cristino Murphy',
         date:'1st Sep 2023 '
     },
