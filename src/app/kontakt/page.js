@@ -110,6 +110,8 @@ export default function Contact() {
                                     <h5 className="footer-head">Telefon</h5>
                                     <p className="text-muted">Skontaktuj się z nami, aby uzyskać więcej informacji</p>
                                     <Link href="tel:+48785076979" className="text-foot">+48 785 076 979</Link>
+                                    <p className="text-muted mt-2">Tel. stacjonarny:</p>
+                                    <Link href="tel:+48123449920" className="text-foot">+48 12 344 99 20</Link>
                                 </div>
                             </div>
                         </div>
@@ -136,6 +138,8 @@ export default function Contact() {
                                     <h5 className="footer-head">Lokalizacja</h5>
                                     <p className="text-muted">Głogoczów 472, 32-444 Głogoczów</p>
                                     <Link href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x471667f6e33e8a85:0x35e4b3ee0b82dae?sa=X&ved=1t:8290&ictx=111" className="text-foot mb-0">Zobacz na mapie Google</Link>
+                                    <p className="text-muted mt-2">NIP:</p>
+                                    <p className="text-foot">6812111371</p>
                                 </div>
                             </div>
                         </div>
