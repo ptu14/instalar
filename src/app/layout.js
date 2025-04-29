@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.css'
 import './assets/scss/style.scss'
 import './assets/css/materialdesignicons.min.css'
 import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const lexend = Lexend({
   subsets: ['latin'],
@@ -95,6 +96,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="pl">
       <Analytics/>
+      <SpeedInsights/>
       <body className={`${lexend.variable} ${ubuntu.variable} ${teko.variable} ${noto.variable} ${libre.variable} ${kaushan.variable}`}>{children}</body>
     </html>
   )

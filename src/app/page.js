@@ -4,7 +4,6 @@ import Image from "next/image";
 
 import Navbar from "./components/navbar/navbar";
 import Partners from "./components/partners";
-import Counter from "./components/business/counter";
 import Faq from "./components/faq";
 import Process from "./components/process";
 import KomplexFooter from "./components/footer/komplexFooter";
