@@ -75,7 +75,7 @@ export default function PolitykaPrywatnosci() {
                                 <h2 className="h4 mb-3 mt-4">4. PODSTAWA PRAWNA PRZETWARZANIA</h2>
                                 <p>Dane osobowe są przetwarzane na podstawie:</p>
                                 <ul>
-                                    <li>Zgody Użytkownika (art. 6 ust. 1 lit. a RODO) – w szczególności w celach marketingowych, w tym przesyłania informacji handlowych drogą elektroniczną</li>
+                                    <li>Zgody Użytkownika (art. 6 ust. 1 lit. a RODO) – w szczególności w celach marketingowych, w tym przesyłania informacji handlowych drogą elektroniczną. Zgoda taka może być wyrażona m.in. poprzez wypełnienie formularza kontaktowego na stronie internetowej lub w reklamach typu Facebook Lead Ads/TikTok Lead Forms.</li>
                                     <li>Niezbędności do wykonania umowy lub podjęcia działań przed jej zawarciem (art. 6 ust. 1 lit. b RODO) – w zakresie niezbędnym do przygotowania oferty, zawarcia i realizacji umowy</li>
                                     <li>Obowiązku prawnego ciążącego na Administratorze (art. 6 ust. 1 lit. c RODO) – w zakresie wystawiania i przechowywania dokumentów wymaganych przepisami prawa, w tym dokumentów księgowych</li>
                                     <li>Prawnie uzasadnionego interesu Administratora (art. 6 ust. 1 lit. f RODO) – w szczególności w zakresie marketingu własnych produktów i usług, prowadzenia analiz i statystyk, zapewnienia bezpieczeństwa oraz dochodzenia roszczeń</li>
@@ -110,7 +110,10 @@ export default function PolitykaPrywatnosci() {
                                 <ul>
                                     <li>Pracownicy i współpracownicy Administratora</li>
                                     <li>Podmioty świadczące usługi na rzecz Administratora (obsługa IT, dostawcy oprogramowania, firmy księgowe, podwykonawcy usług instalacyjnych, firmy kurierskie, agencje marketingowe)</li>
-                                    <li>Dostawcy usług hostingowych i serwerowych</li>
+                                    <li>Dostawcy usług hostingowych – serwery strony internetowej wykorzystywane przez spółkę znajduję się na serwerach dostawcy Vercel</li>
+                                    <li>Dostawcy usług analitycznych – Vercel, który przetwarza dane w celu analizy wydajności strony, monitorowania szybkości ładowania oraz śledzenia odwiedzanych podstron</li>
+                                    <li>Dostawcy usług e-mail - skrzynki pocztowe wykorzystywane przez Spółkę znajdują się na serwerach dostawcy: Gmail</li>
+                                    <li>Dostawcy usług e-mail marketingu – MailerLite (MailerLite Limited, Irlandia), który przetwarza dane osobowe Użytkowników w ramach kampanii mailingowych, newsletterów i formularzy zapisu.</li>
                                     <li>Operatorzy płatności elektronicznych</li>
                                     <li>Dostawcy narzędzi analitycznych (np. Google Analytics)</li>
                                     <li>Platformy mediów społecznościowych (TikTok, Meta) w zakresie prowadzonych kampanii reklamowych</li>
@@ -119,7 +122,7 @@ export default function PolitykaPrywatnosci() {
                                 </ul>
                                 
                                 <h2 className="h4 mb-3 mt-4">8. PRZEKAZYWANIE DANYCH DO PAŃSTW TRZECICH</h2>
-                                <p>Dane osobowe Użytkowników mogą być przekazywane do państw trzecich (poza Europejski Obszar Gospodarczy) w związku z korzystaniem z usług podmiotów takich jak Meta (Facebook, Instagram) czy TikTok. Przekazywanie danych odbywa się:</p>
+                                <p>Dane osobowe Użytkowników mogą być przekazywane do państw trzecich (poza Europejski Obszar Gospodarczy) w związku z korzystaniem z usług podmiotów takich jak Meta (Facebook, Instagram) MailerLite czy TikTok. Przekazywanie danych odbywa się:</p>
                                 <ul>
                                     <li>Na podstawie decyzji Komisji Europejskiej stwierdzającej odpowiedni stopień ochrony</li>
                                     <li>W oparciu o standardowe klauzule umowne zatwierdzone przez Komisję Europejską</li>
@@ -129,6 +132,13 @@ export default function PolitykaPrywatnosci() {
                                 
                                 <h2 className="h4 mb-3 mt-4">9. BEZPIECZEŃSTWO DANYCH</h2>
                                 <p>Administrator stosuje odpowiednie środki techniczne i organizacyjne zapewniające bezpieczeństwo danych osobowych, w tym zabezpieczenia przed ich nieupoważnionym ujawnieniem, utratą, zniszczeniem lub uszkodzeniem. Stosowane środki uwzględniają stan technologii, koszt wdrożenia oraz charakter, zakres, kontekst i cele przetwarzania danych.</p>
+                                <p>Dane przechowywane na serwerach hostingowych i e-mailowych u dostawcy Vercel oraz Gmail są chronione zgodnie z obowiązującymi standardami bezpieczeństwa, w tym poprzez:</p>
+                                <ul>
+                                    <li>stosowanie połączeń szyfrowanych (SSL/TLS),</li>
+                                    <li>ochronę antywirusową i firewall,</li>
+                                    <li>autoryzację dostępu do skrzynek e-mail,</li>
+                                    <li>regularne tworzenie kopii zapasowych.</li>
+                                </ul>
                                 
                                 <h2 className="h4 mb-3 mt-4">10. PROFILOWANIE I ZAUTOMATYZOWANE PODEJMOWANIE DECYZJI</h2>
                                 <p>Administrator może korzystać z narzędzi profilowania w celach marketingowych oraz w celu dostosowania oferty do potrzeb Użytkowników. Profilowanie odbywa się w szczególności w ramach:</p>
@@ -165,11 +175,16 @@ export default function PolitykaPrywatnosci() {
                                     <li>Telefon: 785 076 979</li>
                                     <li>Adres korespondencyjny: Komplex System Sp. z o.o., Głogoczów 472, 32-444 Głogoczów</li>
                                 </ul>
+                                <p>Dodatkowe informacje techniczne:</p>
+                                <ul>
+                                    <li>System pocztowy obsługiwany przez: Gmail</li>
+                                    <li>Skrzynki e-mail przechowywane są na serwerach: Gmail</li>
+                                </ul>
                                 
                                 <h2 className="h4 mb-3 mt-4">13. ZMIANY POLITYKI PRYWATNOŚCI</h2>
                                 <p>Administrator zastrzega sobie prawo do zmiany niniejszej Polityki Prywatności. Zmieniona Polityka Prywatności zostanie opublikowana na stronie komplexsystem.pl oraz na profilach w mediach społecznościowych. Zmiany wchodzą w życie z dniem ich opublikowania.</p>
                                 
-                                <p className="mt-4">Data ostatniej aktualizacji: 30.03.2025</p>
+                                <p className="mt-4">Data ostatniej aktualizacji: 07.05.2025</p>
                                 
                                 <div className="mt-4">
                                     <Link href="/" className="btn btn-primary">Powrót do strony głównej</Link>
