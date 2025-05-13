@@ -44,11 +44,21 @@ const kaushan = Kaushan_Script({
 })
 
 export const metadata = {
+  metadataBase: new URL('https://komplexsystem.pl'),
   title: 'Komplex System - Instalacje Fotowoltaiczne i Pompy Ciepła | OZE',
   description: 'Profesjonalne instalacje fotowoltaiczne i pompy ciepła ✓ Dotacje Mój Prąd i Czyste Powietrze ✓ Oszczędności na rachunkach ✓ Kompleksowa obsługa',
   keywords: 'fotowoltaika, pompy ciepła, instalacje OZE, dotacje fotowoltaika, Mój Prąd, Czyste Powietrze, panele słoneczne, ekologiczne ogrzewanie, energia odnawialna, dofinansowanie OZE',
-  robots: 'index, follow',
-  canonical: 'https://komplexsystem.pl/',
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
+  alternates: {
+    canonical: '/',
+  },
   icons: {
     icon: [
       { url: '/icon/favicon.ico' },
@@ -77,27 +87,58 @@ export const metadata = {
   openGraph: {
     type: 'website',
     locale: 'pl_PL',
-    url: 'https://komplexsystem.pl/',
+    url: '/',
     title: 'Komplex System - Instalacje Fotowoltaiczne i Pompy Ciepła',
     description: 'Profesjonalne instalacje fotowoltaiczne i pompy ciepła. Skorzystaj z dotacji i oszczędzaj na rachunkach. Kompleksowa obsługa od projektu po montaż.',
     images: [
       {
-        url: 'https://komplexsystem.pl/images/komplex_system.png',
+        url: '/images/komplex_system.png',
         width: 650,
         height: 413,
         alt: 'Komplex System Logo',
       }
     ],
     siteName: 'Komplex System',
-  }
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Komplex System - Instalacje Fotowoltaiczne i Pompy Ciepła',
+    description: 'Profesjonalne instalacje fotowoltaiczne i pompy ciepła. Skorzystaj z dotacji i oszczędzaj na rachunkach.',
+    images: ['/images/komplex_system.png'],
+  },
 }
 
 export default function RootLayout({ children }) {
   return (
     <html lang="pl">
+      <head>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: `
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Komplex System",
+          "url": "https://komplexsystem.pl",
+          "logo": "https://komplexsystem.pl/images/komplex_system.png",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+48785076979",
+            "contactType": "customer service"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Głogoczów 472",
+            "addressLocality": "Głogoczów",
+            "postalCode": "32-444",
+            "addressCountry": "PL"
+          }
+        }
+        `}} />
+      </head>
       <Analytics/>
       <SpeedInsights/>
-      <body className={`${lexend.variable} ${ubuntu.variable} ${teko.variable} ${noto.variable} ${libre.variable} ${kaushan.variable}`}>{children}</body>
+      <body className={`${lexend.variable} ${ubuntu.variable} ${teko.variable} ${noto.variable} ${libre.variable} ${kaushan.variable}`}>
+        {children}
+      </body>
     </html>
   )
 }
