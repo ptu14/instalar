@@ -19,6 +19,7 @@ export default function ContactForm({ title, description, subject }) {
                 },
                 body: JSON.stringify({
                     name: 'Klient',
+                    phone: phone,
                     email: 'brak@email.com',
                     subject: subject || 'Nowa prośba o kontakt',
                     comments: `Nowa prośba o kontakt telefoniczny. Numer telefonu: ${phone}`

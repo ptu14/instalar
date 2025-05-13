@@ -62,6 +62,7 @@ export default function Finansowanie() {
                 },
                 body: JSON.stringify({
                     name: 'Klient',
+                    phone: phone,
                     email: 'brak@email.com',
                     subject: 'Nowa prośba o kontakt - Finansowanie',
                     comments: `Nowa prośba o kontakt telefoniczny. Numer telefonu: ${phone}`
