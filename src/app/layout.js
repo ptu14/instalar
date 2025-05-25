@@ -70,13 +70,13 @@ export const metadata = {
     ],
     other: [
       {
-        rel: 'mask-icon',
+        rel: 'icon',
         url: '/icon/android-chrome-192x192.png',
         sizes: '192x192',
         type: 'image/png',
       },
       {
-        rel: 'mask-icon',
+        rel: 'icon',
         url: '/icon/android-chrome-512x512.png',
         sizes: '512x512',
         type: 'image/png',
@@ -112,6 +112,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="pl">
       <head>
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="next-size-adjust" content="" /> 
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: `
         {
           "@context": "https://schema.org",
@@ -134,8 +137,8 @@ export default function RootLayout({ children }) {
         }
         `}} />
       </head>
-      <Analytics/>
-      <SpeedInsights/>
+      <Analytics />
+      <SpeedInsights />
       <body className={`${lexend.variable} ${ubuntu.variable} ${teko.variable} ${noto.variable} ${libre.variable} ${kaushan.variable}`}>
         {children}
       </body>
