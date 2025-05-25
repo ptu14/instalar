@@ -106,15 +106,16 @@ export const metadata = {
     description: 'Profesjonalne instalacje fotowoltaiczne i pompy ciepła. Skorzystaj z dotacji i oszczędzaj na rachunkach.',
     images: ['/images/komplex_system.png'],
   },
+  viewport: 'width=device-width, initial-scale=1',
+  other: {
+    'next-size-adjust': '',
+  }
 }
 
 export default function RootLayout({ children }) {
   return (
     <html lang="pl">
       <head>
-        <meta charSet="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="next-size-adjust" content="" /> 
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: `
         {
           "@context": "https://schema.org",
