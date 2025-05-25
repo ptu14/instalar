@@ -17,6 +17,7 @@ import {AiOutlineCheckCircle} from "react-icons/ai";
 export default function IndexBusiness(){
     return(
         <>
+            <h1 style={{ position: 'absolute', width: '1px', height: '1px', margin: '-1px', padding: '0', overflow: 'hidden', clip: 'rect(0,0,0,0)', border: '0' }}>Komplex System - Instalacje Fotowoltaiczne, Pompy Ciepła, Magazyny Energii i Dotacje Mój Prąd</h1>
             <Navbar navClass="defaultscroll sticky" manuClass="navigation-menu nav-right nav-light"/>
             <HeroSlider/>
             <section className="first-section section">
@@ -92,7 +93,7 @@ export default function IndexBusiness(){
             </section>
             <div className="container-fluid ">
                 <div className="row justify-content-center text-center px-5">
-                    <h2 className="my-1">Jesteśmy autoryzowanem salonem firmy <Image src='/images/partners/daikin.svg'
+                    <h2 className="my-1">Jesteśmy autoryzowanym salonem firmy <Image src='/images/partners/daikin.svg'
                                                                                      width={0} height={0} sizes="100vw"
                                                                                      style={{
                                                                                          width: '200px',
@@ -107,12 +108,12 @@ export default function IndexBusiness(){
                     <div className="row align-items-center">
                         <div className="col-lg-5 col-md-6">
                             <Image src='/images/monter.png' width={0} height={0} sizes="100vw"
-                                   style={{width: '100%', height: 'auto'}} className="img-fluid rounded shadow" alt=""/>
+                                   style={{width: '100%', height: 'auto'}} className="img-fluid rounded shadow" alt="Monter pomp ciepła i instalacji fotowoltaicznych"/>
                         </div>
 
                         <div className="col-lg-7 col-md-6 mt-4 pt-2 mt-sm-0 pt-sm-0">
                             <div className="section-title ms-lg-5">
-                                <h4 className="title fw-semibold mb-3">Nasi monterzy to profesjonaliści!</h4>
+                                <h2 className="title fw-semibold mb-3">Profesjonalny Montaż Instalacji: Pompy Ciepła i Fotowoltaika</h2>
                                 <p className="text-muted">
                                     Nasz zespół to wykwalifikowani specjaliści z <strong>wieloletnim
                                     doświadczeniem</strong> w
@@ -152,7 +153,7 @@ export default function IndexBusiness(){
             <section>
                 <div className="container">
                     <div className="row justify-content-center">
-                        <h3 className="mb-5 text-center">Nasze instalacje wykonujemy na najlepszych komponentach</h3>
+                        <h2 className="mb-5 text-center">Najlepsze Komponenty dla Twojej Instalacji Fotowoltaicznej i Pompy Ciepła</h2>
                     </div>
                 </div>
                 <div className="container-fluid">
@@ -164,7 +165,7 @@ export default function IndexBusiness(){
                     <div className="row justify-content-center">
                         <div className="col-12">
                             <div className="section-title  text-center">
-                                <h4 className="title mb-3">Jak rozpocząć współpracę?</h4>
+                                <h2 className="title mb-3">Jak rozpocząć współpracę?</h2>
                             </div>
                         </div>
                     </div>
@@ -181,7 +182,7 @@ export default function IndexBusiness(){
                                 <div className="col-lg-7 my-2 py-5">
                                     <ContactForm
                                         title="Zostaw swój numer telefonu, a my skontaktujemy się z Tobą w ciągu godziny!"
-                                        description="Sprawdź, ile możesz zaoszczędzić dzięki fotowoltaice i pompom ciepła. Otrzymaj informacje o aktualnych dotacjach z programów 'Mój Prąd' i 'Czyste Powietrze'."
+                                        description="Zyskaj niezależność energetyczną i sprawdź, ile możesz zaoszczędzić dzięki fotowoltaice i pompom ciepła. Otrzymaj informacje o aktualnych dotacjach z programów 'Mój Prąd' i 'Czyste Powietrze'."
                                         subject="Nowa prośba o kontakt - Strona główna"
                                     />
                                 </div>
