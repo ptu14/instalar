@@ -11,14 +11,14 @@ import 'swiper/css/pagination';
 export default function HeroSlider(){
     const slides = [
         {
-            bgImage: "/images/1.jpg",
+            bgImage: "/images/1.webp",
             title: "Efektywne Pompy Ciepła",
             description: "Oszczędzaj do 75% na ogrzewaniu dzięki pompom ciepła. Profesjonalny montaż z dofinansowaniem z programu Czyste Powietrze. Ciepły dom bez wysokich rachunków!",
             buttonLink: "/oferta",
             buttonText: "Poznaj Ofertę"
         },
         {
-            bgImage: "/images/2.jpg",
+            bgImage: "/images/2.webp",
             title: "Fotowoltaika z Dotacją",
             description: "Zyskaj niezależność energetyczną dzięki instalacji fotowoltaicznej. Dostępne dotacje z programu Mój Prąd 6.0. Zmniejsz rachunki za prąd nawet o 90%!",
             buttonLink: "/dotacje",
