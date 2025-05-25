@@ -1,6 +1,7 @@
 'use client'
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 
@@ -49,9 +50,18 @@ export default function HeroSlider(){
                 className="h-100"
             >
                 {slides.map((slide, index) => (
-                    <SwiperSlide key={index} className="h-100">
-                        <div className="bg-home d-flex align-items-center h-100" style={{backgroundImage:`url(${slide.bgImage})`}}>
-                            <div className="bg-overlay bg-linear-gradient"></div>
+                    <SwiperSlide key={index} className="h-100 position-relative">
+                        <Image 
+                            src={slide.bgImage}
+                            alt={slide.title}
+                            layout="fill"
+                            objectFit="cover"
+                            quality={75}
+                            priority={index === 0}
+                        />
+                        <div className="bg-overlay bg-linear-gradient position-absolute top-0 start-0 w-100 h-100" style={{ zIndex: 1 }}></div>
+                        
+                        <div className="position-relative h-100 d-flex align-items-center" style={{ zIndex: 2 }}>
                             <div className="container">
                                 <div className="row justify-content-center">
                                     <div className="col-12">
