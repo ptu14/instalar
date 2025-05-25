@@ -75,7 +75,7 @@ export default function Contact() {
     return (
         <>
             <Navbar navClass="defaultscroll sticky" manuClass="navigation-menu nav-right nav-light" />
-            <section className="bg-half-170 d-table w-100" style={{ backgroundImage: "url('/images/salon.jpg')" }}>
+            <section className="bg-half-170 d-table w-100" style={{ backgroundImage: "url('/images/salon.webp')" }}>
                 <div className="bg-overlay bg-gradient-overlay"></div>
                 <div className="container">
                     <div className="row mt-5 justify-content-center">

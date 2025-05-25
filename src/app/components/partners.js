@@ -9,18 +9,18 @@ import 'swiper/css';
 export default function Partners(){
     let clientImg = [
         '/images/partners/daikin.svg',
-        '/images/partners/rotenso.png',
-        '/images/partners/gree.png',
-        '/images/partners/huawei.png',
-        '/images/partners/jasolar.png',
+        '/images/partners/rotenso.webp',
+        '/images/partners/gree.webp',
+        '/images/partners/huawei.webp',
+        '/images/partners/jasolar.webp',
         '/images/partners/panasonic.svg',
         '/images/partners/longi.png',
-        '/images/partners/sofar.png',
+        '/images/partners/sofar.webp',
         '/images/partners/trinasolar.jpg',
         '/images/partners/jinko.png',
         '/images/partners/deye.webp',
         '/images/partners/solaredge.webp',
-        '/images/partners/foxess.png',
+        '/images/partners/foxess.webp',
     ]
 
     return(

@@ -26,7 +26,7 @@ export default function IndexBusiness(){
                         <div className="col-lg-5 col-md-6 order-1 order-md-2">
                             <div className="features-absoluteTwo">
                                 <div className="position-relative z-1">
-                                    <Image src='/images/bus.png' width={0} height={0} sizes="100vw"
+                                    <Image src='/images/bus.webp' width={0} height={0} sizes="100vw"
                                            style={{width: '100%', height: 'auto'}} className="img-fluid rounded shadow"
                                            alt="Instalacja fotowoltaiczna i pompy ciepła - profesjonalny montaż"/>
                                     <div itemScope itemType="https://schema.org/LocalBusiness"
@@ -107,7 +107,7 @@ export default function IndexBusiness(){
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col-lg-5 col-md-6">
-                            <Image src='/images/monter.png' width={0} height={0} sizes="100vw"
+                            <Image src='/images/monter.webp' width={0} height={0} sizes="100vw"
                                    style={{width: '100%', height: 'auto'}} className="img-fluid rounded shadow" alt="Monter pomp ciepła i instalacji fotowoltaicznych"/>
                         </div>
 
