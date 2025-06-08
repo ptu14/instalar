@@ -237,10 +237,6 @@ export default async function BlogPostPage({ params }) {
                                 
                                 <div className="d-flex justify-content-center align-items-center text-white-50 mb-4 post-meta-hero flex-wrap">
                                     <span className="me-3 mb-2">
-                                        <FiUser className="me-1" />
-                                        {authorName}
-                                    </span>
-                                    <span className="me-3 mb-2">
                                         <FiCalendar className="me-1" />
                                         {formatDate(post.date)}
                                     </span>

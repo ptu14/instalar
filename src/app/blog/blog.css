@@ -478,11 +478,6 @@
         font-size: 15px;
     }
     
-    .post-meta-hero {
-        flex-direction: column !important;
-        text-align: center;
-    }
-    
     .post-meta-hero span {
         margin: 5px;
     }
