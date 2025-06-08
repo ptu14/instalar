@@ -1,59 +1,73 @@
-import axios from 'axios';
+// Cache dla danych - zwiększam czas cache'a dla bloga
+const cache = new Map();
+const CACHE_TTL = 60 * 60 * 1000; // 1 godzina
 
-// Zmień na adres swojego WordPress API
-const API_URL = 'https://seashell-okapi-485470.hostingersite.com/wp-json/wp/v2';
+// Adres WordPress API  
+const API_URL = 'https://komplexsystem.com/wp-json/wp/v2';
 
-// Konfiguracja axios do obsługi WordPress API
-const api = axios.create({
-  baseURL: API_URL,
-  params: {
-    _embed: true // Zawsze pobieraj powiązane dane (media, kategorie, itp.)
-  }
-});
-
-/**
- * Pobiera listę postów z WordPress
- * @param {Object} options - Opcje zapytania
- * @param {number} options.page - Numer strony
- * @param {number} options.per_page - Ilość postów na stronę
- * @param {string} options.category - Filtruj po ID kategorii
- * @param {string} options.search - Wyszukaj po słowie kluczowym
- * @returns {Promise<Array>} - Lista postów
- */
-export async function getPosts(options = {}) {
-  try {
-    const response = await api.get('/posts', { params: options });
-    return {
-      posts: response.data,
-      totalPages: parseInt(response.headers['x-wp-totalpages'] || 1, 10),
-      total: parseInt(response.headers['x-wp-total'] || 0, 10)
-    };
-  } catch (error) {
-    console.error('Błąd podczas pobierania postów:', error);
-    throw error;
-  }
-}
-
-/**
- * Pobiera pojedynczy post po jego slugu (nazwie w URL)
- * @param {string} slug - Slug posta
- * @returns {Promise<Object>} - Post
- */
-export async function getPostBySlug(slug) {
-  try {
-    const response = await api.get('/posts', {
-      params: { slug }
-    });
+// Funkcja cache'ująca dla zapytań HTTP
+export async function fetchWithCache(endpoint, params = {}) {
+    const url = `${API_URL}${endpoint}`;
+    const cacheKey = `${url}?${new URLSearchParams(params).toString()}`;
+    const cached = cache.get(cacheKey);
     
-    if (response.data && response.data.length > 0) {
-      return response.data[0];
+    if (cached && Date.now() - cached.timestamp < CACHE_TTL) {
+        return cached.data;
     }
     
-    throw new Error('Post nie znaleziony');
-  } catch (error) {
-    console.error(`Błąd podczas pobierania posta o slugu ${slug}:`, error);
-    throw error;
-  }
+    try {
+        const response = await fetch(url + '?' + new URLSearchParams(params).toString(), {
+            next: { revalidate: 3600 } // Cache na 1 godzinę w Next.js
+        });
+        
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        
+        const data = await response.json();
+        const totalPages = response.headers.get('x-wp-totalpages');
+        
+        const result = { data, totalPages: parseInt(totalPages || 1, 10) };
+        
+        cache.set(cacheKey, {
+            data: result,
+            timestamp: Date.now()
+        });
+        
+        return result;
+    } catch (error) {
+        console.error('Fetch error:', error);
+        // Zwróć cached dane jeśli są dostępne, nawet jeśli są przestarzałe
+        if (cached) {
+            return cached.data;
+        }
+        throw error;
+    }
+}
+
+// Funkcje helper dla konkretnych endpointów
+export async function getCategories() {
+    const result = await fetchWithCache('/categories');
+    return result.data;
+}
+
+export async function getPosts(params = {}) {
+    const defaultParams = {
+        _embed: true,
+        per_page: 6,
+        ...params
+    };
+    return await fetchWithCache('/posts', defaultParams);
+}
+
+export async function getPostBySlug(slug) {
+    const result = await fetchWithCache('/posts', { slug, _embed: true });
+    return result.data[0] || null;
+}
+
+export async function getCategoryBySlug(slug) {
+    const result = await fetchWithCache('/categories', { slug });
+    return result.data[0] || null;
 }
 
 /**
