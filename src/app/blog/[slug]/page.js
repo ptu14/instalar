@@ -307,17 +307,21 @@ export default async function BlogPostPage({ params }) {
 
                                     {/* Author Bio */}
                                     <div className="p-4 mt-4 rounded bg-light">
-                                        <div className="d-flex align-items-center">
-                                            <Image src="/images/paulina.webp" width={60} height={60} 
-                                                   className="avatar avatar-medium rounded-circle me-3" alt="Paulina - Komplex System" />
-                                            <div>
-                                                <h6 className="mb-1">Paulina - Komplex System</h6>
-                                                <p className="text-muted mb-0">
-                                                    Ekspert w dziedzinie odnawialnych źródeł energii, fotowoltaiki i efektywności energetycznej. 
-                                                    Specjalizuje się w doradztwie energetycznym i nowoczesnych rozwiązaniach ekologicznych.
-                                                </p>
-                                            </div>
+                                        <Image src="/images/paulina.webp" width={80} height={80} 
+                                               className="avatar avatar-medium rounded-circle me-4 mb-3" 
+                                               alt="Paulina - Komplex System" 
+                                               style={{float: 'left'}} />
+                                        <div>
+                                            <h6 className="mb-2">Paulina - Komplex System</h6>
+                                            <p className="text-muted mb-0" style={{textAlign: 'justify'}}>
+                                                Ekspert w dziedzinie odnawialnych źródeł energii, fotowoltaiki i efektywności energetycznej. 
+                                                Specjalizuje się w doradztwie energetycznym i nowoczesnych rozwiązaniach ekologicznych. 
+                                                Paulina ma wieloletnie doświadczenie w branży energetycznej i pomaga klientom w wyborze 
+                                                najlepszych rozwiązań dla ich potrzeb. Jej pasją są innowacyjne technologie które przyczyniają 
+                                                się do ochrony środowiska i oszczędności energii.
+                                            </p>
                                         </div>
+                                        <div style={{clear: 'both'}}></div>
                                     </div>
 
                                     {/* Comments Section */}
@@ -356,7 +360,7 @@ export default async function BlogPostPage({ params }) {
                                                 
                                                 return (
                                                     <div className="d-flex align-items-center mt-3" key={popularPost.id}>
-                                                        <Image 
+                                                <Image
                                                             src={popularImageUrl} 
                                                             alt={popularPost.title.rendered}
                                                             width={70}
@@ -402,6 +406,19 @@ export default async function BlogPostPage({ params }) {
                                     </div>
                                 )}
 
+                                {/* Tags Widget */}
+                                <div className="widget mt-4 pt-2 text-center">
+                                    <h6 className="widget-title font-weight-bold pt-2 pb-2 bg-light rounded">Popularne tagi</h6>
+                                    <div className="tagcloud mt-4">
+                                        <Link href="/blog?category=fotowoltaika" className="rounded text-dark">Fotowoltaika</Link>
+                                        <Link href="/blog?category=pompy-ciepla" className="rounded text-dark">Pompy ciepła</Link>
+                                        <Link href="/blog?category=energia-odnawialna" className="rounded text-dark">OZE</Link>
+                                        <Link href="/blog?category=dotacje" className="rounded text-dark">Dotacje</Link>
+                                        <Link href="/blog?category=technologie" className="rounded text-dark">Technologie</Link>
+                                        <Link href="/blog?category=poradniki" className="rounded text-dark">Poradniki</Link>
+                                                </div>
+                                        </div>
+
                                 {/* CTA Widget */}
                                 <div className="widget mt-4">
                                     <div className="p-4 rounded shadow bg-light">
@@ -410,7 +427,9 @@ export default async function BlogPostPage({ params }) {
                                             Potrzebujesz pomocy w wyborze rozwiązania energetycznego? 
                                             Skontaktuj się z naszymi ekspertami!
                                         </p>
-                                        <Link href="/kontakt" className="btn btn-primary btn-sm">Umów konsultację</Link>
+                                        <div className="d-flex justify-content-center">
+                                            <Link href="/kontakt" className="btn btn-primary btn-sm">Umów konsultację</Link>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -422,25 +441,25 @@ export default async function BlogPostPage({ params }) {
                         <div className="row mt-5">
                             <div className="col-12">
                                 <h4 className="mb-4">Powiązane artykuły</h4>
-                                <div className="row">
-                                    {relatedPosts.map(relatedPost => {
+                                        <div className="row">
+                                            {relatedPosts.map(relatedPost => {
                                         const relatedImageUrl = relatedPost._embedded &&
-                                        relatedPost._embedded['wp:featuredmedia'] &&
-                                        relatedPost._embedded['wp:featuredmedia'][0] ?
-                                            relatedPost._embedded['wp:featuredmedia'][0].source_url :
-                                            '/images/blog/01.jpg';
+                                                relatedPost._embedded['wp:featuredmedia'] &&
+                                                relatedPost._embedded['wp:featuredmedia'][0] ?
+                                                    relatedPost._embedded['wp:featuredmedia'][0].source_url :
+                                                    '/images/blog/01.jpg';
 
                                         const relatedExcerpt = relatedPost.excerpt ? stripHtml(relatedPost.excerpt.rendered) : '';
                                         const shortRelatedExcerpt = relatedExcerpt.length > 100 ? relatedExcerpt.substring(0, 100) + '...' : relatedExcerpt;
 
-                                        return (
+                                                return (
                                             <div className="col-lg-4 col-md-6 mb-4 pb-2" key={relatedPost.id}>
                                                 <div className="card blog blog-primary shadow rounded overflow-hidden h-100">
                                                     <div className="image position-relative overflow-hidden">
-                                                        <Image
+                                                                <Image
                                                             src={relatedImageUrl}
-                                                            alt={relatedPost.title.rendered}
-                                                            width={400}
+                                                                    alt={relatedPost.title.rendered}
+                                                                    width={400}
                                                             height={200}
                                                             style={{width: '100%', height: '200px', objectFit: 'cover'}}
                                                             className="img-fluid"
@@ -453,30 +472,29 @@ export default async function BlogPostPage({ params }) {
                                                                 <FiCalendar className="me-1" />
                                                                 {formatDate(relatedPost.date)}
                                                             </small>
-                                                        </div>
+                                                            </div>
                                                         <h5 className="mb-3">
                                                             <Link href={`/blog/${relatedPost.slug}`} className="card-title title text-dark">
-                                                                {relatedPost.title.rendered}
-                                                            </Link>
-                                                        </h5>
+                                                                        {relatedPost.title.rendered}
+                                                                    </Link>
+                                                                </h5>
                                                         <p className="text-muted flex-grow-1">{shortRelatedExcerpt}</p>
                                                         <div className="mt-auto">
                                                             <Link href={`/blog/${relatedPost.slug}`} className="btn btn-link text-dark p-0">
                                                                 Czytaj więcej <FiArrowRight className="align-middle ms-1" />
-                                                            </Link>
+                                                                    </Link>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                </div>
-                                            </div>
-                                        );
-                                    })}
+                                                );
+                                            })}
+                                        </div>
                                 </div>
                             </div>
-                        </div>
-                    )}
+                        )}
                 </div>
             </section>
-
             <KomplexFooter/>
         </>
     );
