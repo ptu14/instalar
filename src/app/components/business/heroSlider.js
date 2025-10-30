@@ -54,8 +54,8 @@ export default function HeroSlider(){
                         <Image 
                             src={slide.bgImage}
                             alt={slide.title}
-                            layout="fill"
-                            objectFit="cover"
+                            fill
+                            style={{ objectFit: 'cover' }}
                             quality={75}
                             priority={index === 0}
                         />

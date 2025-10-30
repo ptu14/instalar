@@ -106,10 +106,15 @@ export const metadata = {
     description: 'Profesjonalne instalacje fotowoltaiczne i pompy ciepła. Skorzystaj z dotacji i oszczędzaj na rachunkach.',
     images: ['/images/komplex_system.png'],
   },
-  viewport: 'width=device-width, initial-scale=1',
   other: {
     'next-size-adjust': '',
   }
+}
+
+// Next.js 16: viewport przeniesiony do osobnej funkcji generateViewport
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
 }
 
 export default function RootLayout({ children }) {

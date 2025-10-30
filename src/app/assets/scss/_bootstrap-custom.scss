@@ -1,6 +1,8 @@
 //
 // _bootstrap-custom.scss
 //
+@use "sass:color";
+
 .container {
     @media (min-width: 1400px) {
         max-width: 1140px !important;
@@ -47,7 +49,7 @@ $value in $colors {
         &.text-#{$name} {
             &:hover,
             &:focus {
-                color: darken($value, 5%) !important;
+                color: color.scale($value, $lightness: -5%) !important;
             }
         }
     }

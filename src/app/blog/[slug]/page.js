@@ -33,8 +33,8 @@ function estimateReadingTime(content) {
 
 // Dynamicznie generuj metadane SEO dla wpisu
 export async function generateMetadata({ params }) {
-    const { slug } = params;
-    
+    const { slug } = await params;
+
     try {
         const response = await axios.get(`${API_URL}/posts`, {
             params: {
@@ -76,8 +76,8 @@ export async function generateMetadata({ params }) {
 }
 
 export default async function BlogPostPage({ params }) {
-    const { slug } = params;
-    
+    const { slug } = await params;
+
     let post = null;
     let error = null;
     

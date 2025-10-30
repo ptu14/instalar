@@ -78,7 +78,8 @@ function formatDate(dateString) {
 
 // Pobierz dane dla strony
 export async function generateMetadata({ searchParams }) {
-    const categorySlug = searchParams?.category;
+    const resolvedSearchParams = await searchParams;
+    const categorySlug = resolvedSearchParams?.category;
     let categoryName = "";
     
     if (categorySlug) {
@@ -99,9 +100,10 @@ export async function generateMetadata({ searchParams }) {
 }
 
 export default async function BlogPage({ searchParams }) {
-    const categorySlug = searchParams?.category;
-    const page = searchParams?.page || 1;
-    
+    const resolvedSearchParams = await searchParams;
+    const categorySlug = resolvedSearchParams?.category;
+    const page = resolvedSearchParams?.page || 1;
+
     try {
         // Pobierz wszystkie dane równolegle
         const [categoriesResult, postsResult, popularPostsResult] = await Promise.allSettled([
