@@ -9,8 +9,6 @@ import {FiArrowRight, FiCalendar, FiTag, FiUser} from "../assets/icons/vander";
 
 import "./blog.css";
 
-// Konfiguracja ISR - revalidate co 1 godzinę (lepsze dla bloga)
-export const revalidate = 3600; // 1 godzina = 3600 sekund
 
 // Critical CSS inline dla najszybszego ładowania
 const criticalCSS = `
@@ -42,7 +40,7 @@ async function fetchWithCache(url, params = {}) {
     
     try {
         const response = await fetch(url + '?' + new URLSearchParams(params).toString(), {
-            next: { revalidate: 3600 } // Cache na 1 godzinę w Next.js
+            cache: 'force-cache' // Cache na zawsze - pełny SSG
         });
         
         if (!response.ok) {

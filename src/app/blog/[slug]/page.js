@@ -1,16 +1,18 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import axios from "axios";
 import "../blog.css";
 
 import Navbar from "../../components/navbar/navbar";
 import KomplexFooter from "@/app/components/footer/komplexFooter";
 
-import {FiArrowRight, FiCalendar, FiTag, FiUser, FiShare2, FiFacebook, FiTwitter, FiLinkedin, FiMail, FiEye, FiClock} from "../../assets/icons/vander";
+import { FiArrowRight, FiCalendar, FiTag, FiClock } from "@/app/assets/icons/vander";
 
 // Adres WordPress API
 const API_URL = 'https://komplexsystem.com/wp-json/wp/v2';
+
+// Konfiguracja ISR - rewalidacja co 1 godzinę
+export const revalidate = 3600; // 1 godzina w sekundach
 
 // Funkcja pomocnicza do formatowania daty
 function formatDate(dateString) {
@@ -27,8 +29,29 @@ function stripHtml(html) {
 function estimateReadingTime(content) {
     const wordsPerMinute = 200;
     const words = stripHtml(content).split(/\s+/).length;
-    const minutes = Math.ceil(words / wordsPerMinute);
-    return minutes;
+    return Math.ceil(words / wordsPerMinute);
+}
+
+// Generuj statyczne ścieżki dla popularnych postów (opcjonalne, dla lepszej wydajności)
+export async function generateStaticParams() {
+    try {
+        const response = await fetch(`${API_URL}/posts?per_page=20&orderby=date`, {
+            next: { revalidate: 3600 }
+        });
+
+        if (!response.ok) {
+            return [];
+        }
+
+        const posts = await response.json();
+
+        return posts.map((post) => ({
+            slug: post.slug,
+        }));
+    } catch (error) {
+        console.error("Błąd podczas generowania statycznych ścieżek:", error);
+        return [];
+    }
 }
 
 // Dynamicznie generuj metadane SEO dla wpisu
@@ -36,16 +59,19 @@ export async function generateMetadata({ params }) {
     const { slug } = await params;
 
     try {
-        const response = await axios.get(`${API_URL}/posts`, {
-            params: {
-                slug: slug,
-                _embed: true,
-            }
+        const response = await fetch(`${API_URL}/posts?slug=${slug}&_embed=true`, {
+            next: { revalidate: 3600 }
         });
         
-        if (response.data && response.data.length > 0) {
-            const post = response.data[0];
-            
+        if (!response.ok) {
+            throw new Error('Failed to fetch post metadata');
+        }
+
+        const data = await response.json();
+
+        if (data && data.length > 0) {
+            const post = data[0];
+
             // Skrócenie opisu do 160 znaków
             let description = stripHtml(post.excerpt.rendered || post.content.rendered);
             description = description.substring(0, 160).trim() + (description.length > 160 ? '...' : '');
@@ -82,15 +108,18 @@ export default async function BlogPostPage({ params }) {
     let error = null;
     
     try {
-        const response = await axios.get(`${API_URL}/posts`, {
-            params: {
-                slug: slug,
-                _embed: true,
-            }
+        const response = await fetch(`${API_URL}/posts?slug=${slug}&_embed=true`, {
+            next: { revalidate: 3600 }
         });
         
-        if (response.data && response.data.length > 0) {
-            post = response.data[0];
+        if (!response.ok) {
+            throw new Error('Failed to fetch post');
+        }
+
+        const data = await response.json();
+
+        if (data && data.length > 0) {
+            post = data[0];
         } else {
             error = "Nie znaleziono wpisu";
         }
@@ -105,15 +134,14 @@ export default async function BlogPostPage({ params }) {
         const categoryIds = post._embedded['wp:term'][0].map(cat => cat.id);
         if (categoryIds.length > 0) {
             try {
-                const relatedResponse = await axios.get(`${API_URL}/posts`, {
-                    params: {
-                        categories: categoryIds.join(','),
-                        exclude: post.id, // Wyklucz bieżący post
-                        per_page: 3,
-                        _embed: true,
-                    }
-                });
-                relatedPosts = relatedResponse.data;
+                const relatedResponse = await fetch(
+                    `${API_URL}/posts?categories=${categoryIds.join(',')}&exclude=${post.id}&per_page=3&_embed=true`,
+                    { next: { revalidate: 3600 } }
+                );
+
+                if (relatedResponse.ok) {
+                    relatedPosts = await relatedResponse.json();
+                }
             } catch (err) {
                 console.error("Błąd podczas pobierania powiązanych wpisów:", err);
             }
@@ -123,10 +151,14 @@ export default async function BlogPostPage({ params }) {
     // Pobierz popularne wpisy dla sidebara
     let popularPosts = [];
     try {
-        const popularResponse = await axios.get(`${API_URL}/posts`, { 
-            params: { _embed: true, per_page: 4, orderby: 'date' }
-        });
-        popularPosts = popularResponse.data;
+        const popularResponse = await fetch(
+            `${API_URL}/posts?_embed=true&per_page=4&orderby=date`,
+            { next: { revalidate: 3600 } }
+        );
+
+        if (popularResponse.ok) {
+            popularPosts = await popularResponse.json();
+        }
     } catch (err) {
         console.error("Błąd podczas pobierania popularnych wpisów:", err);
     }
@@ -134,8 +166,13 @@ export default async function BlogPostPage({ params }) {
     // Pobierz kategorie dla sidebara
     let categories = [];
     try {
-        const categoriesResponse = await axios.get(`${API_URL}/categories`);
-        categories = categoriesResponse.data;
+        const categoriesResponse = await fetch(`${API_URL}/categories`, {
+            next: { revalidate: 3600 }
+        });
+
+        if (categoriesResponse.ok) {
+            categories = await categoriesResponse.json();
+        }
     } catch (err) {
         console.error("Błąd podczas pobierania kategorii:", err);
     }
@@ -180,21 +217,39 @@ export default async function BlogPostPage({ params }) {
         );
     }
 
+    // Jeśli nie ma posta (nie powinno się zdarzyć z ISR, ale dla bezpieczeństwa)
     if (!post) {
         return (
             <>
                 <Navbar navClass="nav-sticky defaultscroll sticky" manuClass="navigation-menu nav-right nav-light"/>
-                <section className="section">
+
+                <section className="bg-half-170 d-table w-100" style={{background: `linear-gradient(45deg, #1e3c72 0%, #2a5298 100%)`}}>
                     <div className="container">
-                        <div className="row justify-content-center">
-                            <div className="col-12 text-center">
-                                <div className="spinner-border text-primary" role="status">
-                                    <span className="visually-hidden">Ładowanie...</span>
+                        <div className="row mt-5 justify-content-center">
+                            <div className="col-12">
+                                <div className="title-heading text-center">
+                                    <h5 className="heading fw-semibold mb-0 sub-heading text-white title-dark">
+                                        Artykuł niedostępny
+                                    </h5>
+                                    <p className="text-white-50 para-desc mb-0 mx-auto">
+                                        Ten artykuł nie jest jeszcze dostępny
+                                    </p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
+
+                <section className="section">
+                    <div className="container">
+                        <div className="row justify-content-center">
+                            <div className="col-12 text-center">
+                                <Link href="/blog" className="btn btn-primary">Powrót do bloga</Link>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
                 <KomplexFooter/>
             </>
         );
@@ -215,7 +270,6 @@ export default async function BlogPostPage({ params }) {
                       post._embedded.author[0].name : 'Komplex System';
 
     const readingTime = estimateReadingTime(post.content.rendered);
-    const postUrl = typeof window !== 'undefined' ? window.location.href : '';
 
     return (
         <>
