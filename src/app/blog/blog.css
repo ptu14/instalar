@@ -491,19 +491,3 @@
         font-size: 1.75rem !important;
     }
 }
-
-/* Dark mode support */
-@media (prefers-color-scheme: dark) {
-    .blog-detail .post-content {
-        color: #e2e8f0;
-    }
-    
-    .blog-detail .post-content h1,
-    .blog-detail .post-content h2,
-    .blog-detail .post-content h3,
-    .blog-detail .post-content h4,
-    .blog-detail .post-content h5,
-    .blog-detail .post-content h6 {
-        color: #f7fafc;
-    }
-}
