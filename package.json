@@ -13,16 +13,16 @@
     "@project-lary/react-material-symbols": "^0.23.0",
     "@vercel/analytics": "^1.5.0",
     "@vercel/speed-insights": "^1.2.0",
-    "axios": "^1.8.1",
+    "axios": "^1.8.2",
     "bootstrap": "^5.3.3",
     "modal-video": "^2.4.8",
-    "next": "^14.2.12",
-    "nodemailer": "^6.10.0",
-    "react": "^18.3.1",
+    "next": "^16.0.1",
+    "nodemailer": "^6.10.1",
+    "react": "^19.0.0",
     "react-18-image-lightbox": "^5.1.4",
     "react-bootstrap": "^2.10.4",
     "react-countup": "^6.5.3",
-    "react-dom": "^18.3.1",
+    "react-dom": "^19.0.0",
     "react-icons": "^5.3.0",
     "react-modal-video": "^2.0.2",
     "react-parallax": "^3.5.1",
@@ -37,8 +37,10 @@
     "wowjs": "^1.1.3"
   },
   "devDependencies": {
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
     "critters": "^0.0.23",
-    "eslint": "^8",
-    "eslint-config-next": "^14.0.1"
+    "eslint": "^9",
+    "eslint-config-next": "^16.0.1"
   }
 }

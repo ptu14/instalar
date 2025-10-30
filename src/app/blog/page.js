@@ -9,8 +9,6 @@ import {FiArrowRight, FiCalendar, FiTag, FiUser} from "../assets/icons/vander";
 
 import "./blog.css";
 
-// Konfiguracja ISR - revalidate co 1 godzinę (lepsze dla bloga)
-export const revalidate = 3600; // 1 godzina = 3600 sekund
 
 // Critical CSS inline dla najszybszego ładowania
 const criticalCSS = `
@@ -42,7 +40,7 @@ async function fetchWithCache(url, params = {}) {
     
     try {
         const response = await fetch(url + '?' + new URLSearchParams(params).toString(), {
-            next: { revalidate: 3600 } // Cache na 1 godzinę w Next.js
+            cache: 'force-cache' // Cache na zawsze - pełny SSG
         });
         
         if (!response.ok) {
@@ -78,7 +76,8 @@ function formatDate(dateString) {
 
 // Pobierz dane dla strony
 export async function generateMetadata({ searchParams }) {
-    const categorySlug = searchParams?.category;
+    const resolvedSearchParams = await searchParams;
+    const categorySlug = resolvedSearchParams?.category;
     let categoryName = "";
     
     if (categorySlug) {
@@ -99,9 +98,10 @@ export async function generateMetadata({ searchParams }) {
 }
 
 export default async function BlogPage({ searchParams }) {
-    const categorySlug = searchParams?.category;
-    const page = searchParams?.page || 1;
-    
+    const resolvedSearchParams = await searchParams;
+    const categorySlug = resolvedSearchParams?.category;
+    const page = resolvedSearchParams?.page || 1;
+
     try {
         // Pobierz wszystkie dane równolegle
         const [categoriesResult, postsResult, popularPostsResult] = await Promise.allSettled([
