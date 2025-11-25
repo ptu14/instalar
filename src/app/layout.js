@@ -132,7 +132,7 @@ export default function RootLayout({ children }) {
           "logo": "https://komplexsystem.pl/images/komplex_system.png",
           "contactPoint": {
             "@type": "ContactPoint",
-            "telephone": "+48785076979",
+            "telephone": "+48575508698",
             "contactType": "customer service"
           },
           "address": {

@@ -2,11 +2,11 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import {FiPhone, FiMail, FiMapPin, IoIosArrowForward, BiLogoFacebook, AiOutlineInstagram} from "../../assets/icons/vander"
-import {AiOutlineLinkedin} from "react-icons/ai";
+import { FiPhone, FiMail, FiMapPin, IoIosArrowForward, BiLogoFacebook, AiOutlineInstagram } from "../../assets/icons/vander"
+import { AiOutlineLinkedin } from "react-icons/ai";
 
-export default function KomplexFooter(){
-    return(
+export default function KomplexFooter() {
+    return (
         <footer className="footer bg-footer">
             <div className="container">
                 <div className="row">
@@ -15,13 +15,13 @@ export default function KomplexFooter(){
                             <div className="row">
                                 <div className="col-lg-4 col-12 mb-0 mb-md-4 pb-0 pb-md-2">
                                     <Link href="/" className="logo-footer">
-                                        <Image src='/images/komplex_system_neg.png' width={150} height={50} alt="Komplex System" className="img-fluid"/>
+                                        <Image src='/images/komplex_system_neg.png' width={150} height={50} alt="Komplex System" className="img-fluid" />
                                     </Link>
                                     <p className="mt-4 text-foot">Oferujemy <strong>kompleksowe usługi </strong> w zakresie instalacji fotowoltaicznych i pomp ciepła. Pomagamy w uzyskaniu dotacji i zapewniamy profesjonalny montaż.</p>
                                     <ul className="list-unstyled social-icon foot-social-icon mb-0 mt-4">
-                                        <li className="list-inline-item"><Link href="https://www.facebook.com/profile.php?id=61573877295855" target="_blank" className="rounded"><BiLogoFacebook size={32} className="accent"/></Link></li>
-                                        <li className="list-inline-item"><Link href="https://www.linkedin.com/company/komplex-system" target="_blank" className="rounded"><AiOutlineLinkedin size={32} className="accent"/></Link></li>
-                                        <li className="list-inline-item"><Link href="https://www.instagram.com/komplexsystem" target="_blank" className="rounded"><AiOutlineInstagram size={32} className="accent"/></Link></li>
+                                        <li className="list-inline-item"><Link href="https://www.facebook.com/profile.php?id=61573877295855" target="_blank" className="rounded"><BiLogoFacebook size={32} className="accent" /></Link></li>
+                                        <li className="list-inline-item"><Link href="https://www.linkedin.com/company/komplex-system" target="_blank" className="rounded"><AiOutlineLinkedin size={32} className="accent" /></Link></li>
+                                        <li className="list-inline-item"><Link href="https://www.instagram.com/komplexsystem" target="_blank" className="rounded"><AiOutlineInstagram size={32} className="accent" /></Link></li>
                                     </ul>
                                 </div>
 
@@ -30,45 +30,44 @@ export default function KomplexFooter(){
                                         <div className="col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
                                             <h6 className="footer-head">Oferta</h6>
                                             <ul className="list-unstyled footer-list mt-4">
-                                                <li><Link href="/oferta/fotowoltaika" className="text-foot d-flex align-items-center"><IoIosArrowForward className="me-1 accent"/> Fotowoltaika</Link></li>
-                                                <li><Link href="/oferta/pompy-ciepla" className="text-foot d-flex align-items-center"><IoIosArrowForward className="me-1 accent"/> Pompy ciepła</Link></li>
-                                                <li><Link href="/oferta/magazyny-energii" className="text-foot d-flex align-items-center"><IoIosArrowForward className="me-1 accent"/> Magazyny energii</Link></li>
-                                                <li><Link href="/oferta/instalacje-sanitarne" className="text-foot d-flex align-items-center"><IoIosArrowForward className="me-1 accent"/> Instalacje Sanitarne</Link></li>
+                                                <li><Link href="/oferta/fotowoltaika" className="text-foot d-flex align-items-center"><IoIosArrowForward className="me-1 accent" /> Fotowoltaika</Link></li>
+                                                <li><Link href="/oferta/pompy-ciepla" className="text-foot d-flex align-items-center"><IoIosArrowForward className="me-1 accent" /> Pompy ciepła</Link></li>
+                                                <li><Link href="/oferta/magazyny-energii" className="text-foot d-flex align-items-center"><IoIosArrowForward className="me-1 accent" /> Magazyny energii</Link></li>
+                                                <li><Link href="/oferta/instalacje-sanitarne" className="text-foot d-flex align-items-center"><IoIosArrowForward className="me-1 accent" /> Instalacje Sanitarne</Link></li>
                                             </ul>
                                         </div>
-                                        
+
                                         <div className="col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
                                             <h6 className="footer-head">Dotacje</h6>
                                             <ul className="list-unstyled footer-list mt-4">
-                                                <li><Link href="/dotacje/moj-prad" className="text-foot d-flex align-items-center"><IoIosArrowForward className="me-1 accent"/> Mój Prąd</Link></li>
-                                                <li><Link href="/dotacje/czyste-powietrze" className="text-foot d-flex align-items-center"><IoIosArrowForward className="me-1 accent"/> Czyste Powietrze</Link></li>
-                                                <li><Link href="/dotacje/moje-cieplo" className="text-foot d-flex align-items-center"><IoIosArrowForward className="me-1 accent"/> Moje Ciepło</Link></li>
-                                                <li><Link href="/dotacje/finansowanie" className="text-foot d-flex align-items-center"><IoIosArrowForward className="me-1 accent"/> Finansowanie</Link></li>
+                                                <li><Link href="/dotacje/moj-prad" className="text-foot d-flex align-items-center"><IoIosArrowForward className="me-1 accent" /> Mój Prąd</Link></li>
+                                                <li><Link href="/dotacje/czyste-powietrze" className="text-foot d-flex align-items-center"><IoIosArrowForward className="me-1 accent" /> Czyste Powietrze</Link></li>
+                                                <li><Link href="/dotacje/moje-cieplo" className="text-foot d-flex align-items-center"><IoIosArrowForward className="me-1 accent" /> Moje Ciepło</Link></li>
+                                                <li><Link href="/dotacje/finansowanie" className="text-foot d-flex align-items-center"><IoIosArrowForward className="me-1 accent" /> Finansowanie</Link></li>
                                             </ul>
                                         </div>
-                    
+
                                         <div className="col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
                                             <h6 className="footer-head">Kontakt</h6>
                                             <ul className="list-unstyled footer-list mt-4">
                                                 <li className="d-flex align-items-center">
-                                                    <FiPhone className="me-2 text-primary accent"/>
-                                                    <Link href="tel:+48785076979" className="text-foot">+48 785 076
-                                                        979</Link>
+                                                    <FiPhone className="me-2 text-primary accent" />
+                                                    <Link href="tel:+48575508698" className="text-foot">+48 575 508 698</Link>
                                                 </li>
                                                 <li className="d-flex align-items-center mt-2">
-                                                    <FiMail className="me-2 text-primary accent"/>
+                                                    <FiMail className="me-2 text-primary accent" />
                                                     <Link href="mailto:kontakt@komplexsystem.pl"
-                                                          className="text-foot">kontakt@komplexsystem.pl</Link>
+                                                        className="text-foot">kontakt@komplexsystem.pl</Link>
                                                 </li>
                                                 <li className="d-flex align-items-center mt-2">
-                                                    <FiMapPin className="me-2 text-primary accent"/>
+                                                    <FiMapPin className="me-2 text-primary accent" />
                                                     <Link
                                                         href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x471667f6e33e8a85:0x35e4b3ee0b82dae?sa=X&ved=1t:8290&ictx=111"
                                                         className="text-foot mb-0">Głogoczów 472, 32-444
                                                         Głogoczów</Link>
                                                 </li>
                                                 <li className="d-flex align-items-center mt-2">
-                                                    <FiMapPin className="me-2 text-primary accent"/>
+                                                    <FiMapPin className="me-2 text-primary accent" />
                                                     NIP: 6812111371
                                                 </li>
                                             </ul>
@@ -85,7 +84,7 @@ export default function KomplexFooter(){
                 <div className="container">
                     <div className="row justify-content-center">
                         <div className="col-12">
-                        <div className="text-center">
+                            <div className="text-center">
                                 <p className="text-muted small mb-0">
                                     <span className="d-inline-block mx-1">Fotowoltaika</span> •
                                     <span className="d-inline-block mx-1">Pompy ciepła</span> •

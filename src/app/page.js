@@ -39,7 +39,7 @@ export default function IndexBusiness() {
                                             <span itemProp="addressLocality">Głogoczów</span>
                                             <span itemProp="addressCountry">Polska</span>
                                         </div>
-                                        <a href="tel:+48785076979" itemProp="telephone">+48 785 076 979</a>
+                                        <a href="tel:+48575508698" itemProp="telephone">+48 575 508 698</a>
                                         <a itemProp="url" href="https://komplexsystem.pl">https://komplexsystem.pl</a>
                                         <div itemProp="geo" itemScope itemType="https://schema.org/GeoCoordinates">
                                             <meta itemProp="latitude" content="52.2297" />

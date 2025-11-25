@@ -109,7 +109,7 @@ export default function Contact() {
                                 <div className="content mt-3">
                                     <h5 className="footer-head">Telefon</h5>
                                     <p className="text-muted">Skontaktuj się z nami, aby uzyskać więcej informacji</p>
-                                    <Link href="tel:+48785076979" className="text-foot">+48 785 076 979</Link>
+                                    <Link href="tel:+48575508698" className="text-foot">+48 575 508 698</Link>
                                     <p className="text-muted mt-2">Tel. stacjonarny:</p>
                                     <Link href="tel:+48123449920" className="text-foot">+48 12 344 99 20</Link>
                                 </div>
@@ -159,12 +159,12 @@ export default function Contact() {
                                         <div className="col-md-6">
                                             <div className="mb-3">
                                                 <label className="form-label">Twoje imię <span className="text-danger">*</span></label>
-                                                <input 
-                                                    name="name" 
-                                                    id="name" 
-                                                    type="text" 
-                                                    className="form-control" 
-                                                    placeholder="Imię :" 
+                                                <input
+                                                    name="name"
+                                                    id="name"
+                                                    type="text"
+                                                    className="form-control"
+                                                    placeholder="Imię :"
                                                     value={formData.name}
                                                     onChange={handleChange}
                                                     required
@@ -175,12 +175,12 @@ export default function Contact() {
                                         <div className="col-md-6">
                                             <div className="mb-3">
                                                 <label className="form-label">Numer telefonu <span className="text-danger">*</span></label>
-                                                <input 
-                                                    name="phone" 
-                                                    id="phone" 
-                                                    type="tel" 
-                                                    className="form-control" 
-                                                    placeholder="Numer telefonu :" 
+                                                <input
+                                                    name="phone"
+                                                    id="phone"
+                                                    type="tel"
+                                                    className="form-control"
+                                                    placeholder="Numer telefonu :"
                                                     value={formData.phone}
                                                     onChange={handleChange}
                                                     required
@@ -191,12 +191,12 @@ export default function Contact() {
                                         <div className="col-12">
                                             <div className="mb-3">
                                                 <label className="form-label">Twój email</label>
-                                                <input 
-                                                    name="email" 
-                                                    id="email" 
-                                                    type="email" 
-                                                    className="form-control" 
-                                                    placeholder="Email :" 
+                                                <input
+                                                    name="email"
+                                                    id="email"
+                                                    type="email"
+                                                    className="form-control"
+                                                    placeholder="Email :"
                                                     value={formData.email}
                                                     onChange={handleChange}
                                                 />
@@ -206,11 +206,11 @@ export default function Contact() {
                                         <div className="col-12">
                                             <div className="mb-3">
                                                 <label className="form-label">Temat</label>
-                                                <input 
-                                                    name="subject" 
-                                                    id="subject" 
-                                                    className="form-control" 
-                                                    placeholder="Temat :" 
+                                                <input
+                                                    name="subject"
+                                                    id="subject"
+                                                    className="form-control"
+                                                    placeholder="Temat :"
                                                     value={formData.subject}
                                                     onChange={handleChange}
                                                 />
@@ -220,11 +220,11 @@ export default function Contact() {
                                         <div className="col-12">
                                             <div className="mb-3">
                                                 <label className="form-label">Wiadomość <span className="text-danger">*</span></label>
-                                                <textarea 
-                                                    name="comments" 
-                                                    id="comments" 
-                                                    rows="4" 
-                                                    className="form-control" 
+                                                <textarea
+                                                    name="comments"
+                                                    id="comments"
+                                                    rows="4"
+                                                    className="form-control"
                                                     placeholder="Wiadomość :"
                                                     value={formData.comments}
                                                     onChange={handleChange}
@@ -236,10 +236,10 @@ export default function Contact() {
                                     <div className="row">
                                         <div className="col-12">
                                             <div className="d-grid">
-                                                <button 
-                                                    type="submit" 
-                                                    id="submit" 
-                                                    name="send" 
+                                                <button
+                                                    type="submit"
+                                                    id="submit"
+                                                    name="send"
                                                     className="btn btn-primary"
                                                     disabled={status.loading}
                                                 >

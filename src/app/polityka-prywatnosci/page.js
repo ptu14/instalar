@@ -10,7 +10,7 @@ export default function PolitykaPrywatnosci() {
                     <div className="card border-0 rounded shadow">
                         <div className="card-body">
                             <h1 className="h3 mb-4">POLITYKA PRYWATNOŚCI KOMPLEX SYSTEM SP. Z O.O.</h1>
-                            
+
                             <div className="content">
                                 <h2 className="h4 mb-3">1. INFORMACJE OGÓLNE</h2>
                                 <p>Niniejsza Polityka Prywatności określa zasady przetwarzania i ochrony danych osobowych Użytkowników i Klientów (zwanych dalej łącznie "Użytkownikami") przekazanych Komplex System Sp. z o.o. w związku z:</p>
@@ -21,7 +21,7 @@ export default function PolitykaPrywatnosci() {
                                     <li>kontaktem z naszą firmą za pośrednictwem formularzy kontaktowych, e-maila, telefonu lub innych kanałów komunikacji</li>
                                 </ul>
                                 <p>Administratorem danych jest Komplex System Sp. z o.o. z siedzibą w Głogoczowie 472, 32-444 Głogoczów, wpisana do rejestru przedsiębiorców KRS pod numerem 0001162802, NIP: 6812111371 (zwana dalej "Spółką" lub "Administratorem").</p>
-                                
+
                                 <h2 className="h4 mb-3 mt-4">2. ZAKRES ZBIERANYCH DANYCH</h2>
                                 <h3 className="h5 mb-2">2.1. Dane zbierane automatycznie podczas korzystania ze strony komplexsystem.pl:</h3>
                                 <ul>
@@ -52,7 +52,7 @@ export default function PolitykaPrywatnosci() {
                                     <li>Informacje dotyczące zainteresowania produktami i usługami (pompy ciepła, fotowoltaika, programy dofinansowań)</li>
                                     <li>Treść zapytań i wiadomości kierowanych do Spółki</li>
                                 </ul>
-                                
+
                                 <h2 className="h4 mb-3 mt-4">3. CEL ZBIERANIA DANYCH</h2>
                                 <p>Dane osobowe Użytkowników są zbierane i przetwarzane w celu:</p>
                                 <ul>
@@ -71,7 +71,7 @@ export default function PolitykaPrywatnosci() {
                                     <li>Zapewnienia bezpieczeństwa strony i usług</li>
                                     <li>Wypełnienia obowiązków prawnych ciążących na Administratorze</li>
                                 </ul>
-                                
+
                                 <h2 className="h4 mb-3 mt-4">4. PODSTAWA PRAWNA PRZETWARZANIA</h2>
                                 <p>Dane osobowe są przetwarzane na podstawie:</p>
                                 <ul>
@@ -80,7 +80,7 @@ export default function PolitykaPrywatnosci() {
                                     <li>Obowiązku prawnego ciążącego na Administratorze (art. 6 ust. 1 lit. c RODO) – w zakresie wystawiania i przechowywania dokumentów wymaganych przepisami prawa, w tym dokumentów księgowych</li>
                                     <li>Prawnie uzasadnionego interesu Administratora (art. 6 ust. 1 lit. f RODO) – w szczególności w zakresie marketingu własnych produktów i usług, prowadzenia analiz i statystyk, zapewnienia bezpieczeństwa oraz dochodzenia roszczeń</li>
                                 </ul>
-                                
+
                                 <h2 className="h4 mb-3 mt-4">5. CZAS PRZECHOWYWANIA DANYCH</h2>
                                 <p>Dane osobowe Użytkowników będą przechowywane:</p>
                                 <ul>
@@ -90,7 +90,7 @@ export default function PolitykaPrywatnosci() {
                                     <li>W przypadku danych przetwarzanych na podstawie prawnie uzasadnionego interesu Administratora – do czasu wniesienia sprzeciwu lub ustania tego interesu</li>
                                     <li>W przypadku danych zbieranych przez pliki cookies – zgodnie z ustawieniami przeglądarki użytkownika lub do czasu usunięcia tych plików</li>
                                 </ul>
-                                
+
                                 <h2 className="h4 mb-3 mt-4">6. PRAWA UŻYTKOWNIKÓW</h2>
                                 <p>Każdemu Użytkownikowi przysługuje prawo do:</p>
                                 <ul>
@@ -104,7 +104,7 @@ export default function PolitykaPrywatnosci() {
                                     <li>Wniesienia skargi do organu nadzorczego (Prezes Urzędu Ochrony Danych Osobowych, ul. Stawki 2, 00-193 Warszawa)</li>
                                 </ul>
                                 <p>W celu realizacji powyższych praw, prosimy o kontakt z Administratorem za pośrednictwem danych kontaktowych podanych w punkcie 12.</p>
-                                
+
                                 <h2 className="h4 mb-3 mt-4">7. ODBIORCY DANYCH</h2>
                                 <p>Odbiorcami danych osobowych Użytkowników mogą być:</p>
                                 <ul>
@@ -120,7 +120,7 @@ export default function PolitykaPrywatnosci() {
                                     <li>Instytucje finansujące w przypadku wniosków o dofinansowanie</li>
                                     <li>Organy publiczne, gdy wymagają tego przepisy prawa</li>
                                 </ul>
-                                
+
                                 <h2 className="h4 mb-3 mt-4">8. PRZEKAZYWANIE DANYCH DO PAŃSTW TRZECICH</h2>
                                 <p>Dane osobowe Użytkowników mogą być przekazywane do państw trzecich (poza Europejski Obszar Gospodarczy) w związku z korzystaniem z usług podmiotów takich jak Meta (Facebook, Instagram) MailerLite czy TikTok. Przekazywanie danych odbywa się:</p>
                                 <ul>
@@ -129,7 +129,7 @@ export default function PolitykaPrywatnosci() {
                                     <li>W oparciu o wiążące reguły korporacyjne</li>
                                     <li>W ramach wyjątków określonych w art. 49 RODO (w tym na podstawie wyraźnej zgody)</li>
                                 </ul>
-                                
+
                                 <h2 className="h4 mb-3 mt-4">9. BEZPIECZEŃSTWO DANYCH</h2>
                                 <p>Administrator stosuje odpowiednie środki techniczne i organizacyjne zapewniające bezpieczeństwo danych osobowych, w tym zabezpieczenia przed ich nieupoważnionym ujawnieniem, utratą, zniszczeniem lub uszkodzeniem. Stosowane środki uwzględniają stan technologii, koszt wdrożenia oraz charakter, zakres, kontekst i cele przetwarzania danych.</p>
                                 <p>Dane przechowywane na serwerach hostingowych i e-mailowych u dostawcy Vercel oraz Gmail są chronione zgodnie z obowiązującymi standardami bezpieczeństwa, w tym poprzez:</p>
@@ -139,7 +139,7 @@ export default function PolitykaPrywatnosci() {
                                     <li>autoryzację dostępu do skrzynek e-mail,</li>
                                     <li>regularne tworzenie kopii zapasowych.</li>
                                 </ul>
-                                
+
                                 <h2 className="h4 mb-3 mt-4">10. PROFILOWANIE I ZAUTOMATYZOWANE PODEJMOWANIE DECYZJI</h2>
                                 <p>Administrator może korzystać z narzędzi profilowania w celach marketingowych oraz w celu dostosowania oferty do potrzeb Użytkowników. Profilowanie odbywa się w szczególności w ramach:</p>
                                 <ul>
@@ -148,7 +148,7 @@ export default function PolitykaPrywatnosci() {
                                     <li>Personalizacji treści wyświetlanych na stronie</li>
                                 </ul>
                                 <p>Na podstawie profilowania nie są podejmowane zautomatyzowane decyzje wywołujące skutki prawne wobec Użytkowników lub w podobny sposób istotnie na nich wpływające.</p>
-                                
+
                                 <h2 className="h4 mb-3 mt-4">11. PLIKI COOKIES I PODOBNE TECHNOLOGIE</h2>
                                 <h3 className="h5 mb-2">11.1. Czym są pliki cookies</h3>
                                 <p>Pliki cookies (tzw. "ciasteczka") to niewielkie pliki tekstowe, które są przechowywane na urządzeniu końcowym Użytkownika podczas korzystania ze strony komplexsystem.pl. Umożliwiają one rozpoznanie urządzenia Użytkownika i dostosowanie strony do jego preferencji.</p>
@@ -167,12 +167,12 @@ export default function PolitykaPrywatnosci() {
 
                                 <h3 className="h5 mb-2 mt-3">11.4. Pixel Meta i TikTok Pixel</h3>
                                 <p>Na naszej stronie wykorzystujemy technologię śledzenia Pixel Meta (wcześniej Facebook Pixel) oraz TikTok Pixel, które umożliwiają mierzenie skuteczności kampanii reklamowych prowadzonych w serwisach Meta (Facebook, Instagram) i TikTok. Piksele te zbierają informacje o działaniach użytkowników na naszej stronie, które są następnie wykorzystywane do personalizacji reklam.</p>
-                                
+
                                 <h2 className="h4 mb-3 mt-4">12. KONTAKT</h2>
                                 <p>W sprawach związanych z ochroną danych osobowych prosimy o kontakt:</p>
                                 <ul>
                                     <li>Adres e-mail: kontakt@komplexsystem.pl</li>
-                                    <li>Telefon: 785 076 979</li>
+                                    <li>Telefon: +48 575 508 698</li>
                                     <li>Adres korespondencyjny: Komplex System Sp. z o.o., Głogoczów 472, 32-444 Głogoczów</li>
                                 </ul>
                                 <p>Dodatkowe informacje techniczne:</p>
@@ -180,12 +180,12 @@ export default function PolitykaPrywatnosci() {
                                     <li>System pocztowy obsługiwany przez: Gmail</li>
                                     <li>Skrzynki e-mail przechowywane są na serwerach: Gmail</li>
                                 </ul>
-                                
+
                                 <h2 className="h4 mb-3 mt-4">13. ZMIANY POLITYKI PRYWATNOŚCI</h2>
                                 <p>Administrator zastrzega sobie prawo do zmiany niniejszej Polityki Prywatności. Zmieniona Polityka Prywatności zostanie opublikowana na stronie komplexsystem.pl oraz na profilach w mediach społecznościowych. Zmiany wchodzą w życie z dniem ich opublikowania.</p>
-                                
+
                                 <p className="mt-4">Data ostatniej aktualizacji: 07.05.2025</p>
-                                
+
                                 <div className="mt-4">
                                     <Link href="/" className="btn btn-primary">Powrót do strony głównej</Link>
                                 </div>
