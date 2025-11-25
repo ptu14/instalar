@@ -5,12 +5,12 @@ const nextConfig = {
   // Kompresja i optymalizacje
   compress: true,
   poweredByHeader: false,
-  
+
   // Experimental features dla wydajności
   experimental: {
     scrollRestoration: true,
   },
-  
+
   sassOptions: {
     includePaths: [path.join(__dirname, 'styles')],
   },
@@ -41,6 +41,11 @@ const nextConfig = {
       {
         protocol: 'https',
         hostname: 'komplexsystem.com',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'res.cloudinary.com',
         pathname: '/**',
       },
     ],
