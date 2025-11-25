@@ -1,4 +1,4 @@
-import {Poppins, Ubuntu, Teko, Noto_Sans, Libre_Baskerville, Kaushan_Script, Lexend} from 'next/font/google'
+import { Poppins, Ubuntu, Teko, Noto_Sans, Libre_Baskerville, Kaushan_Script, Lexend } from 'next/font/google'
 import 'bootstrap/dist/css/bootstrap.css'
 import './assets/scss/style.scss'
 import './assets/css/materialdesignicons.min.css'
@@ -7,39 +7,39 @@ import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const lexend = Lexend({
   subsets: ['latin'],
-  weight:['100','200','300','400','500','600','700','800','900'],
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
   variable: '--font-lexend',
 })
 
-const poppins = Poppins({ 
+const poppins = Poppins({
   subsets: ['latin'],
-  weight:['100','200','300','400','500','600','700','800','900'],
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
   variable: '--font-poppins',
 })
 
-const ubuntu = Ubuntu({ 
+const ubuntu = Ubuntu({
   subsets: ['latin'],
-  weight:['300','400','500','700'],
+  weight: ['300', '400', '500', '700'],
   variable: '--font-ubuntu',
 })
-const teko = Teko({ 
+const teko = Teko({
   subsets: ['latin'],
-  weight:['300','400','500','700'],
+  weight: ['300', '400', '500', '700'],
   variable: '--font-teko',
 })
-const noto = Noto_Sans({ 
+const noto = Noto_Sans({
   subsets: ['latin'],
-  weight:['400','700'],
+  weight: ['400', '700'],
   variable: '--font-noto',
 })
-const libre = Libre_Baskerville({ 
+const libre = Libre_Baskerville({
   subsets: ['latin'],
-  weight:['400','700'],
+  weight: ['400', '700'],
   variable: '--font-libre',
 })
-const kaushan = Kaushan_Script({ 
+const kaushan = Kaushan_Script({
   subsets: ['latin'],
-  weight:['400'],
+  weight: ['400'],
   variable: '--font-kaushan',
 })
 
@@ -121,7 +121,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="pl">
       <head>
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: `
+        <script type="application/ld+json" dangerouslySetInnerHTML={{
+          __html: `
         {
           "@context": "https://schema.org",
           "@type": "Organization",

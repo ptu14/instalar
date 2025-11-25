@@ -242,8 +242,8 @@ export default function PompyCiepla() {
                     <div className="row justify-content-center">
                         <div className="col-lg-10">
                             <div className="row">
-                                {regionsData.seo_strategy_malopolska.regions.map((region, index) => (
-                                    <div key={index} className="col-md-6 mt-4 pt-2">
+                                {regionsData.map((region) => (
+                                    <div key={region.slug} className="col-md-6 mt-4 pt-2">
                                         <div className="d-flex align-items-center p-3 bg-white rounded shadow-sm h-100">
                                             <div className="icon text-primary h4 mb-0 me-3">
                                                 <AiOutlineCheckCircle />

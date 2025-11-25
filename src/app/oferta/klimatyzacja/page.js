@@ -132,7 +132,7 @@ export default function Klimatyzacja() {
                         </div>
                     </div>
                     <div className="row">
-                        {regionsData.klimatyzacja.regions.map((region) => (
+                        {regionsData.map((region) => (
                             <div key={region.slug} className="col-lg-4 col-md-6 mt-4 pt-2">
                                 <div className="d-flex align-items-center p-3 bg-white rounded shadow-sm h-100 border">
                                     <div className="content">

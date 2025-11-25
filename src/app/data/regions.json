@@ -1,23 +1,32 @@
-{
-    "seo_strategy_malopolska": {
-        "target_service": "Pompy Ciepła",
-        "strategy_type": "Regional Hubs (Agregacja lokalizacji)",
-        "regions": [
-            {
-                "id": 1,
-                "slug": "okolice-krakowa",
-                "region_name": "Okolice Krakowa (Sypialnie)",
-                "target_cities": [
-                    "Wieliczka",
-                    "Niepołomice",
-                    "Zielonki",
-                    "Zabierzów",
-                    "Michałowice",
-                    "Liszki"
-                ],
+[
+    {
+        "id": "okolice-krakowa",
+        "slug": "okolice-krakowa",
+        "region_name": "Okolice Krakowa",
+        "region_genitive": "okolic Krakowa",
+        "region_locative_phrase": "w okolicach Krakowa",
+        "target_cities": [
+            "Wieliczka",
+            "Niepołomice",
+            "Zielonki",
+            "Zabierzów",
+            "Michałowice",
+            "Liszki",
+            "Skawina",
+            "Mogilany",
+            "Świątniki Górne",
+            "Igołomia-Wawrzeńczyce",
+            "Kocmyrzów-Luborzyca",
+            "Wielka Wieś",
+            "Jerzmanowice-Przeginia",
+            "Krzeszowice",
+            "Czernichów",
+            "Słomniki",
+            "Skała"
+        ],
+        "services": {
+            "pompy_ciepla": {
                 "seo_context": "Skupienie na nowoczesnym budownictwie, małe działki, estetyka montażu, szybki serwis z Krakowa, rozwiązania premium.",
-                "region_genitive": "okolic Krakowa",
-                "region_locative_phrase": "w okolicach Krakowa",
                 "unique_lead": "Mieszkasz w okolicach Krakowa i szukasz nowoczesnego ogrzewania, które nie zajmuje wiele miejsca? Specjalizujemy się w montażu pomp ciepła w gęstej zabudowie podmiejskiej, gdzie liczy się każdy metr działki i estetyka wykonania.",
                 "local_challenges": {
                     "title": "Wyzwania w podkrakowskich gminach",
@@ -29,125 +38,7 @@
                     "Cicha praca urządzeń (kluczowa w gęstej zabudowie)"
                 ]
             },
-            {
-                "id": 2,
-                "slug": "malopolska-poludnie",
-                "region_name": "Południe od Krakowa (Brama na góry)",
-                "target_cities": [
-                    "Myślenice",
-                    "Skawina",
-                    "Mogilany",
-                    "Dobczyce",
-                    "Sułkowice",
-                    "Kalwaria Zebrzydowska"
-                ],
-                "seo_context": "Termomodernizacja starszych domów, walka ze smogiem, program Czyste Powietrze, tereny pagórkowate.",
-                "region_genitive": "południa Krakowa i okolic",
-                "region_locative_phrase": "na południe od Krakowa",
-                "unique_lead": "Twoja okolica to brama na góry, gdzie zimy bywają chłodniejsze, a teren pagórkowaty. Oferujemy pompy ciepła idealne do termomodernizacji starszych budynków w Myślenicach, Skawinie i okolicach, pomagając skutecznie walczyć ze smogiem.",
-                "local_challenges": {
-                    "title": "Specyfika ogrzewania na południe od Krakowa",
-                    "content": "Starsze domy w tym regionie często wymagają wysokotemperaturowych pomp ciepła, które poradzą sobie z istniejącą instalacją grzejnikową. Dodatkowo, ukształtowanie terenu może wpływać na lokalny mikroklimat."
-                },
-                "local_benefits": [
-                    "Doświadczenie w termomodernizacji starszych budynków",
-                    "Pomoc w uzyskaniu dotacji Czyste Powietrze (wymiana kopciuchów)",
-                    "Urządzenia radzące sobie wietrznym klimacie pogórza"
-                ]
-            },
-            {
-                "id": 3,
-                "slug": "podhale-i-sadecczyzna",
-                "region_name": "Podhale i Sądecczyzna",
-                "target_cities": [
-                    "Nowy Targ",
-                    "Zakopane",
-                    "Nowy Sącz",
-                    "Limanowa",
-                    "Rabka-Zdrój",
-                    "Mszana Dolna"
-                ],
-                "seo_context": "Surowy klimat, wydajność pomp w niskich temperaturach, ogrzewanie obiektów turystycznych i pensjonatów, wysokie dotacje lokalne.",
-                "region_genitive": "Podhala i Sądecczyzny",
-                "region_locative_phrase": "na Podhalu i Sądecczyźnie",
-                "unique_lead": "Surowy klimat Podhala i Sądecczyzny wymaga niezawodnych rozwiązań. Instalujemy pompy ciepła, które zachowują wysoką wydajność nawet przy siarczystych mrozach, zapewniając ciepło w domach i pensjonatach.",
-                "local_challenges": {
-                    "title": "Ogrzewanie w górskim klimacie",
-                    "content": "Niskie temperatury zimą to test dla każdej pompy ciepła. W rejonach górskich kluczowy jest dobór urządzenia o stabilnej krzywej grzewczej, które nie straci wydajności, gdy słupek rtęci spadnie poniżej -20 stopni."
-                },
-                "local_benefits": [
-                    "Pompy ciepła dedykowane do pracy w niskich temperaturach",
-                    "Rozwiązania kaskadowe dla pensjonatów i hoteli",
-                    "Znajomość lokalnych programów dotacji w gminach górskich"
-                ]
-            },
-            {
-                "id": 4,
-                "slug": "malopolska-zachodnia",
-                "region_name": "Małopolska Zachodnia",
-                "target_cities": [
-                    "Oświęcim",
-                    "Chrzanów",
-                    "Wadowice",
-                    "Olkusz",
-                    "Kęty",
-                    "Trzebinia"
-                ],
-                "seo_context": "Gęsta zabudowa jednorodzinna, wymiana starych kotłów węglowych, stabilny rynek, dostępność serwisu na zachodzie województwa.",
-                "region_genitive": "Małopolski Zachodniej",
-                "region_locative_phrase": "w Małopolsce Zachodniej",
-                "unique_lead": "W zachodniej Małopolsce stawiamy na sprawdzoną jakość i niezawodność. Oferujemy kompleksową wymianę starych kotłów węglowych na nowoczesne pompy ciepła w Oświęcimiu, Chrzanowie i okolicach.",
-                "local_challenges": {
-                    "title": "Transformacja energetyczna zachodniej Małopolski",
-                    "content": "Region ten dynamicznie odchodzi od węgla. Wyzwaniem jest często integracja nowoczesnej pompy ciepła z istniejącą infrastrukturą w gęstej zabudowie jednorodzinnej, przy zachowaniu wysokiej kultury pracy urządzenia."
-                },
-                "local_benefits": [
-                    "Szybkie terminy realizacji w zachodniej części województwa",
-                    "Kompleksowa obsługa: demontaż pieca + montaż pompy",
-                    "Wsparcie w formalnościach związanych z wymianą źródła ciepła"
-                ]
-            },
-            {
-                "id": 5,
-                "slug": "wschod-malopolski",
-                "region_name": "Wschód Małopolski",
-                "target_cities": [
-                    "Bochnia",
-                    "Brzesko",
-                    "Tarnów",
-                    "Proszowice",
-                    "Wojnicz"
-                ],
-                "seo_context": "Dojazd autostradą A4, dynamicznie rozwijające się przedmieścia Tarnowa i Bochni, nowe inwestycje deweloperskie.",
-                "region_genitive": "wschodu Małopolski",
-                "region_locative_phrase": "na wschodzie Małopolski",
-                "unique_lead": "Dynamicznie rozwijające się okolice Tarnowa i Bochni to idealne miejsce na inwestycję w pompę ciepła. Oferujemy nowoczesne systemy grzewcze dla nowych domów oraz modernizowanych budynków wzdłuż autostrady A4.",
-                "local_challenges": {
-                    "title": "Nowoczesne instalacje dla wschodu Małopolski",
-                    "content": "W rejonie Tarnowa powstaje wiele nowych inwestycji, które wymagają energooszczędnych standardów WT 2021. Kluczowe jest tu idealne zgranie pompy ciepła z ogrzewaniem podłogowym i fotowoltaiką."
-                },
-                "local_benefits": [
-                    "Doskonały dojazd i logistyka dzięki A4",
-                    "Oferta dedykowana dla nowych inwestycji deweloperskich",
-                    "Integracja z systemami Smart Home popularnymi w nowych domach"
-                ]
-            }
-        ]
-    },
-    "fotowoltaika": {
-        "regions": [
-            {
-                "slug": "okolice-krakowa",
-                "region_name": "Okolice Krakowa (Sypialnie)",
-                "target_cities": [
-                    "Wieliczka",
-                    "Niepołomice",
-                    "Zielonki",
-                    "Zabierzów",
-                    "Michałowice",
-                    "Liszki"
-                ],
-                "region_genitive": "okolic Krakowa",
+            "fotowoltaika": {
                 "seo_context": "Estetyka paneli Full Black, instalacje na dachach wielospadowych, maksymalizacja autokonsumpcji.",
                 "unique_lead": "W okolicach Krakowa, gdzie dominuje nowoczesne budownictwo, fotowoltaika musi być nie tylko wydajna, ale i estetyczna. Oferujemy panele Full Black idealnie komponujące się z nowoczesną architekturą.",
                 "local_challenges": {
@@ -160,117 +51,7 @@
                     "Szybki zwrot inwestycji dzięki wysokiej autokonsumpcji"
                 ]
             },
-            {
-                "slug": "malopolska-poludnie",
-                "region_name": "Południe od Krakowa",
-                "target_cities": [
-                    "Myślenice",
-                    "Skawina",
-                    "Mogilany",
-                    "Dobczyce",
-                    "Sułkowice",
-                    "Kalwaria Zebrzydowska"
-                ],
-                "region_genitive": "południa Krakowa",
-                "seo_context": "Instalacje na trudnych dachach, walka ze smogiem, niezależność energetyczna.",
-                "unique_lead": "Południe Krakowa to region, gdzie fotowoltaika staje się kluczem do walki ze smogiem i wysokimi rachunkami. Projektujemy instalacje odporne na lokalne warunki atmosferyczne.",
-                "local_challenges": {
-                    "title": "Instalacje na terenach pagórkowatych",
-                    "content": "Zmienne warunki nasłonecznienia na pogórzu wymagają indywidualnego podejścia. Dobieramy kąt nachylenia i rozmieszczenie paneli tak, aby maksymalnie wykorzystać potencjał słoneczny Twojej lokalizacji."
-                },
-                "local_benefits": [
-                    "Odporność na wiatr i śnieg",
-                    "Wsparcie w programie Mój Prąd",
-                    "Integracja z pompami ciepła"
-                ]
-            },
-            {
-                "slug": "podhale-i-sadecczyzna",
-                "region_name": "Podhale i Sądecczyzna",
-                "target_cities": [
-                    "Nowy Targ",
-                    "Zakopane",
-                    "Nowy Sącz",
-                    "Limanowa",
-                    "Rabka-Zdrój",
-                    "Mszana Dolna"
-                ],
-                "region_genitive": "Podhala i Sądecczyzny",
-                "seo_context": "Wytrzymałość na śnieg, instalacje gruntowe dla pensjonatów, wysoka wydajność w chłodne dni.",
-                "unique_lead": "Na Podhalu i Sądecczyźnie fotowoltaika musi sprostać wyzwaniom natury. Oferujemy pancerne konstrukcje i panele o podwyższonej wytrzymałości na obciążenie śniegiem.",
-                "local_challenges": {
-                    "title": "Fotowoltaika w warunkach górskich",
-                    "content": "Obfite opady śniegu wymagają solidnych konstrukcji montażowych i odpowiedniego kąta nachylenia paneli, aby śnieg zsuwał się samoczynnie. Nasze instalacje są projektowane z myślą o ekstremalnych warunkach."
-                },
-                "local_benefits": [
-                    "Wzmocnione konstrukcje na śnieg",
-                    "Wydajna praca w niskich temperaturach (efekt chłodzenia ogniw)",
-                    "Rozwiązania dla turystyki (pensjonaty)"
-                ]
-            },
-            {
-                "slug": "malopolska-zachodnia",
-                "region_name": "Małopolska Zachodnia",
-                "target_cities": [
-                    "Oświęcim",
-                    "Chrzanów",
-                    "Wadowice",
-                    "Olkusz",
-                    "Kęty",
-                    "Trzebinia"
-                ],
-                "region_genitive": "Małopolski Zachodniej",
-                "seo_context": "Transformacja energetyczna, wykorzystanie dachów przemysłowych i domowych, stabilność zasilania.",
-                "unique_lead": "Zachodnia Małopolska inwestuje w słońce. Oferujemy wydajne instalacje fotowoltaiczne dla domów i firm w Oświęcimiu, Chrzanowie i okolicach, zapewniając niezależność od podwyżek cen prądu.",
-                "local_challenges": {
-                    "title": "Fotowoltaika na terenach poprzemysłowych",
-                    "content": "W regionie o silnych tradycjach przemysłowych, jakość powietrza bywa wyzwaniem. Nasze panele posiadają powłoki samoczyszczące, co zapewnia wysoką uzysk energii nawet przy większym zapyleniu."
-                },
-                "local_benefits": [
-                    "Panele z powłoką samoczyszczącą",
-                    "Oferta dla domów i małych firm",
-                    "Szybki montaż w regionie"
-                ]
-            },
-            {
-                "slug": "wschod-malopolski",
-                "region_name": "Wschód Małopolski",
-                "target_cities": [
-                    "Bochnia",
-                    "Brzesko",
-                    "Tarnów",
-                    "Proszowice",
-                    "Wojnicz"
-                ],
-                "region_genitive": "wschodu Małopolski",
-                "seo_context": "Nowe osiedla, instalacje wschód-zachód, współpraca z klimatyzacją.",
-                "unique_lead": "Tarnów i Bochnia to polski biegun ciepła. Wykorzystaj ten potencjał dzięki naszym instalacjom fotowoltaicznym, idealnie zgranym z klimatyzacją w Twoim nowym domu.",
-                "local_challenges": {
-                    "title": "Maksymalizacja uzysków w 'biegunie ciepła'",
-                    "content": "Wysokie nasłonecznienie w tym regionie to atut, ale i wyzwanie dla temperatury ogniw. Stosujemy falowniki o wysokiej sprawności i panele odporne na degradację temperaturową."
-                },
-                "local_benefits": [
-                    "Najwyższe uzyski w Małopolsce",
-                    "Instalacje Wschód-Zachód dla równomiernej produkcji",
-                    "Idealne pod zasilanie klimatyzacji"
-                ]
-            }
-        ]
-    },
-    "klimatyzacja": {
-        "regions": [
-            {
-                "slug": "okolice-krakowa",
-                "region_name": "Okolice Krakowa",
-                "target_cities": [
-                    "Wieliczka",
-                    "Niepołomice",
-                    "Zielonki",
-                    "Zabierzów",
-                    "Michałowice",
-                    "Liszki"
-                ],
-                "region_genitive": "okolic Krakowa",
+            "klimatyzacja": {
                 "seo_context": "Ciche jednostki do sypialni, design pasujący do nowoczesnych wnętrz, funkcja grzania.",
                 "unique_lead": "Komfort termiczny w sypialniach pod Krakowem to standard. Oferujemy cichą i designerską klimatyzację, która zapewni chłód latem i dogrzewanie w okresach przejściowych.",
                 "local_challenges": {
@@ -283,18 +64,72 @@
                     "Sterowanie Wi-Fi w standardzie"
                 ]
             },
-            {
-                "slug": "malopolska-poludnie",
-                "region_name": "Południe od Krakowa",
-                "target_cities": [
-                    "Myślenice",
-                    "Skawina",
-                    "Mogilany",
-                    "Dobczyce",
-                    "Sułkowice",
-                    "Kalwaria Zebrzydowska"
-                ],
-                "region_genitive": "południa Krakowa",
+            "magazyny_energii": {
+                "seo_context": "Zasilanie awaryjne (UPS), praca hybrydowa, bezpieczeństwo energetyczne.",
+                "unique_lead": "Praca zdalna pod Krakowem wymaga stabilnego zasilania. Nasze magazyny energii zapewniają bezpieczeństwo energetyczne i ciągłość pracy nawet podczas awarii sieci.",
+                "local_challenges": {
+                    "title": "Stabilność zasilania na przedmieściach",
+                    "content": "Dynamiczny rozwój przedmieść Krakowa często przeciąża lokalne sieci, powodując spadki napięcia. Magazyn energii stabilizuje parametry sieci, chroniąc Twoją elektronikę."
+                },
+                "local_benefits": [
+                    "Funkcja Back-up (zasilanie awaryjne)",
+                    "Stabilizacja napięcia w domu",
+                    "Maksymalizacja autokonsumpcji z PV"
+                ]
+            }
+        }
+    },
+    {
+        "id": "malopolska-poludnie",
+        "slug": "malopolska-poludnie",
+        "region_name": "Południe od Krakowa",
+        "region_genitive": "południa Krakowa i okolic",
+        "region_locative_phrase": "na południe od Krakowa",
+        "target_cities": [
+            "Myślenice",
+            "Skawina",
+            "Mogilany",
+            "Dobczyce",
+            "Sułkowice",
+            "Kalwaria Zebrzydowska",
+            "Lanckorona",
+            "Pcim",
+            "Lubień",
+            "Tokarnia",
+            "Wiśniowa",
+            "Raciechowice",
+            "Siepraw",
+            "Gdów",
+            "Biskupice"
+        ],
+        "services": {
+            "pompy_ciepla": {
+                "seo_context": "Termomodernizacja starszych domów, walka ze smogiem, program Czyste Powietrze, tereny pagórkowate.",
+                "unique_lead": "Twoja okolica to brama na góry, gdzie zimy bywają chłodniejsze, a teren pagórkowaty. Oferujemy pompy ciepła idealne do termomodernizacji starszych budynków w Myślenicach, Skawinie i okolicach, pomagając skutecznie walczyć ze smogiem.",
+                "local_challenges": {
+                    "title": "Specyfika ogrzewania na południe od Krakowa",
+                    "content": "Starsze domy w tym regionie często wymagają wysokotemperaturowych pomp ciepła, które poradzą sobie z istniejącą instalacją grzejnikową. Dodatkowo, ukształtowanie terenu może wpływać na lokalny mikroklimat."
+                },
+                "local_benefits": [
+                    "Doświadczenie w termomodernizacji starszych budynków",
+                    "Pomoc w uzyskaniu dotacji Czyste Powietrze (wymiana kopciuchów)",
+                    "Urządzenia radzące sobie wietrznym klimacie pogórza"
+                ]
+            },
+            "fotowoltaika": {
+                "seo_context": "Instalacje na trudnych dachach, walka ze smogiem, niezależność energetyczna.",
+                "unique_lead": "Południe Krakowa to region, gdzie fotowoltaika staje się kluczem do walki ze smogiem i wysokimi rachunkami. Projektujemy instalacje odporne na lokalne warunki atmosferyczne.",
+                "local_challenges": {
+                    "title": "Instalacje na terenach pagórkowatych",
+                    "content": "Zmienne warunki nasłonecznienia na pogórzu wymagają indywidualnego podejścia. Dobieramy kąt nachylenia i rozmieszczenie paneli tak, aby maksymalnie wykorzystać potencjał słoneczny Twojej lokalizacji."
+                },
+                "local_benefits": [
+                    "Odporność na wiatr i śnieg",
+                    "Wsparcie w programie Mój Prąd",
+                    "Integracja z pompami ciepła"
+                ]
+            },
+            "klimatyzacja": {
                 "seo_context": "Ogrzewanie klimatyzacją, walka z wilgocią, komfort na poddaszach.",
                 "unique_lead": "Na południe od Krakowa klimatyzacja to nie tylko chłód. To także skuteczne i tanie ogrzewanie w okresach przejściowych oraz walka z wilgocią w starszych budynkach.",
                 "local_challenges": {
@@ -307,18 +142,76 @@
                     "Szybki montaż"
                 ]
             },
-            {
-                "slug": "podhale-i-sadecczyzna",
-                "region_name": "Podhale i Sądecczyzna",
-                "target_cities": [
-                    "Nowy Targ",
-                    "Zakopane",
-                    "Nowy Sącz",
-                    "Limanowa",
-                    "Rabka-Zdrój",
-                    "Mszana Dolna"
-                ],
-                "region_genitive": "Podhala i Sądecczyzny",
+            "magazyny_energii": {
+                "seo_context": "Niezależność w trudnym terenie, częste awarie sieci, wsparcie pompy ciepła.",
+                "unique_lead": "Na południu Małopolski, gdzie linie napowietrzne są narażone na wiatr, magazyn energii to gwarancja spokoju. Zabezpiecz swój dom przed przerwami w dostawie prądu.",
+                "local_challenges": {
+                    "title": "Awarie sieci w terenie pagórkowatym",
+                    "content": "Silne wiatry i burze często zrywają linie energetyczne w tym regionie. Magazyn energii pozwala przetrwać kilkugodzinne, a nawet kilkudniowe wyłączenia prądu bez utraty komfortu."
+                },
+                "local_benefits": [
+                    "Ochrona przed skutkami wichur",
+                    "Zasilanie pompy ciepła przy braku prądu",
+                    "Dofinansowanie Mój Prąd"
+                ]
+            }
+        }
+    },
+    {
+        "id": "podhale-i-sadecczyzna",
+        "slug": "podhale-i-sadecczyzna",
+        "region_name": "Podhale i Sądecczyzna",
+        "region_genitive": "Podhala i Sądecczyzny",
+        "region_locative_phrase": "na Podhalu i Sądecczyźnie",
+        "target_cities": [
+            "Nowy Targ",
+            "Zakopane",
+            "Nowy Sącz",
+            "Limanowa",
+            "Rabka-Zdrój",
+            "Mszana Dolna",
+            "Szczawnica",
+            "Krynica-Zdrój",
+            "Muszyna",
+            "Stary Sącz",
+            "Grybów",
+            "Gorlice",
+            "Biecz",
+            "Jordanów",
+            "Czarny Dunajec",
+            "Bukowina Tatrzańska",
+            "Poronin",
+            "Kościelisko",
+            "Piwniczna-Zdrój"
+        ],
+        "services": {
+            "pompy_ciepla": {
+                "seo_context": "Surowy klimat, wydajność pomp w niskich temperaturach, ogrzewanie obiektów turystycznych i pensjonatów, wysokie dotacje lokalne.",
+                "unique_lead": "Surowy klimat Podhala i Sądecczyzny wymaga niezawodnych rozwiązań. Instalujemy pompy ciepła, które zachowują wysoką wydajność nawet przy siarczystych mrozach, zapewniając ciepło w domach i pensjonatach.",
+                "local_challenges": {
+                    "title": "Ogrzewanie w górskim klimacie",
+                    "content": "Niskie temperatury zimą to test dla każdej pompy ciepła. W rejonach górskich kluczowy jest dobór urządzenia o stabilnej krzywej grzewczej, które nie straci wydajności, gdy słupek rtęci spadnie poniżej -20 stopni."
+                },
+                "local_benefits": [
+                    "Pompy ciepła dedykowane do pracy w niskich temperaturach",
+                    "Rozwiązania kaskadowe dla pensjonatów i hoteli",
+                    "Znajomość lokalnych programów dotacji w gminach górskich"
+                ]
+            },
+            "fotowoltaika": {
+                "seo_context": "Wytrzymałość na śnieg, instalacje gruntowe dla pensjonatów, wysoka wydajność w chłodne dni.",
+                "unique_lead": "Na Podhalu i Sądecczyźnie fotowoltaika musi sprostać wyzwaniom natury. Oferujemy pancerne konstrukcje i panele o podwyższonej wytrzymałości na obciążenie śniegiem.",
+                "local_challenges": {
+                    "title": "Fotowoltaika w warunkach górskich",
+                    "content": "Obfite opady śniegu wymagają solidnych konstrukcji montażowych i odpowiedniego kąta nachylenia paneli, aby śnieg zsuwał się samoczynnie. Nasze instalacje są projektowane z myślą o ekstremalnych warunkach."
+                },
+                "local_benefits": [
+                    "Wzmocnione konstrukcje na śnieg",
+                    "Wydajna praca w niskich temperaturach (efekt chłodzenia ogniw)",
+                    "Rozwiązania dla turystyki (pensjonaty)"
+                ]
+            },
+            "klimatyzacja": {
                 "seo_context": "Klimatyzacja dla turystyki, pensjonaty, grzanie w zimie.",
                 "unique_lead": "Turystyka na Podhalu wymaga standardów. Oferujemy profesjonalną klimatyzację dla pensjonatów i hoteli, zapewniającą komfort gościom zarówno w upalne lato, jak i chłodne wieczory.",
                 "local_challenges": {
@@ -331,18 +224,74 @@
                     "Wydajne grzanie w niskich temperaturach"
                 ]
             },
-            {
-                "slug": "malopolska-zachodnia",
-                "region_name": "Małopolska Zachodnia",
-                "target_cities": [
-                    "Oświęcim",
-                    "Chrzanów",
-                    "Wadowice",
-                    "Olkusz",
-                    "Kęty",
-                    "Trzebinia"
-                ],
-                "region_genitive": "Małopolski Zachodniej",
+            "magazyny_energii": {
+                "seo_context": "Zasilanie pensjonatów, agregacja energii, bezpieczeństwo gości.",
+                "unique_lead": "Dla pensjonatów na Podhalu brak prądu to strata wizerunkowa. Zainwestuj w magazyn energii, aby zapewnić gościom światło i ciepłą wodę niezależnie od warunków pogodowych.",
+                "local_challenges": {
+                    "title": "Ciągłość zasilania w turystyce",
+                    "content": "Zimą, przy dużym obciążeniu sieci przez ogrzewanie elektryczne, zdarzają się wyłączenia. Magazyn energii pozwala na 'peak shaving' - redukcję szczytowego poboru mocy."
+                },
+                "local_benefits": [
+                    "Bezpieczeństwo energetyczne obiektu",
+                    "Redukcja mocy zamówionej",
+                    "Ekologiczny wizerunek pensjonatu"
+                ]
+            }
+        }
+    },
+    {
+        "id": "malopolska-zachodnia",
+        "slug": "malopolska-zachodnia",
+        "region_name": "Małopolska Zachodnia",
+        "region_genitive": "Małopolski Zachodniej",
+        "region_locative_phrase": "w Małopolsce Zachodniej",
+        "target_cities": [
+            "Oświęcim",
+            "Chrzanów",
+            "Wadowice",
+            "Olkusz",
+            "Kęty",
+            "Trzebinia",
+            "Andrychów",
+            "Libiąż",
+            "Chełmek",
+            "Zator",
+            "Brzeszcze",
+            "Alwernia",
+            "Babice",
+            "Wolbrom",
+            "Klucze",
+            "Bolesław",
+            "Spytkowice"
+        ],
+        "services": {
+            "pompy_ciepla": {
+                "seo_context": "Gęsta zabudowa jednorodzinna, wymiana starych kotłów węglowych, stabilny rynek, dostępność serwisu na zachodzie województwa.",
+                "unique_lead": "W zachodniej Małopolsce stawiamy na sprawdzoną jakość i niezawodność. Oferujemy kompleksową wymianę starych kotłów węglowych na nowoczesne pompy ciepła w Oświęcimiu, Chrzanowie i okolicach.",
+                "local_challenges": {
+                    "title": "Transformacja energetyczna zachodniej Małopolski",
+                    "content": "Region ten dynamicznie odchodzi od węgla. Wyzwaniem jest często integracja nowoczesnej pompy ciepła z istniejącą infrastrukturą w gęstej zabudowie jednorodzinnej, przy zachowaniu wysokiej kultury pracy urządzenia."
+                },
+                "local_benefits": [
+                    "Szybkie terminy realizacji w zachodniej części województwa",
+                    "Kompleksowa obsługa: demontaż pieca + montaż pompy",
+                    "Wsparcie w formalnościach związanych z wymianą źródła ciepła"
+                ]
+            },
+            "fotowoltaika": {
+                "seo_context": "Transformacja energetyczna, wykorzystanie dachów przemysłowych i domowych, stabilność zasilania.",
+                "unique_lead": "Zachodnia Małopolska inwestuje w słońce. Oferujemy wydajne instalacje fotowoltaiczne dla domów i firm w Oświęcimiu, Chrzanowie i okolicach, zapewniając niezależność od podwyżek cen prądu.",
+                "local_challenges": {
+                    "title": "Fotowoltaika na terenach poprzemysłowych",
+                    "content": "W regionie o silnych tradycjach przemysłowych, jakość powietrza bywa wyzwaniem. Nasze panele posiadają powłoki samoczyszczące, co zapewnia wysoką uzysk energii nawet przy większym zapyleniu."
+                },
+                "local_benefits": [
+                    "Panele z powłoką samoczyszczącą",
+                    "Oferta dla domów i małych firm",
+                    "Szybki montaż w regionie"
+                ]
+            },
+            "klimatyzacja": {
                 "seo_context": "Klimatyzacja do mieszkań w blokach, filtracja powietrza, komfort w biurach.",
                 "unique_lead": "Mieszkańcy Oświęcimia i Chrzanowa coraz częściej wybierają klimatyzację do mieszkań w blokach. Oferujemy kompaktowe jednostki z zaawansowaną filtracją powietrza.",
                 "local_challenges": {
@@ -355,117 +304,7 @@
                     "Pomoc w formalnościach ze spółdzielnią"
                 ]
             },
-            {
-                "slug": "wschod-malopolski",
-                "region_name": "Wschód Małopolski",
-                "target_cities": [
-                    "Bochnia",
-                    "Brzesko",
-                    "Tarnów",
-                    "Proszowice",
-                    "Wojnicz"
-                ],
-                "region_genitive": "wschodu Małopolski",
-                "seo_context": "Chłodzenie w biegunie ciepła, nowoczesne domy, integracja z rekuperacją.",
-                "unique_lead": "Tarnów to najcieplejsze miasto w Polsce. Klimatyzacja tutaj to konieczność. Oferujemy wydajne systemy chłodzenia dla domów i firm w Bochni i Tarnowie.",
-                "local_challenges": {
-                    "title": "Upały w tarnowskim biegunie ciepła",
-                    "content": "Długotrwałe fale upałów wymagają urządzeń o wysokiej mocy chłodniczej i klasie energetycznej A+++, aby komfort nie wiązał się z wysokimi rachunkami."
-                },
-                "local_benefits": [
-                    "Urządzenia o najwyższej klasie energetycznej",
-                    "Integracja z systemami Smart Home",
-                    "Serwis gwarancyjny i pogwarancyjny"
-                ]
-            }
-        ]
-    },
-    "magazyny_energii": {
-        "regions": [
-            {
-                "slug": "okolice-krakowa",
-                "region_name": "Okolice Krakowa",
-                "target_cities": [
-                    "Wieliczka",
-                    "Niepołomice",
-                    "Zielonki",
-                    "Zabierzów",
-                    "Michałowice",
-                    "Liszki"
-                ],
-                "region_genitive": "okolic Krakowa",
-                "seo_context": "Zasilanie awaryjne (UPS), praca hybrydowa, bezpieczeństwo energetyczne.",
-                "unique_lead": "Praca zdalna pod Krakowem wymaga stabilnego zasilania. Nasze magazyny energii zapewniają bezpieczeństwo energetyczne i ciągłość pracy nawet podczas awarii sieci.",
-                "local_challenges": {
-                    "title": "Stabilność zasilania na przedmieściach",
-                    "content": "Dynamiczny rozwój przedmieść Krakowa często przeciąża lokalne sieci, powodując spadki napięcia. Magazyn energii stabilizuje parametry sieci, chroniąc Twoją elektronikę."
-                },
-                "local_benefits": [
-                    "Funkcja Back-up (zasilanie awaryjne)",
-                    "Stabilizacja napięcia w domu",
-                    "Maksymalizacja autokonsumpcji z PV"
-                ]
-            },
-            {
-                "slug": "malopolska-poludnie",
-                "region_name": "Południe od Krakowa",
-                "target_cities": [
-                    "Myślenice",
-                    "Skawina",
-                    "Mogilany",
-                    "Dobczyce",
-                    "Sułkowice",
-                    "Kalwaria Zebrzydowska"
-                ],
-                "region_genitive": "południa Krakowa",
-                "seo_context": "Niezależność w trudnym terenie, częste awarie sieci, wsparcie pompy ciepła.",
-                "unique_lead": "Na południu Małopolski, gdzie linie napowietrzne są narażone na wiatr, magazyn energii to gwarancja spokoju. Zabezpiecz swój dom przed przerwami w dostawie prądu.",
-                "local_challenges": {
-                    "title": "Awarie sieci w terenie pagórkowatym",
-                    "content": "Silne wiatry i burze często zrywają linie energetyczne w tym regionie. Magazyn energii pozwala przetrwać kilkugodzinne, a nawet kilkudniowe wyłączenia prądu bez utraty komfortu."
-                },
-                "local_benefits": [
-                    "Ochrona przed skutkami wichur",
-                    "Zasilanie pompy ciepła przy braku prądu",
-                    "Dofinansowanie Mój Prąd"
-                ]
-            },
-            {
-                "slug": "podhale-i-sadecczyzna",
-                "region_name": "Podhale i Sądecczyzna",
-                "target_cities": [
-                    "Nowy Targ",
-                    "Zakopane",
-                    "Nowy Sącz",
-                    "Limanowa",
-                    "Rabka-Zdrój",
-                    "Mszana Dolna"
-                ],
-                "region_genitive": "Podhala i Sądecczyzny",
-                "seo_context": "Zasilanie pensjonatów, agregacja energii, bezpieczeństwo gości.",
-                "unique_lead": "Dla pensjonatów na Podhalu brak prądu to strata wizerunkowa. Zainwestuj w magazyn energii, aby zapewnić gościom światło i ciepłą wodę niezależnie od warunków pogodowych.",
-                "local_challenges": {
-                    "title": "Ciągłość zasilania w turystyce",
-                    "content": "Zimą, przy dużym obciążeniu sieci przez ogrzewanie elektryczne, zdarzają się wyłączenia. Magazyn energii pozwala na 'peak shaving' - redukcję szczytowego poboru mocy."
-                },
-                "local_benefits": [
-                    "Bezpieczeństwo energetyczne obiektu",
-                    "Redukcja mocy zamówionej",
-                    "Ekologiczny wizerunek pensjonatu"
-                ]
-            },
-            {
-                "slug": "malopolska-zachodnia",
-                "region_name": "Małopolska Zachodnia",
-                "target_cities": [
-                    "Oświęcim",
-                    "Chrzanów",
-                    "Wadowice",
-                    "Olkusz",
-                    "Kęty",
-                    "Trzebinia"
-                ],
-                "region_genitive": "Małopolski Zachodniej",
+            "magazyny_energii": {
                 "seo_context": "Optymalizacja kosztów w firmach, taryfy dynamiczne, magazynowanie nadwyżek.",
                 "unique_lead": "W zachodniej Małopolsce liczy się ekonomia. Magazyn energii pozwala kupować prąd taniej w taryfach dynamicznych i zużywać go w szczycie, generując realne oszczędności.",
                 "local_challenges": {
@@ -477,18 +316,75 @@
                     "Oszczędność na rachunkach",
                     "Długa żywotność ogniw LiFePO4"
                 ]
+            }
+        }
+    },
+    {
+        "id": "wschod-malopolski",
+        "slug": "wschod-malopolski",
+        "region_name": "Wschód Małopolski",
+        "region_genitive": "wschodu Małopolski",
+        "region_locative_phrase": "na wschodzie Małopolski",
+        "target_cities": [
+            "Bochnia",
+            "Brzesko",
+            "Tarnów",
+            "Proszowice",
+            "Wojnicz",
+            "Dąbrowa Tarnowska",
+            "Żabno",
+            "Tuchów",
+            "Ryglice",
+            "Ciężkowice",
+            "Zakliczyn",
+            "Czchów",
+            "Nowy Wiśnicz",
+            "Rzezawa",
+            "Szczurowa",
+            "Borzęcin",
+            "Radłów"
+        ],
+        "services": {
+            "pompy_ciepla": {
+                "seo_context": "Dojazd autostradą A4, dynamicznie rozwijające się przedmieścia Tarnowa i Bochni, nowe inwestycje deweloperskie.",
+                "unique_lead": "Dynamicznie rozwijające się okolice Tarnowa i Bochni to idealne miejsce na inwestycję w pompę ciepła. Oferujemy nowoczesne systemy grzewcze dla nowych domów oraz modernizowanych budynków wzdłuż autostrady A4.",
+                "local_challenges": {
+                    "title": "Nowoczesne instalacje dla wschodu Małopolski",
+                    "content": "W rejonie Tarnowa powstaje wiele nowych inwestycji, które wymagają energooszczędnych standardów WT 2021. Kluczowe jest tu idealne zgranie pompy ciepła z ogrzewaniem podłogowym i fotowoltaiką."
+                },
+                "local_benefits": [
+                    "Doskonały dojazd i logistyka dzięki A4",
+                    "Oferta dedykowana dla nowych inwestycji deweloperskich",
+                    "Integracja z systemami Smart Home popularnymi w nowych domach"
+                ]
             },
-            {
-                "slug": "wschod-malopolski",
-                "region_name": "Wschód Małopolski",
-                "target_cities": [
-                    "Bochnia",
-                    "Brzesko",
-                    "Tarnów",
-                    "Proszowice",
-                    "Wojnicz"
-                ],
-                "region_genitive": "wschodu Małopolski",
+            "fotowoltaika": {
+                "seo_context": "Nowe osiedla, instalacje wschód-zachód, współpraca z klimatyzacją.",
+                "unique_lead": "Tarnów i Bochnia to polski biegun ciepła. Wykorzystaj ten potencjał dzięki naszym instalacjom fotowoltaicznym, idealnie zgranym z klimatyzacją w Twoim nowym domu.",
+                "local_challenges": {
+                    "title": "Maksymalizacja uzysków w 'biegunie ciepła'",
+                    "content": "Wysokie nasłonecznienie w tym regionie to atut, ale i wyzwanie dla temperatury ogniw. Stosujemy falowniki o wysokiej sprawności i panele odporne na degradację temperaturową."
+                },
+                "local_benefits": [
+                    "Najwyższe uzyski w Małopolsce",
+                    "Instalacje Wschód-Zachód dla równomiernej produkcji",
+                    "Idealne pod zasilanie klimatyzacji"
+                ]
+            },
+            "klimatyzacja": {
+                "seo_context": "Chłodzenie w biegunie ciepła, nowoczesne domy, integracja z rekuperacją.",
+                "unique_lead": "Tarnów to najcieplejsze miasto w Polsce. Klimatyzacja tutaj to konieczność. Oferujemy wydajne systemy chłodzenia dla domów i firm w Bochni i Tarnowie.",
+                "local_challenges": {
+                    "title": "Upały w tarnowskim biegunie ciepła",
+                    "content": "Długotrwałe fale upałów wymagają urządzeń o wysokiej mocy chłodniczej i klasie energetycznej A+++, aby komfort nie wiązał się z wysokimi rachunkami."
+                },
+                "local_benefits": [
+                    "Urządzenia o najwyższej klasie energetycznej",
+                    "Integracja z systemami Smart Home",
+                    "Serwis gwarancyjny i pogwarancyjny"
+                ]
+            },
+            "magazyny_energii": {
                 "seo_context": "Nowoczesne domy Smart Home, pełna automatyzacja, off-grid.",
                 "unique_lead": "Nowe domy w okolicach Tarnowa to często budynki inteligentne. Magazyn energii to serce takiego domu, zarządzające przepływem energii z fotowoltaiki do urządzeń i samochodu elektrycznego.",
                 "local_challenges": {
@@ -501,6 +397,6 @@
                     "Możliwość pracy w trybie wyspowym"
                 ]
             }
-        ]
+        }
     }
-}
+]
