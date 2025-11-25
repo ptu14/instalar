@@ -93,7 +93,7 @@ export default function IndexBusiness() {
             </section>
             <div className="container-fluid ">
                 <div className="row justify-content-center text-center px-5">
-                    <h2 className="my-1">Jesteśmy autoryzowanym salonem firmy <Image src='/images/partners/daikin.svg'
+                    <h2 className="my-1">Jesteśmy autoryzowanym salonem firmy <span style={{ position: 'absolute', width: '1px', height: '1px', margin: '-1px', padding: '0', overflow: 'hidden', clip: 'rect(0,0,0,0)', border: '0' }}>Daikin</span> <Image src='/images/partners/daikin.svg'
                         width={0} height={0} sizes="100vw"
                         style={{
                             width: '200px',
