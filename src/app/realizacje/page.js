@@ -31,18 +31,7 @@ export default async function RealizationsPage() {
     return (
         <>
             <Navbar navClass="defaultscroll sticky" manuClass="navigation-menu nav-right nav-light" />
-            <section className="bg-half-170 d-table w-100" style={{ backgroundImage: "url('/images/bgk.png')" }}>
-                <div className="bg-overlay"></div>
-                <div className="container">
-                    <div className="row mt-5 justify-content-center">
-                        <div className="col-12">
-                            <div className="title-heading text-center">
-                                <h5 className="heading fw-semibold mb-0 page-heading text-white">Nasze Realizacje</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+
             <div className="position-relative">
                 <div className="shape overflow-hidden text-white">
                     <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
