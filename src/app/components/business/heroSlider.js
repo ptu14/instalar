@@ -9,7 +9,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
-export default function HeroSlider(){
+export default function HeroSlider() {
     const slides = [
         {
             bgImage: "/images/1.webp",
@@ -28,14 +28,14 @@ export default function HeroSlider(){
         {
             bgImage: "/images/3.webp",
             title: "Kompleksowe Instalacje OZE",
-            description: "Fotowoltaika, pompy ciepła i magazyny energii w jednym miejscu. Zapewniamy pełną obsługę - od projektu po uzyskanie dotacji. Zainwestuj w przyszłość z Instalar Energy!",
+            description: "Fotowoltaika, pompy ciepła i magazyny energii w jednym miejscu. Zapewniamy pełną obsługę - od projektu po uzyskanie dotacji. Zainwestuj w przyszłość z Komplex System!",
             buttonLink: "/kontakt",
             buttonText: "Bezpłatna Konsultacja"
         }
     ];
 
-    return(
-        <section className="home-slider position-relative" style={{ height: '100vh' }}> 
+    return (
+        <section className="home-slider position-relative" style={{ height: '100vh' }}>
             <Swiper
                 modules={[Navigation, Pagination, Autoplay]}
                 spaceBetween={0}
@@ -51,7 +51,7 @@ export default function HeroSlider(){
             >
                 {slides.map((slide, index) => (
                     <SwiperSlide key={index} className="h-100 position-relative">
-                        <Image 
+                        <Image
                             src={slide.bgImage}
                             alt={slide.title}
                             fill
@@ -60,7 +60,7 @@ export default function HeroSlider(){
                             priority={index === 0}
                         />
                         <div className="bg-overlay bg-linear-gradient position-absolute top-0 start-0 w-100 h-100" style={{ zIndex: 1 }}></div>
-                        
+
                         <div className="position-relative h-100 d-flex align-items-center" style={{ zIndex: 2 }}>
                             <div className="container">
                                 <div className="row justify-content-center">

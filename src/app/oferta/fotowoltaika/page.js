@@ -3,14 +3,15 @@ import Image from "next/image";
 import Link from "next/link";
 import Navbar from "../../components/navbar/navbar";
 import KomplexFooter from "../../components/footer/komplexFooter";
-import {AiOutlineCheckCircle} from "react-icons/ai";
+import { AiOutlineCheckCircle } from "react-icons/ai";
 import ContactForm from "@/app/components/contact-form/contact-form";
+import regionsData from "../../data/regions.json";
 
 export default function Fotowoltaika() {
 
     return (
         <>
-            <Navbar navClass="nav-sticky defaultscroll sticky" manuClass="navigation-menu nav-right nav-light"/>
+            <Navbar navClass="nav-sticky defaultscroll sticky" manuClass="navigation-menu nav-right nav-light" />
 
             <section className="first-section section">
                 <div className="container">
@@ -31,25 +32,25 @@ export default function Fotowoltaika() {
                                 <ul className="list-unstyled text-muted mb-0">
                                     <li className="mb-3">
                                         <span className="text-dark h5 me-2">
-                                            <AiOutlineCheckCircle className="align-middle"/>
+                                            <AiOutlineCheckCircle className="align-middle" />
                                         </span>
                                         Oszczędność na rachunkach za prąd
                                     </li>
                                     <li className="mb-3">
                                         <span className="text-dark h5 me-2">
-                                            <AiOutlineCheckCircle className="align-middle"/>
+                                            <AiOutlineCheckCircle className="align-middle" />
                                         </span>
                                         Dofinansowanie z programu Mój Prąd
                                     </li>
                                     <li className="mb-3">
                                         <span className="text-dark h5 me-2">
-                                            <AiOutlineCheckCircle className="align-middle"/>
+                                            <AiOutlineCheckCircle className="align-middle" />
                                         </span>
                                         Możliwość sprzedaży nadwyżek energii
                                     </li>
                                     <li className="mb-3">
                                         <span className="text-dark h5 me-2">
-                                            <AiOutlineCheckCircle className="align-middle"/>
+                                            <AiOutlineCheckCircle className="align-middle" />
                                         </span>
                                         Ekologiczne rozwiązanie
                                     </li>
@@ -98,25 +99,25 @@ export default function Fotowoltaika() {
                                 <ul className="list-unstyled text-muted mb-0">
                                     <li className="mb-3">
                                         <span className="text-dark h5 me-2">
-                                            <AiOutlineCheckCircle className="align-middle"/>
+                                            <AiOutlineCheckCircle className="align-middle" />
                                         </span>
                                         Maksymalne wykorzystanie własnej energii
                                     </li>
                                     <li className="mb-3">
                                         <span className="text-dark h5 me-2">
-                                            <AiOutlineCheckCircle className="align-middle"/>
+                                            <AiOutlineCheckCircle className="align-middle" />
                                         </span>
                                         Niezależność energetyczna
                                     </li>
                                     <li className="mb-3">
                                         <span className="text-dark h5 me-2">
-                                            <AiOutlineCheckCircle className="align-middle"/>
+                                            <AiOutlineCheckCircle className="align-middle" />
                                         </span>
                                         Ochrona przed przerwami w dostawie prądu
                                     </li>
                                     <li className="mb-3">
                                         <span className="text-dark h5 me-2">
-                                            <AiOutlineCheckCircle className="align-middle"/>
+                                            <AiOutlineCheckCircle className="align-middle" />
                                         </span>
                                         Optymalizacja zużycia energii
                                     </li>
@@ -151,25 +152,25 @@ export default function Fotowoltaika() {
                                 <ul className="list-unstyled text-muted mb-0">
                                     <li className="mb-3">
                                         <span className="text-dark h5 me-2">
-                                            <AiOutlineCheckCircle className="align-middle"/>
+                                            <AiOutlineCheckCircle className="align-middle" />
                                         </span>
                                         Zerowe rachunki za prąd i ogrzewanie
                                     </li>
                                     <li className="mb-3">
                                         <span className="text-dark h5 me-2">
-                                            <AiOutlineCheckCircle className="align-middle"/>
+                                            <AiOutlineCheckCircle className="align-middle" />
                                         </span>
                                         Pełna niezależność energetyczna
                                     </li>
                                     <li className="mb-3">
                                         <span className="text-dark h5 me-2">
-                                            <AiOutlineCheckCircle className="align-middle"/>
+                                            <AiOutlineCheckCircle className="align-middle" />
                                         </span>
                                         Maksymalne wykorzystanie własnej energii
                                     </li>
                                     <li className="mb-3">
                                         <span className="text-dark h5 me-2">
-                                            <AiOutlineCheckCircle className="align-middle"/>
+                                            <AiOutlineCheckCircle className="align-middle" />
                                         </span>
                                         Ekologiczne rozwiązanie
                                     </li>
@@ -249,8 +250,36 @@ export default function Fotowoltaika() {
                 </div>
             </section>
 
+            <section className="section bg-light">
+                <div className="container">
+                    <div className="row justify-content-center">
+                        <div className="col-12 text-center">
+                            <div className="section-title mb-4 pb-2">
+                                <h4 className="title mb-4">Fotowoltaika w Twoim regionie</h4>
+                                <p className="text-muted para-desc mx-auto mb-0">
+                                    Sprawdź naszą ofertę dla poszczególnych lokalizacji w Małopolsce.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row">
+                        {regionsData.fotowoltaika.regions.map((region) => (
+                            <div key={region.slug} className="col-lg-4 col-md-6 mt-4 pt-2">
+                                <div className="d-flex align-items-center p-3 bg-white rounded shadow-sm h-100 border">
+                                    <div className="content">
+                                        <Link href={`/oferta/fotowoltaika/${region.slug}`} className="title h5 text-dark d-block mb-0 hover-text-primary">
+                                            {region.region_name}
+                                        </Link>
+                                    </div>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
             <section className="section mt-4 pb-0">
-                <KomplexFooter/>
+                <KomplexFooter />
             </section>
         </>
     );

@@ -4,6 +4,8 @@ import Navbar from "../../components/navbar/navbar";
 import KomplexFooter from "../../components/footer/komplexFooter";
 import ContactForm from "../../components/contact-form/contact-form";
 import { AiOutlineCheckCircle } from "react-icons/ai";
+import regionsData from "../../data/regions.json";
+import Link from "next/link";
 
 export default function Klimatyzacja() {
     return (
@@ -107,12 +109,40 @@ export default function Klimatyzacja() {
                 <div className="container">
                     <div className="row justify-content-center">
                         <div className="col-lg-7">
-                            <ContactForm 
+                            <ContactForm
                                 title="Chcesz dowiedzieć się więcej o klimatyzacji?"
                                 description="Skontaktuj się z nami, a przygotujemy indywidualną ofertę dopasowaną do Twoich potrzeb"
                                 subject="Nowa prośba o kontakt - Klimatyzacja"
                             />
                         </div>
+                    </div>
+                </div>
+            </section>
+
+            <section className="section bg-light">
+                <div className="container">
+                    <div className="row justify-content-center">
+                        <div className="col-12 text-center">
+                            <div className="section-title mb-4 pb-2">
+                                <h4 className="title mb-4">Klimatyzacja w Twoim regionie</h4>
+                                <p className="text-muted para-desc mx-auto mb-0">
+                                    Sprawdź naszą ofertę dla poszczególnych lokalizacji w Małopolsce.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row">
+                        {regionsData.klimatyzacja.regions.map((region) => (
+                            <div key={region.slug} className="col-lg-4 col-md-6 mt-4 pt-2">
+                                <div className="d-flex align-items-center p-3 bg-white rounded shadow-sm h-100 border">
+                                    <div className="content">
+                                        <Link href={`/oferta/klimatyzacja/${region.slug}`} className="title h5 text-dark d-block mb-0 hover-text-primary">
+                                            {region.region_name}
+                                        </Link>
+                                    </div>
+                                </div>
+                            </div>
+                        ))}
                     </div>
                 </div>
             </section>
