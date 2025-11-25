@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Link from "next/link"
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
-import { LuSearch } from "react-icons/lu";
+import { LuZoomIn } from "react-icons/lu";
 import { BsArrowRight } from "react-icons/bs";
 
 // Cloudinary SDK imports
@@ -38,8 +38,8 @@ export default function Realizations({ initialImages = [] }) {
     // Create Cloudinary Image objects for the grid (thumbnails)
     const gridImages = imagePublicIds.map(publicId => {
         const img = cld.image(publicId);
-        // Apply transformations: fill to 400x300 (or any aspect ratio), auto gravity
-        img.resize(fill().width(400).height(300).gravity(autoGravity()));
+        // Apply transformations: fill to 300x400 (or any aspect ratio), auto gravity
+        img.resize(fill().width(300).height(400).gravity(autoGravity()));
         return {
             id: publicId,
             cldImg: img
@@ -81,7 +81,7 @@ export default function Realizations({ initialImages = [] }) {
                     {visibleGridImages.map((item, index) => (
                         <div className="col-lg-4 col-md-6 col-12 mt-4 pt-2" key={index}>
                             <div className="card portfolio portfolio-classic border-0 position-relative d-block overflow-hidden rounded">
-                                <div className="card-body p-0">
+                                <div className="card-body p-0" onClick={() => handleImageClick(index)} style={{ cursor: 'pointer' }}>
                                     {/* Use AdvancedImage from Cloudinary SDK */}
                                     <AdvancedImage
                                         cldImg={item.cldImg}
@@ -92,9 +92,9 @@ export default function Realizations({ initialImages = [] }) {
                                     <div className="overlay"></div>
 
                                     <div className="pop-icon">
-                                        <Link href="#" onClick={(e) => { e.preventDefault(); handleImageClick(index); }} className="btn btn-pills btn-icon bg-white text-primary lightbox">
-                                            <LuSearch className="fea icon-sm" />
-                                        </Link>
+                                        <div className="btn btn-pills btn-icon bg-white text-primary lightbox">
+                                            <LuZoomIn className="fea icon-sm" />
+                                        </div>
                                     </div>
                                 </div>
                             </div>
