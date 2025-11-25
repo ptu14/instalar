@@ -4,6 +4,7 @@ import './assets/scss/style.scss'
 import './assets/css/materialdesignicons.min.css'
 import { Analytics } from "@vercel/analytics/react"
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import GoogleBadge from './components/google-reviews/GoogleBadge'
 
 const lexend = Lexend({
   subsets: ['latin'],
@@ -148,6 +149,9 @@ export default function RootLayout({ children }) {
       <SpeedInsights />
       <body className={`${lexend.variable} ${ubuntu.variable} ${teko.variable} ${noto.variable} ${libre.variable} ${kaushan.variable}`}>
         {children}
+        <div className="position-fixed bottom-0 start-0 m-3" style={{ zIndex: 9999 }}>
+          <GoogleBadge />
+        </div>
       </body>
     </html>
   )

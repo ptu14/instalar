@@ -11,6 +11,7 @@ import ContactForm from "./components/contact-form/contact-form";
 
 import { aboutData } from "./data/business";
 import HeroSlider from "@/app/components/business/heroSlider";
+import ReviewsCarousel from "@/app/components/google-reviews/ReviewsCarousel";
 
 import { AiOutlineCheckCircle } from "react-icons/ai";
 
@@ -92,7 +93,7 @@ export default function IndexBusiness() {
 
             </section>
             <div className="container-fluid ">
-                <div className="row justify-content-center text-center px-5">
+                <div className="row justify-content-center text-center px-5 mb-5">
                     <h2 className="my-1">Jesteśmy autoryzowanym salonem firmy <span style={{ position: 'absolute', width: '1px', height: '1px', margin: '-1px', padding: '0', overflow: 'hidden', clip: 'rect(0,0,0,0)', border: '0' }}>Daikin</span> <Image src='/images/partners/daikin.svg'
                         width={0} height={0} sizes="100vw"
                         style={{
@@ -103,6 +104,20 @@ export default function IndexBusiness() {
                         alt="Logo Daikin" /></h2>
                 </div>
             </div>
+            <section className="section bg-light">
+                <div className="container">
+                    <div className="row justify-content-center">
+                        <div className="col-12 text-center">
+                            <div className="section-title mb-4 pb-2">
+                                <h4 className="title mb-4">Co mówią o nas klienci?</h4>
+                                <p className="text-muted para-desc mx-auto mb-0">Zaufanie naszych klientów jest dla nas najważniejsze. Sprawdź opinie o naszych realizacjach.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <ReviewsCarousel />
+                </div>
+            </section>
+
             <section className="section">
                 <div className="container">
                     <div className="row align-items-center">
@@ -153,7 +168,7 @@ export default function IndexBusiness() {
             <section>
                 <div className="container">
                     <div className="row justify-content-center">
-                        <h2 className="mb-5 text-center">Najlepsze Komponenty dla Twojej Instalacji Fotowoltaicznej i Pompy Ciepła</h2>
+                        <h2 className="mb-5 text-center text-balance">Najlepsze Komponenty dla Twojej Instalacji Fotowoltaicznej i Pompy Ciepła</h2>
                     </div>
                 </div>
                 <div className="container-fluid">
