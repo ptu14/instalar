@@ -14,13 +14,25 @@ body {
 }
 
 .gym-scss {
-    h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    .h1,
+    .h2,
+    .h3,
+    .h4,
+    .h5,
+    .h6 {
         font-family: var(--font-teko) !important;
         line-height: 1.2 !important;
         font-weight: 500 !important;
     }
 
-    #topnav .navigation-menu > li > a{
+    #topnav .navigation-menu>li>a {
         font-family: var(--font-teko) !important;
     }
 
@@ -28,7 +40,7 @@ body {
     .card {
         background: $black !important;
     }
-    
+
     .border-top,
     .border-right,
     .border-bottom,
@@ -54,12 +66,14 @@ body {
         li {
             a {
                 color: $gray-300;
+
                 &:hover {
                     color: $dark !important;
                 }
             }
         }
     }
+
     .social-icon {
         &.foot-social-icon {
             li {
@@ -68,11 +82,13 @@ body {
                 }
             }
         }
+
         &.social {
             li {
                 a {
                     color: darken($dark, 10%);
                     border: 1px solid lighten($black, 10%);
+
                     &:hover {
                         color: $dark !important;
                     }
@@ -85,6 +101,7 @@ body {
         &.bg-footer {
             background: $primary;
         }
+
         .footer-bar {
             border-top: 1px solid lighten($black, 10%) !important;
         }
