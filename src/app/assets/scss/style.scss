@@ -36,17 +36,18 @@
 @import "home";
 @import "features";
 @import "cta";
-@import "team";
-@import "testi";
-@import "portfolio";
+// @import "team";
+// @import "testi";
+// @import "portfolio";
 @import "blog";
-@import "pricing";
-@import "countdown";
+// @import "pricing";
+// @import "countdown";
 @import "contact";
 @import "footer";
 //Demos
-@import "cafe";
-@import "restaurant";
+// @import "cafe";
+// @import "restaurant";
+
 :root {
   --bs-link-color-rgb: #{$dark};
   --color-accent: #ffb45e;
