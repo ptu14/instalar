@@ -95,21 +95,45 @@ export default function RootLayout({ children }) {
           __html: `
         {
           "@context": "https://schema.org",
-          "@type": "Organization",
+          "@type": "LocalBusiness",
           "name": "Komplex System",
+          "image": "https://komplexsystem.pl/images/komplex_system.png",
           "url": "https://komplexsystem.pl",
-          "logo": "https://komplexsystem.pl/images/komplex_system.png",
-          "contactPoint": {
-            "@type": "ContactPoint",
-            "telephone": "+48575508698",
-            "contactType": "customer service"
-          },
+          "telephone": "+48575508698",
+          "priceRange": "$$",
           "address": {
             "@type": "PostalAddress",
             "streetAddress": "Głogoczów 472",
             "addressLocality": "Głogoczów",
             "postalCode": "32-444",
             "addressCountry": "PL"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 49.8945,
+            "longitude": 19.8741
+          },
+          "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday"
+            ],
+            "opens": "08:00",
+            "closes": "16:00"
+          },
+          "sameAs": [
+            "https://www.facebook.com/profile.php?id=61573877295855",
+            "https://www.linkedin.com/company/komplex-system",
+            "https://www.instagram.com/komplexsystem"
+          ],
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+48575508698",
+            "contactType": "customer service"
           }
         }
         `}} />
