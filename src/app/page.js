@@ -101,7 +101,7 @@ export default function IndexBusiness() {
                             height: 'auto'
                         }}
                         className="img-fluid d-inline-flex"
-                        alt="Logo Daikin" /></h2>
+                        alt="" /></h2>
                 </div>
             </div>
             <section className="section bg-light">
