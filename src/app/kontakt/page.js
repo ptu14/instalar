@@ -4,7 +4,6 @@ import Link from "next/link";
 import Navbar from "../components/navbar/navbar";
 
 import { FiPhone, FiMail, FiMapPin } from '../assets/icons/vander';
-import ScrollTop from "../components/scrollTop";
 import KomplexFooter from "@/app/components/footer/komplexFooter";
 
 export default function Contact() {
@@ -274,7 +273,6 @@ export default function Contact() {
                 </div>
             </section>
             <KomplexFooter />
-            <ScrollTop />
         </>
     );
 }
