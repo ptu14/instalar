@@ -264,7 +264,7 @@ export default function Contact() {
                             <div className="card map border-0">
                                 <div className="card-body p-0">
                                     <iframe
-                                        src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=G%C5%82ogocz%C3%B3w%20472+(Komplex%20System)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                                        src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=G%C5%82ogocz%C3%B3w%20472+(Komplex%20System)&amp;t=&amp;z=10&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
                                         style={{ border: '0' }} title="starty" allowFullScreen></iframe>
                                 </div>
                             </div>
