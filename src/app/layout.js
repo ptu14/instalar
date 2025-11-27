@@ -116,7 +116,7 @@ export default function RootLayout({ children }) {
       </head>
       <Analytics />
       <SpeedInsights />
-      <body className={`${lexend.variable}`}>
+      <body className={`${lexend.variable}`} suppressHydrationWarning={true}>
         {children}
         <div className="position-fixed bottom-0 start-0 m-3" style={{ zIndex: 9999 }}>
           <GoogleBadge />
