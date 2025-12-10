@@ -5,7 +5,7 @@ Allow: /
 Allow: /blog/
 Allow: /images/
 
-Sitemap: https://komplexsystem.pl/sitemap.xml
+Sitemap: https://www.komplexsystem.pl/sitemap.xml
 
 Disallow: /.next/
 Disallow: /node_modules/

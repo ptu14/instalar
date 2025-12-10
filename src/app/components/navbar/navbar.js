@@ -50,15 +50,15 @@ export default function Navbar({ navClass, manuClass, navDark }) {
                             <div className="px-lg-5 mx-lg-5">
                                 {navDark === true ?
                                     <Link className="logo" href="/">
-                                        <Image src='/images/komplex_system.png' width={650} height={413} className="logo-img logo-light-mode" alt="" />
-                                        <Image src='/images/komplex_system.png' width={650} height={413} className="logo-img logo-dark-mode" alt="" />
+                                        <Image src='/images/komplex_system.png' width={650} height={413} className="logo-img logo-light-mode" alt="Logo Komplex System" />
+                                        <Image src='/images/komplex_system.png' width={650} height={413} className="logo-img logo-dark-mode" alt="Logo Komplex System" />
                                     </Link> :
                                     <Link className="logo" href="/">
                                         <span className="logo-light-mode">
-                                            <Image src='/images/komplex_system.png' width={650} height={413} className="logo-img l-dark" alt="" />
-                                            <Image src='/images/komplex_system_neg.png' width={650} height={413} className="logo-img l-light" alt="" />
+                                            <Image src='/images/komplex_system.png' width={650} height={413} className="logo-img l-dark" alt="Logo Komplex System" />
+                                            <Image src='/images/komplex_system_neg.png' width={650} height={413} className="logo-img l-light" alt="Logo Komplex System - negatyw" />
                                         </span>
-                                        <Image src='/images/komplex_system.png' width={650} height={413} className="logo-img logo-dark-mode" alt="" />
+                                        <Image src='/images/komplex_system.png' width={650} height={413} className="logo-img logo-dark-mode" alt="Logo Komplex System" />
                                     </Link>
                                 }
 

@@ -1,7 +1,7 @@
 import regionsData from "./data/regions.json";
 
 export default function sitemap() {
-    const baseUrl = "https://komplexsystem.pl";
+    const baseUrl = "https://www.komplexsystem.pl";
 
     // Static pages
     const staticPages = [

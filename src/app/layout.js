@@ -14,7 +14,7 @@ const lexend = Lexend({
 })
 
 export const metadata = {
-  metadataBase: new URL('https://komplexsystem.pl'),
+  metadataBase: new URL('https://www.komplexsystem.pl'),
   title: 'Komplex System - Instalacje Fotowoltaiczne i Pompy Ciepła | OZE',
   description: 'Profesjonalne instalacje fotowoltaiczne i pompy ciepła ✓ Dotacje Mój Prąd i Czyste Powietrze ✓ Oszczędności na rachunkach ✓ Kompleksowa obsługa',
   keywords: 'fotowoltaika, pompy ciepła, instalacje OZE, dotacje fotowoltaika, Mój Prąd, Czyste Powietrze, panele słoneczne, ekologiczne ogrzewanie, energia odnawialna, dofinansowanie OZE',
