@@ -3,21 +3,25 @@ export const aboutData = [
     {
         icon: HeatPump,
         title: 'Pompy ciepła',
+        link: '/oferta/pompy-ciepla',
         desc: 'Energooszczędne pompy ciepła do ogrzewania domu i wody użytkowej. Dostępne dotacje do 21 tys. zł z programu Czyste Powietrze. Oszczędności na ogrzewaniu do 75% w porównaniu z tradycyjnymi rozwiązaniami.'
     },
     {
         icon: LightMode,
         title: 'Instalacje fotowoltaiczne',
+        link: '/oferta/fotowoltaika',
         desc: 'Nowoczesne instalacje fotowoltaiczne z dofinansowaniem do 6 tys. zł z programu Mój Prąd 6.0. Produkuj własny prąd, zmniejsz rachunki nawet o 90% i uniezależnij się od podwyżek cen energii.'
     },
     {
         icon: BatteryHoriz000,
         title: 'Magazyny energii',
+        link: '/oferta/magazyny-energii',
         desc: 'Nowoczesne magazyny energii pozwalające na większą niezależność energetyczną. Wykorzystaj wyprodukowaną energię gdy jej potrzebujesz, nawet po zachodzie słońca. Dotacje do 16 tys. zł w programie Mój Prąd.'
     },
     {
         icon: Savings,
         title: 'Dotacje i finansowanie',
+        link: '/dotacje',
         desc: 'Kompleksowa pomoc w uzyskaniu dofinansowania na instalacje OZE. Obsługujemy wszystkie programy dotacji: Mój Prąd, Czyste Powietrze, ulga termomodernizacyjna. Atrakcyjne finansowanie i leasing.'
     },
 ]

@@ -42,7 +42,7 @@ export default function IndexBusiness() {
                                         <div className="col-lg-6 col-12 mb-4 pt-2" key={index}>
                                             <div className="card features feature-primary">
                                                 <Icon className="icon icon-accent h1 d-block mb-3" />
-                                                <Link href="/page-single-service"
+                                                <Link href={item.link}
                                                     className="h5 title text-dark">{item.title}</Link>
                                                 <p className="text-muted mt-2 mb-0">{item.desc}</p>
                                             </div>
