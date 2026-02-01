@@ -26,9 +26,7 @@ export const metadata = {
       follow: true,
     },
   },
-  alternates: {
-    canonical: '/',
-  },
+  alternates: {},
   icons: {
     icon: [
       { url: '/icon/favicon.ico' },

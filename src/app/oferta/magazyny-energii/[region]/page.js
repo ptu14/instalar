@@ -23,6 +23,9 @@ export async function generateMetadata({ params }) {
     return {
         title: `Magazyny Energii ${region.region_name} - Montaż i Serwis | Komplex System`,
         description: `Profesjonalny montaż magazynów energii w regionie ${region.region_name}. ${serviceData.unique_lead.substring(0, 150)}...`,
+        alternates: {
+            canonical: `https://www.komplexsystem.pl/oferta/magazyny-energii/${regionSlug}`,
+        },
     };
 }
 

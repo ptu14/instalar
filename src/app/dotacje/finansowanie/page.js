@@ -29,7 +29,7 @@ export default function Finansowanie() {
         {
             title: "Dotacje lokalne",
             description: "Profesjonalne doradztwo i pomoc w przygotowaniu dokumentacji do lokalnych dotacji gminnych. Zapewniamy kompleksową obsługę formalności związanych z pozyskaniem finansowania.",
-            image: "/images/wniosek.jpg",
+            image: "/images/finansowanie.jpg",
             features: [
                 "Analiza dokumentacji",
                 "Pomoc w wypełnianiu wniosków",
