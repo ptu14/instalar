@@ -10,7 +10,7 @@ export default function HeroStatic() {
                 alt="Profesjonalna instalacja pompy ciepła i fotowoltaiki - Komplex System Małopolska"
                 fill
                 style={{ objectFit: 'cover' }}
-                quality={75}
+                quality={70}
                 priority
             />
             <div className="bg-overlay bg-linear-gradient position-absolute top-0 start-0 w-100 h-100" style={{ zIndex: 1 }}></div>
