@@ -72,9 +72,11 @@ export async function generateMetadata({ params }) {
         if (data && data.length > 0) {
             const post = data[0];
 
-            // Skrócenie opisu do 160 znaków
-            let description = stripHtml(post.excerpt.rendered || post.content.rendered);
-            description = description.substring(0, 160).trim() + (description.length > 160 ? '...' : '');
+            // Skrócenie opisu do max 155 znaków (SEO best practice)
+            const rawDescription = stripHtml(post.excerpt.rendered || post.content.rendered).trim();
+            let description = rawDescription.length > 155
+                ? rawDescription.substring(0, 152).trim().replace(/[.,;:!?\s]+$/, '') + '...'
+                : rawDescription;
             
             // Pobranie URL obrazu wyróżniającego
             let ogImage;

@@ -19,7 +19,7 @@ export async function generateMetadata({ params }) {
 
     return {
         title: `Pompy Ciepła ${region.region_name} - Montaż i Serwis | Komplex System`,
-        description: `Profesjonalny montaż pomp ciepła w regionie ${region.region_name}. ${serviceData.unique_lead.substring(0, 150)}...`,
+        description: serviceData.meta_description || `Profesjonalny montaż pomp ciepła ${region.region_locative_phrase}. Bezpłatna wycena i doradztwo.`,
         alternates: {
             canonical: `https://www.komplexsystem.pl/oferta/pompy-ciepla/${regionSlug}`,
         },

@@ -22,7 +22,7 @@ export async function generateMetadata({ params }) {
 
     return {
         title: `Fotowoltaika ${region.region_name} - Montaż i Serwis | Komplex System`,
-        description: `Profesjonalny montaż instalacji fotowoltaicznych w regionie ${region.region_name}. ${serviceData.unique_lead.substring(0, 150)}...`,
+        description: serviceData.meta_description || `Profesjonalny montaż fotowoltaiki ${region.region_locative_phrase}. Bezpłatna wycena i doradztwo.`,
         alternates: {
             canonical: `https://www.komplexsystem.pl/oferta/fotowoltaika/${regionSlug}`,
         },
