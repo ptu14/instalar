@@ -85,6 +85,9 @@ export async function generateMetadata({ params }) {
             return {
                 title: `${post.title.rendered} | Komplex System Blog`,
                 description: description,
+                alternates: {
+                    canonical: `https://www.komplexsystem.pl/blog/${post.slug}`,
+                },
                 openGraph: ogImage ? {
                     images: [{ url: ogImage }],
                 } : undefined,
@@ -98,6 +101,9 @@ export async function generateMetadata({ params }) {
     return {
         title: "Blog | Komplex System",
         description: "Artykuły o odnawialnych źródłach energii, fotowoltaice i pompach ciepła.",
+        alternates: {
+            canonical: "https://www.komplexsystem.pl/blog",
+        },
     };
 }
 

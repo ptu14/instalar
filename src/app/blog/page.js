@@ -52,6 +52,9 @@ export async function generateMetadata({ searchParams }) {
     return {
         title: categoryName ? `Blog - ${categoryName} | Komplex System` : "Blog | Komplex System",
         description: "Najnowsze wpisy i artykuły o odnawialnych źródłach energii, fotowoltaice, pompach ciepła i efektywności energetycznej.",
+        alternates: {
+            canonical: "https://www.komplexsystem.pl/blog",
+        },
     };
 }
 
