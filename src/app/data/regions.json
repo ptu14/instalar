@@ -91,8 +91,6 @@
         "region_locative_phrase": "na południe od Krakowa",
         "target_cities": [
             "Myślenice",
-            "Skawina",
-            "Mogilany",
             "Dobczyce",
             "Sułkowice",
             "Kalwaria Zebrzydowska",
@@ -415,6 +413,92 @@
                     "Pełna integracja z aplikacją mobilną",
                     "Współpraca z ładowarkami EV",
                     "Możliwość pracy w trybie wyspowym"
+                ]
+            }
+        }
+    },
+    {
+        "id": "malopolska",
+        "slug": "malopolska",
+        "region_name": "Małopolska",
+        "region_genitive": "Małopolski",
+        "region_locative_phrase": "w Małopolsce",
+        "target_cities": [
+            "Kraków",
+            "Tarnów",
+            "Nowy Sącz",
+            "Oświęcim",
+            "Chrzanów",
+            "Bochnia",
+            "Nowy Targ",
+            "Zakopane",
+            "Wadowice",
+            "Myślenice",
+            "Wieliczka",
+            "Olkusz",
+            "Limanowa",
+            "Brzesko",
+            "Gorlice",
+            "Miechów",
+            "Proszowice",
+            "Sucha Beskidzka",
+            "Maków Podhalański"
+        ],
+        "services": {
+            "pompy_ciepla": {
+                "meta_description": "Pompy ciepła w Małopolsce. Profesjonalny montaż i serwis w Krakowie i całym województwie małopolskim. Dotacje Czyste Powietrze. Bezpłatna wycena.",
+                "seo_context": "Kompleksowa obsługa całej Małopolski z bazą w Głogoczowie pod Krakowem. Doświadczenie w różnych typach zabudowy - od kamienic w Krakowie po domy w terenie górskim.",
+                "unique_lead": "Szukasz sprawdzonego instalatora pomp ciepła w Małopolsce? Komplex System to lokalna firma z bazą pod Krakowem, obsługująca całe województwo małopolskie. Od Oświęcimia po Gorlice - montujemy pompy ciepła dopasowane do Twojego domu i klimatu.",
+                "local_challenges": {
+                    "title": "Różnorodność klimatyczna Małopolski",
+                    "content": "Małopolska to region o zróżnicowanym klimacie - od łagodnych zim w dolinach po siarczyste mrozy w górach. Dobieramy pompy ciepła indywidualnie, uwzględniając mikroklimat Twojej lokalizacji, typ budynku i istniejącą instalację grzewczą."
+                },
+                "local_benefits": [
+                    "Obsługa całego województwa małopolskiego z szybkim dojazdem",
+                    "Doświadczenie w różnych strefach klimatycznych regionu",
+                    "Kompleksowa pomoc w uzyskaniu dotacji Czyste Powietrze i Moje Ciepło"
+                ]
+            },
+            "fotowoltaika": {
+                "meta_description": "Fotowoltaika w Małopolsce. Instalacje paneli słonecznych w Krakowie i całym województwie. Program Mój Prąd. Darmowy audyt i wycena.",
+                "seo_context": "Fotowoltaika dla domów i firm w całej Małopolsce. Różnorodność warunków - od płaskich dachów miejskich po strome dachy górskie.",
+                "unique_lead": "Małopolska to region o dobrym potencjale słonecznym, szczególnie w rejonie Tarnowa i doliny Wisły. Projektujemy instalacje fotowoltaiczne dopasowane do lokalnych warunków - od gęstej zabudowy Krakowa po tereny górskie.",
+                "local_challenges": {
+                    "title": "Fotowoltaika w zróżnicowanym terenie Małopolski",
+                    "content": "Każda lokalizacja w Małopolsce ma swoją specyfikę - zacienienie przez okoliczną zabudowę w miastach, obciążenie śniegiem w górach czy zmienny kąt nasłonecznienia na pagórkach. Nasze projekty uwzględniają te lokalne uwarunkowania."
+                },
+                "local_benefits": [
+                    "Projekty uwzględniające lokalne warunki nasłonecznienia",
+                    "Wsparcie w programach Mój Prąd i Czyste Powietrze",
+                    "Montaż na każdym typie dachu - płaskim, skośnym, wielospadowym"
+                ]
+            },
+            "klimatyzacja": {
+                "meta_description": "Klimatyzacja w Małopolsce. Montaż klimatyzacji w domach i firmach w Krakowie i okolicach. Ciche jednostki, funkcja grzania. Szybki montaż i serwis.",
+                "seo_context": "Klimatyzacja dla domów, mieszkań i obiektów komercyjnych w całej Małopolsce. Rosnące temperatury latem i potrzeba chłodzenia.",
+                "unique_lead": "Lata w Małopolsce są coraz cieplejsze - szczególnie w Kotlinie Sandomierskiej i miejskich wyspach ciepła Krakowa. Oferujemy klimatyzację, która zapewni komfort termiczny przez cały rok - chłodzenie latem i dogrzewanie zimą.",
+                "local_challenges": {
+                    "title": "Rosnące zapotrzebowanie na chłodzenie w Małopolsce",
+                    "content": "Coraz dłuższe fale upałów dotykają całą Małopolskę. W miastach problem potęgują miejskie wyspy ciepła, a na poddaszach nowych domów temperatura latem przekracza 35°C. Dobieramy klimatyzację uwzględniając kubaturę pomieszczeń i ekspozycję budynku."
+                },
+                "local_benefits": [
+                    "Szybki montaż w całym województwie małopolskim",
+                    "Ciche jednostki odpowiednie do sypialni i biur",
+                    "Funkcja grzania - oszczędne dogrzewanie w okresach przejściowych"
+                ]
+            },
+            "magazyny_energii": {
+                "meta_description": "Magazyny energii w Małopolsce. Magazynowanie energii z fotowoltaiki i zasilanie awaryjne. Ogniwa LiFePO4. Montaż w Krakowie i okolicach.",
+                "seo_context": "Magazyny energii jako dopełnienie fotowoltaiki w Małopolsce. Rosnąca popularność taryf dynamicznych i potrzeba niezależności energetycznej.",
+                "unique_lead": "Magazyn energii to klucz do pełnej niezależności energetycznej w Małopolsce. Przechowuj nadwyżki z fotowoltaiki, korzystaj z tańszego prądu nocnego i zabezpiecz dom przed awariami sieci - niezależnie od tego, czy mieszkasz w Krakowie czy na Podhalu.",
+                "local_challenges": {
+                    "title": "Bezpieczeństwo energetyczne w Małopolsce",
+                    "content": "Rozbudowa sieci energetycznej nie nadąża za dynamicznym rozwojem Małopolski. Magazyn energii chroni przed spadkami napięcia w podmiejskich osiedlach i przerwami w dostawie prądu na terenach wiejskich i górskich."
+                },
+                "local_benefits": [
+                    "Integracja z istniejącą instalacją fotowoltaiczną",
+                    "Zasilanie awaryjne (backup) dla domu i pompy ciepła",
+                    "Dofinansowanie z programu Mój Prąd"
                 ]
             }
         }

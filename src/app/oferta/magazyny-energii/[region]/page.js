@@ -1,4 +1,5 @@
 import React from "react";
+import { notFound } from "next/navigation";
 import regionsData from "../../../data/regions.json";
 import RegionalServicePage from "../../../components/regional/RegionalServicePage";
 
@@ -19,12 +20,30 @@ export async function generateMetadata({ params }) {
     }
 
     const serviceData = region.services.magazyny_energii;
+    const title = `Magazyny Energii ${region.region_name} - Montaż i Doradztwo | Komplex System`;
+    const description = serviceData.meta_description || `Profesjonalny montaż magazynów energii ${region.region_locative_phrase}. Bezpłatna wycena i doradztwo.`;
+    const url = `https://www.komplexsystem.pl/oferta/magazyny-energii/${regionSlug}`;
 
     return {
-        title: `Magazyny Energii ${region.region_name} - Montaż i Serwis | Komplex System`,
-        description: serviceData.meta_description || `Profesjonalny montaż magazynów energii ${region.region_locative_phrase}. Bezpłatna wycena i doradztwo.`,
+        title,
+        description,
         alternates: {
-            canonical: `https://www.komplexsystem.pl/oferta/magazyny-energii/${regionSlug}`,
+            canonical: url,
+        },
+        openGraph: {
+            title,
+            description,
+            url,
+            type: "website",
+            locale: "pl_PL",
+            siteName: "Komplex System",
+            images: [{ url: "/images/magazyn-energii.jpg", width: 600, height: 400, alt: `Magazyny energii ${region.region_name}` }],
+        },
+        twitter: {
+            card: "summary_large_image",
+            title,
+            description,
+            images: ["/images/magazyn-energii.jpg"],
         },
     };
 }
@@ -34,11 +53,18 @@ export default async function Page({ params }) {
     const region = regionsData.find((r) => r.slug === regionSlug);
 
     if (!region) {
-        return <div>Region nie znaleziony</div>;
+        notFound();
     }
 
     const serviceData = region.services.magazyny_energii;
     const regionData = { ...region, ...serviceData };
 
-    return <RegionalServicePage region={regionData} serviceName="Magazyny Energii" heroImage="/images/magazyn-energii.jpg" />;
+    return (
+        <RegionalServicePage
+            region={regionData}
+            serviceName="Magazyny Energii"
+            serviceSlug="magazyny-energii"
+            heroImage="/images/magazyn-energii.jpg"
+        />
+    );
 }

@@ -4,13 +4,71 @@ import Link from "next/link";
 import Navbar from "../navbar/navbar";
 import KomplexFooter from "../footer/komplexFooter";
 import ContactForm from "../contact-form/contact-form";
-import { AiOutlineCheckCircle, AiOutlineEnvironment, AiOutlineInfoCircle } from "react-icons/ai";
+import { AiOutlineCheckCircle, AiOutlineEnvironment } from "react-icons/ai";
 
-export default function RegionalServicePage({ region, serviceName = "Pompy Ciepła", heroImage = "/images/pompa-ciepla.jpg" }) {
-    const { region_name, target_cities, seo_context, unique_lead, local_challenges, local_benefits, region_genitive, region_locative_phrase } = region;
+export default function RegionalServicePage({ region, serviceName = "Pompy Ciepła", serviceSlug = "pompy-ciepla", heroImage = "/images/pompa-ciepla.jpg" }) {
+    const { region_name, target_cities, seo_context, unique_lead, local_challenges, local_benefits, region_genitive, region_locative_phrase, slug } = region;
+
+    const serviceSchema = {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": `${serviceName} - ${region_name}`,
+        "description": unique_lead,
+        "provider": {
+            "@type": "LocalBusiness",
+            "name": "Komplex System",
+            "url": "https://www.komplexsystem.pl",
+            "telephone": "+48575508698",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Głogoczów 472",
+                "addressLocality": "Głogoczów",
+                "postalCode": "32-444",
+                "addressCountry": "PL"
+            }
+        },
+        "areaServed": target_cities.map(city => ({
+            "@type": "City",
+            "name": city
+        })),
+        "url": `https://www.komplexsystem.pl/oferta/${serviceSlug}/${slug}`
+    };
+
+    const breadcrumbSchema = {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Strona główna",
+                "item": "https://www.komplexsystem.pl"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Oferta",
+                "item": "https://www.komplexsystem.pl/oferta"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": serviceName,
+                "item": `https://www.komplexsystem.pl/oferta/${serviceSlug}`
+            },
+            {
+                "@type": "ListItem",
+                "position": 4,
+                "name": region_name
+            }
+        ]
+    };
 
     return (
         <>
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+
             <Navbar navClass="nav-sticky defaultscroll sticky" manuClass="navigation-menu nav-right nav-light" />
 
             {/* Hero Section */}
@@ -23,6 +81,15 @@ export default function RegionalServicePage({ region, serviceName = "Pompy Ciep�
                                 <h1 className="title text-white title-dark mb-0"> {serviceName} - {region_name} </h1>
                                 <p className="para-desc mx-auto text-white-50 mt-4">{unique_lead}</p>
                             </div>
+                            {/* Breadcrumbs UI */}
+                            <nav aria-label="breadcrumb" className="d-inline-block mt-3">
+                                <ul className="breadcrumb bg-transparent rounded shadow-none mb-0 p-0">
+                                    <li className="breadcrumb-item"><Link href="/" className="text-white-50">Strona główna</Link></li>
+                                    <li className="breadcrumb-item"><Link href="/oferta" className="text-white-50">Oferta</Link></li>
+                                    <li className="breadcrumb-item"><Link href={`/oferta/${serviceSlug}`} className="text-white-50">{serviceName}</Link></li>
+                                    <li className="breadcrumb-item active text-white" aria-current="page">{region_name}</li>
+                                </ul>
+                            </nav>
                         </div>
                     </div>
                 </div>
@@ -34,7 +101,7 @@ export default function RegionalServicePage({ region, serviceName = "Pompy Ciep�
                     <div className="row align-items-center">
                         <div className="col-lg-6">
                             <div className="section-title">
-                                <h4 className="title mb-3">Dlaczego wybrać Komplex System {region_locative_phrase || region_name}?</h4>
+                                <h2 className="title mb-3">Dlaczego wybrać Komplex System {region_locative_phrase || region_name}?</h2>
                                 <p className="text-muted mb-0">{seo_context}</p>
                                 <div className="mt-4">
                                     <p className="text-muted">
@@ -60,7 +127,7 @@ export default function RegionalServicePage({ region, serviceName = "Pompy Ciep�
                                     width={600}
                                     height={400}
                                     className="img-fluid rounded shadow"
-                                    alt={`${serviceName} ${region_name}`}
+                                    alt={`${serviceName} ${region_name} - montaż i serwis`}
                                 />
                             </div>
                         </div>
@@ -68,7 +135,7 @@ export default function RegionalServicePage({ region, serviceName = "Pompy Ciep�
                 </div>
             </section>
 
-            {/* Local Challenges Section (New Unique Content) */}
+            {/* Local Challenges Section */}
             {local_challenges && (
                 <section className="section bg-light">
                     <div className="container">
@@ -80,13 +147,13 @@ export default function RegionalServicePage({ region, serviceName = "Pompy Ciep�
                                         width={600}
                                         height={400}
                                         className="img-fluid rounded shadow"
-                                        alt="Wyzwania lokalne"
+                                        alt={`${local_challenges.title} - ${serviceName} ${region_name}`}
                                     />
                                 </div>
                             </div>
                             <div className="col-lg-7 col-md-6 order-1 order-md-2">
                                 <div className="section-title ms-lg-5">
-                                    <h4 className="title mb-3">{local_challenges.title}</h4>
+                                    <h2 className="title mb-3">{local_challenges.title}</h2>
                                     <p className="text-muted mb-0">{local_challenges.content}</p>
                                     <div className="mt-4">
                                         <Link href="/kontakt" className="btn btn-primary">Skonsultuj swój projekt</Link>
@@ -104,7 +171,7 @@ export default function RegionalServicePage({ region, serviceName = "Pompy Ciep�
                     <div className="row justify-content-center">
                         <div className="col-12 text-center">
                             <div className="section-title mb-4 pb-2">
-                                <h4 className="title mb-4">Obsługiwane miejscowości w regionie {region_name}</h4>
+                                <h2 className="title mb-4">{serviceName} - obsługiwane miejscowości {region_locative_phrase || `w regionie ${region_name}`}</h2>
                                 <p className="text-muted para-desc mx-auto mb-0">
                                     Działamy aktywnie w następujących miastach i ich okolicach. Zapewniamy szybki dojazd i bezpłatną wycenę.
                                 </p>
@@ -120,7 +187,7 @@ export default function RegionalServicePage({ region, serviceName = "Pompy Ciep�
                                         <AiOutlineEnvironment />
                                     </div>
                                     <div className="content">
-                                        <h5 className="title mb-0">{city}</h5>
+                                        <h3 className="h5 title mb-0">{city}</h3>
                                         <p className="text-muted mb-0 text-small">Montaż i serwis {serviceName}</p>
                                     </div>
                                 </div>
@@ -136,7 +203,7 @@ export default function RegionalServicePage({ region, serviceName = "Pompy Ciep�
                     <div className="row justify-content-center">
                         <div className="col-lg-8">
                             <ContactForm
-                                title={`Zamów wycenę w: ${region_name}`}
+                                title={`Zamów wycenę - ${serviceName} ${region_locative_phrase || region_name}`}
                                 description="Wypełnij formularz, a skontaktujemy się z Tobą w ciągu 24h."
                                 subject={`Zapytanie z regionu: ${region_name} - ${serviceName}`}
                             />
