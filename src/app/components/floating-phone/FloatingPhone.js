@@ -1,6 +1,7 @@
 'use client'
 import React from 'react';
 import Link from 'next/link';
+import { MdPhone } from 'react-icons/md';
 
 const FloatingPhone = () => {
     return (
@@ -11,7 +12,7 @@ const FloatingPhone = () => {
             onMouseEnter={(e) => e.currentTarget.style.transform = 'translateY(-2px)'}
             onMouseLeave={(e) => e.currentTarget.style.transform = 'translateY(0)'}
         >
-            <i className="mdi mdi-phone fs-5 ring-animation"></i>
+            <MdPhone className="fs-5 ring-animation" />
             <span className="fw-bold d-none d-md-block">+48 575 508 698</span>
         </Link>
     );

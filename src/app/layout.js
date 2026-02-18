@@ -1,7 +1,6 @@
 import { Lexend } from 'next/font/google'
 import 'bootstrap/dist/css/bootstrap.css'
 import './assets/scss/style.scss'
-import './assets/css/materialdesignicons.min.css'
 import { Analytics } from "@vercel/analytics/react"
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import GoogleBadge from './components/google-reviews/GoogleBadge'

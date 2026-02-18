@@ -1,6 +1,7 @@
 'use client'
 import React,{useState} from "react";
 import Link from "next/link";
+import { MdPlayArrow } from 'react-icons/md';
 
 import { Parallax } from 'react-parallax';
 
@@ -26,7 +27,7 @@ export default function Cta(){
                         <div className="col-12">
                             <div className="play-icon">
                                 <Link href="#" scroll={false} onClick={() => setOpen(true)} className="play-btn lightbox">
-                                    <i className="mdi mdi-play text-primary rounded-circle bg-white shadow"></i>
+                                    <MdPlayArrow className="text-primary rounded-circle bg-white shadow" style={{ fontSize: '36px', padding: '6px' }} />
                                 </Link>
                             </div>
                             <ModalVideo

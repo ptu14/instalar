@@ -6,6 +6,7 @@ import Navbar from "../components/navbar/navbar";
 import KomplexFooter from "../components/footer/komplexFooter";
 
 import { FiArrowRight, FiCalendar, FiTag } from "@/app/assets/icons/vander";
+import { MdChevronLeft, MdChevronRight } from "react-icons/md";
 
 import "./blog.css";
 
@@ -276,7 +277,7 @@ export default async function BlogPage({ searchParams }) {
                                                         aria-label="Previous"
                                                     >
                                                         <span aria-hidden="true">
-                                                            <i className="mdi mdi-chevron-left mdi-18px"></i>
+                                                            <MdChevronLeft size={18} />
                                                         </span>
                                                     </Link>
                                                 </li>
@@ -308,7 +309,7 @@ export default async function BlogPage({ searchParams }) {
                                                         aria-label="Next"
                                                     >
                                                         <span aria-hidden="true">
-                                                            <i className="mdi mdi-chevron-right mdi-18px"></i>
+                                                            <MdChevronRight size={18} />
                                                         </span>
                                                     </Link>
                                                 </li>
