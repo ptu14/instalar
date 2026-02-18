@@ -10,7 +10,7 @@ import KomplexFooter from "./components/footer/komplexFooter";
 import ContactForm from "./components/contact-form/contact-form";
 
 import { aboutData } from "./data/business";
-import HeroSlider from "@/app/components/business/heroSlider";
+import HeroStatic from "@/app/components/business/heroStatic";
 import ReviewsCarousel from "@/app/components/google-reviews/ReviewsCarousel";
 
 import { AiOutlineCheckCircle } from "react-icons/ai";
@@ -20,7 +20,7 @@ export default function IndexBusiness() {
         <>
             <h1 style={{ position: 'absolute', width: '1px', height: '1px', margin: '-1px', padding: '0', overflow: 'hidden', clip: 'rect(0,0,0,0)', border: '0' }}>Komplex System - Instalacje Fotowoltaiczne, Pompy Ciepła, Magazyny Energii i Dotacje Mój Prąd</h1>
             <Navbar navClass="defaultscroll sticky" manuClass="navigation-menu nav-right nav-light" />
-            <HeroSlider />
+            <HeroStatic />
             <section className="first-section section">
                 <div className="container">
                     <div className="row">
