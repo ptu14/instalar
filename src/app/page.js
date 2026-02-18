@@ -152,7 +152,7 @@ export default function IndexBusiness() {
 
                 </div>
             </section>
-            <section className="section">
+            <section className="section" id="kontakt">
                 <div className="container-fluid md-contact-form">
                     <div className="container">
                         <div className="row align-items-center">
