@@ -38,8 +38,10 @@ export default function Realizations({ initialImages = [] }) {
     // Create Cloudinary Image objects for the grid (thumbnails)
     const gridImages = imagePublicIds.map(publicId => {
         const img = cld.image(publicId);
-        // Apply transformations: fill to 300x400 (or any aspect ratio), auto gravity
+        // Resize + automatyczna konwersja formatu (HEIC → WebP/JPEG) i jakości
         img.resize(fill().width(300).height(400).gravity(autoGravity()));
+        img.delivery(format(auto()));
+        img.delivery(quality(qAuto()));
         return {
             id: publicId,
             cldImg: img
