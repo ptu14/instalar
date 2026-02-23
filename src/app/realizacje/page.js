@@ -25,6 +25,12 @@ async function getImages() {
     }
 }
 
+export const metadata = {
+    title: 'Realizacje – Galeria Naszych Instalacji | Komplex System',
+    description: 'Zobacz nasze realizacje: montaże fotowoltaiki, pomp ciepła i klimatyzacji w Małopolsce. Sprawdź jakość naszych instalacji na zdjęciach z realizacji.',
+    alternates: { canonical: 'https://www.komplexsystem.pl/realizacje' },
+};
+
 export default async function RealizationsPage() {
     const images = await getImages();
 

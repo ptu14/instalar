@@ -7,6 +7,12 @@ import ContactForm from "../../components/contact-form/contact-form";
 import { AiOutlineCheckCircle } from "react-icons/ai";
 import regionsData from "../../data/regions.json";
 
+export const metadata = {
+    title: 'Magazyny Energii – Przechowuj Energię z Fotowoltaiki | Komplex System',
+    description: 'Montaż magazynów energii do instalacji fotowoltaicznych w Małopolsce. Wykorzystaj 100% wyprodukowanej energii. Dotacja Mój Prąd na magazyn energii. Bezpłatna wycena.',
+    alternates: { canonical: 'https://www.komplexsystem.pl/oferta/magazyny-energii' },
+};
+
 export default function MagazynyEnergii() {
     return (
         <>

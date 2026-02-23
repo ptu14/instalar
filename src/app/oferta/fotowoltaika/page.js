@@ -7,6 +7,12 @@ import { AiOutlineCheckCircle } from "react-icons/ai";
 import ContactForm from "@/app/components/contact-form/contact-form";
 import regionsData from "../../data/regions.json";
 
+export const metadata = {
+    title: 'Fotowoltaika – Instalacje Paneli Słonecznych | Komplex System',
+    description: 'Profesjonalny montaż instalacji fotowoltaicznych w Małopolsce. Produkuj własną energię i oszczędzaj na rachunkach. Dotacje Mój Prąd do 28 000 zł. Bezpłatna wycena.',
+    alternates: { canonical: 'https://www.komplexsystem.pl/oferta/fotowoltaika' },
+};
+
 export default function Fotowoltaika() {
 
     return (

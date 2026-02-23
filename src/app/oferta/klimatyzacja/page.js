@@ -7,6 +7,12 @@ import { AiOutlineCheckCircle } from "react-icons/ai";
 import regionsData from "../../data/regions.json";
 import Link from "next/link";
 
+export const metadata = {
+    title: 'Klimatyzacja – Montaż Klimatyzacji Domowej i Firmowej | Komplex System',
+    description: 'Montaż klimatyzacji split i multi-split w Małopolsce. Chłodzenie latem, dogrzewanie zimą. Energooszczędne urządzenia renomowanych marek. Bezpłatna wycena.',
+    alternates: { canonical: 'https://www.komplexsystem.pl/oferta/klimatyzacja' },
+};
+
 export default function Klimatyzacja() {
     return (
         <>

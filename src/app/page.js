@@ -15,6 +15,12 @@ import ReviewsCarousel from "@/app/components/google-reviews/ReviewsCarousel";
 
 import { AiOutlineCheckCircle } from "react-icons/ai";
 
+export const metadata = {
+    title: 'Komplex System – Fotowoltaika i Pompy Ciepła w Małopolsce',
+    description: 'Montaż fotowoltaiki, pomp ciepła, klimatyzacji i magazynów energii w Małopolsce. Pomagamy uzyskać dotacje Mój Prąd i Czyste Powietrze. Bezpłatna wycena.',
+    alternates: { canonical: 'https://www.komplexsystem.pl' },
+};
+
 export default function IndexBusiness() {
     return (
         <>

@@ -6,6 +6,12 @@ import KomplexFooter from "../components/footer/komplexFooter";
 import {AiOutlineCheckCircle} from "react-icons/ai";
 import ContactForm from "@/app/components/contact-form/contact-form";
 
+export const metadata = {
+    title: 'Oferta – Fotowoltaika, Pompy Ciepła, Klimatyzacja | Komplex System',
+    description: 'Sprawdź naszą ofertę: fotowoltaika, pompy ciepła, klimatyzacja, magazyny energii i instalacje sanitarne. Kompleksowa obsługa od projektu po montaż w Małopolsce.',
+    alternates: { canonical: 'https://www.komplexsystem.pl/oferta' },
+};
+
 export default function Oferta() {
     const uslugi = [
         {

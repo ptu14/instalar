@@ -7,6 +7,12 @@ import ContactForm from "../components/contact-form/contact-form";
 import {AiOutlineCheckCircle} from "react-icons/ai";
 import "./styles.css";
 
+export const metadata = {
+    title: 'Dotacje na OZE – Mój Prąd, Czyste Powietrze, Moje Ciepło | Komplex System',
+    description: 'Pomagamy uzyskać dotacje na fotowoltaikę i pompy ciepła: Mój Prąd do 28 000 zł, Czyste Powietrze do 135 000 zł, Moje Ciepło do 21 000 zł. Sprawdź warunki.',
+    alternates: { canonical: 'https://www.komplexsystem.pl/dotacje' },
+};
+
 export default function Dotacje() {
 
     const dotacje = [

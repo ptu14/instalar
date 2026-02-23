@@ -7,6 +7,12 @@ import ContactForm from "../../components/contact-form/contact-form";
 import { AiOutlineCheckCircle } from "react-icons/ai";
 import regionsData from "../../data/regions.json";
 
+export const metadata = {
+    title: 'Pompy Ciepła – Montaż i Serwis | Komplex System',
+    description: 'Montaż pomp ciepła powietrze-woda i powietrze-powietrze w Małopolsce. Ogrzewanie domu taniej nawet o 60%. Dotacja Czyste Powietrze i Moje Ciepło. Bezpłatna wycena.',
+    alternates: { canonical: 'https://www.komplexsystem.pl/oferta/pompy-ciepla' },
+};
+
 export default function PompyCiepla() {
     return (
         <>
