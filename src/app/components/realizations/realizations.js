@@ -83,13 +83,15 @@ export default function Realizations({ initialImages = [] }) {
                     {visibleGridImages.map((item, index) => (
                         <div className="col-lg-4 col-md-6 col-12 mt-4 pt-2" key={index}>
                             <div className="card portfolio portfolio-classic border-0 position-relative d-block overflow-hidden rounded">
-                                <div className="card-body p-0" onClick={() => handleImageClick(index)} style={{ cursor: 'pointer' }}>
+                                <div className="card-body p-0" onClick={() => handleImageClick(index)} style={{ cursor: 'pointer', aspectRatio: '3 / 4', overflow: 'hidden' }}>
                                     {/* Use AdvancedImage from Cloudinary SDK */}
                                     <AdvancedImage
                                         cldImg={item.cldImg}
                                         className="img-fluid"
                                         alt="Realizacja"
-                                        style={{ width: '100%', height: 'auto' }}
+                                        width={300}
+                                        height={400}
+                                        style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                                     />
                                     <div className="overlay"></div>
 
