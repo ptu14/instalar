@@ -88,6 +88,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="pl">
       <head>
+        {/* Google Tag Manager */}
+        <script dangerouslySetInnerHTML={{ __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-5SJRMFWB');` }} />
+        {/* End Google Tag Manager */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{
           __html: `
         {
@@ -138,6 +141,9 @@ export default function RootLayout({ children }) {
       <Analytics />
       <SpeedInsights />
       <body className={`${lexend.variable}`} suppressHydrationWarning={true}>
+        {/* Google Tag Manager (noscript) */}
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5SJRMFWB" height="0" width="0" style={{display:'none',visibility:'hidden'}}></iframe></noscript>
+        {/* End Google Tag Manager (noscript) */}
         {children}
         <div className="position-fixed bottom-0 start-0 m-3" style={{ zIndex: 9999 }}>
           <GoogleBadge />
