@@ -168,6 +168,20 @@ export default function PolitykaPrywatnosci() {
                                 <h3 className="h5 mb-2 mt-3">11.4. Pixel Meta i TikTok Pixel</h3>
                                 <p>Na naszej stronie wykorzystujemy technologię śledzenia Pixel Meta (wcześniej Facebook Pixel) oraz TikTok Pixel, które umożliwiają mierzenie skuteczności kampanii reklamowych prowadzonych w serwisach Meta (Facebook, Instagram) i TikTok. Piksele te zbierają informacje o działaniach użytkowników na naszej stronie, które są następnie wykorzystywane do personalizacji reklam.</p>
 
+                                <h3 className="h5 mb-2 mt-3">11.5. Google Analytics 4 (GA4)</h3>
+                                <p>Niniejsza strona korzysta z usługi Google Analytics 4 świadczonej przez Google LLC (1600 Amphitheatre Parkway, Mountain View, CA 94043, USA). Google Analytics 4 to narzędzie analityczne, które za pomocą plików cookies zbiera informacje o sposobie korzystania ze strony, m.in.:</p>
+                                <ul>
+                                    <li>odwiedzane podstrony i czas spędzony na stronie</li>
+                                    <li>źródło ruchu (skąd użytkownik trafił na stronę)</li>
+                                    <li>typ urządzenia i przeglądarki</li>
+                                    <li>przybliżona lokalizacja geograficzna (na poziomie kraju/regionu)</li>
+                                </ul>
+                                <p>Dane te są przekazywane do serwerów Google i przechowywane zgodnie z polityką prywatności Google. Identyfikator pomiarowy GA4 używany na tej stronie to: <strong>G-LEEZZFMK2B</strong>. GA4 używa mechanizmu <em>Google Consent Mode v2</em> – dane analityczne są zbierane wyłącznie po wyrażeniu zgody przez Użytkownika. Możesz zapoznać się z <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">polityką prywatności Google</a>.</p>
+
+                                <h3 className="h5 mb-2 mt-3">11.6. Google Tag Manager (GTM)</h3>
+                                <p>Strona korzysta z narzędzia Google Tag Manager (GTM) świadczonego przez Google LLC. GTM to system zarządzania tagami, który umożliwia wdrażanie i zarządzanie skryptami analitycznymi i marketingowymi (m.in. GA4, piksele reklamowe) bez konieczności bezpośredniej modyfikacji kodu strony. Identyfikator kontenera GTM używany na tej stronie to: <strong>GTM-5SJRMFWB</strong>.</p>
+                                <p>GTM sam w sobie nie zbiera danych osobowych – jest jedynie narzędziem do wdrażania innych tagów. Jednak tagi uruchamiane przez GTM (np. GA4) mogą zbierać dane zgodnie z opisem w odpowiednich punktach niniejszej Polityki. Wszystkie tagi są konfigurowane z uwzględnieniem zgody Użytkownika (<em>Consent Mode v2</em>).</p>
+
                                 <h2 className="h4 mb-3 mt-4">12. KONTAKT</h2>
                                 <p>W sprawach związanych z ochroną danych osobowych prosimy o kontakt:</p>
                                 <ul>
@@ -184,7 +198,7 @@ export default function PolitykaPrywatnosci() {
                                 <h2 className="h4 mb-3 mt-4">13. ZMIANY POLITYKI PRYWATNOŚCI</h2>
                                 <p>Administrator zastrzega sobie prawo do zmiany niniejszej Polityki Prywatności. Zmieniona Polityka Prywatności zostanie opublikowana na stronie komplexsystem.pl oraz na profilach w mediach społecznościowych. Zmiany wchodzą w życie z dniem ich opublikowania.</p>
 
-                                <p className="mt-4">Data ostatniej aktualizacji: 07.05.2025</p>
+                                <p className="mt-4">Data ostatniej aktualizacji: 26.02.2026</p>
 
                                 <div className="mt-4">
                                     <Link href="/" className="btn btn-primary">Powrót do strony głównej</Link>

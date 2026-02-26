@@ -5,6 +5,7 @@ import { Analytics } from "@vercel/analytics/react"
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import GoogleBadge from './components/google-reviews/GoogleBadge'
 import FloatingPhone from './components/floating-phone/FloatingPhone'
+import CookieBanner from './components/cookie-banner/CookieBanner'
 
 const lexend = Lexend({
   subsets: ['latin'],
@@ -88,6 +89,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="pl">
       <head>
+        {/* Google Consent Mode v2 - default denied */}
+        <script dangerouslySetInnerHTML={{ __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('consent','default',{analytics_storage:'denied',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',wait_for_update:500});` }} />
+        {/* End Google Consent Mode v2 */}
         {/* Google Tag Manager */}
         <script dangerouslySetInnerHTML={{ __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-5SJRMFWB');` }} />
         {/* End Google Tag Manager */}
@@ -148,6 +152,7 @@ export default function RootLayout({ children }) {
         {/* Google Tag Manager (noscript) */}
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5SJRMFWB" height="0" width="0" style={{display:'none',visibility:'hidden'}}></iframe></noscript>
         {/* End Google Tag Manager (noscript) */}
+        <CookieBanner />
         {children}
         <div className="position-fixed bottom-0 start-0 m-3" style={{ zIndex: 9999 }}>
           <GoogleBadge />
