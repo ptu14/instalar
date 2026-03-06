@@ -8,8 +8,8 @@ import { AiOutlineCheckCircle } from "react-icons/ai";
 import regionsData from "../../data/regions.json";
 
 export const metadata = {
-    title: 'Pompy Ciepła – Montaż i Serwis | Komplex System',
-    description: 'Montaż pomp ciepła powietrze-woda i powietrze-powietrze w Małopolsce. Ogrzewanie domu taniej nawet o 60%. Dotacja Czyste Powietrze i Moje Ciepło. Bezpłatna wycena.',
+    title: 'Pompy Ciepła – Montaż i Serwis w Małopolsce | Komplex System',
+    description: 'Profesjonalny montaż pomp ciepła powietrze-woda w Małopolsce. Ogrzewanie domu taniej nawet o 60%. Dotacja Czyste Powietrze do 66 300 zł. Bezpłatna wycena od projektu do uruchomienia.',
     alternates: { canonical: 'https://www.komplexsystem.pl/oferta/pompy-ciepla' },
 };
 
@@ -18,44 +18,52 @@ export default function PompyCiepla() {
         <>
             <Navbar navClass="nav-sticky defaultscroll sticky" manuClass="navigation-menu nav-right nav-light" />
 
+            {/* Hero — pełna szerokość */}
             <section className="first-section section">
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col-lg-6">
                             <div className="section-title">
                                 <h4 className="title mb-3">Pompy Ciepła</h4>
-                                <p className="text-muted">Nowoczesne i ekologiczne ogrzewanie Twojego domu</p>
+                                <p className="text-muted">Profesjonalny montaż pomp ciepła powietrze-woda w Małopolsce</p>
                             </div>
                             <div className="mt-4">
                                 <p className="text-muted">
-                                    Pompy ciepła to nowoczesne i ekologiczne rozwiązanie grzewcze, które wykorzystuje energię
-                                    z otoczenia do ogrzewania domu i wody użytkowej. To rozwiązanie, które znacząco obniża
-                                    koszty ogrzewania i jest przyjazne dla środowiska.
+                                    Pompa ciepła powietrze-woda to nowoczesne i ekologiczne rozwiązanie grzewcze, które pobiera energię
+                                    z powietrza zewnętrznego i zamienia ją w ciepło do ogrzewania domu oraz wody użytkowej. Przy
+                                    współczynniku COP sięgającym 4,5 — z każdego 1 kWh prądu uzyskujesz nawet 4,5 kWh ciepła, co oznacza
+                                    oszczędności na ogrzewaniu sięgające 60% w porównaniu z tradycyjnymi źródłami ciepła.
+                                </p>
+                                <p className="text-muted">
+                                    Montaż pompy ciepła w Małopolsce to także doskonała okazja do skorzystania z dotacji — program Czyste
+                                    Powietrze oferuje dofinansowanie do 66 300 zł, a program Moje Ciepło do 21 000 zł. Jako certyfikowany
+                                    instalator pomagamy w całym procesie — od doboru urządzenia i projektu, przez montaż i uruchomienie,
+                                    aż po obsługę formalności związanych z dotacjami.
                                 </p>
                                 <ul className="list-unstyled text-muted mb-0">
                                     <li className="mb-3">
                                         <span className="text-dark h5 me-2">
                                             <AiOutlineCheckCircle className="align-middle" />
                                         </span>
-                                        Oszczędność na rachunkach za ogrzewanie
+                                        Oszczędność na ogrzewaniu nawet do 60%
                                     </li>
                                     <li className="mb-3">
                                         <span className="text-dark h5 me-2">
                                             <AiOutlineCheckCircle className="align-middle" />
                                         </span>
-                                        Dofinansowanie z programu Czyste Powietrze
+                                        Dofinansowanie z programu Czyste Powietrze i Moje Ciepło
                                     </li>
                                     <li className="mb-3">
                                         <span className="text-dark h5 me-2">
                                             <AiOutlineCheckCircle className="align-middle" />
                                         </span>
-                                        Ekologiczne rozwiązanie
+                                        Ekologiczne ogrzewanie — bez spalania paliw kopalnych
                                     </li>
                                     <li className="mb-3">
                                         <span className="text-dark h5 me-2">
                                             <AiOutlineCheckCircle className="align-middle" />
                                         </span>
-                                        Idealne połączenie z fotowoltaiką
+                                        Kompleksowa obsługa — od projektu do uruchomienia
                                     </li>
                                 </ul>
                             </div>
@@ -67,7 +75,7 @@ export default function PompyCiepla() {
                                     width={600}
                                     height={400}
                                     className="img-fluid rounded shadow"
-                                    alt="Pompa ciepła"
+                                    alt="Montaż pompy ciepła powietrze-woda w Małopolsce"
                                 />
                             </div>
                         </div>
@@ -75,211 +83,217 @@ export default function PompyCiepla() {
                 </div>
             </section>
 
-            <section className="section bg-light" id="fotowoltaika">
-                <div className="container">
-                    <div className="row align-items-center">
-                        <div className="col-lg-6">
-                            <div className="position-relative">
-                                <Image
-                                    src="/images/fotowoltaika.jpg"
-                                    width={600}
-                                    height={400}
-                                    className="img-fluid rounded shadow"
-                                    alt="Instalacja fotowoltaiczna"
-                                />
-                            </div>
-                        </div>
-                        <div className="col-lg-6">
-                            <div className="section-title">
-                                <h4 className="title mb-3">Idealna synergia: Pompa Ciepła + Fotowoltaika</h4>
-                                <p className="text-muted">
-                                    Połączenie pompy ciepła z instalacją fotowoltaiczną to rozwiązanie, które maksymalizuje
-                                    oszczędności. Fotowoltaika produkuje prąd, który zasila pompę ciepła, co pozwala na
-                                    ogrzewanie domu praktycznie za darmo. To idealne rozwiązanie dla osób, które chcą
-                                    maksymalnie obniżyć rachunki za ogrzewanie.
-                                </p>
-                                <ul className="list-unstyled text-muted mb-0">
-                                    <li className="mb-3">
-                                        <span className="text-dark h5 me-2">
-                                            <AiOutlineCheckCircle className="align-middle" />
-                                        </span>
-                                        Zerowe rachunki za ogrzewanie
-                                    </li>
-                                    <li className="mb-3">
-                                        <span className="text-dark h5 me-2">
-                                            <AiOutlineCheckCircle className="align-middle" />
-                                        </span>
-                                        Maksymalne wykorzystanie własnej energii
-                                    </li>
-                                    <li className="mb-3">
-                                        <span className="text-dark h5 me-2">
-                                            <AiOutlineCheckCircle className="align-middle" />
-                                        </span>
-                                        Ekologiczne rozwiązanie
-                                    </li>
-                                    <li className="mb-3">
-                                        <span className="text-dark h5 me-2">
-                                            <AiOutlineCheckCircle className="align-middle" />
-                                        </span>
-                                        Niezależność energetyczna
-                                    </li>
-                                </ul>
-                                <div className="mt-4">
-                                    <Link href="/oferta/fotowoltaika" className="btn btn-primary">
-                                        Dowiedz się więcej o fotowoltaice
-                                    </Link>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section className="section">
-                <div className="container">
-                    <div className="row align-items-center">
-                        <div className="col-lg-6">
-                            <div className="section-title">
-                                <h4 className="title mb-3">Kompleksowe rozwiązanie: Pompa Ciepła + Fotowoltaika + Magazyn Energii</h4>
-                                <p className="text-muted">
-                                    Połączenie pompy ciepła z fotowoltaiką i magazynem energii to najbardziej efektywne rozwiązanie
-                                    dla Twojego domu. Fotowoltaika produkuje prąd, magazyn energii go przechowuje, a pompa ciepła
-                                    wykorzystuje do ogrzewania domu i wody. To system, który maksymalizuje oszczędności i zapewnia
-                                    pełną niezależność energetyczną.
-                                </p>
-                                <ul className="list-unstyled text-muted mb-0">
-                                    <li className="mb-3">
-                                        <span className="text-dark h5 me-2">
-                                            <AiOutlineCheckCircle className="align-middle" />
-                                        </span>
-                                        Zerowe rachunki za prąd i ogrzewanie
-                                    </li>
-                                    <li className="mb-3">
-                                        <span className="text-dark h5 me-2">
-                                            <AiOutlineCheckCircle className="align-middle" />
-                                        </span>
-                                        Pełna niezależność energetyczna
-                                    </li>
-                                    <li className="mb-3">
-                                        <span className="text-dark h5 me-2">
-                                            <AiOutlineCheckCircle className="align-middle" />
-                                        </span>
-                                        Maksymalne wykorzystanie własnej energii
-                                    </li>
-                                    <li className="mb-3">
-                                        <span className="text-dark h5 me-2">
-                                            <AiOutlineCheckCircle className="align-middle" />
-                                        </span>
-                                        Ekologiczne rozwiązanie
-                                    </li>
-                                </ul>
-                                <div className="mt-4">
-                                    <Link href="/oferta/magazyny-energii" className="btn btn-primary">
-                                        Dowiedz się więcej o magazynach energii
-                                    </Link>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-6">
-                            <div className="position-relative">
-                                <Image
-                                    src="/images/magazyn-energii.jpg"
-                                    width={600}
-                                    height={400}
-                                    className="img-fluid rounded shadow"
-                                    alt="Magazyn energii"
-                                />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section className="section">
+            {/* Formularz mobilny — widoczny tylko na mobile */}
+            <section className="section bg-light d-lg-none">
                 <div className="container">
                     <div className="row justify-content-center">
-                        <div className="col-12">
-                            <div className="section-title text-center">
-                                <h4 className="title mb-3">Dlaczego warto wybrać naszą firmę?</h4>
-                            </div>
+                        <div className="col-md-8">
+                            <ContactForm
+                                title="Zamów bezpłatną wycenę pompy ciepła"
+                                description="Nasz technik oddzwoni w ciągu 24h i przygotuje indywidualny kosztorys montażu"
+                                subject="Nowa prośba o kontakt - Pompy Ciepła"
+                            />
                         </div>
                     </div>
+                </div>
+            </section>
+
+            {/* Główna treść + sticky sidebar */}
+            <section className="section">
+                <div className="container">
                     <div className="row">
-                        <div className="col-lg-4 col-md-6 mt-4">
-                            <div className="card features feature-primary h-100">
-                                <div className="card-body">
-                                    <h5 className="card-title">Certyfikowani instalatorzy</h5>
-                                    <p className="text-muted">Zespół wykwalifikowanych specjalistów z uprawnieniami SEP</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-4 col-md-6 mt-4">
-                            <div className="card features feature-primary h-100">
-                                <div className="card-body">
-                                    <h5 className="card-title">Gwarancja</h5>
-                                    <p className="text-muted">Długoletnia gwarancja na montaż i urządzenia</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-4 col-md-6 mt-4">
-                            <div className="card features feature-primary h-100">
-                                <div className="card-body">
-                                    <h5 className="card-title">Serwis</h5>
-                                    <p className="text-muted">Profesjonalny serwis i monitoring instalacji</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+                        {/* Lewa kolumna — treść */}
+                        <div className="col-lg-8">
 
-            <section className="section bg-light">
-                <div className="container">
-                    <div className="row justify-content-center">
-                        <div className="col-12">
-                            <div className="section-title text-center mb-4 pb-2">
-                                <h4 className="title mb-3">Działamy lokalnie w Twoim regionie</h4>
-                                <p className="text-muted para-desc mx-auto mb-0">
-                                    Sprawdź naszą ofertę dedykowaną dla konkretnych lokalizacji w Małopolsce.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="row justify-content-center">
-                        <div className="col-lg-10">
-                            <div className="row">
-                                {regionsData.map((region) => (
-                                    <div key={region.slug} className="col-md-6 mt-4 pt-2">
-                                        <div className="d-flex align-items-center p-3 bg-white rounded shadow-sm h-100">
-                                            <div className="icon text-primary h4 mb-0 me-3">
-                                                <AiOutlineCheckCircle />
-                                            </div>
-                                            <div className="content">
-                                                <Link href={`/oferta/pompy-ciepla/${region.slug}`} className="text-dark h5 title">
-                                                    {region.region_name}
-                                                </Link>
-                                                <p className="text-muted mb-0 text-small mt-1">
-                                                    {region.target_cities.slice(0, 3).join(", ")}...
+                            {/* Dlaczego warto? */}
+                            <div className="mb-5 pb-5 border-bottom">
+                                <div className="section-title mb-4">
+                                    <h4 className="title mb-3">Dlaczego warto wybrać naszą firmę?</h4>
+                                </div>
+                                <div className="row">
+                                    <div className="col-md-4 mt-4">
+                                        <div className="card features feature-primary h-100">
+                                            <div className="card-body">
+                                                <h5 className="card-title">Certyfikowani instalatorzy</h5>
+                                                <p className="text-muted">
+                                                    Zespół wykwalifikowanych specjalistów z uprawnieniami SEP oraz certyfikatami
+                                                    producenckich szkoleń. Posiadamy uprawnienia do pracy z czynnikami chłodniczymi
+                                                    (F-gazy) oraz wieloletnie doświadczenie w montażu pomp ciepła różnych producentów.
                                                 </p>
                                             </div>
                                         </div>
                                     </div>
-                                ))}
+                                    <div className="col-md-4 mt-4">
+                                        <div className="card features feature-primary h-100">
+                                            <div className="card-body">
+                                                <h5 className="card-title">Gwarancja</h5>
+                                                <p className="text-muted">
+                                                    Wieloletnia gwarancja na montaż i urządzenia — do 10 lat gwarancji producenta
+                                                    na pompę ciepła i 5 lat na wykonane prace instalacyjne. Gwarancja obejmuje
+                                                    wszystkie elementy systemu grzewczego, w tym armaturę i automatykę.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="col-md-4 mt-4">
+                                        <div className="card features feature-primary h-100">
+                                            <div className="card-body">
+                                                <h5 className="card-title">Serwis</h5>
+                                                <p className="text-muted">
+                                                    Profesjonalny serwis gwarancyjny i pogwarancyjny z szybkim czasem reakcji
+                                                    na terenie całej Małopolski. Oferujemy regularne przeglądy, monitoring pracy
+                                                    instalacji oraz wsparcie techniczne przez cały okres użytkowania.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
 
-            <section className="section">
-                <div className="container">
-                    <div className="row justify-content-center">
-                        <div className="col-lg-7">
-                            <ContactForm
-                                title="Chcesz dowiedzieć się więcej o pompach ciepła?"
-                                description="Skontaktuj się z nami, a przygotujemy dla Ciebie indywidualną ofertę"
-                                subject="Nowa prośba o kontakt - Pompy Ciepła"
-                            />
+                            {/* Linki regionalne */}
+                            <div className="mb-5 pb-5 border-bottom">
+                                <div className="section-title mb-4">
+                                    <h4 className="title mb-3">Działamy lokalnie w Twoim regionie</h4>
+                                    <p className="text-muted">
+                                        Sprawdź naszą ofertę dedykowaną dla konkretnych lokalizacji w Małopolsce.
+                                    </p>
+                                </div>
+                                <div className="row">
+                                    {regionsData.map((region) => (
+                                        <div key={region.slug} className="col-md-6 mt-3">
+                                            <div className="d-flex align-items-center p-3 bg-light rounded h-100">
+                                                <div className="icon text-primary h4 mb-0 me-3">
+                                                    <AiOutlineCheckCircle />
+                                                </div>
+                                                <div className="content">
+                                                    <Link href={`/oferta/pompy-ciepla/${region.slug}`} className="text-dark h5 title">
+                                                        {region.region_name}
+                                                    </Link>
+                                                    <p className="text-muted mb-0 text-small mt-1">
+                                                        {region.target_cities.slice(0, 3).join(", ")}...
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+
+                            {/* Synergia 1: PC + Fotowoltaika */}
+                            <div className="mb-5 pb-5 border-bottom">
+                                <div className="row align-items-center">
+                                    <div className="col-md-6">
+                                        <div className="position-relative mb-4 mb-md-0">
+                                            <Image
+                                                src="/images/fotowoltaika.jpg"
+                                                width={600}
+                                                height={400}
+                                                className="img-fluid rounded shadow"
+                                                alt="Instalacja fotowoltaiczna"
+                                            />
+                                        </div>
+                                    </div>
+                                    <div className="col-md-6">
+                                        <div className="section-title">
+                                            <h4 className="title mb-3">Idealna synergia: Pompa Ciepła + Fotowoltaika</h4>
+                                            <p className="text-muted">
+                                                Połączenie pompy ciepła z instalacją fotowoltaiczną to rozwiązanie, które maksymalizuje
+                                                oszczędności. Fotowoltaika produkuje prąd, który zasila pompę ciepła, co pozwala na
+                                                ogrzewanie domu praktycznie za darmo.
+                                            </p>
+                                            <ul className="list-unstyled text-muted mb-0">
+                                                <li className="mb-2">
+                                                    <span className="text-dark h5 me-2">
+                                                        <AiOutlineCheckCircle className="align-middle" />
+                                                    </span>
+                                                    Zerowe rachunki za ogrzewanie
+                                                </li>
+                                                <li className="mb-2">
+                                                    <span className="text-dark h5 me-2">
+                                                        <AiOutlineCheckCircle className="align-middle" />
+                                                    </span>
+                                                    Maksymalne wykorzystanie własnej energii
+                                                </li>
+                                                <li className="mb-2">
+                                                    <span className="text-dark h5 me-2">
+                                                        <AiOutlineCheckCircle className="align-middle" />
+                                                    </span>
+                                                    Niezależność energetyczna
+                                                </li>
+                                            </ul>
+                                            <div className="mt-3">
+                                                <Link href="/oferta/fotowoltaika" className="btn btn-primary">
+                                                    Dowiedz się więcej o fotowoltaice
+                                                </Link>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* Synergia 2: PC + FW + Magazyn */}
+                            <div>
+                                <div className="row align-items-center">
+                                    <div className="col-md-6">
+                                        <div className="section-title">
+                                            <h4 className="title mb-3">Kompleksowe rozwiązanie: Pompa Ciepła + Fotowoltaika + Magazyn Energii</h4>
+                                            <p className="text-muted">
+                                                Połączenie pompy ciepła z fotowoltaiką i magazynem energii to najbardziej efektywne rozwiązanie
+                                                dla Twojego domu. Fotowoltaika produkuje prąd, magazyn energii go przechowuje, a pompa ciepła
+                                                wykorzystuje do ogrzewania domu i wody.
+                                            </p>
+                                            <ul className="list-unstyled text-muted mb-0">
+                                                <li className="mb-2">
+                                                    <span className="text-dark h5 me-2">
+                                                        <AiOutlineCheckCircle className="align-middle" />
+                                                    </span>
+                                                    Zerowe rachunki za prąd i ogrzewanie
+                                                </li>
+                                                <li className="mb-2">
+                                                    <span className="text-dark h5 me-2">
+                                                        <AiOutlineCheckCircle className="align-middle" />
+                                                    </span>
+                                                    Pełna niezależność energetyczna
+                                                </li>
+                                                <li className="mb-2">
+                                                    <span className="text-dark h5 me-2">
+                                                        <AiOutlineCheckCircle className="align-middle" />
+                                                    </span>
+                                                    Ekologiczne rozwiązanie
+                                                </li>
+                                            </ul>
+                                            <div className="mt-3">
+                                                <Link href="/oferta/magazyny-energii" className="btn btn-primary">
+                                                    Dowiedz się więcej o magazynach energii
+                                                </Link>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="col-md-6">
+                                        <div className="position-relative mt-4 mt-md-0">
+                                            <Image
+                                                src="/images/magazyn-energii.jpg"
+                                                width={600}
+                                                height={400}
+                                                className="img-fluid rounded shadow"
+                                                alt="Magazyn energii"
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        {/* Prawa kolumna — sticky formularz (tylko desktop) */}
+                        <div className="col-lg-4 d-none d-lg-block">
+                            <div className="sticky-bar">
+                                <ContactForm
+                                    title="Zamów bezpłatną wycenę pompy ciepła"
+                                    description="Nasz technik oddzwoni w ciągu 24h i przygotuje indywidualny kosztorys montażu"
+                                    subject="Nowa prośba o kontakt - Pompy Ciepła"
+                                />
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -290,4 +304,4 @@ export default function PompyCiepla() {
             </section>
         </>
     );
-} 
+}

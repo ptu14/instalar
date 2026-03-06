@@ -11,43 +11,50 @@ export default function InstalacjeSanitarne() {
         <>
             <Navbar navClass="nav-sticky defaultscroll sticky" manuClass="navigation-menu nav-right nav-light" />
 
+            {/* Hero — pełna szerokość */}
             <section className="first-section section">
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col-lg-6">
                             <div className="section-title">
                                 <h4 className="title mb-3">Instalacje Sanitarne</h4>
-                                <p className="text-muted">Kompleksowe rozwiązania wodno-kanalizacyjne dla Twojego domu i firmy</p>
+                                <p className="text-muted">Profesjonalny montaż instalacji wodno-kanalizacyjnych w Małopolsce</p>
                             </div>
                             <div className="mt-4">
                                 <p className="text-muted">
-                                    Oferujemy projektowanie, montaż oraz serwis instalacji sanitarnych – wodnych, kanalizacyjnych i deszczowych.
-                                    Pracujemy z zachowaniem najwyższych standardów, korzystając z nowoczesnych technologii i sprawdzonych materiałów.
+                                    Wykonujemy kompleksowe instalacje sanitarne dla domów jednorodzinnych, budynków wielorodzinnych oraz obiektów
+                                    komercyjnych na terenie Małopolski. Nasz zakres obejmuje instalacje wodne, kanalizacyjne, deszczowe oraz
+                                    centralnego ogrzewania — od projektu, przez montaż, aż po serwis i konserwację.
+                                </p>
+                                <p className="text-muted">
+                                    Pracujemy zarówno przy budowach od zera, jak i przy remontach oraz modernizacjach istniejących systemów.
+                                    Stosujemy sprawdzone materiały renomowanych producentów i realizujemy prace zgodnie z obowiązującymi normami
+                                    budowlanymi. Każdą instalację wykonujemy z myślą o trwałości, bezawaryjności i wygodzie użytkowania.
                                 </p>
                                 <ul className="list-unstyled text-muted mb-0">
                                     <li className="mb-3">
                                         <span className="text-dark h5 me-2">
                                             <AiOutlineCheckCircle className="align-middle" />
                                         </span>
-                                        Instalacje wodne i kanalizacyjne
+                                        Instalacje wodne, kanalizacyjne i centralnego ogrzewania
                                     </li>
                                     <li className="mb-3">
                                         <span className="text-dark h5 me-2">
                                             <AiOutlineCheckCircle className="align-middle" />
                                         </span>
-                                        Odwodnienia i systemy deszczowe
+                                        Odwodnienia, systemy deszczowe i drenaże
                                     </li>
                                     <li className="mb-3">
                                         <span className="text-dark h5 me-2">
                                             <AiOutlineCheckCircle className="align-middle" />
                                         </span>
-                                        Nowoczesne rozwiązania technologiczne
+                                        Nowoczesne materiały i technologie montażu
                                     </li>
                                     <li className="mb-3">
                                         <span className="text-dark h5 me-2">
                                             <AiOutlineCheckCircle className="align-middle" />
                                         </span>
-                                        Profesjonalny montaż i serwis
+                                        Realizacje dla domów, firm i deweloperów
                                     </li>
                                 </ul>
                             </div>
@@ -59,7 +66,7 @@ export default function InstalacjeSanitarne() {
                                     width={600}
                                     height={400}
                                     className="img-fluid rounded shadow"
-                                    alt="Instalacje sanitarne"
+                                    alt="Profesjonalny montaż instalacji sanitarnych w Małopolsce"
                                 />
                             </div>
                         </div>
@@ -67,53 +74,84 @@ export default function InstalacjeSanitarne() {
                 </div>
             </section>
 
-            <section className="section bg-light">
+            {/* Formularz mobilny — widoczny tylko na mobile */}
+            <section className="section bg-light d-lg-none">
                 <div className="container">
                     <div className="row justify-content-center">
-                        <div className="col-12">
-                            <div className="section-title text-center">
-                                <h4 className="title mb-3">Dlaczego warto wybrać naszą firmę?</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="row">
-                        <div className="col-lg-4 col-md-6 mt-4">
-                            <div className="card features feature-primary h-100">
-                                <div className="card-body">
-                                    <h5 className="card-title">Doświadczenie</h5>
-                                    <p className="text-muted">Wieloletnie doświadczenie w branży instalacyjnej</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-4 col-md-6 mt-4">
-                            <div className="card features feature-primary h-100">
-                                <div className="card-body">
-                                    <h5 className="card-title">Jakość</h5>
-                                    <p className="text-muted">Wysokiej jakości materiały i sprawdzone rozwiązania</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-4 col-md-6 mt-4">
-                            <div className="card features feature-primary h-100">
-                                <div className="card-body">
-                                    <h5 className="card-title">Wsparcie</h5>
-                                    <p className="text-muted">Kompleksowe doradztwo i obsługa techniczna</p>
-                                </div>
-                            </div>
+                        <div className="col-md-8">
+                            <ContactForm
+                                title="Zamów bezpłatną wycenę instalacji sanitarnej"
+                                description="Nasz specjalista skontaktuje się z Tobą w ciągu 24 godzin"
+                                subject="Nowa prośba o kontakt - Instalacje Sanitarne"
+                            />
                         </div>
                     </div>
                 </div>
             </section>
 
+            {/* Główna treść + sticky sidebar */}
             <section className="section">
                 <div className="container">
-                    <div className="row justify-content-center">
-                        <div className="col-lg-7">
-                            <ContactForm 
-                                title="Potrzebujesz instalacji sanitarnej?"
-                                description="Skontaktuj się z nami, a przygotujemy dopasowaną ofertę"
-                                subject="Nowa prośba o kontakt - Instalacje Sanitarne"
-                            />
+                    <div className="row">
+                        {/* Lewa kolumna — treść */}
+                        <div className="col-lg-8">
+
+                            {/* Dlaczego warto? */}
+                            <div>
+                                <div className="section-title mb-4">
+                                    <h4 className="title mb-3">Dlaczego warto wybrać naszą firmę?</h4>
+                                </div>
+                                <div className="row">
+                                    <div className="col-md-4 mt-4">
+                                        <div className="card features feature-primary h-100">
+                                            <div className="card-body">
+                                                <h5 className="card-title">Doświadczenie</h5>
+                                                <p className="text-muted">
+                                                    Wieloletnie doświadczenie w branży instalacyjnej potwierdzone setkami zrealizowanych
+                                                    projektów. Nasz zespół posiada pełne uprawnienia budowlane i regularnie uczestniczy
+                                                    w szkoleniach z zakresu nowych technologii instalacyjnych.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="col-md-4 mt-4">
+                                        <div className="card features feature-primary h-100">
+                                            <div className="card-body">
+                                                <h5 className="card-title">Jakość</h5>
+                                                <p className="text-muted">
+                                                    Stosujemy wyłącznie materiały renomowanych producentów z pełną certyfikacją.
+                                                    Każda instalacja jest wykonywana zgodnie z obowiązującymi normami budowlanymi
+                                                    i poddawana próbom ciśnieniowym przed odbiorem.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="col-md-4 mt-4">
+                                        <div className="card features feature-primary h-100">
+                                            <div className="card-body">
+                                                <h5 className="card-title">Wsparcie</h5>
+                                                <p className="text-muted">
+                                                    Kompleksowe doradztwo na każdym etapie — od doboru materiałów, przez projekt,
+                                                    aż po serwis pogwarancyjny. Zapewniamy szybki czas reakcji serwisowej
+                                                    i pomoc w sytuacjach awaryjnych.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        {/* Prawa kolumna — sticky formularz (tylko desktop) */}
+                        <div className="col-lg-4 d-none d-lg-block">
+                            <div className="sticky-bar">
+                                <ContactForm
+                                    title="Zamów bezpłatną wycenę instalacji sanitarnej"
+                                    description="Nasz specjalista skontaktuje się z Tobą w ciągu 24 godzin"
+                                    subject="Nowa prośba o kontakt - Instalacje Sanitarne"
+                                />
+                            </div>
                         </div>
                     </div>
                 </div>

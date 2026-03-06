@@ -8,57 +8,62 @@ import ContactForm from "@/app/components/contact-form/contact-form";
 import regionsData from "../../data/regions.json";
 
 export const metadata = {
-    title: 'Fotowoltaika – Instalacje Paneli Słonecznych | Komplex System',
-    description: 'Profesjonalny montaż instalacji fotowoltaicznych w Małopolsce. Produkuj własną energię i oszczędzaj na rachunkach. Dotacje Mój Prąd do 28 000 zł. Bezpłatna wycena.',
+    title: 'Fotowoltaika – Montaż Paneli Słonecznych w Małopolsce | Komplex System',
+    description: 'Profesjonalny montaż instalacji fotowoltaicznych w Małopolsce. Produkuj własną energię i oszczędzaj na rachunkach. Dotacja Mój Prąd do 28 000 zł. Bezpłatna wycena.',
     alternates: { canonical: 'https://www.komplexsystem.pl/oferta/fotowoltaika' },
 };
 
 export default function Fotowoltaika() {
-
     return (
         <>
             <Navbar navClass="nav-sticky defaultscroll sticky" manuClass="navigation-menu nav-right nav-light" />
 
+            {/* Hero — pełna szerokość */}
             <section className="first-section section">
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col-lg-6">
                             <div className="section-title">
                                 <h4 className="title mb-3">Fotowoltaika</h4>
-                                <p className="text-muted">Produkuj własną energię elektryczną i oszczędzaj na
-                                    rachunkach</p>
+                                <p className="text-muted">Profesjonalny montaż instalacji fotowoltaicznych w Małopolsce</p>
                             </div>
                             <div className="mt-4">
                                 <p className="text-muted">
-                                    Instalacje fotowoltaiczne pozwalają na produkcję własnej energii elektrycznej ze
-                                    słońca.
-                                    To rozwiązanie, które znacząco obniża rachunki za prąd i zapewnia niezależność
-                                    energetyczną.
+                                    Instalacja fotowoltaiczna to sprawdzony sposób na produkcję własnej energii elektrycznej ze słońca
+                                    i realne obniżenie rachunków za prąd. Nowoczesne panele słoneczne montowane na dachu Twojego domu
+                                    pozwalają uniezależnić się od rosnących cen energii i czerpać korzyści z systemu net-billing, który
+                                    umożliwia rozliczanie nadwyżek produkowanej energii z zakładem energetycznym.
+                                </p>
+                                <p className="text-muted">
+                                    Jako doświadczony instalator fotowoltaiki w Małopolsce oferujemy kompleksową obsługę — od bezpłatnej
+                                    analizy zużycia energii i doboru mocy instalacji, przez montaż paneli i falownika, aż po zgłoszenie
+                                    do operatora sieci. Nasi klienci mogą skorzystać z dotacji Mój Prąd pokrywającej nawet do 28 000 zł
+                                    kosztów instalacji.
                                 </p>
                                 <ul className="list-unstyled text-muted mb-0">
                                     <li className="mb-3">
                                         <span className="text-dark h5 me-2">
                                             <AiOutlineCheckCircle className="align-middle" />
                                         </span>
-                                        Oszczędność na rachunkach za prąd
+                                        Realna oszczędność na rachunkach za prąd
                                     </li>
                                     <li className="mb-3">
                                         <span className="text-dark h5 me-2">
                                             <AiOutlineCheckCircle className="align-middle" />
                                         </span>
-                                        Dofinansowanie z programu Mój Prąd
+                                        Dofinansowanie z programu Mój Prąd do 28 000 zł
                                     </li>
                                     <li className="mb-3">
                                         <span className="text-dark h5 me-2">
                                             <AiOutlineCheckCircle className="align-middle" />
                                         </span>
-                                        Możliwość sprzedaży nadwyżek energii
+                                        Rozliczanie nadwyżek energii w systemie net-billing
                                     </li>
                                     <li className="mb-3">
                                         <span className="text-dark h5 me-2">
                                             <AiOutlineCheckCircle className="align-middle" />
                                         </span>
-                                        Ekologiczne rozwiązanie
+                                        Ekologiczna energia — bez emisji CO₂
                                     </li>
                                 </ul>
                             </div>
@@ -70,7 +75,7 @@ export default function Fotowoltaika() {
                                     width={600}
                                     height={400}
                                     className="img-fluid rounded shadow"
-                                    alt="Instalacja fotowoltaiczna"
+                                    alt="Montaż instalacji fotowoltaicznej na dachu domu w Małopolsce"
                                 />
                             </div>
                         </div>
@@ -78,177 +83,14 @@ export default function Fotowoltaika() {
                 </div>
             </section>
 
-            <section className="section bg-light" id="magazyny-energii">
-                <div className="container">
-                    <div className="row align-items-center">
-                        <div className="col-lg-6">
-                            <div className="position-relative">
-                                <Image
-                                    src="/images/magazyn-energii.png"
-                                    width={600}
-                                    height={400}
-                                    className="img-fluid rounded"
-                                    alt="Magazyn energii"
-                                />
-                            </div>
-                        </div>
-                        <div className="col-lg-6">
-                            <div className="section-title">
-                                <h4 className="title mb-3">Idealna synergia: Fotowoltaika + Magazyn Energii</h4>
-                                <p className="text-muted">
-                                    Połączenie instalacji fotowoltaicznej z magazynem energii to rozwiązanie, które
-                                    maksymalizuje
-                                    wykorzystanie produkowanej energii. Magazyn energii pozwala na przechowywanie
-                                    nadwyżek
-                                    prądu i wykorzystanie ich wtedy, gdy instalacja nie produkuje energii (np. w nocy).
-                                </p>
-                                <ul className="list-unstyled text-muted mb-0">
-                                    <li className="mb-3">
-                                        <span className="text-dark h5 me-2">
-                                            <AiOutlineCheckCircle className="align-middle" />
-                                        </span>
-                                        Maksymalne wykorzystanie własnej energii
-                                    </li>
-                                    <li className="mb-3">
-                                        <span className="text-dark h5 me-2">
-                                            <AiOutlineCheckCircle className="align-middle" />
-                                        </span>
-                                        Niezależność energetyczna
-                                    </li>
-                                    <li className="mb-3">
-                                        <span className="text-dark h5 me-2">
-                                            <AiOutlineCheckCircle className="align-middle" />
-                                        </span>
-                                        Ochrona przed przerwami w dostawie prądu
-                                    </li>
-                                    <li className="mb-3">
-                                        <span className="text-dark h5 me-2">
-                                            <AiOutlineCheckCircle className="align-middle" />
-                                        </span>
-                                        Optymalizacja zużycia energii
-                                    </li>
-                                </ul>
-                                <div className="mt-4">
-                                    <Link href="/oferta/magazyny-energii" className="btn btn-primary">
-                                        Dowiedz się więcej o magazynach energii
-                                    </Link>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section className="section">
-                <div className="container">
-                    <div className="row align-items-center">
-                        <div className="col-lg-6">
-                            <div className="section-title">
-                                <h4 className="title mb-3">Kompleksowe rozwiązanie: Fotowoltaika + Magazyn Energii +
-                                    Pompa Ciepła</h4>
-                                <p className="text-muted">
-                                    Połączenie fotowoltaiki, magazynu energii i pompy ciepła to najbardziej efektywne
-                                    rozwiązanie
-                                    dla Twojego domu. Fotowoltaika produkuje prąd, magazyn energii go przechowuje, a
-                                    pompa ciepła
-                                    wykorzystuje do ogrzewania domu i wody. To system, który maksymalizuje oszczędności
-                                    i zapewnia
-                                    pełną niezależność energetyczną.
-                                </p>
-                                <ul className="list-unstyled text-muted mb-0">
-                                    <li className="mb-3">
-                                        <span className="text-dark h5 me-2">
-                                            <AiOutlineCheckCircle className="align-middle" />
-                                        </span>
-                                        Zerowe rachunki za prąd i ogrzewanie
-                                    </li>
-                                    <li className="mb-3">
-                                        <span className="text-dark h5 me-2">
-                                            <AiOutlineCheckCircle className="align-middle" />
-                                        </span>
-                                        Pełna niezależność energetyczna
-                                    </li>
-                                    <li className="mb-3">
-                                        <span className="text-dark h5 me-2">
-                                            <AiOutlineCheckCircle className="align-middle" />
-                                        </span>
-                                        Maksymalne wykorzystanie własnej energii
-                                    </li>
-                                    <li className="mb-3">
-                                        <span className="text-dark h5 me-2">
-                                            <AiOutlineCheckCircle className="align-middle" />
-                                        </span>
-                                        Ekologiczne rozwiązanie
-                                    </li>
-                                </ul>
-                                <div className="mt-4">
-                                    <Link href="/oferta/pompy-ciepla" className="btn btn-primary">
-                                        Dowiedz się więcej o pompach ciepła
-                                    </Link>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-6">
-                            <div className="position-relative">
-                                <Image
-                                    src="/images/pompa-ciepla.jpg"
-                                    width={600}
-                                    height={400}
-                                    className="img-fluid rounded shadow"
-                                    alt="Pompa ciepła"
-                                />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section className="section">
+            {/* Formularz mobilny — widoczny tylko na mobile */}
+            <section className="section bg-light d-lg-none">
                 <div className="container">
                     <div className="row justify-content-center">
-                        <div className="col-12">
-                            <div className="section-title text-center">
-                                <h4 className="title mb-3">Dlaczego warto wybrać naszą firmę?</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="row">
-                        <div className="col-lg-4 col-md-6 mt-4">
-                            <div className="card features feature-primary h-100">
-                                <div className="card-body">
-                                    <h5 className="card-title">Certyfikowani instalatorzy</h5>
-                                    <p className="text-muted">Zespół wykwalifikowanych specjalistów z uprawnieniami
-                                        SEP</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-4 col-md-6 mt-4">
-                            <div className="card features feature-primary h-100">
-                                <div className="card-body">
-                                    <h5 className="card-title">Gwarancja</h5>
-                                    <p className="text-muted">Długoletnia gwarancja na montaż i urządzenia</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-4 col-md-6 mt-4">
-                            <div className="card features feature-primary h-100">
-                                <div className="card-body">
-                                    <h5 className="card-title">Serwis</h5>
-                                    <p className="text-muted">Profesjonalny serwis i monitoring instalacji</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section className="section">
-                <div className="container">
-                    <div className="row justify-content-center">
-                        <div className="col-lg-7">
+                        <div className="col-md-8">
                             <ContactForm
-                                title="Potrzebujesz Fotowoltaiki?"
-                                description="Skontaktuj się z nami, a przygotujemy dopasowaną ofertę"
+                                title="Zamów bezpłatną wycenę fotowoltaiki"
+                                description="Nasz technik oddzwoni w ciągu 24h i policzy, ile możesz zaoszczędzić"
                                 subject="Nowa prośba o kontakt - Fotowoltaika"
                             />
                         </div>
@@ -256,30 +98,197 @@ export default function Fotowoltaika() {
                 </div>
             </section>
 
-            <section className="section bg-light">
+            {/* Główna treść + sticky sidebar */}
+            <section className="section">
                 <div className="container">
-                    <div className="row justify-content-center">
-                        <div className="col-12 text-center">
-                            <div className="section-title mb-4 pb-2">
-                                <h4 className="title mb-4">Fotowoltaika w Twoim regionie</h4>
-                                <p className="text-muted para-desc mx-auto mb-0">
-                                    Sprawdź naszą ofertę dla poszczególnych lokalizacji w Małopolsce.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
                     <div className="row">
-                        {regionsData.map((region) => (
-                            <div key={region.slug} className="col-lg-4 col-md-6 mt-4 pt-2">
-                                <div className="d-flex align-items-center p-3 bg-white rounded shadow-sm h-100 border">
-                                    <div className="content">
-                                        <Link href={`/oferta/fotowoltaika/${region.slug}`} className="title h5 text-dark d-block mb-0 hover-text-primary">
-                                            {region.region_name}
-                                        </Link>
+                        {/* Lewa kolumna — treść */}
+                        <div className="col-lg-8">
+
+                            {/* Dlaczego warto? */}
+                            <div className="mb-5 pb-5 border-bottom">
+                                <div className="section-title mb-4">
+                                    <h4 className="title mb-3">Dlaczego warto wybrać naszą firmę?</h4>
+                                </div>
+                                <div className="row">
+                                    <div className="col-md-4 mt-4">
+                                        <div className="card features feature-primary h-100">
+                                            <div className="card-body">
+                                                <h5 className="card-title">Certyfikowani instalatorzy</h5>
+                                                <p className="text-muted">
+                                                    Zespół wykwalifikowanych specjalistów z uprawnieniami SEP i certyfikatami
+                                                    producenckich szkoleń. Każdy montaż wykonujemy zgodnie z wytycznymi producenta
+                                                    paneli i falowników, co gwarantuje pełną wydajność instalacji.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="col-md-4 mt-4">
+                                        <div className="card features feature-primary h-100">
+                                            <div className="card-body">
+                                                <h5 className="card-title">Gwarancja</h5>
+                                                <p className="text-muted">
+                                                    Wieloletnia gwarancja na montaż i urządzenia — do 25 lat gwarancji wydajności
+                                                    na panele słoneczne i do 12 lat na falownik. Dodatkowo udzielamy 5-letniej
+                                                    gwarancji na wykonane prace montażowe.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="col-md-4 mt-4">
+                                        <div className="card features feature-primary h-100">
+                                            <div className="card-body">
+                                                <h5 className="card-title">Serwis</h5>
+                                                <p className="text-muted">
+                                                    Profesjonalny serwis i monitoring instalacji fotowoltaicznej. Oferujemy zdalne
+                                                    monitorowanie produkcji energii, regularne przeglądy oraz szybką reakcję
+                                                    serwisową na terenie całej Małopolski.
+                                                </p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        ))}
+
+                            {/* Linki regionalne */}
+                            <div className="mb-5 pb-5 border-bottom">
+                                <div className="section-title mb-4">
+                                    <h4 className="title mb-3">Fotowoltaika w Twoim regionie</h4>
+                                    <p className="text-muted">
+                                        Sprawdź naszą ofertę dla poszczególnych lokalizacji w Małopolsce.
+                                    </p>
+                                </div>
+                                <div className="row">
+                                    {regionsData.map((region) => (
+                                        <div key={region.slug} className="col-md-6 mt-3">
+                                            <div className="d-flex align-items-center p-3 bg-light rounded h-100">
+                                                <div className="content">
+                                                    <Link href={`/oferta/fotowoltaika/${region.slug}`} className="title h5 text-dark d-block mb-0 hover-text-primary">
+                                                        {region.region_name}
+                                                    </Link>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+
+                            {/* Synergia 1: FW + Magazyn */}
+                            <div className="mb-5 pb-5 border-bottom">
+                                <div className="row align-items-center">
+                                    <div className="col-md-6">
+                                        <div className="position-relative mb-4 mb-md-0">
+                                            <Image
+                                                src="/images/magazyn-energii.png"
+                                                width={600}
+                                                height={400}
+                                                className="img-fluid rounded"
+                                                alt="Magazyn energii"
+                                            />
+                                        </div>
+                                    </div>
+                                    <div className="col-md-6">
+                                        <div className="section-title">
+                                            <h4 className="title mb-3">Idealna synergia: Fotowoltaika + Magazyn Energii</h4>
+                                            <p className="text-muted">
+                                                Połączenie instalacji fotowoltaicznej z magazynem energii to rozwiązanie, które
+                                                maksymalizuje wykorzystanie produkowanej energii. Magazyn pozwala na przechowywanie
+                                                nadwyżek prądu i wykorzystanie ich wtedy, gdy instalacja nie produkuje energii.
+                                            </p>
+                                            <ul className="list-unstyled text-muted mb-0">
+                                                <li className="mb-2">
+                                                    <span className="text-dark h5 me-2">
+                                                        <AiOutlineCheckCircle className="align-middle" />
+                                                    </span>
+                                                    Maksymalne wykorzystanie własnej energii
+                                                </li>
+                                                <li className="mb-2">
+                                                    <span className="text-dark h5 me-2">
+                                                        <AiOutlineCheckCircle className="align-middle" />
+                                                    </span>
+                                                    Niezależność energetyczna
+                                                </li>
+                                                <li className="mb-2">
+                                                    <span className="text-dark h5 me-2">
+                                                        <AiOutlineCheckCircle className="align-middle" />
+                                                    </span>
+                                                    Ochrona przed przerwami w dostawie prądu
+                                                </li>
+                                            </ul>
+                                            <div className="mt-3">
+                                                <Link href="/oferta/magazyny-energii" className="btn btn-primary">
+                                                    Dowiedz się więcej o magazynach energii
+                                                </Link>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* Synergia 2: FW + Magazyn + PC */}
+                            <div>
+                                <div className="row align-items-center">
+                                    <div className="col-md-6">
+                                        <div className="section-title">
+                                            <h4 className="title mb-3">Kompleksowe rozwiązanie: Fotowoltaika + Magazyn Energii + Pompa Ciepła</h4>
+                                            <p className="text-muted">
+                                                Połączenie fotowoltaiki, magazynu energii i pompy ciepła to najbardziej efektywne
+                                                rozwiązanie dla Twojego domu. Fotowoltaika produkuje prąd, magazyn energii go
+                                                przechowuje, a pompa ciepła wykorzystuje do ogrzewania domu i wody.
+                                            </p>
+                                            <ul className="list-unstyled text-muted mb-0">
+                                                <li className="mb-2">
+                                                    <span className="text-dark h5 me-2">
+                                                        <AiOutlineCheckCircle className="align-middle" />
+                                                    </span>
+                                                    Zerowe rachunki za prąd i ogrzewanie
+                                                </li>
+                                                <li className="mb-2">
+                                                    <span className="text-dark h5 me-2">
+                                                        <AiOutlineCheckCircle className="align-middle" />
+                                                    </span>
+                                                    Pełna niezależność energetyczna
+                                                </li>
+                                                <li className="mb-2">
+                                                    <span className="text-dark h5 me-2">
+                                                        <AiOutlineCheckCircle className="align-middle" />
+                                                    </span>
+                                                    Ekologiczne rozwiązanie
+                                                </li>
+                                            </ul>
+                                            <div className="mt-3">
+                                                <Link href="/oferta/pompy-ciepla" className="btn btn-primary">
+                                                    Dowiedz się więcej o pompach ciepła
+                                                </Link>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="col-md-6">
+                                        <div className="position-relative mt-4 mt-md-0">
+                                            <Image
+                                                src="/images/pompa-ciepla.jpg"
+                                                width={600}
+                                                height={400}
+                                                className="img-fluid rounded shadow"
+                                                alt="Pompa ciepła"
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        {/* Prawa kolumna — sticky formularz (tylko desktop) */}
+                        <div className="col-lg-4 d-none d-lg-block">
+                            <div className="sticky-bar">
+                                <ContactForm
+                                    title="Zamów bezpłatną wycenę fotowoltaiki"
+                                    description="Nasz technik oddzwoni w ciągu 24h i policzy, ile możesz zaoszczędzić"
+                                    subject="Nowa prośba o kontakt - Fotowoltaika"
+                                />
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -289,4 +298,4 @@ export default function Fotowoltaika() {
             </section>
         </>
     );
-} 
+}
