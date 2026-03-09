@@ -253,16 +253,16 @@
         }
         .has-submenu {
             .menu-arrow {
-                border: solid $dark;
+                border: solid currentColor;
                 border-radius: 0.5px;
                 border-width: 0 2px 2px 0;
                 display: inline-block;
-                padding: 3px;
+                padding: 2px;
                 transform: rotate(45deg);
-                position: absolute;
-                transition: all 0.5s;
-                right: -1px;
-                top: 30px;
+                position: relative;
+                top: -2px;
+                margin-left: 4px;
+                transition: transform 0.3s ease;
             }
         }
     }
@@ -424,16 +424,16 @@
                     }
                 }
                 .menu-arrow {
-                    display: none;
+                    display: inline-block;
                 }
                 &:hover {
                     .menu-arrow {
-                        top: 33px !important;
+                        transform: rotate(225deg);
                     }
                 }
                 &.active {
                     .menu-arrow {
-                        top: 30px;
+                        border-color: $primary;
                     }
                 }
             }
@@ -736,8 +736,7 @@
             }
             .has-submenu {
                 .menu-arrow {
-                    right: 16px;
-                    top: 16px;
+                    top: -2px;
                 }
             }
         }

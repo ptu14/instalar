@@ -31,14 +31,13 @@ export default function Fotowoltaika() {
                                 <p className="text-muted">
                                     Instalacja fotowoltaiczna to sprawdzony sposób na produkcję własnej energii elektrycznej ze słońca
                                     i realne obniżenie rachunków za prąd. Nowoczesne panele słoneczne montowane na dachu Twojego domu
-                                    pozwalają uniezależnić się od rosnących cen energii i czerpać korzyści z systemu net-billing, który
+                                    pozwalają <strong>uniezależnić się od rosnących cen energii</strong> i czerpać korzyści z systemu net-billing, który
                                     umożliwia rozliczanie nadwyżek produkowanej energii z zakładem energetycznym.
                                 </p>
                                 <p className="text-muted">
                                     Jako doświadczony instalator fotowoltaiki w Małopolsce oferujemy kompleksową obsługę — od bezpłatnej
                                     analizy zużycia energii i doboru mocy instalacji, przez montaż paneli i falownika, aż po zgłoszenie
-                                    do operatora sieci. Nasi klienci mogą skorzystać z dotacji Mój Prąd pokrywającej nawet do 28 000 zł
-                                    kosztów instalacji.
+                                    do operatora sieci. Nasi klienci mogą skorzystać z <strong>dotacji Mój Prąd pokrywającej nawet do 28 000 zł</strong> kosztów instalacji.
                                 </p>
                                 <ul className="list-unstyled text-muted mb-0">
                                     <li className="mb-3">
@@ -51,7 +50,7 @@ export default function Fotowoltaika() {
                                         <span className="text-dark h5 me-2">
                                             <AiOutlineCheckCircle className="align-middle" />
                                         </span>
-                                        Dofinansowanie z programu Mój Prąd do 28 000 zł
+                                        <strong>Dofinansowanie z programu Mój Prąd do 28 000 zł</strong>
                                     </li>
                                     <li className="mb-3">
                                         <span className="text-dark h5 me-2">
@@ -128,8 +127,7 @@ export default function Fotowoltaika() {
                                             <div className="card-body">
                                                 <h5 className="card-title">Gwarancja</h5>
                                                 <p className="text-muted">
-                                                    Wieloletnia gwarancja na montaż i urządzenia — do 25 lat gwarancji wydajności
-                                                    na panele słoneczne i do 12 lat na falownik. Dodatkowo udzielamy 5-letniej
+                                                    Wieloletnia gwarancja na montaż i urządzenia — <strong>do 25 lat gwarancji wydajności</strong> na panele słoneczne i <strong>do 12 lat na falownik</strong>. Dodatkowo udzielamy 5-letniej
                                                     gwarancji na wykonane prace montażowe.
                                                 </p>
                                             </div>
@@ -241,13 +239,13 @@ export default function Fotowoltaika() {
                                                     <span className="text-dark h5 me-2">
                                                         <AiOutlineCheckCircle className="align-middle" />
                                                     </span>
-                                                    Zerowe rachunki za prąd i ogrzewanie
+                                                    <strong>Zerowe rachunki za prąd i ogrzewanie</strong>
                                                 </li>
                                                 <li className="mb-2">
                                                     <span className="text-dark h5 me-2">
                                                         <AiOutlineCheckCircle className="align-middle" />
                                                     </span>
-                                                    Pełna niezależność energetyczna
+                                                    <strong>Pełna niezależność energetyczna</strong>
                                                 </li>
                                                 <li className="mb-2">
                                                     <span className="text-dark h5 me-2">

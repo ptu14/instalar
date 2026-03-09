@@ -31,12 +31,12 @@ export default function PompyCiepla() {
                                 <p className="text-muted">
                                     Pompa ciepła powietrze-woda to nowoczesne i ekologiczne rozwiązanie grzewcze, które pobiera energię
                                     z powietrza zewnętrznego i zamienia ją w ciepło do ogrzewania domu oraz wody użytkowej. Przy
-                                    współczynniku COP sięgającym 4,5 — z każdego 1 kWh prądu uzyskujesz nawet 4,5 kWh ciepła, co oznacza
-                                    oszczędności na ogrzewaniu sięgające 60% w porównaniu z tradycyjnymi źródłami ciepła.
+                                    współczynniku COP sięgającym 4,5 — z każdego 1 kWh prądu uzyskujesz nawet 4,5 kWh ciepła, co
+                                    oznacza <strong>oszczędności na ogrzewaniu sięgające 60%</strong> w porównaniu z tradycyjnymi źródłami ciepła.
                                 </p>
                                 <p className="text-muted">
                                     Montaż pompy ciepła w Małopolsce to także doskonała okazja do skorzystania z dotacji — program Czyste
-                                    Powietrze oferuje dofinansowanie do 66 300 zł, a program Moje Ciepło do 21 000 zł. Jako certyfikowany
+                                    Powietrze oferuje <strong>dofinansowanie do 66 300 zł</strong>, a program Moje Ciepło <strong>do 21 000 zł</strong>. Jako certyfikowany
                                     instalator pomagamy w całym procesie — od doboru urządzenia i projektu, przez montaż i uruchomienie,
                                     aż po obsługę formalności związanych z dotacjami.
                                 </p>
@@ -45,19 +45,13 @@ export default function PompyCiepla() {
                                         <span className="text-dark h5 me-2">
                                             <AiOutlineCheckCircle className="align-middle" />
                                         </span>
-                                        Oszczędność na ogrzewaniu nawet do 60%
+                                        <strong>Oszczędność na ogrzewaniu nawet do 60%</strong>
                                     </li>
                                     <li className="mb-3">
                                         <span className="text-dark h5 me-2">
                                             <AiOutlineCheckCircle className="align-middle" />
                                         </span>
-                                        Dofinansowanie z programu Czyste Powietrze i Moje Ciepło
-                                    </li>
-                                    <li className="mb-3">
-                                        <span className="text-dark h5 me-2">
-                                            <AiOutlineCheckCircle className="align-middle" />
-                                        </span>
-                                        Ekologiczne ogrzewanie — bez spalania paliw kopalnych
+                                        <strong>Dofinansowanie z programu Czyste Powietrze i Moje Ciepło</strong>
                                     </li>
                                     <li className="mb-3">
                                         <span className="text-dark h5 me-2">
@@ -128,8 +122,7 @@ export default function PompyCiepla() {
                                             <div className="card-body">
                                                 <h5 className="card-title">Gwarancja</h5>
                                                 <p className="text-muted">
-                                                    Wieloletnia gwarancja na montaż i urządzenia — do 10 lat gwarancji producenta
-                                                    na pompę ciepła i 5 lat na wykonane prace instalacyjne. Gwarancja obejmuje
+                                                    Wieloletnia gwarancja na montaż i urządzenia — <strong>do 10 lat gwarancji producenta</strong> na pompę ciepła i <strong>5 lat na wykonane prace instalacyjne</strong>. Gwarancja obejmuje
                                                     wszystkie elementy systemu grzewczego, w tym armaturę i automatykę.
                                                 </p>
                                             </div>
@@ -206,7 +199,7 @@ export default function PompyCiepla() {
                                                     <span className="text-dark h5 me-2">
                                                         <AiOutlineCheckCircle className="align-middle" />
                                                     </span>
-                                                    Zerowe rachunki za ogrzewanie
+                                                    <strong>Zerowe rachunki za ogrzewanie</strong>
                                                 </li>
                                                 <li className="mb-2">
                                                     <span className="text-dark h5 me-2">
@@ -247,7 +240,7 @@ export default function PompyCiepla() {
                                                     <span className="text-dark h5 me-2">
                                                         <AiOutlineCheckCircle className="align-middle" />
                                                     </span>
-                                                    Zerowe rachunki za prąd i ogrzewanie
+                                                    <strong>Zerowe rachunki za prąd i ogrzewanie</strong>
                                                 </li>
                                                 <li className="mb-2">
                                                     <span className="text-dark h5 me-2">

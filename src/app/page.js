@@ -166,7 +166,7 @@ export default function IndexBusiness() {
                                 <div className="col-lg-7 my-2 py-5">
                                     <ContactForm
                                         title="Zostaw swój numer telefonu, a my skontaktujemy się z Tobą w ciągu godziny!"
-                                        description="Zyskaj niezależność energetyczną i sprawdź, ile możesz zaoszczędzić dzięki fotowoltaice i pompom ciepła. Otrzymaj informacje o aktualnych dotacjach z programów 'Mój Prąd' i 'Czyste Powietrze'."
+                                        description={<>Zyskaj niezależność energetyczną i sprawdź, <strong>ile możesz zaoszczędzić</strong> dzięki fotowoltaice i pompom ciepła. Otrzymaj informacje o aktualnych dotacjach z programów <strong>Mój Prąd</strong> i <strong>Czyste Powietrze</strong>.</>}
                                         subject="Nowa prośba o kontakt - Strona główna"
                                     />
                                 </div>

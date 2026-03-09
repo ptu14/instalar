@@ -88,7 +88,7 @@ export default function Navbar({ navClass, manuClass, navDark }) {
                                             <Link href="/">Start</Link>
                                         </li>
                                         <li className="has-submenu">
-                                            <Link href="/oferta">Oferta</Link>
+                                            <Link href="/oferta">Oferta <span className="menu-arrow"></span></Link>
                                             <ul className="submenu">
                                                 <li><Link href="/oferta/pompy-ciepla">Pompy Ciepła</Link></li>
                                                 <li><Link href="/oferta/fotowoltaika">Fotowoltaika</Link></li>
@@ -100,7 +100,7 @@ export default function Navbar({ navClass, manuClass, navDark }) {
                                             </ul>
                                         </li>
                                         <li className="has-submenu">
-                                            <Link href="/dotacje">Dotacje</Link>
+                                            <Link href="/dotacje">Dotacje <span className="menu-arrow"></span></Link>
                                             <ul className="submenu">
                                                 <li><Link href="/dotacje/moj-prad">Mój Prąd</Link></li>
                                                 <li><Link href="/dotacje/czyste-powietrze">Czyste Powietrze</Link></li>
