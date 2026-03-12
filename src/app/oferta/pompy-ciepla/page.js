@@ -5,6 +5,7 @@ import Navbar from "../../components/navbar/navbar";
 import KomplexFooter from "../../components/footer/komplexFooter";
 import ContactForm from "../../components/contact-form/contact-form";
 import { AiOutlineCheckCircle } from "react-icons/ai";
+import { FiCoffee, FiEye, FiAward } from "react-icons/fi";
 import regionsData from "../../data/regions.json";
 
 export const metadata = {
@@ -71,6 +72,69 @@ export default function PompyCiepla() {
                                     className="img-fluid rounded shadow"
                                     alt="Montaż pompy ciepła powietrze-woda w Małopolsce"
                                 />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* Salon Pomp Ciepła Daikin */}
+            <section className="section bg-light">
+                <div className="container">
+                    <div className="row align-items-center">
+                        <div className="col-lg-6 mb-4 mb-lg-0">
+                            <Image
+                                src="/images/salon-daikin.png"
+                                width={800}
+                                height={600}
+                                className="img-fluid rounded shadow"
+                                alt="Salon pomp ciepła Daikin — Komplex System"
+                            />
+                        </div>
+                        <div className="col-lg-6">
+                            <div className="section-title mb-4">
+                                <h4 className="title mb-3">Autoryzowany Salon Pomp Ciepła Daikin</h4>
+                                <p className="text-muted">
+                                    Zapraszamy do naszej siedziby, gdzie pompy ciepła zobaczysz na żywo.
+                                    Wpadnij na kawę, porozmawiaj ze specjalistą i dowiedz się,
+                                    jak realnie obniżyć rachunki za ogrzewanie — spokojnie, kompleksowo i bez zobowiązań.
+                                </p>
+                            </div>
+                            <div className="d-flex mb-3">
+                                <div className="text-primary h4 mb-0 me-3 mt-1">
+                                    <FiEye />
+                                </div>
+                                <div className="flex-1">
+                                    <h5 className="mb-1">Obejrzyj pompy na żywo</h5>
+                                    <p className="text-muted mb-0">
+                                        Dotknij, porównaj modele i przekonaj się, jak działają
+                                        pompy ciepła Daikin — zanim podejmiesz decyzję.
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="d-flex mb-3">
+                                <div className="text-primary h4 mb-0 me-3 mt-1">
+                                    <FiCoffee />
+                                </div>
+                                <div className="flex-1">
+                                    <h5 className="mb-1">Porozmawiaj przy kawie</h5>
+                                    <p className="text-muted mb-0">
+                                        Usiądź wygodnie i opowiedz nam o swoim domu. Doradzimy
+                                        najlepsze rozwiązanie i policzymy, ile możesz zaoszczędzić.
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="d-flex">
+                                <div className="text-primary h4 mb-0 me-3 mt-1">
+                                    <FiAward />
+                                </div>
+                                <div className="flex-1">
+                                    <h5 className="mb-1">Autoryzowany partner Daikin</h5>
+                                    <p className="text-muted mb-0">
+                                        Jako oficjalny salon Daikin oferujemy pełne wsparcie — od doboru
+                                        urządzenia, przez montaż, po serwis i obsługę gwarancji.
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
