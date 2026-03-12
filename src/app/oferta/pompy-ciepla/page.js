@@ -6,6 +6,8 @@ import KomplexFooter from "../../components/footer/komplexFooter";
 import ContactForm from "../../components/contact-form/contact-form";
 import { AiOutlineCheckCircle } from "react-icons/ai";
 import { FiCoffee, FiEye, FiAward } from "react-icons/fi";
+import PompyCieplaFaq from "../../components/pompy-ciepla-faq";
+import pompyCieplaFaqData from "../../data/pompy-ciepla-faq";
 import regionsData from "../../data/regions.json";
 
 export const metadata = {
@@ -355,6 +357,32 @@ export default function PompyCiepla() {
                     </div>
                 </div>
             </section>
+
+            {/* FAQ */}
+            <section className="section bg-light">
+                <div className="container">
+                    <PompyCieplaFaq />
+                </div>
+            </section>
+
+            {/* FAQ Schema.org */}
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "FAQPage",
+                        "mainEntity": pompyCieplaFaqData.map((item) => ({
+                            "@type": "Question",
+                            "name": item.title,
+                            "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": item.desc
+                            }
+                        }))
+                    })
+                }}
+            />
 
             <section className="section mt-4 pb-0">
                 <KomplexFooter />
