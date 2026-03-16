@@ -5,9 +5,9 @@ import Image from "next/image";
 import Navbar from "./components/navbar/navbar";
 import Partners from "./components/partners";
 import Faq from "./components/faq";
-import Process from "./components/process";
 import KomplexFooter from "./components/footer/komplexFooter";
 import ContactForm from "./components/contact-form/contact-form";
+import RealizationsPreview from "./components/realizations/realizationsPreview";
 
 import { aboutData } from "./data/business";
 import HeroStatic from "@/app/components/business/heroStatic";
@@ -15,13 +15,38 @@ import ReviewsCarousel from "@/app/components/google-reviews/ReviewsCarousel";
 
 import { AiOutlineCheckCircle } from "react-icons/ai";
 
+import { v2 as cloudinary } from 'cloudinary';
+
+cloudinary.config({
+    cloud_name: process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME,
+    api_key: process.env.CLOUDINARY_API_KEY,
+    api_secret: process.env.CLOUDINARY_API_SECRET,
+    secure: true,
+});
+
+async function getPreviewImages() {
+    try {
+        const results = await cloudinary.search
+            .expression('folder:realizacje AND resource_type:image')
+            .sort_by('created_at', 'desc')
+            .max_results(4)
+            .execute();
+        return results.resources.map(resource => resource.public_id);
+    } catch (error) {
+        console.error("Cloudinary Preview Error:", error);
+        return [];
+    }
+}
+
 export const metadata = {
     title: 'Komplex System – Fotowoltaika i Pompy Ciepła w Małopolsce',
     description: 'Montaż fotowoltaiki, pomp ciepła, klimatyzacji i magazynów energii w Małopolsce. Pomagamy uzyskać dotacje Mój Prąd i Czyste Powietrze. Bezpłatna wycena.',
     alternates: { canonical: 'https://www.komplexsystem.pl' },
 };
 
-export default function IndexBusiness() {
+export default async function IndexBusiness() {
+    const previewImages = await getPreviewImages();
+
     return (
         <>
             <h1 style={{ position: 'absolute', width: '1px', height: '1px', margin: '-1px', padding: '0', overflow: 'hidden', clip: 'rect(0,0,0,0)', border: '0' }}>Komplex System - Instalacje Fotowoltaiczne, Pompy Ciepła, Magazyny Energii i Dotacje Mój Prąd</h1>
@@ -134,7 +159,10 @@ export default function IndexBusiness() {
                 </div>
 
             </section>
-            <section>
+            {previewImages.length > 0 && (
+                <RealizationsPreview images={previewImages} />
+            )}
+            <section className="section pb-4">
                 <div className="container">
                     <div className="row justify-content-center">
                         <h2 className="mb-5 text-center text-balance">Najlepsze Komponenty dla Twojej Instalacji Fotowoltaicznej i Pompy Ciepła</h2>
@@ -142,20 +170,6 @@ export default function IndexBusiness() {
                 </div>
                 <div className="container-fluid">
                     <Partners />
-                </div>
-            </section>
-            <section className="section">
-                <div className="container">
-                    <div className="row justify-content-center">
-                        <div className="col-12">
-                            <div className="section-title  text-center">
-                                <h2 className="title mb-3">Jak rozpocząć współpracę?</h2>
-                            </div>
-                        </div>
-                    </div>
-
-                    <Process icon={false} />
-
                 </div>
             </section>
             <section className="section" id="kontakt">

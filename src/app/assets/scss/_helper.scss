@@ -1,3 +1,4 @@
+@use "sass:color";
 //
 // helper.scss
 //
@@ -254,13 +255,13 @@
             span {
                 background-color: #{$value} !important;
                 &:before {
-                    border-left-color: darken($value, 10%);
-                    border-top-color: darken($value, 10%);
+                    border-left-color: color.adjust($value, $lightness: -10%);
+                    border-top-color: color.adjust($value, $lightness: -10%);
                 }
         
                 &:after {
-                    border-right-color: darken($value, 10%);
-                    border-top-color: darken($value, 10%);
+                    border-right-color: color.adjust($value, $lightness: -10%);
+                    border-top-color: color.adjust($value, $lightness: -10%);
                 }
             }
         }

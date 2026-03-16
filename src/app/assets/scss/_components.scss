@@ -1,3 +1,4 @@
+@use "sass:color";
 //
 // components.scss
 //
@@ -11,8 +12,8 @@ $value in $colors {
         color: $white !important;
         box-shadow: 0 3px 5px 0 rgba($value, 0.3);
         &:hover, &:focus, &:active, &.active, &.focus{
-            background-color: darken($value, 10%) !important;
-            border-color: darken($value, 10%) !important;
+            background-color: color.adjust($value, $lightness: -10%) !important;
+            border-color: color.adjust($value, $lightness: -10%) !important;
             color: $white !important;
         }
     }
@@ -227,7 +228,7 @@ $value in $colors {
         color: $white;
         border-color: $value;
         .alert-link {
-            color: darken($value, 30%);
+            color: color.adjust($value, $lightness: -30%);
         }
     }
     .alert-outline-#{$name} {
@@ -241,7 +242,7 @@ $value in $colors {
     border-radius: 5px;
     font-size: 13px;
     &.alert-light {
-        background-color: lighten($light, 3%);
+        background-color: color.adjust($light, $lightness: 3%);
         color: $dark;
         border-color: $gray-200;
     }
@@ -423,7 +424,7 @@ $value in $colors {
 //Nav
 .nav-pills {
     margin-bottom: 15px;
-    background: darken($light, 1%);
+    background: color.adjust($light, $lightness: -1%);
     .nav-link {
         color: $gray-700 !important;
         padding: 5px;
@@ -666,7 +667,7 @@ $value in $colors {
         li {
             a {
                 color: $gray-500;
-                border-color: lighten($footer, 3%);
+                border-color: color.adjust($footer, $lightness: 3%);
             }
         }
     }
@@ -744,7 +745,7 @@ $value in $colors {
     display: none;
     transition: all 0.5s ease;
     &:hover {
-        background-color: darken($primary, 10%) !important;
+        background-color: color.adjust($primary, $lightness: -10%) !important;
     }
 }
 

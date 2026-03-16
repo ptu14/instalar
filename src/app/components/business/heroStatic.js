@@ -26,8 +26,9 @@ export default function HeroStatic() {
                                 <p className="para-desc mx-auto text-white mb-2">
                                     Fotowoltaika, pompy ciepła, magazyny energii i ogrzewanie podłogowe w jednym miejscu. Oszczędzaj do 75% na ogrzewaniu i do 90% na prądzie dzięki dotacjom z programów Mój Prąd i Czyste Powietrze.
                                 </p>
-                                <div className="mt-4 pt-2">
-                                    <Link href="/oferta" className="btn btn-primary">Poznaj Ofertę</Link>
+                                <div className="mt-4 pt-2 d-flex justify-content-center gap-3 flex-wrap">
+                                    <Link href="#kontakt" className="btn btn-primary">Bezpłatna wycena</Link>
+                                    <Link href="/oferta" className="btn btn-hero-ghost">Poznaj Ofertę</Link>
                                 </div>
                             </div>
                         </div>

@@ -1,3 +1,4 @@
+@use "sass:color";
 //
 // menu.scss
 //
@@ -791,8 +792,8 @@
         height: auto;
         padding-bottom: 0;
         overflow: auto;
-        border-top: 1px solid darken($light,2%);
-        border-bottom: 1px solid darken($light,2%);
+        border-top: 1px solid color.adjust($light, $lightness: -2%);
+        border-bottom: 1px solid color.adjust($light, $lightness: -2%);
         background-color: $white;
         &.open {
             display: block;

@@ -1,3 +1,4 @@
+@use "sass:color";
 //
 // _footer.scss
 //
@@ -29,8 +30,8 @@
     .footer-subscribe,
     .foot-subscribe {
         .form-control {
-            background-color: lighten($black, 10%);
-            border: 1px solid lighten($black, 10%);
+            background-color: color.adjust($black, $lightness: 10%);
+            border: 1px solid color.adjust($black, $lightness: 10%);
             color: white;
         }
 
@@ -70,7 +71,7 @@
                 transition: all 0.5s ease;
 
                 &:hover {
-                    color: lighten($gray-500, 20%);
+                    color: color.adjust($gray-500, $lightness: 20%);
                 }
             }
 
@@ -82,15 +83,15 @@
 
     .footer-border,
     .footer-bar {
-        border-top: 1px solid lighten($footer, 3%);
+        border-top: 1px solid color.adjust($footer, $lightness: 3%);
     }
 
     .footer-border-bottom {
-        border-bottom: 1px solid lighten($footer, 3%);
+        border-bottom: 1px solid color.adjust($footer, $lightness: 3%);
     }
 
     .border {
-        border-color: lighten($footer, 3%) !important;
+        border-color: color.adjust($footer, $lightness: 3%) !important;
     }
 
     &.footer-light {
@@ -129,7 +130,7 @@
             li {
                 a {
                     &:hover {
-                        color: darken($gray-500, 20%);
+                        color: color.adjust($gray-500, $lightness: -20%);
                     }
                 }
 

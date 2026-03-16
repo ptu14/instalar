@@ -192,6 +192,22 @@
     }
 }
 
+// Przycisk ghost na hero (ciemne tło)
+.btn-hero-ghost {
+    color: #fff !important;
+    border: 2px solid rgba(255, 255, 255, 0.6) !important;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(4px);
+    transition: all 0.3s ease;
+
+    &:hover, &:focus, &:active {
+        background: rgba(255, 255, 255, 0.25) !important;
+        border-color: #fff !important;
+        color: #fff !important;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    }
+}
+
 .bg-animation-left {
     &:after {
         content: "";
