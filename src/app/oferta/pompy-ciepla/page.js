@@ -95,6 +95,13 @@ export default function PompyCiepla() {
                         </div>
                         <div className="col-lg-6">
                             <div className="section-title mb-4">
+                                <Image
+                                    src="/images/partners/daikin.svg"
+                                    width={140}
+                                    height={40}
+                                    alt="Logo Daikin"
+                                    className="mb-2"
+                                />
                                 <h4 className="title mb-3">Autoryzowany Salon Pomp Ciepła Daikin</h4>
                                 <p className="text-muted">
                                     Zapraszamy do naszej siedziby, gdzie pompy ciepła zobaczysz na żywo.
@@ -126,7 +133,7 @@ export default function PompyCiepla() {
                                     </p>
                                 </div>
                             </div>
-                            <div className="d-flex">
+                            <div className="d-flex mb-3">
                                 <div className="text-primary h4 mb-0 me-3 mt-1">
                                     <FiAward />
                                 </div>
@@ -135,9 +142,13 @@ export default function PompyCiepla() {
                                     <p className="text-muted mb-0">
                                         Jako oficjalny salon Daikin oferujemy pełne wsparcie — od doboru
                                         urządzenia, przez montaż, po serwis i obsługę gwarancji.
+                                        <br /><a href="https://www.daikin.pl/pl_pl/klienci/lokalizator-dystrybutorow/2106623.html" target="_blank" rel="noopener" className="text-primary fw-semibold">Sprawdź nas na daikin.pl&nbsp;→</a>
                                     </p>
                                 </div>
                             </div>
+                            <p className="text-muted mb-0 small fst-italic">
+                                Specjalizujemy się w Daikin, ale montujemy również pompy ciepła innych producentów — dobierzemy rozwiązanie najlepsze dla Twojego domu i budżetu.
+                            </p>
                         </div>
                     </div>
                 </div>
