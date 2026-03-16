@@ -4,6 +4,7 @@ import Link from "next/link";
 import Navbar from "../../components/navbar/navbar";
 import KomplexFooter from "../../components/footer/komplexFooter";
 import { AiOutlineCheckCircle } from "react-icons/ai";
+import { FiAward, FiShield, FiTool } from "react-icons/fi";
 import ContactForm from "@/app/components/contact-form/contact-form";
 import regionsData from "../../data/regions.json";
 
@@ -109,12 +110,15 @@ export default function Fotowoltaika() {
                                 <div className="section-title mb-4">
                                     <h4 className="title mb-3">Dlaczego warto wybrać naszą firmę?</h4>
                                 </div>
-                                <div className="row">
-                                    <div className="col-md-4 mt-4">
-                                        <div className="card features feature-primary h-100">
-                                            <div className="card-body">
-                                                <h5 className="card-title">Certyfikowani instalatorzy</h5>
-                                                <p className="text-muted">
+                                <div className="row g-2">
+                                    <div className="col-12">
+                                        <div className="d-flex align-items-start p-3 bg-light rounded">
+                                            <div className="icon text-primary h3 mb-0 me-3">
+                                                <FiAward />
+                                            </div>
+                                            <div>
+                                                <h5 className="mb-1">Certyfikowani instalatorzy</h5>
+                                                <p className="text-muted mb-0 small">
                                                     Zespół wykwalifikowanych specjalistów z uprawnieniami SEP i certyfikatami
                                                     producenckich szkoleń. Każdy montaż wykonujemy zgodnie z wytycznymi producenta
                                                     paneli i falowników, co gwarantuje pełną wydajność instalacji.
@@ -122,22 +126,28 @@ export default function Fotowoltaika() {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="col-md-4 mt-4">
-                                        <div className="card features feature-primary h-100">
-                                            <div className="card-body">
-                                                <h5 className="card-title">Gwarancja</h5>
-                                                <p className="text-muted">
+                                    <div className="col-12">
+                                        <div className="d-flex align-items-start p-3 bg-light rounded">
+                                            <div className="icon text-primary h3 mb-0 me-3">
+                                                <FiShield />
+                                            </div>
+                                            <div>
+                                                <h5 className="mb-1">Gwarancja</h5>
+                                                <p className="text-muted mb-0 small">
                                                     Wieloletnia gwarancja na montaż i urządzenia — <strong>do 25 lat gwarancji wydajności</strong> na panele słoneczne i <strong>do 12 lat na falownik</strong>. Dodatkowo udzielamy 5-letniej
                                                     gwarancji na wykonane prace montażowe.
                                                 </p>
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="col-md-4 mt-4">
-                                        <div className="card features feature-primary h-100">
-                                            <div className="card-body">
-                                                <h5 className="card-title">Serwis</h5>
-                                                <p className="text-muted">
+                                    <div className="col-12">
+                                        <div className="d-flex align-items-start p-3 bg-light rounded">
+                                            <div className="icon text-primary h3 mb-0 me-3">
+                                                <FiTool />
+                                            </div>
+                                            <div>
+                                                <h5 className="mb-1">Serwis</h5>
+                                                <p className="text-muted mb-0 small">
                                                     Profesjonalny serwis i monitoring instalacji fotowoltaicznej. Oferujemy zdalne
                                                     monitorowanie produkcji energii, regularne przeglądy oraz szybką reakcję
                                                     serwisową na terenie całej Małopolski.

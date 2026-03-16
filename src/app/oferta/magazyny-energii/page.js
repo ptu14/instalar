@@ -5,6 +5,7 @@ import Navbar from "../../components/navbar/navbar";
 import KomplexFooter from "../../components/footer/komplexFooter";
 import ContactForm from "../../components/contact-form/contact-form";
 import { AiOutlineCheckCircle } from "react-icons/ai";
+import { FiAward, FiShield, FiTool } from "react-icons/fi";
 import regionsData from "../../data/regions.json";
 
 export const metadata = {
@@ -110,12 +111,15 @@ export default function MagazynyEnergii() {
                                 <div className="section-title mb-4">
                                     <h4 className="title mb-3">Dlaczego warto wybrać naszą firmę?</h4>
                                 </div>
-                                <div className="row">
-                                    <div className="col-md-4 mt-4">
-                                        <div className="card features feature-primary h-100">
-                                            <div className="card-body">
-                                                <h5 className="card-title">Doświadczenie</h5>
-                                                <p className="text-muted">
+                                <div className="row g-2">
+                                    <div className="col-12">
+                                        <div className="d-flex align-items-start p-3 bg-light rounded">
+                                            <div className="icon text-primary h3 mb-0 me-3">
+                                                <FiAward />
+                                            </div>
+                                            <div>
+                                                <h5 className="mb-1">Doświadczenie</h5>
+                                                <p className="text-muted mb-0 small">
                                                     Wieloletnie doświadczenie w montażu systemów magazynowania energii i instalacji
                                                     fotowoltaicznych. Nasz zespół posiada certyfikaty producentów magazynów energii
                                                     i regularnie szkoli się z najnowszych technologii bateryjnych.
@@ -123,11 +127,14 @@ export default function MagazynyEnergii() {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="col-md-4 mt-4">
-                                        <div className="card features feature-primary h-100">
-                                            <div className="card-body">
-                                                <h5 className="card-title">Gwarancja</h5>
-                                                <p className="text-muted">
+                                    <div className="col-12">
+                                        <div className="d-flex align-items-start p-3 bg-light rounded">
+                                            <div className="icon text-primary h3 mb-0 me-3">
+                                                <FiShield />
+                                            </div>
+                                            <div>
+                                                <h5 className="mb-1">Gwarancja</h5>
+                                                <p className="text-muted mb-0 small">
                                                     Wieloletnia gwarancja na montaż i urządzenia — do 10 lat gwarancji producenta
                                                     na magazyn energii i 5 lat na wykonane prace instalacyjne. Gwarancja obejmuje
                                                     ogniwa, falownik hybrydowy oraz całą instalację elektryczną.
@@ -135,11 +142,14 @@ export default function MagazynyEnergii() {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="col-md-4 mt-4">
-                                        <div className="card features feature-primary h-100">
-                                            <div className="card-body">
-                                                <h5 className="card-title">Serwis</h5>
-                                                <p className="text-muted">
+                                    <div className="col-12">
+                                        <div className="d-flex align-items-start p-3 bg-light rounded">
+                                            <div className="icon text-primary h3 mb-0 me-3">
+                                                <FiTool />
+                                            </div>
+                                            <div>
+                                                <h5 className="mb-1">Serwis</h5>
+                                                <p className="text-muted mb-0 small">
                                                     Profesjonalny serwis i zdalny monitoring systemu magazynowania energii.
                                                     Oferujemy regularne przeglądy, aktualizacje oprogramowania oraz szybką
                                                     reakcję serwisową na terenie całej Małopolski.
