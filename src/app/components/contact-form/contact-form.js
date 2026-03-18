@@ -24,6 +24,7 @@ export default function ContactForm({ title, description, subject }) {
                     name: name || 'Klient',
                     phone: phone,
                     email: 'brak@email.com',
+                    postalCode: postalCode || '',
                     subject: subject || 'Nowa prośba o kontakt',
                     comments: `Nowa prośba o kontakt telefoniczny.\nImię: ${name}\nTelefon: ${phone}${postalCode ? `\nKod pocztowy: ${postalCode}` : ''}`
                 }),
