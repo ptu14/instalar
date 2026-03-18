@@ -37,25 +37,29 @@ export async function POST(req) {
             `,
         };
 
-        // Wysyłanie wiadomości
-        await transporter.sendMail(mailOptions);
-
-        // Wysyłka leada do n8n (fire-and-forget, rozbite pola)
+        // Wysyłka leada do n8n
         const n8nWebhookUrl = process.env.N8N_WEBHOOK_URL;
         if (n8nWebhookUrl) {
-            fetch(n8nWebhookUrl, {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({
-                    name,
-                    phone,
-                    email,
-                    postal_code: postalCode || '',
-                    subject: subject || '',
-                    source: 'website',
-                }),
-            }).catch((err) => console.error('Błąd wysyłki do n8n:', err));
+            try {
+                await fetch(n8nWebhookUrl, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        name,
+                        phone,
+                        email,
+                        postal_code: postalCode || '',
+                        subject: subject || '',
+                        source: 'website',
+                    }),
+                });
+            } catch (err) {
+                console.error('Błąd wysyłki do n8n:', err);
+            }
         }
+
+        // Wysyłanie wiadomości email
+        await transporter.sendMail(mailOptions);
 
         return NextResponse.json(
             { message: 'Wiadomość została wysłana pomyślnie' },
