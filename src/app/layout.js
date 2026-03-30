@@ -6,6 +6,8 @@ import { SpeedInsights } from "@vercel/speed-insights/next"
 import GoogleBadge from './components/google-reviews/GoogleBadge'
 import FloatingPhone from './components/floating-phone/FloatingPhone'
 import CookieBanner from './components/cookie-banner/CookieBanner'
+import PromoBanner from './components/promo-banner/PromoBanner'
+import promoBanners from './data/promo-banners'
 
 const lexend = Lexend({
   subsets: ['latin'],
@@ -153,6 +155,7 @@ export default function RootLayout({ children }) {
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5SJRMFWB" height="0" width="0" style={{display:'none',visibility:'hidden'}}></iframe></noscript>
         {/* End Google Tag Manager (noscript) */}
         <CookieBanner />
+        <PromoBanner banners={promoBanners} />
         {children}
         <div className="position-fixed bottom-0 start-0 m-3" style={{ zIndex: 9999 }}>
           <GoogleBadge />

@@ -67,6 +67,26 @@ src/app/
 - API: `POST /api/contact` → Nodemailer (Gmail SMTP)
 - Zmienne env: `GMAIL_USER`, `GMAIL_APP_PASS`, `CONTACT_EMAIL`
 
+### Banery promocyjne
+- Konfiguracja: `src/app/data/promo-banners.js` - tablica obiektów
+- Komponent: `src/app/components/promo-banner/PromoBanner.js` (client component)
+- Baner automatycznie znika po dacie `expiresAt`
+- Aby dodać nowy baner, dopisz obiekt do tablicy w `promo-banners.js`:
+  ```js
+  {
+      id: 'unikalny-id',
+      expiresAt: '2026-12-31',       // data wygaśnięcia (YYYY-MM-DD)
+      badge: 'Tekst badge',           // opcjonalny
+      title: 'Tytuł banera',
+      description: 'Opis banera',
+      highlights: [                    // opcjonalna tablica kwot/wartości
+          { label: 'Opis', value: 'do X zł' },
+      ],
+      ctaText: 'Tekst przycisku',      // opcjonalny
+      ctaLink: '#kontakt',             // opcjonalny, domyślnie #kontakt
+  }
+  ```
+
 ### SEO
 - Rozbudowane metadata w każdej stronie
 - Schema.org JSON-LD (LocalBusiness)
