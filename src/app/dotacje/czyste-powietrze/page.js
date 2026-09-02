@@ -1,4 +1,4 @@
-import React,  from "react";
+import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -17,7 +17,7 @@ export default function CzystePowietrze() {
           <div className="row mt-5 justify-content-center">
             <div className="col-12">
               <div className="title-heading text-center">
-                <h1 className="heading text-white mb-3">Program "Czyste Powietrze"</h1>
+                <h1 className="heading text-white mb-3">Program &quot;Czyste Powietrze&quot;</h1>
                 <p className="para-desc text-white-50 mx-auto">Dofinansowanie do wymiany źródeł ciepła i termomodernizacji domów jednorodzinnych</p>
               </div>
             </div>
@@ -36,8 +36,8 @@ export default function CzystePowietrze() {
 
             <div className="col-lg-6 col-md-6 mt-4 mt-lg-0 pt-2 pt-lg-0">
               <div className="section-title">
-                <h4 className="title mb-4">Czym jest program "Czyste Powietrze"?</h4>
-                <p className="text-muted">Program "Czyste Powietrze" to kompleksowy program dotacyjny, którego celem jest poprawa jakości powietrza oraz zmniejszenie emisji gazów cieplarnianych poprzez wymianę źródeł ciepła i poprawę efektywności energetycznej budynków mieszkalnych jednorodzinnych.</p>
+                <h4 className="title mb-4">Czym jest program &quot;Czyste Powietrze&quot;?</h4>
+                <p className="text-muted">Program &quot;Czyste Powietrze&quot; to kompleksowy program dotacyjny, którego celem jest poprawa jakości powietrza oraz zmniejszenie emisji gazów cieplarnianych poprzez wymianę źródeł ciepła i poprawę efektywności energetycznej budynków mieszkalnych jednorodzinnych.</p>
                 <p className="text-muted mt-3">Program oferuje dofinansowanie do wymiany starych pieców i kotłów na paliwo stałe na nowoczesne źródła ciepła spełniające najwyższe normy, a także przeprowadzenia prac termomodernizacyjnych budynku.</p>
               </div>
             </div>
@@ -50,7 +50,7 @@ export default function CzystePowietrze() {
           <div className="row justify-content-center">
             <div className="col-12 text-center">
               <div className="section-title">
-                <h4 className="title mb-4">Co można sfinansować z programu "Czyste Powietrze"?</h4>
+                <h4 className="title mb-4">Co można sfinansować z programu &quot;Czyste Powietrze&quot;?</h4>
               </div>
             </div>
           </div>
@@ -250,7 +250,7 @@ export default function CzystePowietrze() {
             <div className="col-lg-7 col-md-6">
               <div className="section-title">
                 <h4 className="title mb-4">Pomożemy Ci uzyskać dofinansowanie</h4>
-                <p className="text-muted para-desc">Oferujemy pełne wsparcie w procesie pozyskania dofinansowania z programu "Czyste Powietrze". Nasi doradcy pomogą wybrać optymalne rozwiązania i przeprowadzą Cię przez cały proces.</p>
+                <p className="text-muted para-desc">Oferujemy pełne wsparcie w procesie pozyskania dofinansowania z programu &quot;Czyste Powietrze&quot;. Nasi doradcy pomogą wybrać optymalne rozwiązania i przeprowadzą Cię przez cały proces.</p>
                 <ul className="list-unstyled text-muted mt-4">
                   <li className="mb-0"><span className="text-primary h5 me-2"><i className="uil uil-check-circle align-middle"></i></span>Bezpłatna wstępna ocena możliwości uzyskania dofinansowania</li>
                   <li className="mb-0"><span className="text-primary h5 me-2"><i className="uil uil-check-circle align-middle"></i></span>Dobór optymalnego rozwiązania grzewczego i zakresu termomodernizacji</li>

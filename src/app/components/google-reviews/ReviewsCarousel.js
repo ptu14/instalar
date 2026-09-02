@@ -67,7 +67,7 @@ export default function ReviewsCarousel() {
                                 </div>
 
                                 <p className="text-muted mb-0 fst-italic">
-                                    "{review.text.length > 200 ? review.text.substring(0, 200) + '...' : review.text}"
+                                    &quot;{review.text.length > 200 ? review.text.substring(0, 200) + '...' : review.text}&quot;
                                 </p>
                             </div>
                         </SwiperSlide>

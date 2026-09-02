@@ -21,6 +21,7 @@ export default function CookieBanner() {
   useEffect(() => {
     const saved = localStorage.getItem(STORAGE_KEY);
     if (!saved) {
+      // eslint-disable-next-line react-hooks/set-state-in-effect -- syncs UI with localStorage, unavailable during SSR
       setVisible(true);
     } else {
       updateGtmConsent(saved === 'granted');

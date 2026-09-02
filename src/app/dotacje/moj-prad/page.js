@@ -1,4 +1,4 @@
-import React,  from "react";
+import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -18,7 +18,7 @@ export default function MojPrad() {
           <div className="row mt-5 justify-content-center">
             <div className="col-12">
               <div className="title-heading text-center">
-                <h1 className="heading text-white mb-3">Program "Mój Prąd"</h1>
+                <h1 className="heading text-white mb-3">Program &quot;Mój Prąd&quot;</h1>
                 <p className="para-desc text-white-50 mx-auto">Dofinansowanie do instalacji fotowoltaicznych dla gospodarstw domowych</p>
               </div>
             </div>
@@ -37,8 +37,8 @@ export default function MojPrad() {
 
             <div className="col-lg-6 col-md-6 mt-4 mt-lg-0 pt-2 pt-lg-0">
               <div className="section-title">
-                <h4 className="title mb-4">Czym jest program "Mój Prąd"?</h4>
-                <p className="text-muted">Program "Mój Prąd" to rządowy program wsparcia dla mikroinstalacji fotowoltaicznych, skierowany do gospodarstw domowych wytwarzających energię elektryczną na własne potrzeby.</p>
+                <h4 className="title mb-4">Czym jest program &quot;Mój Prąd&quot;?</h4>
+                <p className="text-muted">Program &quot;Mój Prąd&quot; to rządowy program wsparcia dla mikroinstalacji fotowoltaicznych, skierowany do gospodarstw domowych wytwarzających energię elektryczną na własne potrzeby.</p>
                 <p className="text-muted mt-3">Aktualnie trwa 6. edycja programu, w ramach której można otrzymać dofinansowanie do instalacji fotowoltaicznej, magazynu energii, magazynu ciepła i systemu zarządzania energią.</p>
               </div>
             </div>
@@ -52,7 +52,7 @@ export default function MojPrad() {
             <div className="col-12 text-center">
               <div className="section-title">
                 <h4 className="title mb-4">Na co można otrzymać dofinansowanie?</h4>
-                <p className="text-muted para-desc mx-auto">W ramach programu "Mój Prąd" można uzyskać dofinansowanie do:</p>
+                <p className="text-muted para-desc mx-auto">W ramach programu &quot;Mój Prąd&quot; można uzyskać dofinansowanie do:</p>
               </div>
             </div>
           </div>
@@ -251,7 +251,7 @@ export default function MojPrad() {
             <div className="col-lg-7 col-md-6">
               <div className="section-title">
                 <h4 className="title mb-4">Pomożemy Ci uzyskać dofinansowanie</h4>
-                <p className="text-muted para-desc">W Komplex System oferujemy kompleksową pomoc w uzyskaniu dofinansowania z programu "Mój Prąd". Zajmiemy się wszystkimi formalnościami, abyś mógł cieszyć się korzyściami z fotowoltaiki bez zbędnego stresu.</p>
+                <p className="text-muted para-desc">W Komplex System oferujemy kompleksową pomoc w uzyskaniu dofinansowania z programu &quot;Mój Prąd&quot;. Zajmiemy się wszystkimi formalnościami, abyś mógł cieszyć się korzyściami z fotowoltaiki bez zbędnego stresu.</p>
                 <ul className="list-unstyled text-muted mt-4">
                   <li className="mb-0"><span className="text-primary h5 me-2"><i className="uil uil-check-circle align-middle"></i></span>Doradzimy, jaka instalacja będzie optymalna dla Twojego domu</li>
                   <li className="mb-0"><span className="text-primary h5 me-2"><i className="uil uil-check-circle align-middle"></i></span>Przygotujemy wszystkie wymagane dokumenty</li>

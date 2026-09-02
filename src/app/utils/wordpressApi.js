@@ -71,20 +71,6 @@ export async function getCategoryBySlug(slug) {
 }
 
 /**
- * Pobiera kategorie
- * @returns {Promise<Array>} - Lista kategorii
- */
-export async function getCategories() {
-  try {
-    const response = await api.get('/categories');
-    return response.data;
-  } catch (error) {
-    console.error('Błąd podczas pobierania kategorii:', error);
-    throw error;
-  }
-}
-
-/**
  * Pobiera tagi
  * @returns {Promise<Array>} - Lista tagów
  */
@@ -134,7 +120,7 @@ export function truncateText(text, maxLength = 150) {
   return text.substring(0, maxLength) + '...';
 }
 
-export default {
+const wordpressApi = {
   getPosts,
   getPostBySlug,
   getCategories,
@@ -143,3 +129,5 @@ export default {
   stripHtml,
   truncateText
 };
+
+export default wordpressApi;

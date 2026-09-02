@@ -19,6 +19,7 @@ export default function PromoBanner({ banners, delay = 3000 }) {
         });
         if (!banner) return;
 
+        // eslint-disable-next-line react-hooks/set-state-in-effect -- syncs UI with sessionStorage, unavailable during SSR
         setActiveBanner(banner);
         const timer = setTimeout(() => setVisible(true), delay);
         return () => clearTimeout(timer);

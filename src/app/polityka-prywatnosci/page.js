@@ -13,14 +13,14 @@ export default function PolitykaPrywatnosci() {
 
                             <div className="content">
                                 <h2 className="h4 mb-3">1. INFORMACJE OGÓLNE</h2>
-                                <p>Niniejsza Polityka Prywatności określa zasady przetwarzania i ochrony danych osobowych Użytkowników i Klientów (zwanych dalej łącznie "Użytkownikami") przekazanych Komplex System Sp. z o.o. w związku z:</p>
+                                <p>Niniejsza Polityka Prywatności określa zasady przetwarzania i ochrony danych osobowych Użytkowników i Klientów (zwanych dalej łącznie &quot;Użytkownikami&quot;) przekazanych Komplex System Sp. z o.o. w związku z:</p>
                                 <ul>
                                     <li>korzystaniem ze strony internetowej komplexsystem.pl</li>
                                     <li>interakcją z naszymi profilami w mediach społecznościowych (TikTok, Facebook, Instagram)</li>
                                     <li>reagowaniem na nasze reklamy w serwisach Meta (Facebook, Instagram) i TikTok</li>
                                     <li>kontaktem z naszą firmą za pośrednictwem formularzy kontaktowych, e-maila, telefonu lub innych kanałów komunikacji</li>
                                 </ul>
-                                <p>Administratorem danych jest Komplex System Sp. z o.o. z siedzibą w Głogoczowie 472, 32-444 Głogoczów, wpisana do rejestru przedsiębiorców KRS pod numerem 0001162802, NIP: 6812111371 (zwana dalej "Spółką" lub "Administratorem").</p>
+                                <p>Administratorem danych jest Komplex System Sp. z o.o. z siedzibą w Głogoczowie 472, 32-444 Głogoczów, wpisana do rejestru przedsiębiorców KRS pod numerem 0001162802, NIP: 6812111371 (zwana dalej &quot;Spółką&quot; lub &quot;Administratorem&quot;).</p>
 
                                 <h2 className="h4 mb-3 mt-4">2. ZAKRES ZBIERANYCH DANYCH</h2>
                                 <h3 className="h5 mb-2">2.1. Dane zbierane automatycznie podczas korzystania ze strony komplexsystem.pl:</h3>
@@ -60,7 +60,7 @@ export default function PolitykaPrywatnosci() {
                                     <li>Nawiązania kontaktu w odpowiedzi na zapytanie</li>
                                     <li>Przedstawienia oferty handlowej</li>
                                     <li>Przygotowania wyceny instalacji OZE</li>
-                                    <li>Pomocy w uzyskaniu dofinansowania z programów takich jak "Czyste Powietrze"</li>
+                                    <li>Pomocy w uzyskaniu dofinansowania z programów takich jak &quot;Czyste Powietrze&quot;</li>
                                     <li>Realizacji usług instalacyjnych</li>
                                     <li>Realizacji umów i obsługi zamówień</li>
                                     <li>Rozpatrywania reklamacji i wniosków</li>
@@ -151,7 +151,7 @@ export default function PolitykaPrywatnosci() {
 
                                 <h2 className="h4 mb-3 mt-4">11. PLIKI COOKIES I PODOBNE TECHNOLOGIE</h2>
                                 <h3 className="h5 mb-2">11.1. Czym są pliki cookies</h3>
-                                <p>Pliki cookies (tzw. "ciasteczka") to niewielkie pliki tekstowe, które są przechowywane na urządzeniu końcowym Użytkownika podczas korzystania ze strony komplexsystem.pl. Umożliwiają one rozpoznanie urządzenia Użytkownika i dostosowanie strony do jego preferencji.</p>
+                                <p>Pliki cookies (tzw. &quot;ciasteczka&quot;) to niewielkie pliki tekstowe, które są przechowywane na urządzeniu końcowym Użytkownika podczas korzystania ze strony komplexsystem.pl. Umożliwiają one rozpoznanie urządzenia Użytkownika i dostosowanie strony do jego preferencji.</p>
 
                                 <h3 className="h5 mb-2 mt-3">11.2. Rodzaje plików cookies wykorzystywanych przez stronę komplexsystem.pl</h3>
                                 <p>Na naszej stronie wykorzystujemy następujące rodzaje plików cookies:</p>
@@ -186,7 +186,7 @@ export default function PolitykaPrywatnosci() {
                                 <p>W sprawach związanych z ochroną danych osobowych prosimy o kontakt:</p>
                                 <ul>
                                     <li>Adres e-mail: kontakt@komplexsystem.pl</li>
-                                    <li>Telefon: +48 575 508 698</li>
+                                    <li>Telefon: +48 660 969 071</li>
                                     <li>Adres korespondencyjny: Komplex System Sp. z o.o., Głogoczów 472, 32-444 Głogoczów</li>
                                 </ul>
                                 <p>Dodatkowe informacje techniczne:</p>
