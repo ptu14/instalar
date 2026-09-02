@@ -108,7 +108,7 @@ export default function Contact() {
                                 <div className="content mt-3">
                                     <h5 className="footer-head">Telefon</h5>
                                     <p className="text-muted">Skontaktuj się z nami, aby uzyskać więcej informacji</p>
-                                    <Link href="tel:+48575508698" className="text-foot">+48 575 508 698</Link>
+                                    <Link href="tel:+48660969071" className="text-foot">+48 660 969 071</Link>
                                     <p className="text-muted mt-2">Tel. stacjonarny:</p>
                                     <Link href="tel:+48123449920" className="text-foot">+48 12 344 99 20</Link>
                                 </div>

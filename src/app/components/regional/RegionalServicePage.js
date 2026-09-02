@@ -18,7 +18,7 @@ export default function RegionalServicePage({ region, serviceName = "Pompy Ciep�
             "@type": "LocalBusiness",
             "name": "Komplex System",
             "url": "https://www.komplexsystem.pl",
-            "telephone": "+48575508698",
+            "telephone": "+48660969071",
             "address": {
                 "@type": "PostalAddress",
                 "streetAddress": "Głogoczów 472",

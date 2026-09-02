@@ -109,7 +109,7 @@ export default function RootLayout({ children }) {
           "name": "Komplex System",
           "image": "https://komplexsystem.pl/images/komplex_system.png",
           "url": "https://komplexsystem.pl",
-          "telephone": "+48575508698",
+          "telephone": "+48660969071",
           "priceRange": "$$",
           "address": {
             "@type": "PostalAddress",
@@ -142,7 +142,7 @@ export default function RootLayout({ children }) {
           ],
           "contactPoint": {
             "@type": "ContactPoint",
-            "telephone": "+48575508698",
+            "telephone": "+48660969071",
             "contactType": "customer service"
           }
         }

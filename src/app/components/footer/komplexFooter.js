@@ -52,7 +52,7 @@ export default function KomplexFooter() {
                                             <ul className="list-unstyled footer-list mt-4">
                                                 <li className="d-flex align-items-center">
                                                     <FiPhone className="me-2 text-primary accent" />
-                                                    <Link href="tel:+48575508698" className="text-foot">+48 575 508 698</Link>
+                                                    <Link href="tel:+48660969071" className="text-foot">+48 660 969 071</Link>
                                                 </li>
                                                 <li className="d-flex align-items-center mt-2">
                                                     <FiMail className="me-2 text-primary accent" />
