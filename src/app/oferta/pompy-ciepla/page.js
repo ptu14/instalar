@@ -68,7 +68,7 @@ export default function PompyCiepla() {
                         <div className="col-lg-6">
                             <div className="position-relative">
                                 <Image
-                                    src="/images/pompa-ciepla.jpg"
+                                    src="/images/pompa-ciepla-daikin.jpg"
                                     width={600}
                                     height={400}
                                     className="img-fluid rounded shadow"
